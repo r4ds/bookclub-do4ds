@@ -1,4 +1,4 @@
-# Code promotion and integration
+# Getting Started with the Cloud
 
 **Learning objectives:**
 

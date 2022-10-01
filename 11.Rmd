@@ -1,4 +1,4 @@
-# Code promotion and integration
+# DevOps for DevOps
 
 **Learning objectives:**
 

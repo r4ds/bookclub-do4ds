@@ -1,4 +1,4 @@
-# Code promotion and integration
+# Environments as Code
 
 **Learning objectives:**
 

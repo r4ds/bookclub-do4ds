@@ -54,7 +54,7 @@ This companion follows the [R4DS Online Learning Community Code of Conduct](http
 
 -   Recognize the **history of DevOps.**
 -   Differentiate between **DevOps** (knowledge, practices, and tools) and **IT/Admins** (people and roles).
--   Recognize **red flags abut IT/Admin functions** and what they might indicate.
+-   Recognize **red flags about IT/Admin functions** and what they might indicate.
 -   Organize the content that will be **covered in this book.**
 
 ## Devops? {-}

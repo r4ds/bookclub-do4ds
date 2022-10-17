@@ -2,7 +2,9 @@
 
 **Learning objectives:**
 
-- TBD
+-   Describe the **three environments** used in software development and data science.
+-   Use **GitHub Actions (GHA) to deploy** data science assets.
+-   Keep environments in sync using **infrastructure as code (IaC) tooling.**
 
 ## SLIDE 1
 

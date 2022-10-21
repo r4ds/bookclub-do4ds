@@ -6,10 +6,158 @@
 -   Use **GitHub Actions (GHA) to deploy** data science assets.
 -   Keep environments in sync using **infrastructure as code (IaC) tooling.**
 
-## SLIDE 1
+## Why Do Care About Code Promotion Workflows?
 
-- ADD SLIDES AS SECTIONS (`##`).
-- TRY TO KEEP THEM RELATIVELY SLIDE-LIKE; THESE ARE NOTES, NOT THE BOOK ITSELF.
+<figure>
+    <img src="https://i.redd.it/7zhsce11xms31.jpg" style="float:right;width:300px;height:420px;">
+    <figcaption>(Image Source: [Reddit](https://www.reddit.com/r/ProgrammerHumor/comments/di2shq/well_thats_interesting_lets_take_rest_of_the_day/))</figcaption>
+</figure>
+
+- Without foresight, live products can break. Users sad; supervisors mad.
+- Code promotion reduces the risk of disaster by:
+    - Modularizing processes
+    - Testing & checking rigorously
+    - Minimizing downtime
+
+> What does code promotion look like?
+
+## The Three Environments
+
+<figure>
+    <img src="https://miamioh.edu/_files/images/it-services/news-articles/2017/08/dev-graphic.png">
+    <figcaption>(Image Source: [Miami University](https://miamioh.edu/it-services/news/2017/08/dev-test-prod.html))</figcaption>
+</figure>
+
+
+### Dev
+
+- The _development environment_ is the product sandbox
+- Most "data science" happens here:
+    - Data analysis & modeling
+    - App prototyping
+    - ETL
+
+Comparing dev for data science vs dev for software engineering:
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0lax"></th>
+    <th class="tg-1wig">Data Science</th>
+    <th class="tg-1wig">Software Engineering</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax"><span style="font-weight:bold">Goal</span></td>
+    <td class="tg-0lax">Explore relationships in data that may develop into live products</td>
+    <td class="tg-0lax">Build &amp; implement a specific feature for a live product with pre-defined requirements</td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">Tools</td>
+    <td class="tg-0lax">"Fully fledged" data science IDE (RStudio, VSCode) can encompass Dev, Test, &amp; Prod</td>
+    <td class="tg-0lax">Dev, Test, &amp; Prod are differentiated by environments &amp; containers</td>
+  </tr>
+</tbody>
+</table>
+
+<figure>
+    <img src="https://www.productboard.com/wp-content/uploads/2022/04/untitled-3.png" style="width:500px;height:450px;">
+    <figcaption>Most of what data scientists do doesn't end up as a live product in the state it was created; these entities think differently! ([Source](https://www.productboard.com/blog/orchestrating-ml-workflows-with-airflow/))</figcaption>
+</figure>
+
+
+### Test
+
+- Test is for testing :)
+
+- Tests used for many reasons incl. security, portability, performance, usability
+
+### Prod
+
+- Gold standard (where your live product is released into the wild)
+- Should be guarded by Continuous Integration/Continuous Deployment (CI/CD)
+- Ideally zero manual interaction and zero changes to the actual code
+
+## CI/CD
+
+- Most CI/CD processes are usually managed with git:
+
+<figure>
+    <img src="https://do4ds.com/chapters/sec1/images-code-promotion/git-branches.png">
+    <figcaption>There are a handful of [git workflow patterns](https://rovitpm.com/5-git-workflows-to-improve-development/) for DevOps (Image Source: [The book!](https://do4ds.com/chapters/sec1/1-1-code-promotion.html#cicd-and-the-mechanics-of-code-promotion))</figcaption>
+</figure>
+
+CI/CD processes are "triggered" by git changes (i.e. when code changes in `test`)
+
+- GitHub is the leading provider for CI/CD via GitHub Actions (GHA)
+
+### How Does it Work?
+
+You write code that tells the CI/CD tool to:
+
+1. Build a clean, empty server on the cloud
+2. Copy your code with new changes and the bare-minimum requirements for it to run
+3. Install and run any tests as specified; if tests fail, stop immediately and inform the developer
+4. Accept the new changes and "push" to production (automatically copy the changes to the live product)
+
+`r-lib` 📦 is your friend for getting started with GHA with R — See [here](https://github.com/r-lib/actions)
+
+## Per-Environment Configuration
+
+- When servers are "stood up" by CI/CD, they can take many forms
+- It's wise to test these forms for your users
+- How do you flexibly code CI/CD to test many forms? `config` 📦 in R is your friend, use it to set environment variables^[We'll probably learn more about environment variables in chapter 7 + 8]
+
+## Creating & Maintaining Identical Environments
+
+- Servers should be cattle; not sheep/environments are pocket change
+    - Servers should be unremarkable, used frequently and interchangeably
+- Test environments should be identical to production; therefore, never fiddle with test when tests fail
+    - Doing so introduces servers to _drift out of alignment_
+- Infrastructure as Code (IaC) are tools meant to manage these servers and changes
+
+## Review
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">Learning Objective</th>
+    <th class="tg-0pky">What Did We Learn?</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Describe the <span style="font-weight:bold">three environments </span>used in software development and data science.</td>
+    <td class="tg-0pky"><ol><li><span style="font-weight:bold">Dev</span>: where products are conceived and built</li><li><span style="font-weight:bold">Test</span>: where products are rigorously tested against the many different environments they will encounter "in the wild"</li><li><span style="font-weight:bold">Prod</span><span style="font-weight:normal">: where the live product exists "in the wild"</span></li></ol></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Use <span style="font-weight:bold">GitHub Actions (GHA) to deploy </span>data science assets.<br></td>
+    <td class="tg-0pky">R users can do this with `r-lib` 📦</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Keep environments in sync using <span style="font-weight:bold">infrastructure as code (IaC) tooling.</span></td>
+    <td class="tg-0pky"><ul><li>Servers are cheap; use frequently</li><li>IaC Tools help you stay away from <span style="font-weight:bold">drifting</span></li></ul></td>
+  </tr>
+</tbody>
+</table>
 
 ## Meeting Videos
 

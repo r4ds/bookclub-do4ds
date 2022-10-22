@@ -6,7 +6,7 @@
 -   Use **GitHub Actions (GHA) to deploy** data science assets.
 -   Keep environments in sync using **infrastructure as code (IaC) tooling.**
 
-## Why Do Care About Code Promotion Workflows?
+## Why Do We Care About Code Promotion Workflows?
 
 <figure>
     <img src="https://i.redd.it/7zhsce11xms31.jpg" style="float:right;width:300px;height:420px;">

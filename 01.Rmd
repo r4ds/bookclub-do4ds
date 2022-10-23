@@ -163,12 +163,13 @@ You write code that tells the CI/CD tool to:
 
 ### Cohort 1
 
-`r knitr::include_url("https://www.youtube.com/embed/URL")`
+`r knitr::include_url("https://www.youtube.com/embed/9qQ4YpEgkr0")`
 
 <details>
 <summary> Meeting chat log </summary>
 
 ```
-LOG
+00:44:58	priyanka gagneja:	fantastic question
+00:47:25	priyanka gagneja:	and dates
 ```
 </details>

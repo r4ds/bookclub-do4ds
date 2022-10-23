@@ -2,12 +2,33 @@
 
 **Learning objectives:**
 
-- THESE ARE NICE TO HAVE BUT NOT ABSOLUTELY NECESSARY
+- List the **three layers of data science environments.**
+- Explain **why** it's important to **control the package environment.**
+- **Use `{renv}`** (or `{venv}`) to control the **package environment.**
+- Recognize **when** it is important to **control the system environment.**
 
 ## SLIDE 1
 
 - ADD SLIDES AS SECTIONS (`##`).
 - TRY TO KEEP THEM RELATIVELY SLIDE-LIKE; THESE ARE NOTES, NOT THE BOOK ITSELF.
+
+## Review
+
++---------------------------------------+--------------------------------------+
+| Learning Objective                    | What Did We Learn?                   |
++=======================================+======================================+
+| List the **three layers of data       | IF YOU CAN FIND A LESS PAINFUL WAY TO|
+| science environments.**               | DO THIS, DO SO!                      |
++---------------------------------------+--------------------------------------+
+| Explain **why** it's important to     | IF YOU CAN FIND A LESS PAINFUL WAY TO|
+| **control the package environment.**  | DO THIS, DO SO!                      |
++---------------------------------------+--------------------------------------+
+| **Use `{renv}`** (or `{venv}`) to     | IF YOU CAN FIND A LESS PAINFUL WAY TO|
+| control the **package environment.**  | DO THIS, DO SO!                      |
++---------------------------------------+--------------------------------------+
+| Recognize **when** it is important to | IF YOU CAN FIND A LESS PAINFUL WAY TO|
+| **control the system environment.**   | DO THIS, DO SO!                      |
++---------------------------------------+--------------------------------------+
 
 ## Meeting Videos
 

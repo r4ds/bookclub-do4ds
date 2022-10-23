@@ -9,6 +9,21 @@
 - ADD SLIDES AS SECTIONS (`##`).
 - TRY TO KEEP THEM RELATIVELY SLIDE-LIKE; THESE ARE NOTES, NOT THE BOOK ITSELF.
 
+## Review
+
++---------------------------------------+--------------------------------------+
+| Learning Objective                    | What Did We Learn?                   |
++=======================================+======================================+
+| TEXT OF LO IN HERE                    | IF YOU CAN FIND A LESS PAINFUL WAY TO|
+|                                       | DO THIS, DO SO!                      |
++---------------------------------------+--------------------------------------+
+| TEXT OF LO IN HERE                    | IF YOU CAN FIND A LESS PAINFUL WAY TO|
+|                                       | DO THIS, DO SO!                      |
++---------------------------------------+--------------------------------------+
+| TEXT OF LO IN HERE                    | IF YOU CAN FIND A LESS PAINFUL WAY TO|
+|                                       | DO THIS, DO SO!                      |
++---------------------------------------+--------------------------------------+
+
 ## Meeting Videos
 
 ### Cohort 1

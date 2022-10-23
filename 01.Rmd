@@ -128,36 +128,26 @@ You write code that tells the CI/CD tool to:
 
 ## Review
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-</style>
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-0pky">Learning Objective</th>
-    <th class="tg-0pky">What Did We Learn?</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-0pky">Describe the <span style="font-weight:bold">three environments </span>used in software development and data science.</td>
-    <td class="tg-0pky"><ol><li><span style="font-weight:bold">Dev</span>: where products are conceived and built</li><li><span style="font-weight:bold">Test</span>: where products are rigorously tested against the many different environments they will encounter "in the wild"</li><li><span style="font-weight:bold">Prod</span><span style="font-weight:normal">: where the live product exists "in the wild"</span></li></ol></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Use <span style="font-weight:bold">GitHub Actions (GHA) to deploy </span>data science assets.<br></td>
-    <td class="tg-0pky">R users can do this with `r-lib` 📦</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Keep environments in sync using <span style="font-weight:bold">infrastructure as code (IaC) tooling.</span></td>
-    <td class="tg-0pky"><ul><li>Servers are cheap; use frequently</li><li>IaC Tools help you stay away from <span style="font-weight:bold">drifting</span></li></ul></td>
-  </tr>
-</tbody>
-</table>
++---------------------------------------+--------------------------------------+
+| Learning Objective                    | What Did We Learn?                   |
++=======================================+======================================+
+| Describe the **three environments**   | 1. **Dev:** where products are       |
+| used in software development and data |   conceived and built                |
+| science.                              | 2. **Test:** where products are      |
+|                                       |   rigorously tested against the many |
+|                                       |   different environments they will   |
+|                                       |   encounter “in the wild”            |
+|                                       | 3. **Prod:** where the live product  |
+|                                       |   exists “in the wild”               |
++---------------------------------------+--------------------------------------+
+| Use **GitHub Actions (GHA) to deploy**| R users can do this with `r-lib` 📦  |
+| data science assets.                  |                                      |
++---------------------------------------+--------------------------------------+
+| Keep environments in sync using       | * Servers are cheap; use frequently  |
+| infrastructure as code (IaC) tooling. | * IaC Tools help you stay away from  |
+|                                       |   drifting                           |
++---------------------------------------+--------------------------------------+
+
 
 ## Meeting Videos
 

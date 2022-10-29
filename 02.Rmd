@@ -59,7 +59,7 @@ Today we will focus mainly on the first layer, the package environment.
 
 ## The Package Environment
 
-![The Data Scientist Life Cycle](images/galaxy_package.jpeg) \## Clash
+![The Data Scientist Life Cycle](images/galaxy_package.jpeg)
 
 ## Please don't
 
@@ -87,7 +87,7 @@ Why not?
 
 "This works fine for a while. But the problem with this is that the default has you installing things into a cache that’s shared among every project on your system."
 
-It's also considered rude to make changes to a user's system packages.
+It's also considered rude to make changes to a user's system-level package setup.
 
 More importantly, DevOps aims to help you make things that don't break,
 installing packages without versions specified does not prevent things
@@ -126,10 +126,12 @@ in a /Library folder and we can only have one version of each package in
 
 ## Virtual Environments to the Rescue
 
+We can't have multiple versions of 'package x' in /Library, but we can have multiple versions of /Library, each with a different version of 'package x'
+
 ::: {style="display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 10px;"}
 <div>
 
-![fig_x](images/multiple_libraries.png)
+![From source material](images/multiple_libraries.png)
 
 </div>
 
@@ -174,6 +176,12 @@ Now that you have your lock file, you can send your project over to a friend/col
 
 "In the context of a production environment, Conda smashes together the language version, the package management, and (sometimes) the system library management. ... I generally recommend people use a tool that’s just for package management, like {venv}, as opposed to an all-in-one tool like Conda."
 
+## Taking Control of the System Environment
+
+"In other cases, your R or Python library might basically just be a wrapper for system libraries. For example, many popular packages for geospatial analysis are just thin language wrappers that call out to the system libraries. In this case, it might be important to be able to maintain a particular version of the underlying system library to ensure that your code runs at all in the future."
+
+As we have a chapter dedicated to Docker (which I haven't read) I won't dive into this here - I expect we'll have run out of time too.
+
 ## Further reading
 
 https://rstats.wtf/
@@ -185,10 +193,10 @@ I'm leaving this slide as a discussion and will edit retroactively, so... What d
 
 | Learning Objective                                                        | What Did We Learn?                                    |
 |-----------------------------------------|-------------------------------|
-| List the **three layers of data science environments.**                   | IF YOU CAN FIND A LESS PAINFUL WAY TO DO THIS, DO SO! |
-| Explain **why** it's important to **control the package environment.**    | IF YOU CAN FIND A LESS PAINFUL WAY TO DO THIS, DO SO! |
-| **Use `{renv}`** (or `{venv}`) to control the **package environment.**    | IF YOU CAN FIND A LESS PAINFUL WAY TO DO THIS, DO SO! |
-| Recognize **when** it is important to **control the system environment.** | IF YOU CAN FIND A LESS PAINFUL WAY TO DO THIS, DO SO! |
+| List the **three layers of data science environments.**                   | |
+| Explain **why** it's important to **control the package environment.**    |  |
+| **Use `{renv}`** (or `{venv}`) to control the **package environment.**    |  |
+| Recognize **when** it is important to **control the system environment.** |  |
 
 ## Meeting Videos
 

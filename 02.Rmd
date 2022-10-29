@@ -166,7 +166,7 @@ Now that you have your lock file, you can send your project over to a friend/col
 
 - Download the project
 - Move into the project directory through the cmd line in 2 ways:
-  1 Open the .RProj file with RStuduo
+  1 Open the .RProj file with RStudio
   2`setwd('<project-dir>')` e.g. if you made a projects folder in your home directory and a project within your projects folder named my_project: `setwd("~/projects/my_project")`
 - `renv::init()`
 - `renv::restore()` - if this didn't happen automatically

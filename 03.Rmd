@@ -2,7 +2,11 @@
 
 **Learning objectives:**
 
-- THESE ARE NICE TO HAVE BUT NOT ABSOLUTELY NECESSARY
+-   Compare and contrast the tiers of the three-tier app architecture vs the seven data science services.
+-   Answer the two data-storage questions about an app: storage format and storage location.
+-   Choose the appropriate storage solution for an app.
+-   Authorize an app to access data.
+-   Consider database-as-a-servie options.
 
 ## SLIDE 1
 

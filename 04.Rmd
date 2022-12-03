@@ -19,11 +19,8 @@
     -   {log4r} adds structure that's useful for a stream of events (timestamp, etc)
 -   The object created via `logger()` defines where things go & how they look.
 
-```{r 04-log4r setup, message = FALSE, warning = FALSE}
-library(log4r)
-```
-
 ```{r 04-log4r defaults, eval = FALSE}
+library(log4r)
 log <- logger(threshold = "INFO", appenders = console_appender()) # Defaults
 
 info(log, "Log starting.")

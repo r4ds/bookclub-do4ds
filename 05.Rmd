@@ -2,7 +2,10 @@
 
 **Learning objectives:**
 
-- THESE ARE NICE TO HAVE BUT NOT ABSOLUTELY NECESSARY
+-   Decide whether a container is the right tool for a given job.
+-   Download and run pre-built Docker images.
+-   Describe the stages of the Docker container lifecycle.
+-   Build simple Dockerfiles for your own projects.
 
 ## SLIDE 1
 

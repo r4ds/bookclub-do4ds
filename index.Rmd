@@ -131,12 +131,4 @@ This companion follows the [R4DS Online Learning Community Code of Conduct](http
 
 ### Cohort 1
 
-`r knitr::include_url("https://www.youtube.com/embed/URL")`
-
-<details>
-<summary> Meeting chat log </summary>
-
-```
-LOG
-```
-</details>
+`r knitr::include_url("https://www.youtube.com/embed/3-pFRbbaGpg")`

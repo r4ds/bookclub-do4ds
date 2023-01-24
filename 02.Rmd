@@ -202,7 +202,7 @@ I'm leaving this slide as a discussion and will edit retroactively, so... What d
 
 ### Cohort 1
 
-`r knitr::include_url("https://www.youtube.com/embed/URL")`
+`r knitr::include_url("https://www.youtube.com/embed/b2GWwkN8rR8")`
 
 <details>
 
@@ -211,7 +211,8 @@ I'm leaving this slide as a discussion and will edit retroactively, so... What d
 Meeting chat log
 
 </summary>
-
-    LOG
-
+```
+00:43:56	Tinashe Tapera:	https://www.tidyverse.org/blog/2017/12/workflow-vs-script/
+00:45:19	Jon Harmon (jonthegeek):	That blog led to one of my favorite hex stickers: "Everything I Know Is From Jenny Bryan" https://raw.githubusercontent.com/MonkmanMH/EIKIFJB/main/EIKIFJB_sigmar_hex.png
+```
 </details>

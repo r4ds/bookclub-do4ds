@@ -212,12 +212,6 @@ docker kill palmer-plumber
 
 ### Cohort 1
 
-`r knitr::include_url("https://www.youtube.com/embed/URL")`
+`r knitr::include_url("https://www.youtube.com/embed/gzJ3eT6tcog")`
 
-<details>
-<summary> Meeting chat log </summary>
-
-```
-LOG
-```
-</details>
+`r knitr::include_url("https://www.youtube.com/embed/CHbaTCo4gQk")`

@@ -7,7 +7,7 @@
 -   Describe the stages of the Docker container lifecycle.
 -   Build simple Dockerfiles for your own projects.
 
-## Why containers?
+## Why containers? {-}
 
 ![](images/05_it-works-on-my-machine.jpg)
 
@@ -22,7 +22,7 @@
 
 *https://www.reddit.com/r/ProgrammerHumor/comments/cw58z7/it_works_on_my_machine/*
 
-## Why containers for Data Science?
+## Why containers for Data Science? {-}
 
 - Containers are mostly used for:
   1. Packaging an environment for someone else to use
@@ -36,7 +36,7 @@ Potential examples:
 - You have a project at work that needs to be interacted with every week no matter who looks at it or when
 - You're publishing an R package and want to test specific features across different base R or package versions
 
-## Words of caution
+## Words of caution {-}
 
 - Docker is limited to the resources you give it. If your dev machine is less than awesome, your Docker container will be much less than awesome
 - Docker is only allowed access to what you give it and may take some extra work to get running
@@ -46,9 +46,9 @@ Potential examples:
   
 - Containers require proper setup!
 
-## Diving In
+## Diving In {-}
 
-### Docker Run
+### Docker Run {-}
 
 `docker run [OPTIONS] IMAGE [COMMAND] [ARG...]`
 
@@ -63,7 +63,7 @@ docker run --rm -d \
   alexkgold/plumber
 ```
 
-### Docker Compose
+### Docker Compose {-}
 
 `docker-compose.yml` -> `docker compose [-f <arg>...] [options] [COMMAND] [ARGS...]`
 
@@ -87,7 +87,7 @@ cd project-dir
 docker-compose up
 ```
 
-## Container Lifecyle
+## Container Lifecyle {-}
 
 ![](https://do4ds.com/chapters/sec1/images-docker/docker-lifecycle.png)
 
@@ -97,7 +97,7 @@ docker-compose up
 - There are services to provide private image registries for companies
 - Containers usually auto-pull if it doesn't exist already
 
-## More on Docker Run
+## More on Docker Run {-}
 
 ```{bash, eval=FALSE}
 docker run --rm -d \
@@ -116,7 +116,7 @@ docker run --rm -d \
 - `-v <outside/directory>:<inside/directory>` to expose a directory
   - `${PWD}` is your project directory
   
-## Build a Dockerfile
+## Build a Dockerfile {-}
 
 - Not the same as a `docker-compose.yml`
 
@@ -168,7 +168,7 @@ CMD cd /project && \
 docker build -t <image name>
 ```
 
-## Trying out Docker
+## Trying out Docker {-}
 
 1. Try out plumber penguins [in your browser]( http://localhost:8000/__docs__/)
 
@@ -208,9 +208,9 @@ exit
 docker kill palmer-plumber
 ```
 
-## Meeting Videos
+## Meeting Videos {-}
 
-### Cohort 1
+### Cohort 1 {-}
 
 `r knitr::include_url("https://www.youtube.com/embed/gzJ3eT6tcog")`
 

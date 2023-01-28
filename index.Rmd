@@ -97,7 +97,7 @@ This companion follows the [R4DS Online Learning Community Code of Conduct](http
 -   **Section 2:** Vocab & beginnings of DIY.
 -   **Section 3:** Hands-on DIY. Still very very in progress.
 
-# DevOps Lessons for Data Science {-}
+## DevOps Lessons for Data Science {-}
 
 **Learning objectives:**
 
@@ -129,6 +129,6 @@ This companion follows the [R4DS Online Learning Community Code of Conduct](http
 
 ## Meeting Videos {-}
 
-### Cohort 1
+### Cohort 1 {-}
 
 `r knitr::include_url("https://www.youtube.com/embed/3-pFRbbaGpg")`

@@ -6,7 +6,7 @@
 -   Use **GitHub Actions (GHA) to deploy** data science assets.
 -   Keep environments in sync using **infrastructure as code (IaC) tooling.**
 
-## Why Do We Care About Code Promotion Workflows?
+## Why Do We Care About Code Promotion Workflows? {-}
 
 <figure>
     <img src="https://i.redd.it/7zhsce11xms31.jpg" style="float:right;width:300px;height:420px;">
@@ -21,7 +21,7 @@
 
 > What does code promotion look like?
 
-## The Three Environments
+## The Three Environments {-}
 
 <figure>
     <img src="https://miamioh.edu/_files/images/it-services/news-articles/2017/08/dev-graphic.png">
@@ -29,7 +29,7 @@
 </figure>
 
 
-### Dev
+### Dev {-}
 
 - The _development environment_ is the product sandbox
 - Most "data science" happens here:
@@ -76,19 +76,19 @@ Comparing dev for data science vs dev for software engineering:
 </figure>
 
 
-### Test
+### Test {-}
 
 - Test is for testing :)
 
 - Tests used for many reasons incl. security, portability, performance, usability
 
-### Prod
+### Prod {-}
 
 - Gold standard (where your live product is released into the wild)
 - Should be guarded by Continuous Integration/Continuous Deployment (CI/CD)
 - Ideally zero manual interaction and zero changes to the actual code
 
-## CI/CD
+## CI/CD {-}
 
 - Most CI/CD processes are usually managed with git:
 
@@ -101,7 +101,7 @@ CI/CD processes are "triggered" by git changes (i.e. when code changes in `test`
 
 - GitHub is the leading provider for CI/CD via GitHub Actions (GHA)
 
-### How Does it Work?
+### How Does it Work? {-}
 
 You write code that tells the CI/CD tool to:
 
@@ -112,13 +112,13 @@ You write code that tells the CI/CD tool to:
 
 `r-lib` 📦 is your friend for getting started with GHA with R — See [here](https://github.com/r-lib/actions)
 
-## Per-Environment Configuration
+## Per-Environment Configuration {-}
 
 - When servers are "stood up" by CI/CD, they can take many forms
 - It's wise to test these forms for your users
 - How do you flexibly code CI/CD to test many forms? `config` 📦 in R is your friend, use it to set environment variables^[We'll probably learn more about environment variables in chapter 7 + 8]
 
-## Creating & Maintaining Identical Environments
+## Creating & Maintaining Identical Environments {-}
 
 - Servers should be cattle; not sheep/environments are pocket change
     - Servers should be unremarkable, used frequently and interchangeably
@@ -126,7 +126,7 @@ You write code that tells the CI/CD tool to:
     - Doing so introduces servers to _drift out of alignment_
 - Infrastructure as Code (IaC) are tools meant to manage these servers and changes
 
-## Review
+## Review {-}
 
 +---------------------------------------+--------------------------------------+
 | Learning Objective                    | What Did We Learn?                   |
@@ -149,9 +149,9 @@ You write code that tells the CI/CD tool to:
 +---------------------------------------+--------------------------------------+
 
 
-## Meeting Videos
+## Meeting Videos {-}
 
-### Cohort 1
+### Cohort 1 {-}
 
 `r knitr::include_url("https://www.youtube.com/embed/9qQ4YpEgkr0")`
 

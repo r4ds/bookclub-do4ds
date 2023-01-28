@@ -8,7 +8,7 @@
 -   Authorize an app to access data.
 -   Consider database-as-a-service options.
 
-## Perspectives on Data Science Projects
+## Perspectives on Data Science Projects {-}
 
 -   DS vs SE Perspective
 
@@ -20,7 +20,7 @@
 
 -   We as SE/DE think of systems as a puzzle pieces where each piece of the puzzle have to optimally fit/integrated with other puzzle pieces.
 
-## Productionizing apps
+## Productionizing apps {-}
 
 -   Microservices and tight coupling (SRP OR SOC)
 
@@ -34,13 +34,13 @@
 
 -   What else comes to your mind when you move DS project to production?
 
-## The What & Where Questions of Storage
+## The What & Where Questions of Storage {-}
 
 -   What format would you use to store your data and why?
 
 -   Where you gonna put your data?
 
-## Factors we should consider when we choose our storage solution
+## Factors we should consider when we choose our storage solution {-}
 
 -   Data Access patterns
 
@@ -60,7 +60,7 @@
 
     -   Latency --\> is the time it takes for data to pass from one point on a network to another.
 
-## Data authorization
+## Data authorization {-}
 
 -   Don't allow all users to have access to all data.
 
@@ -70,7 +70,7 @@
 
 -   RStudio Connect to the Rescue with an encryption option.
 
-## Database-as-a-service
+## Database-as-a-service {-}
 
 -   When to use what? **Database** vs **Datawarehouse** vs **Datalake**.
 
@@ -78,7 +78,7 @@
 
 -   Is that all we got? (**Hint**: Not even close!!).
 
-## Review
+## Review {-}
 
 Left those as an open discussion questions?
 
@@ -90,9 +90,9 @@ Left those as an open discussion questions?
 | Authorize an app to access data.                                                                      |                    |
 | Consider database-as-a-service options.                                                               |                    |
 
-## Meeting Videos
+## Meeting Videos {-}
 
-### Cohort 1
+### Cohort 1 {-}
 
 `r knitr::include_url("https://www.youtube.com/embed/Dh1g_D_Ir0A")`
 

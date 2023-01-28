@@ -11,7 +11,7 @@
 -   Logs = events as they happen.
 -   Metrics = measurements of how things are working.
 
-## {log4r} Basics {-}
+## log4r Basics {-}
 
 -   {log4r} vs {base} vs {cli}
     -   {base} message/warning/error have least structure.
@@ -35,7 +35,7 @@ debug(log, "This won't show up.")
 ## ERROR [2022-12-03 10:31:41] This is an error, but not an R error.
 ```
 
-## {log4r} Layouts {-}
+## log4r Layouts {-}
 
 -   Alex hinted at this but didn't dig into it.
 

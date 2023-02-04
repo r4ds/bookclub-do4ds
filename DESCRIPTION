@@ -14,3 +14,4 @@ Depends:
 Imports: 
     bookdown,
     rmarkdown
+RoxygenNote: 7.2.3

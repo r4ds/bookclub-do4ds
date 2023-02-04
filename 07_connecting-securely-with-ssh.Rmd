@@ -2,23 +2,79 @@
 
 **Learning objectives:**
 
-- THESE ARE NICE TO HAVE BUT NOT ABSOLUTELY NECESSARY
+-   Understand what SSH is and why we use it
+-   Find out the difference between a public key and a private key
+-   Appreciate *how* SSH encryption works
 
-## SLIDE 1 {-}
+## SSH
 
-- ADD SLIDES AS SECTIONS (`##`).
-- TRY TO KEEP THEM RELATIVELY SLIDE-LIKE; THESE ARE NOTES, NOT THE BOOK ITSELF.
+Stands for 'Secure (socket) Shell'
 
-## Meeting Videos {-}
+Two-way communication between your computer and a remote server.
 
-### Cohort 1 {-}
+When interacting with the server we use Linux commands.
+
+SSH allows us to interact with the server privately, to prevent bad actors from performing... bad acts!
+
+![Nicholas Cage](images/ssh_bada_actor.jpeg)
+
+## Keys
+
+SSH works by the exchange of ~~Cryptocurrencies~~ cryptographic keys ![Not this](images/ssh_not_bitcoin.png)
+
+SSH Keys come in two parts - public and private, so we call them public keys and private keys.
+
+## What's the difference?
+
+The private key is for you, public keys are shareable.
+
+![keys](images/ssh_public_private.png)
+The private key comprises two large prime numbers
+
+The public key is the product of those two primes, so is by definition not a prime number.
+
+## When should you move your private key?
+
+When  f(x) = 1/x = 0
+
+
+## Public keys as locks
+
+Alex points out that Private key and Public key are needlessly similar, making them potentially difficult to recall. Hello sensitivity and specificity.
+
+It's better to think of private keys as keys, public keys as locks
+
+![One to many](images/ssh_key_padlocks.jpeg)
+There should only be one private key, but there can be many public keys.
+
+## Practical SSH Usage
+
+First key pairs are created - Private & Public
+
+Then the public key is added to the servers .ssh/authorized_keys file
+
+Keys are then shared with the server admin, if you are the server admin, congratulations the keys are shared with you!
+
+Keys ship with a default name e.g. `id_ed25519`, best to stick with this name. Check book for -i workaround.
+
+It's possible to include usernames and addresses in a config file, i.e.
+instead of tpying `ssh alexkgold@do4ds-lab.shop` I can just type `ssh lab`.
+
+## Comprehension Questions:
+
+Under what circumstances should you move or share your SSH private key?
+What is it about SSH public keys that makes them safe to share?
+
+## Meeting Videos {.unnumbered}
+
+### Cohort 1 {.unnumbered}
 
 `r knitr::include_url("https://www.youtube.com/embed/URL")`
 
 <details>
-<summary> Meeting chat log </summary>
 
-```
-LOG
-```
+<summary>Meeting chat log</summary>
+
+    LOG
+
 </details>

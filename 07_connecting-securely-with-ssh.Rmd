@@ -62,8 +62,8 @@ instead of tpying `ssh alexkgold@do4ds-lab.shop` I can just type `ssh lab`.
 
 ## Comprehension Questions:
 
-Under what circumstances should you move or share your SSH private key?
-What is it about SSH public keys that makes them safe to share?
+- Under what circumstances should you move or share your SSH private key?
+- What is it about SSH public keys that makes them safe to share?
 
 ## Meeting Videos {.unnumbered}
 

@@ -4,15 +4,15 @@
 
 - Gain a basic awareness of the terminal
 - Understand the 3 programs which sit on top of the command line
-- Familiarise ourselves with customising the terminal/shell
+- Familiarize ourselves with customizing the terminal/shell
 
 ## The Three Programs
 
 We have three programs which sit on top of one another:
 
-The terminal - we type commands
-The shell- matches typed commands to programs
-The operating system - runs the commands 
+-   The terminal - we type commands
+-   The shell- matches typed commands to programs
+-   The operating system - runs the commands 
 
 
 ![terminal_graph](images/terminal_graph_book.png)

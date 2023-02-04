@@ -74,7 +74,7 @@ instead of tpying `ssh alexkgold@do4ds-lab.shop` I can just type `ssh lab`.
 <details>
 
 <summary>Meeting chat log</summary>
-
-    LOG
-
+```
+LOG
+```
 </details>

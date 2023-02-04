@@ -2,12 +2,51 @@
 
 **Learning objectives:**
 
-- THESE ARE NICE TO HAVE BUT NOT ABSOLUTELY NECESSARY
+- Gain a basic awareness of the terminal
+- Understand the 3 programs which sit on top of the command line
+- Familiarise oursleves with customising the terminal/shell
 
-## SLIDE 1 {-}
+## The Three Programs
 
-- ADD SLIDES AS SECTIONS (`##`).
-- TRY TO KEEP THEM RELATIVELY SLIDE-LIKE; THESE ARE NOTES, NOT THE BOOK ITSELF.
+We have three programs which sit on top of one another:
+
+The terminal - we type commands
+The shell- matches typed commands to programs
+The operating system - runs the commands 
+
+
+![terminal_graph](images/terminal_graph_book.png)
+## Why should you learn to use the terminal?
+
+![Hacking into the mainframe](images/terminal_bond_hacker.jpeg)
+Because you want to be this guy.
+
+*Let's discuss this and fill in some reasons?
+
+## Selecting your terminal
+
+As a Mac user Alex recommends using the built-in app, Terminal, so do I!
+
+iTerm 2 for multiple tabs, theming and other niceties. Has anyone used this, anything to add?
+
+Same for Windows! 
+
+Any thoughts here, disagreements, recommendations?
+
+## Selecting your shell
+
+Mac users: 
+
+Alex recommends  zsh, notes that the defualt shell - Bash is fine too.
+
+Shoutouts for zsh, Ksh, and Fish.
+
+Plugin managers: OhMyZsh and Prezt
+
+Windows users:
+
+PowerShell > Cmd
+
 
 ## Meeting Videos {-}
 

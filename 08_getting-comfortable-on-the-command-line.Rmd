@@ -90,6 +90,8 @@ The `bash` command to change directories is `cd` . In this case, you start at `/
 | Stopping by the hospital where you were born because they have great grilled cheese sandwiches in the cafeteria          | `cd /`                  |
 | Going back to your room                                                                                                  | `cd ~/cohort1`          |
 
+Any path with `..` is a relative path and only works from your current directory.
+
 ## Reading Text Files {.unnumbered}
 
 Let's take a look at `pr_check.yml` in our `.github/workflows` folder:
@@ -136,6 +138,8 @@ The `rm` command will remove something, with the options to do so recursively (`
 | Demolish the kitchen                                 | `rmdir ~/kitchen`                             |
 | Make a new kitchen                                   | `mkdir ~/kitchen`                             |
 | Move everything into the new kitchen                 | `mv ~/spare_room/* ~/kitchen`                 |
+
+You `mv` or `cp` `from_here to_here`
 
 ## Server Files {.unnumbered}
 

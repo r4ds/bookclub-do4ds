@@ -1,4 +1,4 @@
-# HTTP and Application Layer Protocols
+# DNS allows for human-readable addresses
 
 **Learning objectives:**
 

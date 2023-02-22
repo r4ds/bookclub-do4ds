@@ -1,4 +1,4 @@
-# Basic Linux SysAdmin
+# DNS allows for human-readable addresses
 
 **Learning objectives:**
 

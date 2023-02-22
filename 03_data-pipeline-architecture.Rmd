@@ -1,4 +1,6 @@
-# Data Science Project Components
+# Data Pipeline Architecture
+
+> Since these notes were prepared, this chapter has been split into two chapters. These notes have not been updated to reflect this change.
 
 **Learning objectives:**
 

@@ -1,4 +1,4 @@
-# Things that Only Matter on the Internet (DNS, HTTPS)
+# You should use SSL/HTTPS
 
 **Learning objectives:**
 

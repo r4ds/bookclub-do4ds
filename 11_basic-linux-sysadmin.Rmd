@@ -1,0 +1,34 @@
+# Basic Linux SysAdmin
+
+**Learning objectives:**
+
+-   Recognize major events in the history of Linux.
+-   Create users in Linux.
+-   Check and set Linux file permissions.
+-   Install programs on Debian-based Linux distributions.
+-   Check storage usage.
+-   Manage processes.
+-   Implement SSH port forwarding.
+-   Locate files on the `$PATH`.
+-   Run RStudio on an AWS EC2.
+-   Run JupyterHub on an AWS EC2.
+-   Run a plumber API in a docker container on an AWS EC2.
+
+## SLIDE 1 {-}
+
+- ADD SLIDES AS SECTIONS (`##`).
+- TRY TO KEEP THEM RELATIVELY SLIDE-LIKE; THESE ARE NOTES, NOT THE BOOK ITSELF.
+
+## Meeting Videos {-}
+
+### Cohort 1 {-}
+
+`r knitr::include_url("https://www.youtube.com/embed/URL")`
+
+<details>
+<summary> Meeting chat log </summary>
+
+```
+LOG
+```
+</details>

@@ -2,12 +2,47 @@
 
 **Learning objectives:**
 
-- THESE ARE NICE TO HAVE BUT NOT ABSOLUTELY NECESSARY
+-   Details that we won't dig into:
+    -   Identify the problems that SSL/https are meant to solve.
+    -   Explain how SSL/https solve those problems.
+-   Configure SSL on an AWS EC2.
+    -   Configure nginx to identify your domain name.
+    -   Use `certbot` to set up SSL.
+    -   Update the `rstudio` configuration in `nginx` to support `https`.
+    -   Open the necessary ports on your EC2's security group.
 
-## SLIDE 1 {-}
+## Get ready {-}
 
-- ADD SLIDES AS SECTIONS (`##`).
-- TRY TO KEEP THEM RELATIVELY SLIDE-LIKE; THESE ARE NOTES, NOT THE BOOK ITSELF.
+-   If you've followed the instructions from Chapter 13, you're ready to go!
+-   Make sure you have this line in `nginx.conf`: 
+    -   `server_name yourdomain.you www.yourdomain.you;`
+
+## certbot {-}
+
+-   `sudo apt-get install certbot python3-certbot-nginx`
+-   `sudo systemctl restart nginx`
+-   `sudo certbot –nginx -d yourdomain.you -d www.yourdomain.you`
+
+## rstudio in nginx.conf {-}
+
+-   `sudo vim /etc/nginx/nginx.conf`
+-   `proxy_set_header X-Forwarded-Proto https;` in the `rstudio` location
+-   `sudo systemctl restart nginx`
+
+## Open the port {-}
+
+(you may have already set this up in Chapter 12)
+
+-   *(Log into console.aws.amazon.com and navigate to EC2/Instances)*
+-   Click the "Security" tab on your instance.
+-   Click the Security group (something like `launch-wizard-2`)
+    -   (or go directly to "Network & Security"/"Security Groups")
+-   "Inbound rules" > "Edit inbound rules"
+-   "Add rule"
+    -   "HTTPS", "Anywhere-IPv4"
+-   Discussion: Leave HTTP, probably?
+-   Visit `https://yourdomain.you/rstudio`, `http://yourdomain.you/rstudio`, etc.
+
 
 ## Meeting Videos {-}
 

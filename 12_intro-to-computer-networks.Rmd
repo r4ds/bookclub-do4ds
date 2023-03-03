@@ -2,12 +2,108 @@
 
 **Learning objectives:**
 
-- THESE ARE NICE TO HAVE BUT NOT ABSOLUTELY NECESSARY
+-   Details that we won't dig into:
+    -   Describe the pieces of a URL.
+    -   Briefly explain how ports map to services.
+    -   Outline how IP addresses map to servers.
+    -   Troubleshoot common network problems.
+-   Use `nginx` to make multiple services available from a single server.
+    -   Install `nginx` on an Ubuntu server.
+    -   Allow outside traffic to reach `nginx` on our AWS EC2.
+    -   Route traffic to RStudio via `nginx.conf`.
+    -   Route traffic to JupyterHub via `nginx.conf` (skipped here).
+    -   Route traffic to a plumber api via `nginx.conf`.
 
-## SLIDE 1 {-}
+## Install nginx {-}
 
-- ADD SLIDES AS SECTIONS (`##`).
-- TRY TO KEEP THEM RELATIVELY SLIDE-LIKE; THESE ARE NOTES, NOT THE BOOK ITSELF.
+-   *(Make sure the server from Chapter 11 is running, with RStudio & the plumber API.)*
+-   `ssh test-user@$SERVER_ADDRESS`
+-   `sudo apt install nginx`
+
+## Allow outside traffic {-}
+
+-   *(Log into console.aws.amazon.com and navigate to EC2/Instances)*
+-   Click the "Security" tab on your instance.
+-   Click the Security group (something like `launch-wizard-2`)
+    -   (or go directly to "Network & Security"/"Security Groups")
+-   "Inbound rules" > "Edit inbound rules"
+-   "Add rule"
+    -   "HTTP", "Anywhere-IPv4"
+    -   "HTTPS", "Anywhere-IPv4" while we're in here (won't work yet, though)
+
+## Edit nginx.conf {-}
+
+-   `sudo cp /etc/nginx/nginx.conf /etc/nginx/nginx-backup.conf`
+-   `sudo vim /etc/nginx/nginx.conf`
+    -   Delete everything below the `events` block (`80dd`).
+-   Set up http basics.
+
+```
+http {
+  
+  # Enable websockets (needed for Shiny) -- I don't know if this part matters.
+  map $http_upgrade  $connection_upgrade { 
+    default upgrade; '' close; 
+  }
+  
+  server { listen 80;
+  
+    # You can edit this file if you want a default page.
+    root /usr/share/nginx/html;
+    index index.html index.htm;
+  
+    # I think this was necessary to get it to work.
+    # We'll do more with this in Chapter 13.
+    server_name ec2-12-345-678-90.compute-1.amazonaws.com;
+  }
+}
+```
+
+-   `sudo systemctl restart nginx`
+-   Test it at your "Public IPv4 DNS".
+
+## Add RStudio routing {-}
+
+-   Add a `location` block inside the `http` / `server` section of `nginx.conf`.
+
+```
+    location /rstudio/ {
+      # Needed only for a custom path prefix of /rstudio
+      rewrite ^/rstudio/(.*)$ /$1 break;
+      
+      proxy_pass http://localhost:8787;
+      
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection $connection_upgrade;
+      proxy_read_timeout 20d;
+      
+      # Not needed if www-root-path is set in rserver.conf
+      proxy_set_header X-RStudio-Root-Path /rstudio;
+      
+      # Optionally, use an explicit hostname and omit the port if using 80/443
+      proxy_set_header Host $host:$server_port;
+    }
+```
+
+-   `sudo systemctl restart nginx`
+-   Test it at your "Public IPv4 DNS" `/rstudio`.
+
+## Add plumber api routing {-}
+
+-   Add a `location` block each time you want to add an API.
+
+```
+    location /palmer/ {
+      # Check the book to see if he has added more!
+      proxy_pass http://localhost:8555/;
+      proxy_set_header Host $host;
+    }
+```
+
+-   `sudo systemctl restart nginx`
+-   Test it at your "Public IPv4 DNS" `/palmer/stats` and `/palmer/__docs__/`.
+
 
 ## Meeting Videos {-}
 

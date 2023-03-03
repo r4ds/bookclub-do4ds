@@ -14,7 +14,7 @@
     -   `flags + flag args`: Options for the command and options for those options
     -   `command args`: arguments to pass to the command
 
-### Listing files in the current directory
+### Listing files in the current directory {-}
 
 We want to list files in the specified directory. The `bash` command to list files is `ls`.
 
@@ -60,7 +60,7 @@ ls -a .github
 
 \*There's no easy way to access your current mount point
 
-### What if you were a file?
+### What if you were a file? {-}
 
 Let's say you are this file: `/r4ds/do4ds/cohort1/chapter8.Rmd`
 

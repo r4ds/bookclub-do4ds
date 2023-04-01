@@ -2,13 +2,91 @@
 
 **Learning objectives:**
 
+- Appreciate computation hardware/software
+- CPU vs. GPU
+- RAM vs Storage
 
-- THESE ARE NICE TO HAVE BUT NOT ABSOLUTELY NECESSARY
+## What is Computing? {-}
 
-## SLIDE 1 {-}
+- Everything on a computer is represented by a (usually very large) number.
 
-- ADD SLIDES AS SECTIONS (`##`).
-- TRY TO KEEP THEM RELATIVELY SLIDE-LIKE; THESE ARE NOTES, NOT THE BOOK ITSELF.
+- At a hardware level the only thing computers do is add these numbers together.
+
+- Modern computers add very quickly and very accurately.
+
+- Computing speed is limited by **cores** and **clock**
+
+![classroom as a computer](https://content.fortune.com/wp-content/uploads/2017/08/gettyimages-535820805-e1513195741205.jpg)
+
+## CPU: The physical brain {-}
+
+- Cores: Available processing centers in a CPU (usually 4-32)
+
+- Clock speed: number of operations each core can accomplish (2-5 GHz, 2-5 billion operations per sec)
+
+- Most recent improvement is a result of number of cores, and core usage, not clocks
+
+![moore's law](https://upload.wikimedia.org/wikipedia/commons/0/00/Moore%27s_Law_Transistor_Count_1970-2020.png)
+
+## How do I go faster...? {-}
+
+- For R/Python, fewer faster cores are usually preferable to many slower cores
+
+- For servers, keep it light:
+
+$n \textrm{ cores} = 1 \textrm{ core per user} + 1$
+
+## GPU {-}
+
+- Specialized chips initially built for graphics
+
+- More numerous slower cores than CPU
+
+> Where a consumer-grade CPU has 4-16 cores, mid-range GPUs have 700-4,000 cores, but each one runs between 1% and 10% the speed of a CPU core.
+
+- Great for parallelisation (think Neural Nets)
+
+## So Should I Get  GPU...? {-}
+
+- Usually, no (parallelising into < 10 workers is often enough)
+
+- You'll know you need a GPU when you get there
+
+- _Discuss..._
+
+![decisions, decisions](https://study.com/cimages/videopreview/ayh7r7g0ty.jpg)
+
+## RAM {-}
+
+- Basically short term memory. When a process ends, it is destroyed (like when you quit RStudio)
+
+- Get a computer with lots of RAM, probably
+
+$\textrm{Necessary RAM} = \textrm{max amount of data} \times 3$
+
+- If it's too big, move to disk (e.g. database, Arrow, dask, HDF5)
+
+![Big data in R](https://rviews.rstudio.com/post/2019-07-01-3-big-data-paradigms-for-r_files/chunk_pull.png)
+
+## Disk (Storage) {-}
+
+- Where physical files live and persist
+
+- The bigger the better (and cheaper nowadays)
+
+$\textrm{Necessary Storage} = \textrm{approx data} + 1 \textrm{GB} \times n \textrm{ users}$
+
+## Scenarios {-}
+
+1. You try to load a big csv file into pandas in Python. It churns for a while and then crashes.
+
+2. You go to build a new ML model on your data. You’d like to re-train the model once a day, but it turns out training this model takes 26 hours on your laptop.
+
+3. You design an visualization Matplotlib , and create a whole bunch in a loop, you want to parallelize the operation. Right now you’re running on a t2.small with 1 CPU.
+
+## Lab {-}
+
+Not much to say here...🤷
 
 ## Meeting Videos {-}
 
@@ -23,3 +101,5 @@
 LOG
 ```
 </details>
+
+ec2-3-144-30-68.us-east-2.compute.amazonaws.com

@@ -101,5 +101,3 @@ Not much to say here...🤷
 LOG
 ```
 </details>
-
-ec2-3-144-30-68.us-east-2.compute.amazonaws.com

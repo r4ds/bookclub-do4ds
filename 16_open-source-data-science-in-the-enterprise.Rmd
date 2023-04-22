@@ -71,6 +71,7 @@ Three components to a sandbox:
 - You're not safe from your own bad habits
   
 Shiny example:
+
 1. Set up a server
 2. Configure network settings
   - Security

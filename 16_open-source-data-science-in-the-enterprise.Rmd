@@ -38,7 +38,7 @@ Three components to a sandbox:
 -   Free reign in dev is great
     -   You can keep track of what you use with `renv` or `venv`
 
-## Promotion
+## Promotion {-}
 
 -   How do you promote code from dev to test to prod?
 

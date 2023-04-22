@@ -60,7 +60,7 @@ Three components to a sandbox:
 - This is where DevOps for Data Science starts to become regular DevOps
   - Infrastructure as code
   
-## Infrastructure as Code (IaC)
+## Infrastructure as Code (IaC) {-}
 
 - To get a server to be useful you need two things:
   1. Provision (create) the infrastructure

@@ -88,12 +88,14 @@ I am not a lawyer and this is not legal advice.
 But try to be aware of the licenses your software and packages are under
 
 Four FOSS freedoms:
+
 1. View and inspect source code
 2. Run the software
 3. Modify the software
 4. Redistribute the software
 
 General categories:
+
 - Permissive: You can do basically whatever you want
   - Examples: MIT, Apache, BSD
 - Copyleft: Derivative works must use the same license
@@ -112,6 +114,7 @@ General categories:
 - Lots of kinds of enterprise repository software
 
 Two main concerns:
+
 - Managing vulnerabilities
   - Code scanners vs common vulnerabliities vs common sense
 - Licenses

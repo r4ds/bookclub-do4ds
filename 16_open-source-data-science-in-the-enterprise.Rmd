@@ -29,7 +29,7 @@ Three components to a sandbox:
 
     -   Fun fact: Some PCs have to be so secure that they're considered insecure if they've ever connected to any kind of network ever
 
-## Package availability
+## Package availability {-}
 
 -   You may have package restrictions (understandable, but :( all the same)
     -   Security

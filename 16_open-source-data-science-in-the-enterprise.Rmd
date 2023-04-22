@@ -17,7 +17,7 @@ Three components to a sandbox:
 2.  broad access to packages
 3.  production code promotion process
 
-## Read-only access
+## Read-only access {-} 
 
 -   The last thing you want to do is mess up production data
 

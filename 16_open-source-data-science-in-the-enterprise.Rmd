@@ -101,7 +101,7 @@ General categories:
 - Not something you want to mess with
 - Things get confusing when mixing licenses
 
-## Package Restrictions
+## Package Restrictions {-}
 
 - To restrict package access, IT Admins must:
   - Restrict access to public repositories

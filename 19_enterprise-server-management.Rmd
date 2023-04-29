@@ -1,4 +1,4 @@
-# Logging in with auth
+# Enterprise Server Management
 
 **Learning objectives:**
 

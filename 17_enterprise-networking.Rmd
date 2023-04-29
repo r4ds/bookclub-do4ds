@@ -37,7 +37,7 @@
 ## Issues with Outbound Proxies {-}
 
 -   Connections from server to the internet
--   Rare than inbound.
+-   Rarer than inbound.
     -   "Air-gapped" often means "strong outbound proxy."
 -   Things that can be impacted:
     -   Downloading packages (other than from internal package manager).

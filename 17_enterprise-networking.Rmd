@@ -1,0 +1,61 @@
+# Enterprise Networking
+
+**Learning objectives:**
+
+-   Understand enterprise networking terminology.
+-   List some benefits of private networks and proxies.
+-   Recognize issues related to inbound proxies.
+-   Recognize issues related to outbound proxies.
+
+## Enterprise Networking Terminology {-}
+
+-   **private network:** a network that *communicates* with the wider internet *via proxies;* VPC ("Virtual private cloud") on AWS 
+-   **inbound proxy:** more formally "reverse proxy"; a server on the public network that routes traffic *into* a private network
+-   **outbound proxy:** more formally "forward proxy"; a server on the public network that routes traffic *out of* a private network
+
+## Benefits of Private Networks {-}
+
+-   Deal with security issues at the proxies
+-   Easier to route traffic (and change routing) to specific servers
+-   Easier to manage ports
+-   Can block traffic to/from specific unwanted sources
+    -   Or block all traffic and only allow specific white lists
+-   Can optionally handle authentication at the proxy & pass token/header along
+
+## Issues with Inbound Proxies {-}
+
+-   Connections from your laptop to the server
+-   Things that are often configured:
+    -   Upload/download file size limits.
+    -   Upload/download/session timeouts.
+-   Signs that you might be fighting against an inbound proxy:
+    -   Uploads/downloads from you to the server fail or cut off early.
+    -   Your session keeps ending (you have to log back in).
+-   Special case: Websockets
+    -   Older proxies might break things like Shiny and Streamlit.
+
+## Issues with Outbound Proxies {-}
+
+-   Connections from server to the internet
+-   Rarer than inbound.
+    -   "Air-gapped" often means "strong outbound proxy."
+-   Things that can be impacted:
+    -   Downloading packages (other than from internal package manager).
+    -   Accessing external data (APIs).
+    -   Updating system libraries (hopefully your IT has a plan for this).
+    -   Software licensing (software might ping a server).
+-   IT often open to allowing access to specific URLs, so ask!
+
+## Meeting Videos {-}
+
+### Cohort 1 {-}
+
+`r knitr::include_url("https://www.youtube.com/embed/URL")`
+
+<details>
+<summary> Meeting chat log </summary>
+
+```
+LOG
+```
+</details>

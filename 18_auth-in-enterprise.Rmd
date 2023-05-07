@@ -1,4 +1,4 @@
-# Logging in with auth
+# Auth in Enterprise
 
 **Learning objectives:**
 

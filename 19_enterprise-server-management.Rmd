@@ -1,4 +1,4 @@
-# Scaling
+# Enterprise Server Management
 
 **Learning objectives:**
 

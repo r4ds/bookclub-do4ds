@@ -40,12 +40,17 @@
 
 ### Cohort 1 {-}
 
-`r knitr::include_url("https://www.youtube.com/embed/URL")`
+`r knitr::include_url("https://www.youtube.com/embed/NbSDSB-kYA0")`
 
 <details>
 <summary> Meeting chat log </summary>
 
 ```
-LOG
+00:21:29	novica nakov: it's more fun with more than one key :)
+00:22:45	novica nakov: no you copied in your local folder
+00:28:28	Tinashe Tapera: ssh-copy-id: https://www.ssh.com/academy/ssh/copy-id
+00:41:20	Gus Lipkin: There’s a gui Docker image available for nginx that makes things easier (or more complicated depending on how you feel): https://nginxproxymanager.com/
+00:43:09	Tinashe Tapera: This is really nice
+00:51:45	Ahmed: pretty cool!
 ```
 </details>

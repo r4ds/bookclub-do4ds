@@ -75,12 +75,6 @@
 
 ### Cohort 1 {.unnumbered}
 
-`r knitr::include_url("https://www.youtube.com/embed/URL")`
+`r knitr::include_url("https://www.youtube.com/embed/uyNSi8IqGz0")`
 
-<details>
-
-<summary>Meeting chat log</summary>
-
-    LOG
-
-</details>
+`r knitr::include_url("https://www.youtube.com/embed/SrmbX9ZtWH4")`

@@ -69,12 +69,4 @@ instead of tpying `ssh alexkgold@do4ds-lab.shop` I can just type `ssh lab`.
 
 ### Cohort 1 {.unnumbered}
 
-`r knitr::include_url("https://www.youtube.com/embed/URL")`
-
-<details>
-
-<summary>Meeting chat log</summary>
-```
-LOG
-```
-</details>
+`r knitr::include_url("https://www.youtube.com/embed/RRm2hOQ5MiM")`

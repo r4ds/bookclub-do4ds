@@ -198,12 +198,4 @@ It's okay if you don't remember.
 
 ### Cohort 1 {.unnumbered}
 
-`r knitr::include_url("https://www.youtube.com/embed/URL")`
-
-<details>
-
-<summary>Meeting chat log</summary>
-
-    LOG
-
-</details>
+`r knitr::include_url("https://www.youtube.com/embed/_umuxP_u-d0")`

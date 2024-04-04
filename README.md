@@ -1,14 +1,14 @@
-# R4DS DevOps for Data Science Book Club
+# DSLC DevOps for Data Science Book Club
 
-Welcome to the R4DS DevOps for Data Science Book Club!
+Welcome to the DSLC DevOps for Data Science Book Club!
 
 We are working together to read [_DevOps for Data Science_](https://do4ds.com/) by Alex K Gold (copyright 2022).
-Join the [#book_club-do4ds](https://rfordatascience.slack.com/archives/C03SMHQ0RJP) channel on the [R4DS Slack](https://r4ds.io/join) to participate.
-As we read, we are producing [notes about the book](https://r4ds.io/do4ds).
+Join the [#book_club-do4ds](https://dslcio.slack.com/archives/C03SMHQ0RJP) channel on the [DSLC Slack](https://dslc.io/join) to participate.
+As we read, we are producing [notes about the book](https://dslc.io/do4ds).
 
 ## Meeting Schedule
 
-If you would like to present, please see the sign-up sheet for your cohort (linked below, and pinned in the [#book_club-do4ds](https://rfordatascience.slack.com/archives/C03SMHQ0RJP) channel on Slack)!
+If you would like to present, please see the sign-up sheet for your cohort (linked below, and pinned in the [#book_club-do4ds](https://dslcio.slack.com/archives/C03SMHQ0RJP) channel on Slack)!
 
 - Cohort 1 (started 2022-10-15, finished 2023-05-27): [meeting videos](https://youtube.com/playlist?list=PL3x6DOfs2NGh_vdoVBZ0Tp3nOrOgY_XIZ)
 
@@ -39,4 +39,4 @@ Do these steps each time you present another chapter:
 10. When your PR has been accepted ("merged"), `usethis::pr_finish()` to close out your branch and prepare your local repository for future work.
 11. Now that your local copy is up-to-date with the main repo, you need to update your remote fork. Run `gert::git_push("origin")` or click the `Push` button on the `Git` tab of Rstudio.
 
-When your PR is checked into the main branch, the bookdown site will rebuild, adding your slides to [this site](https://r4ds.io/do4ds).
+When your PR is checked into the main branch, the bookdown site will rebuild, adding your slides to [this site](https://dslc.io/do4ds).

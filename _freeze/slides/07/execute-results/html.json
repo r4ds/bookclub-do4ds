@@ -1,0 +1,19 @@
+{
+  "hash": "132ed8e84493552ecea49454926fdf8d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nengine: knitr\ntitle: Getting Started with the Cloud\n---\n\n## Learning objectives\n\n-   Recognize **why** you might (and might not) want to **host services in the cloud.**\n-   Differentiate between **IaaS, PaaS,** and **SaaS.**\n-   List some **common cloud services.**\n-   Start and stop an **EC2 instance** on AWS.\n\n## Quick Section Overview\n\n> So this section is really targeting the student who wants to **host a project for portfolio purposes,** the hobbyist who's **hosting a toy project,** or the data science leader who **has no choice but to host things for themselves because they just can't get IT/Admin support.**\n\n🎉🎉🎉 I've been two of those things in the last year!\n\n## Why cloud?\n\n-   It probably isn't cheaper.\n-   It's faster and easier.\n    -   No need to wait for new hardware to arrive and be installed.\n\n## Things as a Service\n\n::: {style=\"display: flex;\"}\n<div>\n\n**Infrastructure as a Service (IaaS, \"eye-az\")** ![Raw ingredients for a cake.](images/06_raw-ingredients.jpg){width=\"400\"}\n\n</div>\n\n<div>\n\n**Platform as a Service (PaaS, \"pass\")** ![A box of Betty Crocker cake mix.](images/06_cake-mix.png){width=\"400\"}\n\n</div>\n\n<div>\n\n**Software as a Service (SaaS, \"sass\")** ![An undecorated sheet cake.](images/06_sheet-cake.jpg){width=\"400\"}\n\n</div>\n:::\n\n## Common Cloud Services\n\n| Service                  | AWS                              | Azure                          | GCP                            |\n|------------------|-------------------|------------------|------------------|\n| Kubernetes cluster       | EKS (Elastic Kubernetes Service) | AKS (Azure Kubernetes Service) | GKE (Google Kubernetes Engine) |\n| Run a function as an API | Lambda                           | Azure Functions                | Google Cloud Functions         |\n| Database                 | RDS/Redshift                     | Azure Database                 | Google Cloud SQL               |\n| ML Platform              | SageMaker                        | Azure ML                       | Vertex AI                      |\n\n## Discuss the Lab\n\n<https://aws.amazon.com>\n\n## Meeting Videos\n\n### Cohort 1\n\n<iframe src=\"https://www.youtube.com/embed/O6lhqSz-8Dw\" width=\"100%\" height=\"400px\" data-external=\"1\"></iframe>\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\n<script>\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\n  // slide changes (different for each slide format).\n  (function () {\n    // dispatch for htmlwidgets\n    function fireSlideEnter() {\n      const event = window.document.createEvent(\"Event\");\n      event.initEvent(\"slideenter\", true, true);\n      window.document.dispatchEvent(event);\n    }\n\n    function fireSlideChanged(previousSlide, currentSlide) {\n      fireSlideEnter();\n\n      // dispatch for shiny\n      if (window.jQuery) {\n        if (previousSlide) {\n          window.jQuery(previousSlide).trigger(\"hidden\");\n        }\n        if (currentSlide) {\n          window.jQuery(currentSlide).trigger(\"shown\");\n        }\n      }\n    }\n\n    // hookup for slidy\n    if (window.w3c_slidy) {\n      window.w3c_slidy.add_observer(function (slide_num) {\n        // slide_num starts at position 1\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\n      });\n    }\n\n  })();\n</script>\n\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

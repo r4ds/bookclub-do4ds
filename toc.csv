@@ -1,0 +1,19 @@
+part,number,title,number_wide
+DevOps Lessons for Data Science,1,Environments as Code,01
+DevOps Lessons for Data Science,2,Data Project Architecture,02
+DevOps Lessons for Data Science,3,Databases and Data APIs,03
+DevOps Lessons for Data Science,4,Logging and Monitoring,04
+DevOps Lessons for Data Science,5,Deployments and Code Promotion,05
+DevOps Lessons for Data Science,6,Demystifying Docker,06
+IT/Admin for Data Science,7,The Cloud,07
+IT/Admin for Data Science,8,The Command Line,08
+IT/Admin for Data Science,9,Linux Administration,09
+IT/Admin for Data Science,10,Application Administration,10
+IT/Admin for Data Science,11,Server Resources and Scaling,11
+IT/Admin for Data Science,12,Computer Networks,12
+IT/Admin for Data Science,13,Domains and DNS,13
+IT/Admin for Data Science,14,SSL/TLS and HTTPS,14
+Enterprise-Grade Data Science,15,Enterprise Networking,15
+Enterprise-Grade Data Science,16,Auth in Enterprise,16
+Enterprise-Grade Data Science,17,Compute at Enterprise Scale,17
+Enterprise-Grade Data Science,18,Package Management in the Enterprise,18

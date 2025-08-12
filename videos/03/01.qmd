@@ -1,0 +1,12 @@
+---
+title: Cohort 1
+---
+{{< video https://www.youtube.com/embed/Dh1g_D_Ir0A >}}
+<details>
+<summary>Meeting chat log</summary>
+```
+00:02:43	Gus Lipkin:	East Coast US, 1pm local
+00:44:48	Gus Lipkin:	https://xkcd.com/927/
+00:57:17	Jack Penzer:	Graph databases <3
+```
+</details>

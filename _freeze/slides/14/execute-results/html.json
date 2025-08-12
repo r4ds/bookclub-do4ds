@@ -1,0 +1,19 @@
+{
+  "hash": "31da4d256c7319f68c4c1e8b11c61c7e",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nengine: knitr\ntitle: You should use SSL/HTTPS\n---\n\n## Learning objectives\n\n-   Details that we won't dig into:\n    -   Identify the problems that SSL/https are meant to solve.\n    -   Explain how SSL/https solve those problems.\n-   Configure SSL on an AWS EC2.\n    -   Configure nginx to identify your domain name.\n    -   Use `certbot` to set up SSL.\n    -   Update the `rstudio` configuration in `nginx` to support `https`.\n    -   Open the necessary ports on your EC2's security group.\n\n## Get ready {-}\n\n-   If you've followed the instructions from Chapter 13, you're ready to go!\n-   Make sure you have this line in `nginx.conf`: \n    -   `server_name yourdomain.you www.yourdomain.you;`\n\n## certbot {-}\n\n-   `sudo apt-get install certbot python3-certbot-nginx`\n-   `sudo systemctl restart nginx`\n-   `sudo certbot –nginx -d yourdomain.you -d www.yourdomain.you`\n\n## rstudio in nginx.conf {-}\n\n-   `sudo vim /etc/nginx/nginx.conf`\n-   `proxy_set_header X-Forwarded-Proto https;` in the `rstudio` location\n-   `sudo systemctl restart nginx`\n\n## Open the port {-}\n\n(you may have already set this up in Chapter 12)\n\n-   *(Log into console.aws.amazon.com and navigate to EC2/Instances)*\n-   Click the \"Security\" tab on your instance.\n-   Click the Security group (something like `launch-wizard-2`)\n    -   (or go directly to \"Network & Security\"/\"Security Groups\")\n-   \"Inbound rules\" > \"Edit inbound rules\"\n-   \"Add rule\"\n    -   \"HTTPS\", \"Anywhere-IPv4\"\n-   Discussion: Leave HTTP, probably?\n-   Visit `https://yourdomain.you/rstudio`, `http://yourdomain.you/rstudio`, etc.\n\n\n## Meeting Videos {-}\n\n### Cohort 1 {-}\n\n<iframe src=\"https://www.youtube.com/embed/NbSDSB-kYA0\" width=\"100%\" height=\"400px\" data-external=\"1\"></iframe>\n\n<details>\n<summary> Meeting chat log </summary>\n\n```\n00:21:29\tnovica nakov: it's more fun with more than one key :)\n00:22:45\tnovica nakov: no you copied in your local folder\n00:28:28\tTinashe Tapera: ssh-copy-id: https://www.ssh.com/academy/ssh/copy-id\n00:41:20\tGus Lipkin: There’s a gui Docker image available for nginx that makes things easier (or more complicated depending on how you feel): https://nginxproxymanager.com/\n00:43:09\tTinashe Tapera: This is really nice\n00:51:45\tAhmed: pretty cool!\n```\n</details>\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\n<script>\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\n  // slide changes (different for each slide format).\n  (function () {\n    // dispatch for htmlwidgets\n    function fireSlideEnter() {\n      const event = window.document.createEvent(\"Event\");\n      event.initEvent(\"slideenter\", true, true);\n      window.document.dispatchEvent(event);\n    }\n\n    function fireSlideChanged(previousSlide, currentSlide) {\n      fireSlideEnter();\n\n      // dispatch for shiny\n      if (window.jQuery) {\n        if (previousSlide) {\n          window.jQuery(previousSlide).trigger(\"hidden\");\n        }\n        if (currentSlide) {\n          window.jQuery(currentSlide).trigger(\"shown\");\n        }\n      }\n    }\n\n    // hookup for slidy\n    if (window.w3c_slidy) {\n      window.w3c_slidy.add_observer(function (slide_num) {\n        // slide_num starts at position 1\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\n      });\n    }\n\n  })();\n</script>\n\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

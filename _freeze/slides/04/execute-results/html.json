@@ -1,0 +1,19 @@
+{
+  "hash": "406399217162865c047629837ad0e1d4",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nengine: knitr\ntitle: Logging and Monitoring\n---\n\n## Learning objectives\n\n-   Differentiate between logs and metrics.\n-   Log events from your code using the {log4r} package.\n-   Recognize some open source options for emitting metrics.\n\n## Logs and Metrics {-}\n\n-   Logs = events as they happen.\n-   Metrics = measurements of how things are working.\n\n## log4r Basics {-}\n\n-   {log4r} vs {base} vs {cli}\n    -   {base} message/warning/error have least structure.\n    -   {cli} adds structure for human readability.\n    -   {log4r} adds structure that's useful for a stream of events (timestamp, etc)\n-   The object created via `logger()` defines where things go & how they look.\n\n\n::: {.cell}\n\n:::\n\n\n\n::: {.cell}\n\n:::\n\n\n## log4r Layouts {-}\n\n-   Alex hinted at this but didn't dig into it.\n\n\n::: {.cell}\n\n:::\n\n\n\n::: {.cell}\n\n:::\n\n\n\n::: {.cell}\n\n:::\n\n\n## Metrics {-}\n\n-   [Prometheus](https://prometheus.io/) = open source monitoring tool\n-   [Grafana](https://grafana.com/) = open source viz for Prometheus\n-   [{openmetrics}](https://github.com/atheriel/openmetrics) = R package to add metrics to {plumber} & {shiny}\n-   [{vetiver}](https://rstudio.github.io/vetiver-r/) = RStudio's model deployment framework, includes metrics\n-   Hoping to revisit this in January (\"What has changed?\" meeting)\n\n## Review Discussion {-}\n\n-   Differentiate between logs and metrics.\n-   Log events from your code using the {log4r} package.\n-   Recognize some open source options for emitting metrics.\n\n\n## Meeting Videos {-}\n\n### Cohort 1 {-}\n\n<iframe src=\"https://www.youtube.com/embed/UFC_S1D9WGk\" width=\"100%\" height=\"400px\" data-external=\"1\"></iframe>\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\n<script>\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\n  // slide changes (different for each slide format).\n  (function () {\n    // dispatch for htmlwidgets\n    function fireSlideEnter() {\n      const event = window.document.createEvent(\"Event\");\n      event.initEvent(\"slideenter\", true, true);\n      window.document.dispatchEvent(event);\n    }\n\n    function fireSlideChanged(previousSlide, currentSlide) {\n      fireSlideEnter();\n\n      // dispatch for shiny\n      if (window.jQuery) {\n        if (previousSlide) {\n          window.jQuery(previousSlide).trigger(\"hidden\");\n        }\n        if (currentSlide) {\n          window.jQuery(currentSlide).trigger(\"shown\");\n        }\n      }\n    }\n\n    // hookup for slidy\n    if (window.w3c_slidy) {\n      window.w3c_slidy.add_observer(function (slide_num) {\n        // slide_num starts at position 1\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\n      });\n    }\n\n  })();\n</script>\n\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

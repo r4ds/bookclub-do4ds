@@ -1,0 +1,67 @@
+---
+engine: knitr
+title: You should use SSL/HTTPS
+---
+
+## Learning objectives
+
+-   Details that we won't dig into:
+    -   Identify the problems that SSL/https are meant to solve.
+    -   Explain how SSL/https solve those problems.
+-   Configure SSL on an AWS EC2.
+    -   Configure nginx to identify your domain name.
+    -   Use `certbot` to set up SSL.
+    -   Update the `rstudio` configuration in `nginx` to support `https`.
+    -   Open the necessary ports on your EC2's security group.
+
+## Get ready {-}
+
+-   If you've followed the instructions from Chapter 13, you're ready to go!
+-   Make sure you have this line in `nginx.conf`: 
+    -   `server_name yourdomain.you www.yourdomain.you;`
+
+## certbot {-}
+
+-   `sudo apt-get install certbot python3-certbot-nginx`
+-   `sudo systemctl restart nginx`
+-   `sudo certbot –nginx -d yourdomain.you -d www.yourdomain.you`
+
+## rstudio in nginx.conf {-}
+
+-   `sudo vim /etc/nginx/nginx.conf`
+-   `proxy_set_header X-Forwarded-Proto https;` in the `rstudio` location
+-   `sudo systemctl restart nginx`
+
+## Open the port {-}
+
+(you may have already set this up in Chapter 12)
+
+-   *(Log into console.aws.amazon.com and navigate to EC2/Instances)*
+-   Click the "Security" tab on your instance.
+-   Click the Security group (something like `launch-wizard-2`)
+    -   (or go directly to "Network & Security"/"Security Groups")
+-   "Inbound rules" > "Edit inbound rules"
+-   "Add rule"
+    -   "HTTPS", "Anywhere-IPv4"
+-   Discussion: Leave HTTP, probably?
+-   Visit `https://yourdomain.you/rstudio`, `http://yourdomain.you/rstudio`, etc.
+
+
+## Meeting Videos {-}
+
+### Cohort 1 {-}
+
+`r knitr::include_url("https://www.youtube.com/embed/NbSDSB-kYA0")`
+
+<details>
+<summary> Meeting chat log </summary>
+
+```
+00:21:29	novica nakov: it's more fun with more than one key :)
+00:22:45	novica nakov: no you copied in your local folder
+00:28:28	Tinashe Tapera: ssh-copy-id: https://www.ssh.com/academy/ssh/copy-id
+00:41:20	Gus Lipkin: There’s a gui Docker image available for nginx that makes things easier (or more complicated depending on how you feel): https://nginxproxymanager.com/
+00:43:09	Tinashe Tapera: This is really nice
+00:51:45	Ahmed: pretty cool!
+```
+</details>

@@ -1,0 +1,130 @@
+---
+engine: knitr
+title: Open Source Data Science in the Enterprise
+---
+
+## Learning objectives
+
+-   What are sandboxes and why should we use them?
+-   What is the code promotion process?
+-   How does software licensing affect the work you do?
+-   What are some concerns to keep in mind when using free open-source software?
+
+## Data Science Sandboxes {.unnumbered}
+
+-   Keep dev/test/prod separated
+
+Three components to a sandbox:
+
+1.  free read-only access to real data
+2.  broad access to packages
+3.  production code promotion process
+
+## Read-only access {-} 
+
+-   The last thing you want to do is mess up production data
+
+-   This gives you the access you need without the worry
+
+-   Any writes are contained to the sandbox
+
+-   You can also protect your data in completely offline environments
+
+    -   Fun fact: Some PCs have to be so secure that they're considered insecure if they've ever connected to any kind of network ever
+
+## Package availability {-}
+
+-   You may have package restrictions (understandable, but :( all the same)
+    -   Security
+    -   Correctness
+    -   Maintenance
+-   Free reign in dev is great
+    -   You can keep track of what you use with `renv` or `venv`
+
+## Promotion {-}
+
+-   How do you promote code from dev to test to prod?
+
+-   Usually only admins get prod access
+
+-   Always best to discuss a promotion strategy when getting started
+
+    -   Discussed in chapter 1
+
+## Dev/Test/Prod for Admins {-}
+
+-   Just like you want to keep your package environment safe, admins want your system kept safe
+    -   Servers, OS, R/Python, etc
+    
+- Promotion matrix
+  - IT/Admins can upgrade the environment separately from the data science tooling
+  - IT/Admins like to call development and testing "staging"
+  
+- This is where DevOps for Data Science starts to become regular DevOps
+  - Infrastructure as code
+  
+## Infrastructure as Code (IaC) {-}
+
+- To get a server to be useful you need two things:
+  1. Provision (create) the infrastructure
+  2. Configure the infrastructure
+- No clear dividing line between provisioning and configuring tools
+- Docker is part of IaC, but you still need a deployment framework and hypervisor or other container management software
+- IaC should be deployed with CI/CD, but doesn't have to be
+- You're not safe from your own bad habits
+  
+Shiny example:
+
+1. Set up a server
+2. Configure network settings
+  - Security
+  - Ports
+  - Anything else
+3. Install R (or Python or whatever)
+4. Install Shiny
+5. Hosting software
+
+## Open Source in Enterprise {-}
+
+I am not a lawyer and this is not legal advice.
+
+But try to be aware of the licenses your software and packages are under
+
+Four FOSS freedoms:
+
+1. View and inspect source code
+2. Run the software
+3. Modify the software
+4. Redistribute the software
+
+General categories:
+
+- Permissive: You can do basically whatever you want
+  - Examples: MIT, Apache, BSD
+- Copyleft: Derivative works must use the same license
+  - Examples: GPL, AGPL
+  
+- Not something you want to mess with
+- Things get confusing when mixing licenses
+
+## Package Restrictions {-}
+
+- To restrict package access, IT Admins must:
+  - Restrict access to public repositories
+  - Provide an alternative!
+    - Don't worry about space needed for packages. Most are small
+      - I have 421 packages taking up ~2GB
+- Lots of kinds of enterprise repository software
+
+Two main concerns:
+
+- Managing vulnerabilities
+  - Code scanners vs common vulnerabliities vs common sense
+- Licenses
+- Maintenance/lifetime
+
+## Meeting Videos {.unnumbered}
+
+### Cohort 1 {.unnumbered}
+
+`r knitr::include_url("https://www.youtube.com/embed/-CQeJDmxOc0")`

@@ -3,10 +3,12 @@
 .Rdata
 .httr-oauth
 .DS_Store
-_book
-_bookdown_files
-bookclub-do4ds.Rmd
-bookclub-do4ds.knit.md
-bookclub-do4ds_files
-libs
+
+# Ignore things generated during render.
 *.html
+*.rmarkdown
+/.quarto/
+/_site/
+/site_libs/
+figure-revealjs
+/[0-9][0-9]*.qmd

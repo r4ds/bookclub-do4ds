@@ -1,6 +1,7 @@
+Type: Book
 Package: bookclub-do4ds
 Title: DevOps for Data Science Book Club
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: c(
   person(
     "Data Science Learning Community",
@@ -8,10 +9,15 @@ Authors@R: c(
     role = c("aut", "cre", "cph")
   )
   )
-URL: https://r4ds.github.io/bookclub-do4ds, https://github.com/r4ds/bookclub-do4ds
+License: CC BY NC SA 4.0
+URL: https://dslc.io/do4ds, https://github.com/r4ds/bookclub-do4ds
 Depends:
     R (>= 3.1.0)
 Imports: 
-    bookdown,
-    rmarkdown
-RoxygenNote: 7.2.3
+    dplyr,
+    fs,
+    glue,
+    purrr,
+    readr,
+    rmarkdown,
+    yaml

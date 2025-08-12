@@ -1,8 +1,0 @@
-book_filename: "bookclub-do4ds"
-repo: https://github.com/r4ds/bookclub-do4ds
-edit: "https://github.com/r4ds/bookclub-do4ds/edit/main/%s"
-output_dir: "_book"
-delete_merged_file: true
-language:
-  ui:
-    chapter_name: "Chapter "

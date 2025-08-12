@@ -1,0 +1,16 @@
+format:
+  revealjs:
+    theme: [dark, custom.scss]
+    footer: <a href="/" target="do4ds_club-index">DSLC.io/do4ds</a> | <a href="https://DSLC.io" target="_blank">DSLC.io</a>
+    link-external-newwindow: true
+    transition: slide
+    incremental: false
+execute:
+  eval: true
+  r:
+    echo: true
+  mermaid:
+    echo: false
+knitr:
+  opts_chunk:
+    comment: "#>"

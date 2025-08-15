@@ -659,7 +659,17 @@
     "href": "slides/00.html#book-club-meetings",
     "title": "Club meetings",
     "section": "Book club meetings",
-    "text": "Book club meetings\n\nVolunteer leads discussion of a chapter\n\nThis is the best way to learn the material.\n\nPresentations:\n\nReview of material\nQuestions you have\nMaybe live demo\n\nMore info about editing: this github repo\nIdeally convert existing Rmd to qmd as we go\nRecorded, available on the Data Science Learning Community YouTube Channel (DSLC.video)",
+    "text": "Book club meetings\n\nVolunteer leads discussion of a chapter\n\nThis is the best way to learn the material.\n\nPresentations:\n\nReview of material\nQuestions you have\nMaybe live demo",
+    "crumbs": [
+      "Club meetings"
+    ]
+  },
+  {
+    "objectID": "slides/00.html#how-to-edit-the-slides",
+    "href": "slides/00.html#how-to-edit-the-slides",
+    "title": "Club meetings",
+    "section": "How to edit the slides:",
+    "text": "How to edit the slides:\n\nMore info about editing: this github repo\nIdeally convert existing Rmd to qmd as we go\nRecorded, available on the Data Science Learning Community YouTube Channel (DSLC.video)",
     "crumbs": [
       "Club meetings"
     ]
@@ -669,7 +679,7 @@
     "href": "slides/00.html#pace",
     "title": "Club meetings",
     "section": "Pace",
-    "text": "Pace\n\nGoal: 1 chapter/week\nOk to split overwhelming chapters\nOk to combine short chapters\nMeet every week except holidays, etc\n\nWe will meet even if scheduled presenter unavailable",
+    "text": "Pace\n\nGoal: 1 chapter/week\nOk to split overwhelming chapters\nOk to combine short chapters\nMeet every week except holidays, etc\n\nWe will meet even if scheduled presenter unavailable\n\nSlack is good place for offline discussion/troubleshooting",
     "crumbs": [
       "Club meetings"
     ]
@@ -719,7 +729,7 @@
     "href": "slides/00.html#devops-vs-itadmins",
     "title": "Club meetings",
     "section": "DevOps vs IT/Admins",
-    "text": "DevOps vs IT/Admins\n\nDevOps\n\nKnowledge, practices, & tools\nPut things into prod\nSafely & easily\n\nIT/Admins\n\nPeople/roles who manage the servers, etc.\nMany names:\n\nInformation Technology (IT)\nSysAdmin\nSite Reliability Engineering (SRE)\nDevOps\nSubdivisions (see next slide)",
+    "text": "DevOps vs IT/Admins\n\nDevOps\n\nKnowledge, practices, & tools\nPut things into prod\nSafely & easily\n\nIT/Admins\n\nPeople/roles who manage the servers, etc.\nMany names:\n\nInformation Technology (IT)\nSysAdmin\nSite Reliability Engineering (SRE)\nDevOps",
     "crumbs": [
       "Club meetings"
     ]
@@ -765,11 +775,31 @@
     ]
   },
   {
-    "objectID": "slides/00.html#devops-for-data-science",
-    "href": "slides/00.html#devops-for-data-science",
+    "objectID": "slides/00.html#devops-for-data-science-12",
+    "href": "slides/00.html#devops-for-data-science-12",
     "title": "Club meetings",
-    "section": "DevOps for Data Science",
-    "text": "DevOps for Data Science\n\nUse CI/CD ➡️ Code Promotion and Integration Processes\n\nStructure output so moving to prod or updating is easy.\n\nInfrastructure as Code ➡️ Manage Environments as Code\n\nReproducible & secure environments are… reproducible and secure!\n\nMicroservices ➡️ Data Science Project Components\n\nFigure out how to subdivide things to make updating less painful.\n\nMonitoring & Logging ➡️ Monitoring & Logging\n\nData science doesn’t do enough of this, but he’ll tell us how we should!\n\nOther Things ➡️ Other Things 🙃\n\nChapter about Docker for Data Science here, because it deserves its own chapter.\nSection 2 will be all about things like communication, collaboration, and review practices.",
+    "section": "DevOps for Data Science (1/2)",
+    "text": "DevOps for Data Science (1/2)\n\nUse CI/CD ➡️ Code Promotion and Integration Processes\n\nStructure output so moving to prod or updating is easy.\n\nInfrastructure as Code ➡️ Manage Environments as Code\n\nReproducible & secure environments are… reproducible and secure!\n\nMicroservices ➡️ Data Science Project Components\n\nFigure out how to subdivide things to make updating less painful.",
+    "crumbs": [
+      "Club meetings"
+    ]
+  },
+  {
+    "objectID": "slides/00.html#devops-for-data-science-22",
+    "href": "slides/00.html#devops-for-data-science-22",
+    "title": "Club meetings",
+    "section": "DevOps for Data Science (2/2)",
+    "text": "DevOps for Data Science (2/2)\n\nMonitoring & Logging ➡️ Monitoring & Logging\n\nData science doesn’t do enough of this, but he’ll tell us how we should!\n\nOther Things ➡️ Other Things 🙃\n\nChapter about Docker for Data Science here, because it deserves its own chapter.\nSection 2 will be all about things like communication, collaboration, and review practices.",
+    "crumbs": [
+      "Club meetings"
+    ]
+  },
+  {
+    "objectID": "slides/00.html#section",
+    "href": "slides/00.html#section",
+    "title": "Club meetings",
+    "section": "",
+    "text": "Architect 👷🏻‍♀️ VS Archaeologist 🤠\nYou are a software engineer.",
     "crumbs": [
       "Club meetings"
     ]

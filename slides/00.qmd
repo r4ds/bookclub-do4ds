@@ -23,6 +23,9 @@ title: Club meetings
     -   Review of material
     -   Questions you have
     -   Maybe live demo
+
+## How to edit the slides: 
+
 -   More info about editing: [this github repo](https://github.com/r4ds/bookclub-do4ds)
 -   Ideally convert existing Rmd to qmd as we go
 -   Recorded, available on the [Data Science Learning Community YouTube Channel (DSLC.video)](http://dslc.video)
@@ -34,6 +37,7 @@ title: Club meetings
 -   Ok to combine short chapters
 -   Meet ***every*** week except holidays, etc
     -   We will meet even if scheduled presenter unavailable
+-   Slack is good place for offline discussion/troubleshooting  
 
 ## Learning objectives (LOs)
 
@@ -60,7 +64,7 @@ title: Club meetings
 
 ## Devops?
 
--   Grew out of **Agile software development (2001).**
+-   Grew out of [**Agile software development (2001).**](https://agilemanifesto.org/)
     -   Deliver small units, collect feedback, iterate.
 -   Needed similar process to **get the iterations deployed.**
 -   **DevOps (~2010)** is the **system/discipline.**
@@ -78,7 +82,6 @@ title: Club meetings
         -   SysAdmin
         -   Site Reliability Engineering (SRE)
         -   DevOps
-        -   Subdivisions (see next slide)
 
 ## Red Flags about IT/Admins
 
@@ -114,7 +117,7 @@ title: Club meetings
 4.  **Production** systems should have **monitoring and logging.**
 5.  Frequent opportunities for **review, change, and updating** should be **built into the system** -- both **culturally** and **technically.**
 
-## DevOps for Data Science
+## DevOps for Data Science (1/2)
 
 -   **Use CI/CD ➡️ Code Promotion and Integration Processes**
     -   Structure output so moving to prod or updating is easy.
@@ -122,8 +125,20 @@ title: Club meetings
     -   Reproducible & secure environments are... reproducible and secure!
 -   **Microservices ➡️ Data Science Project Components**
     -   Figure out how to subdivide things to make updating less painful.
+
+## DevOps for Data Science (2/2)
+
 -   **Monitoring & Logging ➡️ Monitoring & Logging**
     -   Data science doesn't do enough of this, but he'll tell us how we should!
 -   **Other Things ➡️ Other Things 🙃**
     -   Chapter about Docker for Data Science here, because it deserves its own chapter.
     -   Section 2 will be all about things like communication, collaboration, and review practices.
+
+## {.center}
+
+:::{#title-slide .center}
+Architect 👷🏻‍♀️ VS Archaeologist 🤠
+
+
+You are a software engineer.
+:::

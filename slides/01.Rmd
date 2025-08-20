@@ -8,13 +8,13 @@ title: Environments as Code
 -   List the **three layers of data science environments.**
 -   Explain **why** it's important to **control the package
     environment.**
--   **Use `{renv}`** (or `{venv}`) to control the **package
+-   **Use `{renv}`** (or `{venv}` and `uv` ) to control the **package
     environment.**
 -   Recognize **when** it is important to **control the system
     environment.**
 
 ## Recap {-}
-
+`
 The 5 tenets of DevOps from the intro call:
 
 1.  Code should be **well-tested** and tests should be **automated.**
@@ -26,7 +26,8 @@ The 5 tenets of DevOps from the intro call:
     be **built into the system** -- both **culturally** and
     **technically.**
 
-Chapter 1
+
+## Chapter 1
 
 1.  Development
 2.  Testing
@@ -64,6 +65,7 @@ Today we will focus mainly on the first layer, the package environment.
 <div>
 
 ```{r, eval = FALSE}
+#| echo: TRUE
 # Check if dplyr installed
 if (!"dplyr" %in% row.names(installed.packages())) {
   # install if not
@@ -80,7 +82,8 @@ if (!"dplyr" %in% row.names(installed.packages())) {
 </div>
 :::
 
-Why not?
+
+## Why not?
 
 "This works fine for a while. But the problem with this is that the default has you installing things into a cache that’s shared among every project on your system."
 
@@ -151,7 +154,10 @@ We can't have multiple versions of 'package x' in /Library, but we can have mult
 
 "\* Lockfile written to '\~/git_repos/bookclub-do4ds/renv.lock'."
 
-Now you have a file called renv.lock which has been updated with the project's packages and their versions:
+
+## renv_lock 
+
+now you have a file called renv.lock which has been updated with the project's packages and their versions:
 
 ![renv lock](images/renv_lock.png)
 

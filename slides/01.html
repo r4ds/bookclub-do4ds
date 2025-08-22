@@ -27,6 +27,72 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #f8f8f2;  }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #f8f8f2; } /* Normal */
+    code span.al { color: #f07178; } /* Alert */
+    code span.an { color: #d4d0ab; } /* Annotation */
+    code span.at { color: #00e0e0; } /* Attribute */
+    code span.bn { color: #d4d0ab; } /* BaseN */
+    code span.bu { color: #abe338; } /* BuiltIn */
+    code span.cf { color: #ffa07a; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #abe338; } /* Char */
+    code span.cn { color: #ffd700; } /* Constant */
+    code span.co { color: #f8f8f2; font-style: italic; } /* Comment */
+    code span.cv { color: #ffd700; } /* CommentVar */
+    code span.do { color: #f8f8f2; } /* Documentation */
+    code span.dt { color: #ffa07a; } /* DataType */
+    code span.dv { color: #d4d0ab; } /* DecVal */
+    code span.er { color: #f07178; text-decoration: underline; } /* Error */
+    code span.ex { color: #00e0e0; font-weight: bold; } /* Extension */
+    code span.fl { color: #d4d0ab; } /* Float */
+    code span.fu { color: #ffa07a; } /* Function */
+    code span.im { color: #abe338; } /* Import */
+    code span.in { color: #d4d0ab; } /* Information */
+    code span.kw { color: #ffa07a; font-weight: bold; } /* Keyword */
+    code span.op { color: #ffa07a; } /* Operator */
+    code span.ot { color: #00e0e0; } /* Other */
+    code span.pp { color: #dcc6e0; } /* Preprocessor */
+    code span.re { color: #00e0e0; background-color: #f8f8f2; } /* RegionMarker */
+    code span.sc { color: #abe338; } /* SpecialChar */
+    code span.ss { color: #abe338; } /* SpecialString */
+    code span.st { color: #abe338; } /* String */
+    code span.va { color: #00e0e0; } /* Variable */
+    code span.vs { color: #abe338; } /* VerbatimString */
+    code span.wa { color: #dcc6e0; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-5fa723a4ee799f64e44b6fe0747a0a63.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -137,11 +203,11 @@
 <ul>
 <li>List the <strong>three layers of data science environments.</strong></li>
 <li>Explain <strong>why</strong> it’s important to <strong>control the package environment.</strong></li>
-<li><strong>Use <code>{renv}</code></strong> (or <code>{venv}</code>) to control the <strong>package environment.</strong></li>
+<li><strong>Use <code>{renv}</code></strong> (or <code>{venv}</code> and <code>uv</code> ) to control the <strong>package environment.</strong></li>
 <li>Recognize <strong>when</strong> it is important to <strong>control the system environment.</strong></li>
 </ul>
 </section>
-<section id="recap" class="slide level2 unnumbered">
+<section id="recap" class="slide level2">
 <h2>Recap</h2>
 <p>The 5 tenets of DevOps from the intro call:</p>
 <ol type="1">
@@ -151,7 +217,9 @@
 <li><strong>Production</strong> systems should have <strong>monitoring and logging.</strong></li>
 <li>Frequent opportunities for <strong>review, change, and updating</strong> should be <strong>built into the system</strong> – both <strong>culturally</strong> and <strong>technically.</strong></li>
 </ol>
-<p>Chapter 1</p>
+</section>
+<section id="chapter-1" class="slide level2">
+<h2>Chapter 1</h2>
 <ol type="1">
 <li>Development</li>
 <li>Testing</li>
@@ -160,13 +228,13 @@
 <p><code>r-lib</code> and Github Actions</p>
 <p>“Servers as cattle”</p>
 </section>
-<section id="intro-discussion" class="slide level2 unnumbered">
+<section id="intro-discussion" class="slide level2">
 <h2>Intro Discussion</h2>
 <p>Before we dive in, who has experience with managing package environments in R and Python, and what do you guys think about each language’s ecosystem?</p>
 <p>Which is simpler/more pleasant to use?</p>
 <p>Have you tried in R without RStudio?</p>
 </section>
-<section id="the-three-layers-of-environments" class="slide level2 unnumbered">
+<section id="the-three-layers-of-environments" class="slide level2">
 <h2>The Three Layers of Environments</h2>
 <ul>
 <li>Packages</li>
@@ -175,15 +243,21 @@
 </ul>
 <p>Today we will focus mainly on the first layer, the package environment.</p>
 </section>
-<section id="the-package-environment" class="slide level2 unnumbered">
+<section id="the-package-environment" class="slide level2">
 <h2>The Package Environment</h2>
 
 <img data-src="images/galaxy_package.jpeg" class="r-stretch quarto-figure-center"><p class="caption">The Data Scientist Life Cycle</p></section>
-<section id="please-dont" class="slide level2 unnumbered">
+<section id="please-dont" class="slide level2">
 <h2>Please don’t</h2>
 <div style="display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 10px;">
 <div>
-
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="co"># Check if dplyr installed</span></span>
+<span id="cb1-2"><a></a><span class="cf">if</span> (<span class="sc">!</span><span class="st">"dplyr"</span> <span class="sc">%in%</span> <span class="fu">row.names</span>(<span class="fu">installed.packages</span>())) {</span>
+<span id="cb1-3"><a></a>  <span class="co"># install if not</span></span>
+<span id="cb1-4"><a></a>  <span class="fu">install.packages</span>(<span class="st">"dplyr"</span>)</span>
+<span id="cb1-5"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </div>
 <div>
 <div class="quarto-figure quarto-figure-center">
@@ -194,29 +268,31 @@
 </div>
 </div>
 </div>
-<p>Why not?</p>
+</section>
+<section id="why-not" class="slide level2">
+<h2>Why not?</h2>
 <p>“This works fine for a while. But the problem with this is that the default has you installing things into a cache that’s shared among every project on your system.”</p>
 <p>It’s also considered rude to make changes to a user’s system-level package setup.</p>
 <p>More importantly, DevOps aims to help you make things that don’t break, installing packages without versions specified does not prevent things from breaking in the future.</p>
 </section>
-<section id="the-rooms-of-a-house" class="slide level2 unnumbered">
+<section id="the-rooms-of-a-house" class="slide level2">
 <h2>The Rooms of a House</h2>
 <p>Most of us manage to fit everything we want in our homes, but it’s not all in the same room and we’re not bound to keep our rooms the same over time.</p>
 <p>At any given time, we put things in different rooms for a variety of reasons; space and incompatible functions being the main two.</p>
 <p>This is also true over time - perhaps even more so - we move rooms around, place things in and out of rooms according to our needs. It would be quite restrictive if we had to have everything, everywhere, all at once.</p>
 </section>
-<section id="there-can-only-be-one" class="slide level2 unnumbered">
+<section id="there-can-only-be-one" class="slide level2">
 <h2>There Can Only Be One</h2>
 <p>It would be more restrictive still, if we had to have incompatible things together. Kitchen and toilet together? No thanks</p>
 
 <img data-src="images/one_and_only_one.jpeg" class="r-stretch quarto-figure-center"><p class="caption">You must choose</p></section>
-<section id="why" class="slide level2 unnumbered">
+<section id="why" class="slide level2">
 <h2>Why?</h2>
 <p>‘Why can’t we have multiple version of the same package?’</p>
 
 <img data-src="images/because_no.png" class="r-stretch quarto-figure-center"><p class="caption">Because no</p><p>When it comes to managing package environments, each package is stored in a /Library folder and we can only have one version of each package in /Library</p>
 </section>
-<section id="virtual-environments-to-the-rescue" class="slide level2 unnumbered">
+<section id="virtual-environments-to-the-rescue" class="slide level2">
 <h2>Virtual Environments to the Rescue</h2>
 <p>We can’t have multiple versions of ‘package x’ in /Library, but we can have multiple versions of /Library, each with a different version of ‘package x’</p>
 <div style="display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 10px;">
@@ -238,7 +314,7 @@
 </div>
 </div>
 </section>
-<section id="using-renv" class="slide level2 unnumbered">
+<section id="using-renv" class="slide level2">
 <h2>Using Renv</h2>
 <ul>
 <li>Create a project</li>
@@ -248,11 +324,14 @@
 <li>Call <code>renv::snapshot()</code> to track versions etc.</li>
 </ul>
 <p>“* Lockfile written to ‘~/git_repos/bookclub-do4ds/renv.lock’.”</p>
-<p>Now you have a file called renv.lock which has been updated with the project’s packages and their versions:</p>
+</section>
+<section id="renv_lock" class="slide level2">
+<h2>renv_lock</h2>
+<p>now you have a file called renv.lock which has been updated with the project’s packages and their versions:</p>
 
 <img data-src="images/renv_lock.png" class="r-stretch quarto-figure-center"><p class="caption">renv lock</p><p>*see book for python equivalent i.e.&nbsp;virtualenv/venv and requirements.txt</p>
 </section>
-<section id="sharing-the-environment" class="slide level2 unnumbered">
+<section id="sharing-the-environment" class="slide level2">
 <h2>Sharing The Environment</h2>
 <p>Now that you have your lock file, you can send your project over to a friend/colleague and they should:</p>
 <ul>
@@ -262,20 +341,24 @@
 <li><code>renv::restore()</code> - if this didn’t happen automatically</li>
 </ul>
 </section>
-<section id="avoiding-conda-in-production" class="slide level2 unnumbered">
+<section id="avoiding-conda-in-production" class="slide level2">
 <h2>Avoiding Conda in production</h2>
 <p>“In the context of a production environment, Conda smashes together the language version, the package management, and (sometimes) the system library management. … I generally recommend people use a tool that’s just for package management, like {venv}, as opposed to an all-in-one tool like Conda.”</p>
 </section>
-<section id="taking-control-of-the-system-environment" class="slide level2 unnumbered">
+<section id="taking-control-of-the-system-environment" class="slide level2">
 <h2>Taking Control of the System Environment</h2>
 <p>“In other cases, your R or Python library might basically just be a wrapper for system libraries. For example, many popular packages for geospatial analysis are just thin language wrappers that call out to the system libraries. In this case, it might be important to be able to maintain a particular version of the underlying system library to ensure that your code runs at all in the future.”</p>
 <p>As we have a chapter dedicated to Docker (which I haven’t read) I won’t dive into this here - I expect we’ll have run out of time too.</p>
 </section>
-<section id="further-reading" class="slide level2 unnumbered">
+<section id="further-reading" class="slide level2">
 <h2>Further reading</h2>
-<p>https://rstats.wtf/</p>
+<ul>
+<li><p>https://rstats.wtf/</p></li>
+<li><p>👷 R in Production <a href="https://r-in-production.org/packages.html">chapter</a> about packages installation</p></li>
+<li><p><a href="https://nixos.org/">nix</a> and <a href="https://docs.ropensci.org/rix/">{rix}</a> /<a href="https://guix.gnu.org/">guix</a></p></li>
+</ul>
 </section>
-<section id="review" class="slide level2 unnumbered">
+<section id="review" class="slide level2">
 <h2>Review</h2>
 <p>What did we learn?</p>
 <table class="caption-top">
@@ -308,19 +391,6 @@
 </tr>
 </tbody>
 </table>
-</section>
-<section id="meeting-videos" class="slide level2 unnumbered">
-<h2>Meeting Videos</h2>
-<h3 class="unnumbered" id="cohort-1">Cohort 1</h3>
-<iframe src="https://www.youtube.com/embed/b2GWwkN8rR8" width="100%" height="400px" data-external="1">
-</iframe>
-<details>
-<summary>
-<p>Meeting chat log</p>
-</summary>
-<pre><code>00:43:56    Tinashe Tapera: https://www.tidyverse.org/blog/2017/12/workflow-vs-script/
-00:45:19    Jon Harmon (jonthegeek):    That blog led to one of my favorite hex stickers: "Everything I Know Is From Jenny Bryan" https://raw.githubusercontent.com/MonkmanMH/EIKIFJB/main/EIKIFJB_sigmar_hex.png</code></pre>
-</details>
 
 
 </section>

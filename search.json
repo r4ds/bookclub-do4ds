@@ -809,14 +809,21 @@
     "href": "slides/01.html#learning-objectives",
     "title": "Environments as Code",
     "section": "Learning objectives",
-    "text": "Learning objectives\n\nList the three layers of data science environments.\nExplain why it’s important to control the package environment.\nUse {renv} (or {venv}) to control the package environment.\nRecognize when it is important to control the system environment."
+    "text": "Learning objectives\n\nList the three layers of data science environments.\nExplain why it’s important to control the package environment.\nUse {renv} (or {venv} and uv ) to control the package environment.\nRecognize when it is important to control the system environment."
   },
   {
     "objectID": "slides/01.html#recap",
     "href": "slides/01.html#recap",
     "title": "Environments as Code",
     "section": "Recap",
-    "text": "Recap\nThe 5 tenets of DevOps from the intro call:\n\nCode should be well-tested and tests should be automated.\nUpdates should be frequent and low-risk.\nSecurity concerns should be considered up front as part of architecture.\nProduction systems should have monitoring and logging.\nFrequent opportunities for review, change, and updating should be built into the system – both culturally and technically.\n\nChapter 1\n\nDevelopment\nTesting\nProduction\n\nr-lib and Github Actions\n“Servers as cattle”"
+    "text": "Recap\nThe 5 tenets of DevOps from the intro call:\n\nCode should be well-tested and tests should be automated.\nUpdates should be frequent and low-risk.\nSecurity concerns should be considered up front as part of architecture.\nProduction systems should have monitoring and logging.\nFrequent opportunities for review, change, and updating should be built into the system – both culturally and technically."
+  },
+  {
+    "objectID": "slides/01.html#chapter-1",
+    "href": "slides/01.html#chapter-1",
+    "title": "Environments as Code",
+    "section": "Chapter 1",
+    "text": "Chapter 1\n\nDevelopment\nTesting\nProduction\n\nr-lib and Github Actions\n“Servers as cattle”"
   },
   {
     "objectID": "slides/01.html#intro-discussion",
@@ -844,7 +851,14 @@
     "href": "slides/01.html#please-dont",
     "title": "Environments as Code",
     "section": "Please don’t",
-    "text": "Please don’t\n\n\n\n\n\n\n\n\nnuh_uh\n\n\n\n\nWhy not?\n“This works fine for a while. But the problem with this is that the default has you installing things into a cache that’s shared among every project on your system.”\nIt’s also considered rude to make changes to a user’s system-level package setup.\nMore importantly, DevOps aims to help you make things that don’t break, installing packages without versions specified does not prevent things from breaking in the future."
+    "text": "Please don’t\n\n\n\n# Check if dplyr installed\nif (!\"dplyr\" %in% row.names(installed.packages())) {\n  # install if not\n  install.packages(\"dplyr\")\n}\n\n\n\n\n\n\nnuh_uh"
+  },
+  {
+    "objectID": "slides/01.html#why-not",
+    "href": "slides/01.html#why-not",
+    "title": "Environments as Code",
+    "section": "Why not?",
+    "text": "Why not?\n“This works fine for a while. But the problem with this is that the default has you installing things into a cache that’s shared among every project on your system.”\nIt’s also considered rude to make changes to a user’s system-level package setup.\nMore importantly, DevOps aims to help you make things that don’t break, installing packages without versions specified does not prevent things from breaking in the future."
   },
   {
     "objectID": "slides/01.html#the-rooms-of-a-house",
@@ -879,7 +893,14 @@
     "href": "slides/01.html#using-renv",
     "title": "Environments as Code",
     "section": "Using Renv",
-    "text": "Using Renv\n\nCreate a project\nCall renv::init() to create a standalone library\nCall renv::activate() this happens automatically if using RStudio projects\nInstall necessary packages with traditional syntax install.packages(\"dplyr\")\nCall renv::snapshot() to track versions etc.\n\n“* Lockfile written to ‘~/git_repos/bookclub-do4ds/renv.lock’.”\nNow you have a file called renv.lock which has been updated with the project’s packages and their versions:\n\nrenv lock*see book for python equivalent i.e. virtualenv/venv and requirements.txt"
+    "text": "Using Renv\n\nCreate a project\nCall renv::init() to create a standalone library\nCall renv::activate() this happens automatically if using RStudio projects\nInstall necessary packages with traditional syntax install.packages(\"dplyr\")\nCall renv::snapshot() to track versions etc.\n\n“* Lockfile written to ‘~/git_repos/bookclub-do4ds/renv.lock’.”"
+  },
+  {
+    "objectID": "slides/01.html#renv_lock",
+    "href": "slides/01.html#renv_lock",
+    "title": "Environments as Code",
+    "section": "renv_lock",
+    "text": "renv_lock\nnow you have a file called renv.lock which has been updated with the project’s packages and their versions:\n\nrenv lock*see book for python equivalent i.e. virtualenv/venv and requirements.txt"
   },
   {
     "objectID": "slides/01.html#sharing-the-environment",
@@ -907,7 +928,7 @@
     "href": "slides/01.html#further-reading",
     "title": "Environments as Code",
     "section": "Further reading",
-    "text": "Further reading\nhttps://rstats.wtf/"
+    "text": "Further reading\n\nhttps://rstats.wtf/\n👷 R in Production chapter about packages installation\nnix and {rix} /guix"
   },
   {
     "objectID": "slides/01.html#review",
@@ -915,13 +936,6 @@
     "title": "Environments as Code",
     "section": "Review",
     "text": "Review\nWhat did we learn?\n\n\n\n\n\n\n\nLearning Objective\nWhat Did We Learn?\n\n\n\n\nList the three layers of data science environments.\n\n\n\nExplain why it’s important to control the package environment.\n\n\n\nUse {renv} (or {venv}) to control the package environment.\n\n\n\nRecognize when it is important to control the system environment."
-  },
-  {
-    "objectID": "slides/01.html#meeting-videos",
-    "href": "slides/01.html#meeting-videos",
-    "title": "Environments as Code",
-    "section": "Meeting Videos",
-    "text": "Meeting Videos\nCohort 1\n\n\n\n\nMeeting chat log\n\n00:43:56    Tinashe Tapera: https://www.tidyverse.org/blog/2017/12/workflow-vs-script/\n00:45:19    Jon Harmon (jonthegeek):    That blog led to one of my favorite hex stickers: \"Everything I Know Is From Jenny Bryan\" https://raw.githubusercontent.com/MonkmanMH/EIKIFJB/main/EIKIFJB_sigmar_hex.png"
   },
   {
     "objectID": "slides/03.html#learning-objectives",

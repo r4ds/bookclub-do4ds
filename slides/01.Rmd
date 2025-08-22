@@ -186,8 +186,12 @@ As we have a chapter dedicated to Docker (which I haven't read) I won't dive int
 
 ## Further reading {-}
 
-https://rstats.wtf/
+- https://rstats.wtf/
 
+
+- :construction: R in Production [chapter](https://r-in-production.org/packages.html) about packages installation  
+
+- [nix](https://nixos.org/) and [{rix}](https://docs.ropensci.org/rix/) /[guix](https://guix.gnu.org/)
 
 ## Review {-}
 

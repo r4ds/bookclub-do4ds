@@ -6,10 +6,10 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-bc185b5c5bdbcb35c2eb49d8a876ef70.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.33">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-befe23ebd2f54d8af2c8a89d1a1611f1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.34">
 
-  <title>DevOps for Data Science Book Club – Data Pipeline Architecture</title>
+  <title>DevOps for Data Science Book Club – Data Project Architecture</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -126,7 +126,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Data Pipeline Architecture</h1>
+  <h1 class="title">Data Project Architecture</h1>
 
 <div class="quarto-title-authors">
 </div>
@@ -134,127 +134,115 @@
 </section>
 <section id="learning-objectives" class="slide level2">
 <h2>Learning objectives</h2>
-<blockquote>
-<p>Since these notes were prepared, this chapter has been split into two chapters. These notes have not been updated to reflect this change.</p>
-</blockquote>
-<p><strong>Learning objectives:</strong></p>
 <ul>
-<li>Compare and contrast the tiers of the three-tier app architecture vs the seven data science services.</li>
-<li>Answer the two data-storage questions about an app: storage format and storage location.</li>
-<li>Choose the appropriate storage solution for an app.</li>
-<li>Authorize an app to access data.</li>
-<li>Consider database-as-a-service options.</li>
+<li>Learn about the three-layer app.</li>
+<li>Learn why the presentation layer is important and how can we handle its data.</li>
+<li>Learn about APIs.</li>
 </ul>
 </section>
-<section id="perspectives-on-data-science-projects" class="slide level2 unnumbered">
-<h2>Perspectives on Data Science Projects</h2>
+<section id="the-three-layer-architecture" class="slide level2">
+<h2>The three layer architecture</h2>
+<p>Poorly-architected software is likely to break when you share it or go to production. A standard software arquitechture for apps:</p>
+
+<img data-src="images/02_3-tier-app.webp" class="r-stretch quarto-figure-center"><p class="caption">Three layer app</p></section>
+<section id="is-it-for-data-science-projects" class="slide level2">
+<h2>Is it for Data Science projects?</h2>
+<p>The three layers can help clarify parts of our projects, but:</p>
 <ul>
-<li><p>DS vs SE Perspective</p>
+<li>We might not be designing an app</li>
+<li>We usually have projects with many components</li>
+<li>Apps run in response to user actions, data science projects run in response to updates to the data</li>
+<li>We usually don’t have ownership on the data</li>
+</ul>
+</section>
+<section id="the-presentation-layer" class="slide level2">
+<h2>The presentation layer</h2>
+<p>It is what our users will consume, so we have to choose it first. Options:</p>
 <ul>
-<li><p>Data Flow Differences</p>
+<li>A <strong>job</strong>: it changes something in another system.</li>
+<li>An <strong>app</strong>: data science web apps to explore datasets.</li>
+<li>A <strong>report</strong>: might be static or have some interactive elements.</li>
+<li>An <strong>API</strong>: for machine-to-machine communication.</li>
+</ul>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+
+<img data-src="images/02_presentation-layer.png" class="r-stretch quarto-figure-center"><p class="caption">Decision workflow for presentation layer</p></section>
+<section id="other-things-to-consider-for-the-presentation-layer" class="slide level2">
+<h2>Other things to consider for the presentation layer</h2>
+<ul>
+<li><strong>Do less</strong> here. Keep only code that shows something to the user or that collects input from the user</li>
+<li>Have <strong>small data</strong> here, you want high performance.
+<ul>
+<li>Can you precalculate anything before it goes to the presentation layer?</li>
+<li>Can you reduce the granularity of your data? Figure out the dimensions that will make sense to the user</li>
+</ul></li>
+</ul>
+</section>
+<section id="how-to-make-big-data-small" class="slide level2">
+<h2>How to make big data small</h2>
+<p>Don’t pull all the data into your session. Instead:</p>
+<ul>
+<li>Push work to the <strong>data source</strong>: do anything you can do before you pull the data out.</li>
+<li>Be <strong>lazy</strong> with data pulls: pull the data that’s needed when it’s needed.</li>
+<li><strong>Sample</strong> the data. Makes sense for machine learning tasks but not for counting.</li>
+<li><strong>Chunk and pull</strong>. Identify natural groups.</li>
+</ul>
+</section>
+<section id="where-to-store-the-data" class="slide level2">
+<h2>Where to store the data</h2>
+<p>It depends on how often it is <strong>updated</strong>. In the presentation bundle, only if the data and the app will be updated together.</p>
+<ul>
+<li>Filesystem: hard for deployment.</li>
+<li>Blob storage or pins: cloud storage like S3 from Amazon, Google Storeage or Azure. They usually have packages.</li>
+<li>Google sheets: maybe as an intermediate step.</li>
+</ul>
+<p>You can also store your intermediate artifacts in <code>.csv</code>, <code>pickle</code> or <code>rds</code> files or use <strong>DuckDB</strong>.</p>
+</section>
+<section id="how-about-an-api" class="slide level2">
+<h2>How about an API?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>API: Application Programming Interface.</li>
+<li>Suited for the middle tier, you separate the processing logic into functions.</li>
+<li><strong>Function as a service</strong>. Functions, but in a completely separate process.</li>
+<li><code>{fastAPI}</code> and <code>{plumber}</code> can help.</li>
+</ul>
+</div><div class="column center" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/ds_vs_se.PNG"></p>
-<figcaption>DS Vs SE</figcaption>
+<p><img data-src="images/02_api.png"></p>
+<figcaption>API</figcaption>
 </figure>
-</div></li>
-<li><p>The software three-tier architecture vs the seven data science layers.</p></li>
-</ul></li>
-<li><p>We as SE/DE think of systems as a puzzle pieces where each piece of the puzzle have to optimally fit/integrated with other puzzle pieces.</p></li>
-</ul>
+</div>
+</div></div>
 </section>
-<section id="productionizing-apps" class="slide level2 unnumbered">
-<h2>Productionizing apps</h2>
+<section id="rest-apis" class="slide level2">
+<h2>REST APIs</h2>
 <ul>
-<li><p>Microservices and tight coupling (SRP OR SOC)</p></li>
-<li><p>The Idea of abstraction in software engineering &amp; It’s relation to how we could create a good API.</p></li>
-<li><p><strong>Important distinction</strong>: Business Logic Vs App Logic</p>
-<ul>
-<li><p>App Logic –&gt; is all about how the user interacts with the app</p></li>
-<li><p>Business Logic –&gt;is all about the data inputs based on your business</p></li>
-</ul></li>
-<li><p>What else comes to your mind when you move DS project to production?</p></li>
+<li>REpresentational State Transfer:</li>
+<li>Resources and URLs to identify each function.</li>
+<li>HTTP methods for CRUD operations.</li>
+<li>Stateless: no client-specific context.</li>
+<li>Representations for requests and reponses: Json or XML.</li>
 </ul>
+<p><a href="https://guides.dataverse.org/en/6.7/api/dataaccess.html">Dataverse Access API</a></p>
 </section>
-<section id="the-what-where-questions-of-storage" class="slide level2 unnumbered">
-<h2>The What &amp; Where Questions of Storage</h2>
-<ul>
-<li><p>What format would you use to store your data and why?</p></li>
-<li><p>Where you gonna put your data?</p></li>
-</ul>
-</section>
-<section id="factors-we-should-consider-when-we-choose-our-storage-solution" class="slide level2 unnumbered">
-<h2>Factors we should consider when we choose our storage solution</h2>
-<ul>
-<li><p>Data Access patterns</p>
-<ul>
-<li><p>on The App level</p></li>
-<li><p>on The Data Pipeline Level</p></li>
-</ul></li>
-<li><p>Data Security</p></li>
-<li><p>How big are the data we’re going to use inside our app?</p>
-<p><img data-src="images/storage_space.PNG"></p></li>
-<li><p>What are the performance criteria for the storage solution?</p>
-<ul>
-<li><p>Throughput –&gt; how many units of information can be processed by a system within a given timeframe.</p></li>
-<li><p>Latency –&gt; is the time it takes for data to pass from one point on a network to another.</p></li>
-</ul></li>
-</ul>
-</section>
-<section id="data-authorization" class="slide level2 unnumbered">
-<h2>Data authorization</h2>
-<ul>
-<li><p>Don’t allow all users to have access to all data.</p></li>
-<li><p>Avoid ever putting credentials in plain-text.</p></li>
-<li><p>Trivial approach of using <code>Sys</code> or <code>os</code> in R and Python.</p></li>
-<li><p>RStudio Connect to the Rescue with an encryption option.</p></li>
-</ul>
-</section>
-<section id="database-as-a-service" class="slide level2 unnumbered">
-<h2>Database-as-a-service</h2>
-<ul>
-<li><p>When to use what? <strong>Database</strong> vs <strong>Datawarehouse</strong> vs <strong>Datalake</strong>.</p></li>
-<li><p>Recommended solutions: <strong>EBS</strong>, <strong>RDS</strong>, <strong>Redshift</strong> and <strong>S3</strong>.</p></li>
-<li><p>Is that all we got? (<strong>Hint</strong>: Not even close!!).</p></li>
-</ul>
-</section>
+<section id="write-a-data-flow-chart" class="slide level2">
+<h2>Write a data flow chart</h2>
+
+<img data-src="images/02_data-flow-chart.png" class="r-stretch quarto-figure-center"><p class="caption">Data flow chart</p></section>
 <section id="review" class="slide level2 unnumbered">
 <h2>Review</h2>
-<p>Left those as an open discussion questions?</p>
-<table class="caption-top">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Learning Objective</th>
-<th>What Did We Learn?</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Compare and contrast the tiers of the three-tier app architecture vs the seven data science services.</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Answer the two data-storage questions about an app: storage format and storage location.</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Choose the appropriate storage solution for an app.</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Authorize an app to access data.</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Consider database-as-a-service options.</td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p>Comprehension questions</p>
+<ul>
+<li>Do you ever think about your application layer?</li>
+<li>What libraries could you use to implement a three-layer architecture in R or Python?</li>
+<li>How do you reduce the data requirements for your project?</li>
+<li>How do you handle your intermediate artifacts?</li>
+</ul>
 </section>
 <section id="meeting-videos" class="slide level2 unnumbered">
 <h2>Meeting Videos</h2>

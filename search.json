@@ -594,63 +594,91 @@
   {
     "objectID": "slides/02.html#learning-objectives",
     "href": "slides/02.html#learning-objectives",
-    "title": "Data Pipeline Architecture",
+    "title": "Data Project Architecture",
     "section": "Learning objectives",
-    "text": "Learning objectives\n\nSince these notes were prepared, this chapter has been split into two chapters. These notes have not been updated to reflect this change.\n\nLearning objectives:\n\nCompare and contrast the tiers of the three-tier app architecture vs the seven data science services.\nAnswer the two data-storage questions about an app: storage format and storage location.\nChoose the appropriate storage solution for an app.\nAuthorize an app to access data.\nConsider database-as-a-service options."
+    "text": "Learning objectives\n\nLearn about the three-layer app.\nLearn why the presentation layer is important and how can we handle its data.\nLearn about APIs."
   },
   {
-    "objectID": "slides/02.html#perspectives-on-data-science-projects",
-    "href": "slides/02.html#perspectives-on-data-science-projects",
-    "title": "Data Pipeline Architecture",
-    "section": "Perspectives on Data Science Projects",
-    "text": "Perspectives on Data Science Projects\n\nDS vs SE Perspective\n\nData Flow Differences\n\n\n\nDS Vs SE\n\n\nThe software three-tier architecture vs the seven data science layers.\n\nWe as SE/DE think of systems as a puzzle pieces where each piece of the puzzle have to optimally fit/integrated with other puzzle pieces."
+    "objectID": "slides/02.html#the-three-layer-architecture",
+    "href": "slides/02.html#the-three-layer-architecture",
+    "title": "Data Project Architecture",
+    "section": "The three layer architecture",
+    "text": "The three layer architecture\nPoorly-architected software is likely to break when you share it or go to production. A standard software arquitechture for apps:\n\nThree layer app"
   },
   {
-    "objectID": "slides/02.html#productionizing-apps",
-    "href": "slides/02.html#productionizing-apps",
-    "title": "Data Pipeline Architecture",
-    "section": "Productionizing apps",
-    "text": "Productionizing apps\n\nMicroservices and tight coupling (SRP OR SOC)\nThe Idea of abstraction in software engineering & It’s relation to how we could create a good API.\nImportant distinction: Business Logic Vs App Logic\n\nApp Logic –&gt; is all about how the user interacts with the app\nBusiness Logic –&gt;is all about the data inputs based on your business\n\nWhat else comes to your mind when you move DS project to production?"
+    "objectID": "slides/02.html#is-it-for-data-science-projects",
+    "href": "slides/02.html#is-it-for-data-science-projects",
+    "title": "Data Project Architecture",
+    "section": "Is it for Data Science projects?",
+    "text": "Is it for Data Science projects?\nThe three layers can help clarify parts of our projects, but:\n\nWe might not be designing an app\nWe usually have projects with many components\nApps run in response to user actions, data science projects run in response to updates to the data\nWe usually don’t have ownership on the data"
   },
   {
-    "objectID": "slides/02.html#the-what-where-questions-of-storage",
-    "href": "slides/02.html#the-what-where-questions-of-storage",
-    "title": "Data Pipeline Architecture",
-    "section": "The What & Where Questions of Storage",
-    "text": "The What & Where Questions of Storage\n\nWhat format would you use to store your data and why?\nWhere you gonna put your data?"
+    "objectID": "slides/02.html#the-presentation-layer",
+    "href": "slides/02.html#the-presentation-layer",
+    "title": "Data Project Architecture",
+    "section": "The presentation layer",
+    "text": "The presentation layer\nIt is what our users will consume, so we have to choose it first. Options:\n\nA job: it changes something in another system.\nAn app: data science web apps to explore datasets.\nA report: might be static or have some interactive elements.\nAn API: for machine-to-machine communication."
   },
   {
-    "objectID": "slides/02.html#factors-we-should-consider-when-we-choose-our-storage-solution",
-    "href": "slides/02.html#factors-we-should-consider-when-we-choose-our-storage-solution",
-    "title": "Data Pipeline Architecture",
-    "section": "Factors we should consider when we choose our storage solution",
-    "text": "Factors we should consider when we choose our storage solution\n\nData Access patterns\n\non The App level\non The Data Pipeline Level\n\nData Security\nHow big are the data we’re going to use inside our app?\n\nWhat are the performance criteria for the storage solution?\n\nThroughput –&gt; how many units of information can be processed by a system within a given timeframe.\nLatency –&gt; is the time it takes for data to pass from one point on a network to another."
+    "objectID": "slides/02.html#section",
+    "href": "slides/02.html#section",
+    "title": "Data Project Architecture",
+    "section": "",
+    "text": "Decision workflow for presentation layer"
   },
   {
-    "objectID": "slides/02.html#data-authorization",
-    "href": "slides/02.html#data-authorization",
-    "title": "Data Pipeline Architecture",
-    "section": "Data authorization",
-    "text": "Data authorization\n\nDon’t allow all users to have access to all data.\nAvoid ever putting credentials in plain-text.\nTrivial approach of using Sys or os in R and Python.\nRStudio Connect to the Rescue with an encryption option."
+    "objectID": "slides/02.html#other-things-to-consider-for-the-presentation-layer",
+    "href": "slides/02.html#other-things-to-consider-for-the-presentation-layer",
+    "title": "Data Project Architecture",
+    "section": "Other things to consider for the presentation layer",
+    "text": "Other things to consider for the presentation layer\n\nDo less here. Keep only code that shows something to the user or that collects input from the user\nHave small data here, you want high performance.\n\nCan you precalculate anything before it goes to the presentation layer?\nCan you reduce the granularity of your data? Figure out the dimensions that will make sense to the user"
   },
   {
-    "objectID": "slides/02.html#database-as-a-service",
-    "href": "slides/02.html#database-as-a-service",
-    "title": "Data Pipeline Architecture",
-    "section": "Database-as-a-service",
-    "text": "Database-as-a-service\n\nWhen to use what? Database vs Datawarehouse vs Datalake.\nRecommended solutions: EBS, RDS, Redshift and S3.\nIs that all we got? (Hint: Not even close!!)."
+    "objectID": "slides/02.html#how-to-make-big-data-small",
+    "href": "slides/02.html#how-to-make-big-data-small",
+    "title": "Data Project Architecture",
+    "section": "How to make big data small",
+    "text": "How to make big data small\nDon’t pull all the data into your session. Instead:\n\nPush work to the data source: do anything you can do before you pull the data out.\nBe lazy with data pulls: pull the data that’s needed when it’s needed.\nSample the data. Makes sense for machine learning tasks but not for counting.\nChunk and pull. Identify natural groups."
+  },
+  {
+    "objectID": "slides/02.html#where-to-store-the-data",
+    "href": "slides/02.html#where-to-store-the-data",
+    "title": "Data Project Architecture",
+    "section": "Where to store the data",
+    "text": "Where to store the data\nIt depends on how often it is updated. In the presentation bundle, only if the data and the app will be updated together.\n\nFilesystem: hard for deployment.\nBlob storage or pins: cloud storage like S3 from Amazon, Google Storeage or Azure. They usually have packages.\nGoogle sheets: maybe as an intermediate step.\n\nYou can also store your intermediate artifacts in .csv, pickle or rds files or use DuckDB."
+  },
+  {
+    "objectID": "slides/02.html#how-about-an-api",
+    "href": "slides/02.html#how-about-an-api",
+    "title": "Data Project Architecture",
+    "section": "How about an API?",
+    "text": "How about an API?\n\n\n\nAPI: Application Programming Interface.\nSuited for the middle tier, you separate the processing logic into functions.\nFunction as a service. Functions, but in a completely separate process.\n{fastAPI} and {plumber} can help.\n\n\n\n\n\nAPI"
+  },
+  {
+    "objectID": "slides/02.html#rest-apis",
+    "href": "slides/02.html#rest-apis",
+    "title": "Data Project Architecture",
+    "section": "REST APIs",
+    "text": "REST APIs\n\nREpresentational State Transfer:\nResources and URLs to identify each function.\nHTTP methods for CRUD operations.\nStateless: no client-specific context.\nRepresentations for requests and reponses: Json or XML.\n\nDataverse Access API"
+  },
+  {
+    "objectID": "slides/02.html#write-a-data-flow-chart",
+    "href": "slides/02.html#write-a-data-flow-chart",
+    "title": "Data Project Architecture",
+    "section": "Write a data flow chart",
+    "text": "Write a data flow chart\n\nData flow chart"
   },
   {
     "objectID": "slides/02.html#review",
     "href": "slides/02.html#review",
-    "title": "Data Pipeline Architecture",
+    "title": "Data Project Architecture",
     "section": "Review",
-    "text": "Review\nLeft those as an open discussion questions?\n\n\n\n\n\n\n\nLearning Objective\nWhat Did We Learn?\n\n\n\n\nCompare and contrast the tiers of the three-tier app architecture vs the seven data science services.\n\n\n\nAnswer the two data-storage questions about an app: storage format and storage location.\n\n\n\nChoose the appropriate storage solution for an app.\n\n\n\nAuthorize an app to access data.\n\n\n\nConsider database-as-a-service options."
+    "text": "Review\nComprehension questions\n\nDo you ever think about your application layer?\nWhat libraries could you use to implement a three-layer architecture in R or Python?\nHow do you reduce the data requirements for your project?\nHow do you handle your intermediate artifacts?"
   },
   {
     "objectID": "slides/02.html#meeting-videos",
     "href": "slides/02.html#meeting-videos",
-    "title": "Data Pipeline Architecture",
+    "title": "Data Project Architecture",
     "section": "Meeting Videos",
     "text": "Meeting Videos\nCohort 1\n\n\n\n\nMeeting chat log\n\n00:02:43    Gus Lipkin: East Coast US, 1pm local\n00:44:48    Gus Lipkin: https://xkcd.com/927/\n00:57:17    Jack Penzer:    Graph databases &lt;3"
   },

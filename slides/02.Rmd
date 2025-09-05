@@ -1,101 +1,108 @@
 ---
 engine: knitr
-title: Data Pipeline Architecture
+title: Data Project Architecture
 ---
 
 ## Learning objectives
 
-> Since these notes were prepared, this chapter has been split into two chapters. These notes have not been updated to reflect this change.
 
-**Learning objectives:**
+- Learn about the three-layer app.
+- Learn why the presentation layer is important and how can we handle its data.
+- Learn about APIs.
 
--   Compare and contrast the tiers of the three-tier app architecture vs the seven data science services.
--   Answer the two data-storage questions about an app: storage format and storage location.
--   Choose the appropriate storage solution for an app.
--   Authorize an app to access data.
--   Consider database-as-a-service options.
+## The three layer architecture
+Poorly-architected software is likely to break when you share it or go to production.
+A standard software arquitechture for apps:
 
-## Perspectives on Data Science Projects {-}
+![Three layer app](images/02_3-tier-app.webp)
 
--   DS vs SE Perspective
+## Is it for Data Science projects?
 
-    -   Data Flow Differences
+The three layers can help clarify parts of our projects, but:
 
-        ![DS Vs SE](images/ds_vs_se.PNG)
+- We might not be designing an app
+- We usually have projects with many components
+- Apps run in response to user actions, data science projects run in response 
+to updates to the data
+- We usually don't have ownership on the data
 
-    -   The software three-tier architecture vs the seven data science layers.
+## The presentation layer
 
--   We as SE/DE think of systems as a puzzle pieces where each piece of the puzzle have to optimally fit/integrated with other puzzle pieces.
+It is what our users will consume, so we have to choose it first. Options:
 
-## Productionizing apps {-}
+- A **job**: it changes something in another system. 
+- An **app**: data science web apps to explore datasets.
+- A **report**: might be static or have some interactive elements.
+- An **API**: for machine-to-machine communication. 
 
--   Microservices and tight coupling (SRP OR SOC)
+##
+![Decision workflow for presentation layer](images/02_presentation-layer.png)
 
--   The Idea of abstraction in software engineering & It's relation to how we could create a good API.
 
--   **Important distinction**: Business Logic Vs App Logic
+## Other things to consider for the presentation layer
 
-    -   App Logic --\> is all about how the user interacts with the app
+- **Do less** here. Keep only code that shows something to the user or that collects input from the user
+- Have **small data** here, you want high performance. 
+    - Can you precalculate anything before it goes to the presentation layer?
+    - Can you reduce the granularity of your data? Figure out the dimensions that will make sense to the user
 
-    -   Business Logic --\>is all about the data inputs based on your business
+## How to make big data small
 
--   What else comes to your mind when you move DS project to production?
+Don't pull all the data into your session. Instead:
 
-## The What & Where Questions of Storage {-}
+- Push work to the **data source**: do anything you can do before you pull the data out.
+- Be **lazy** with data pulls: pull the data that's needed when it's needed.
+- **Sample** the data. Makes sense for machine learning tasks but not for counting. 
+- **Chunk and pull**. Identify natural groups. 
 
--   What format would you use to store your data and why?
+## Where to store the data
 
--   Where you gonna put your data?
+It depends on how often it is **updated**. In the presentation bundle, only if the data and the app will 
+be updated together. 
 
-## Factors we should consider when we choose our storage solution {-}
+- Filesystem: hard for deployment.
+- Blob storage or pins: cloud storage like S3 from Amazon, Google Storeage or Azure.
+ They usually have packages.
+ - Google sheets: maybe as an intermediate step. 
 
--   Data Access patterns
+You can also store your intermediate artifacts in `.csv`, `pickle` or `rds` files or use **DuckDB**.
 
-    -   on The App level
+## How about an API?
 
-    -   on The Data Pipeline Level
+::::{.columns}
+:::{.column width="50%"}
+- API: Application Programming Interface. 
+- Suited for the middle tier, you separate the processing logic into functions.
+- **Function as a service**. Functions, but in a completely separate process. 
+- `{fastAPI}` and `{plumber}` can help.
+:::
+:::{.column width="50%" .center}
+![API](images/02_api.png)
+:::
+::::
 
--   Data Security
+## REST APIs
 
--   How big are the data we're going to use inside our app?
+- REpresentational State Transfer:
+- Resources and URLs to identify each function.
+- HTTP methods for CRUD operations. 
+- Stateless: no client-specific context.
+- Representations for requests and reponses: Json or XML.
 
-    ![](images/storage_space.PNG)
+[Dataverse Access API](https://guides.dataverse.org/en/6.7/api/dataaccess.html)
 
--   What are the performance criteria for the storage solution?
+## Write a data flow chart
 
-    -   Throughput --\> how many units of information can be processed by a system within a given timeframe.
-
-    -   Latency --\> is the time it takes for data to pass from one point on a network to another.
-
-## Data authorization {-}
-
--   Don't allow all users to have access to all data.
-
--   Avoid ever putting credentials in plain-text.
-
--   Trivial approach of using `Sys` or `os` in R and Python.
-
--   RStudio Connect to the Rescue with an encryption option.
-
-## Database-as-a-service {-}
-
--   When to use what? **Database** vs **Datawarehouse** vs **Datalake**.
-
--   Recommended solutions: **EBS**, **RDS**, **Redshift** and **S3**.
-
--   Is that all we got? (**Hint**: Not even close!!).
+![Data flow chart](images/02_data-flow-chart.png)
 
 ## Review {-}
 
-Left those as an open discussion questions?
+Comprehension questions
 
-| Learning Objective                                                                                    | What Did We Learn? |
-|------------------------------------|------------------------------------|
-| Compare and contrast the tiers of the three-tier app architecture vs the seven data science services. |                    |
-| Answer the two data-storage questions about an app: storage format and storage location.              |                    |
-| Choose the appropriate storage solution for an app.                                                   |                    |
-| Authorize an app to access data.                                                                      |                    |
-| Consider database-as-a-service options.                                                               |                    |
+- Do you ever think about your application layer?
+- What libraries could you use to implement a three-layer architecture in R or Python?
+- How do you reduce the data requirements for your project?
+- How do you handle your intermediate artifacts?  
 
 ## Meeting Videos {-}
 

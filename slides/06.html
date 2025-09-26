@@ -6,10 +6,10 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-befe23ebd2f54d8af2c8a89d1a1611f1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.34">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b651517ce65839d647a86e2780455cfb.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.24">
 
-  <title>DevOps for Data Science Book Club – Docker for Data Science</title>
+  <title>DevOps for Data Science Book Club – Demystyfing Docker</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -27,8 +27,74 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #f8f8f2;  }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #f8f8f2; } /* Normal */
+    code span.al { color: #f07178; } /* Alert */
+    code span.an { color: #d4d0ab; } /* Annotation */
+    code span.at { color: #00e0e0; } /* Attribute */
+    code span.bn { color: #d4d0ab; } /* BaseN */
+    code span.bu { color: #abe338; } /* BuiltIn */
+    code span.cf { color: #ffa07a; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #abe338; } /* Char */
+    code span.cn { color: #ffd700; } /* Constant */
+    code span.co { color: #f8f8f2; font-style: italic; } /* Comment */
+    code span.cv { color: #ffd700; } /* CommentVar */
+    code span.do { color: #f8f8f2; } /* Documentation */
+    code span.dt { color: #ffa07a; } /* DataType */
+    code span.dv { color: #d4d0ab; } /* DecVal */
+    code span.er { color: #f07178; text-decoration: underline; } /* Error */
+    code span.ex { color: #00e0e0; font-weight: bold; } /* Extension */
+    code span.fl { color: #d4d0ab; } /* Float */
+    code span.fu { color: #ffa07a; } /* Function */
+    code span.im { color: #abe338; } /* Import */
+    code span.in { color: #d4d0ab; } /* Information */
+    code span.kw { color: #ffa07a; font-weight: bold; } /* Keyword */
+    code span.op { color: #ffa07a; } /* Operator */
+    code span.ot { color: #00e0e0; } /* Other */
+    code span.pp { color: #dcc6e0; } /* Preprocessor */
+    code span.re { color: #00e0e0; background-color: #f8f8f2; } /* RegionMarker */
+    code span.sc { color: #abe338; } /* SpecialChar */
+    code span.ss { color: #abe338; } /* SpecialString */
+    code span.st { color: #abe338; } /* String */
+    code span.va { color: #00e0e0; } /* Variable */
+    code span.vs { color: #abe338; } /* VerbatimString */
+    code span.wa { color: #dcc6e0; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-5fa723a4ee799f64e44b6fe0747a0a63.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-5079db4132f0eaf0a29ac93fceccb8c9.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -126,7 +192,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Docker for Data Science</h1>
+  <h1 class="title">Demystyfing Docker</h1>
 
 <div class="quarto-title-authors">
 </div>
@@ -141,135 +207,142 @@
 <li>Build simple Dockerfiles for your own projects.</li>
 </ul>
 </section>
-<section id="why-containers" class="slide level2 unnumbered">
-<h2>Why containers?</h2>
-
-<img data-src="images/05_it-works-on-my-machine.jpg" class="r-stretch"><ul>
-<li>Containers are a way to save an entire machine’s state, rather than just project components
+<section id="why-docker-matters-for-data-science" class="slide level2">
+<h2>Why docker matters for data science</h2>
 <ul>
-<li>This extends beyond packages and libraries to the R or Python version itself, as well as any other tools</li>
-</ul></li>
-<li>While a container is similar to a VM, they are much more single purpose. They…
-<ul>
-<li>are quick to start</li>
-<li>can be used for individual projects or scripts</li>
-</ul></li>
-<li>The container’s configuration is code (infrastructure as code!) and so it’s easy to reproduce</li>
-</ul>
-<p><em>https://www.reddit.com/r/ProgrammerHumor/comments/cw58z7/it_works_on_my_machine/</em></p>
-</section>
-<section id="why-containers-for-data-science" class="slide level2 unnumbered">
-<h2>Why containers for Data Science?</h2>
-<ul>
-<li>Containers are mostly used for:
+<li><p>Docker creates standardized environments that are:</p>
 <ol type="1">
-<li>Packaging an environment for someone else to use</li>
-<li>Packaging a finished product (project/app/whatever) for archiving, reproducibility, or production</li>
+<li><p>Reproducible</p></li>
+<li><p>Portable</p></li>
+<li><p>Collaborative</p></li>
+<li><p>Scalable</p></li>
 </ol></li>
 </ul>
+<p><img data-src="images/06_docker-logo.png" class="absolute" style="top: 200px; left: 500px; width: 480px; height: 270px; " alt="The Docker logo, a whale with shipping containers on its back"></p>
 
-<img data-src="https://do4ds.com/chapters/sec1/images-docker/docker-usage.png" class="r-stretch"><p>Potential examples:</p>
+<aside class="notes">
 <ul>
-<li>When publishing, instead of providing code, data, and describing the environment used, you can include a Dockerfile so anyone can pick up exactly where you left off</li>
-<li>You have a project at work that needs to be interacted with every week no matter who looks at it or when</li>
-<li>You’re publishing an R package and want to test specific features across different base R or package versions</li>
+<li><p>Docker allows us to set up infrastructure as code</p></li>
+<li><p>Docker enhances reproducibility by creating a reproducible environment all the way down to the operating system - important for highly regulated industries</p></li>
+<li><p>Docker allows you to develop your project using an image that may more closely match the production environment - important for Shiny apps and APIs</p></li>
 </ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<aside><div>
+<p>See <a href="https://colinfay.me/docker-r-reproducibility/">An Introduction to Docker for R Users</a> for a guide on reproducibility with Docker for R users</p>
+</div></aside></section>
+<section id="what-is-docker" class="slide level2">
+<h2>What is Docker?</h2>
+<ul>
+<li>An open-source tool for building, sharing, and running software</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/06_docker-lifecycle.png" class="quarto-figure quarto-figure-center" style="width:50.0%;height:50.0%" alt="The Docker lifecycle and commands, showing that a Dockerfile produces a Docker Image, which leads to a Docker Container"></p>
+</figure>
+</div>
+<aside class="notes">
+<ul>
+<li><p>Requires a Linux operating system or the Windows Subsystem for Linux (WSL)</p></li>
+<li><p>Windows and macOS users download <a href="https://www.docker.com/products/docker-desktop/">Docker Desktop</a>, which comes with a Linux VM. Linux users are recommended to install the <a href="https://docs.docker.com/engine/install/">Docker Engine</a> directly.</p></li>
+<li><p>Three terms to be familiar with are DockerFile, Docker Image, and Container Instances.</p></li>
+<li><p>Note that the names <em>container</em> and <em>instance</em> are often used interchangeably</p></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="words-of-caution" class="slide level2 unnumbered">
-<h2>Words of caution</h2>
+<section id="specify-your-environment-via-a-dockerfile" class="slide level2">
+<h2>Specify your environment via a <code>Dockerfile</code></h2>
 <ul>
-<li>Docker is limited to the resources you give it. If your dev machine is less than awesome, your Docker container will be much less than awesome</li>
-<li>Docker is only allowed access to what you give it and may take some extra work to get running</li>
-<li>Some workplaces may not be comfortable with Docker</li>
-<li>Some use-cases may require direct access to the hardware and are incompatible with a container system
-<ul>
-<li>Sometimes computers do math differently</li>
-</ul></li>
-<li>Containers require proper setup!</li>
+<li><p>Dockerfiles build Docker images</p></li>
+<li><p>Dockerfiles are plain text files using <code>FROM</code>, <code>RUN</code>, <code>COPY</code>, and <code>CMD</code> commands</p></li>
 </ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-1"><pre class="sourceCode numberSource bash code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode bash"><a class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-1-1" class="code-annotation-target"><a href="#annotated-cell-1-1"></a><span class="ex">FROM</span> ubuntu:latest</span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="2" onclick="event.preventDefault();">2</a><span id="annotated-cell-1-2" class="code-annotation-target"><a href="#annotated-cell-1-2"></a><span class="ex">COPY</span> my-data.csv /data/data.csv</span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="3" onclick="event.preventDefault();">3</a><span id="annotated-cell-1-3" class="code-annotation-target"><a href="#annotated-cell-1-3"></a><span class="ex">RUN</span> [<span class="st">"head"</span>, <span class="st">"/data/data.csv"</span>]</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-1" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-1" data-code-lines="1" data-code-annotation="1">Declare the base image</span>
+</dd>
+<dt data-target-cell="annotated-cell-1" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-1" data-code-lines="2" data-code-annotation="2">Copy <code>data.csv</code> from the host’s working directory to the container’s data directory</span>
+</dd>
+<dt data-target-cell="annotated-cell-1" data-target-annotation="3">3</dt>
+<dd>
+<span data-code-cell="annotated-cell-1" data-code-lines="3" data-code-annotation="3">Print the first few rows of <code>data.csv</code></span>
+</dd>
+</dl>
+</div>
+</div>
+<aside class="notes">
+<ul>
+<li><p>Creating your own Dockerfile is optional - many standard Docker images exist on Dockerhub (e.g.&nbsp;<a href=""><code>rocker/tidyverse</code></a>)</p></li>
+<li><p>Dockerfiles build images and also <em>pull</em> existing images</p></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="diving-in" class="slide level2 unnumbered">
-<h2>Diving In</h2>
-<h3 class="unnumbered" id="docker-run">Docker Run</h3>
-<p><code>docker run [OPTIONS] IMAGE [COMMAND] [ARG...]</code></p>
+<section id="docker-images-are-a-snapshot-of-your-environment" class="slide level2">
+<h2>Docker images are a snapshot of your environment</h2>
 <ul>
-<li><code>docker run</code> tells Docker to run the following image</li>
-<li>Options are configured as needed</li>
-<li><code>IMAGE</code> is configured as <code>user/image</code> when pulling from docker hub (like CRAN but for Docker)</li>
+<li><p>Docker images contain the bundled software (e.g.&nbsp;OS, data, packages)</p></li>
+<li><p>Docker images can be shared with others via <a href="https://hub.docker.com/">Docker hub</a></p></li>
+<li><p>Docker images can, in theory, be a standalone project</p></li>
 </ul>
-<h3 class="unnumbered" id="docker-compose">Docker Compose</h3>
-<p><code>docker-compose.yml</code> -&gt; <code>docker compose [-f &lt;arg&gt;...] [options] [COMMAND] [ARGS...]</code></p>
+<aside class="notes">
 <ul>
-<li>The <code>docker-compose</code> file provides a structured way to describe a docker image</li>
-<li>Easy way to combine multiple services (maybe you want R + Python)</li>
-<li>Can be used with the <code>run</code> (do something) or <code>up</code> command (be ready to do something)</li>
-<li>Options are similar to <code>docker run</code></li>
+<li>Other container registries exist (e.g.&nbsp;<a href="https://azure.microsoft.com/en-us/products/container-registry/?msockid=16f9494b817a63e60f275f7a80ce623d">Azure Container Registry</a>)</li>
 </ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="container-lifecyle" class="slide level2 unnumbered">
-<h2>Container Lifecyle</h2>
-
-<img data-src="https://do4ds.com/chapters/sec1/images-docker/docker-lifecycle.png" class="r-stretch"><ul>
-<li>Change the Dockerfile, not the image</li>
-<li>Images can be shared like code
+<section id="containers-are-an-ephemeral-instance-of-a-docker-image" class="slide level2">
+<h2>Containers are an ephemeral instance of a Docker Image</h2>
 <ul>
-<li>Think Git!</li>
-</ul></li>
-<li>There are services to provide private image registries for companies</li>
-<li>Containers usually auto-pull if it doesn’t exist already</li>
+<li><p>By default, changes made to containers are lost on shutdown</p></li>
+<li><p>Data can be preserved from instance to instance of the same container using mounted volumes</p></li>
+<li><p>Containers are a process that executes the layers of your Dockerfile</p></li>
 </ul>
-</section>
-<section id="more-on-docker-run" class="slide level2 unnumbered">
-<h2>More on Docker Run</h2>
-<ul>
-<li>DockerHub containers are in the form <code>&lt;user&gt;/&lt;name&gt;</code> (<code>alexkgold/plumber</code>)
-<ul>
-<li>You can tag an image with a version number <code>user&gt;/&lt;name&gt;:&lt;version&gt;</code></li>
-</ul></li>
-<li><code>--rm</code> to remove the container on kill (probably not for production)</li>
-<li><code>-d</code> run in detached mode so the terminal is free for other uses</li>
-<li><code>-p &lt;host&gt;:&lt;container&gt;</code> publishes a port from inside the container to outside</li>
-<li><code>--name</code> to assign a name of your choice</li>
-<li><code>-v &lt;outside/directory&gt;:&lt;inside/directory&gt;</code> to expose a directory
-<ul>
-<li><code>${PWD}</code> is your project directory</li>
-</ul></li>
-</ul>
-</section>
-<section id="build-a-dockerfile" class="slide level2 unnumbered">
-<h2>Build a Dockerfile</h2>
-<ul>
-<li><p>Not the same as a <code>docker-compose.yml</code></p></li>
-<li><p><code>FROM</code> the base image for the container</p></li>
-<li><p><code>RUN</code> run any command as though it’s using the terminal</p>
-<ul>
-<li>If using something fancy, you may need to install it first</li>
-</ul></li>
-<li><p><code>COPY</code> copy a file from host to container</p></li>
-<li><p><code>CMD</code> run a command at runtime</p></li>
-</ul>
-
-<img data-src="images/05_container-layers.jpg" class="r-stretch"><ul>
-<li>Containers will rebuild from the top-most command that was changed</li>
-</ul>
-</section>
-<section id="trying-out-docker" class="slide level2 unnumbered">
-<h2>Trying out Docker</h2>
-<ol type="1">
-<li>Try out plumber penguins <a href="http://localhost:8000/__docs__/">in your browser</a></li>
-</ol>
-<ol start="2" type="1">
-<li>Kill it</li>
-</ol>
-<ol start="3" type="1">
-<li>Do it again</li>
-</ol>
-<ol start="4" type="1">
-<li>Poke around</li>
-</ol>
-<ol start="5" type="1">
-<li>Kill it again</li>
-</ol>
 </section>
 <section id="meeting-videos" class="slide level2 unnumbered">
 <h2>Meeting Videos</h2>
@@ -470,7 +543,7 @@
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -582,13 +655,14 @@
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-            const codeEl = trigger.previousElementSibling.cloneNode(true);
-            for (const childEl of codeEl.children) {
-              if (isCodeAnnotation(childEl)) {
-                childEl.remove();
-              }
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
             }
-            return codeEl.innerText;
+          }
+          return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy

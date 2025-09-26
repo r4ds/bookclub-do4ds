@@ -6,8 +6,8 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-befe23ebd2f54d8af2c8a89d1a1611f1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.34">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b651517ce65839d647a86e2780455cfb.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.24">
 
   <title>DevOps for Data Science Book Club – Getting Comfortable on the Command Line</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -94,7 +94,7 @@
     code span.vs { color: #abe338; } /* VerbatimString */
     code span.wa { color: #dcc6e0; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-5fa723a4ee799f64e44b6fe0747a0a63.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-5079db4132f0eaf0a29ac93fceccb8c9.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -227,14 +227,14 @@
 <li><code>flags + flag args</code>: <code>all.files = TRUE</code></li>
 <li><code>command args</code>: <code>".github"</code></li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">list.files</span>(<span class="st">".github"</span>, <span class="at">all.files =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">list.files</span>(<span class="st">".github"</span>, <span class="at">all.files =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <h4 class="unnumbered" id="bash">bash</h4>
 <ul>
 <li><code>command</code>: <code>ls</code></li>
 <li><code>flags + flag args</code>: <code>-a</code></li>
 <li><code>command args</code>: <code>.github</code></li>
 </ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a></a><span class="fu">ls</span> <span class="at">-a</span> .github</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a></a><span class="fu">ls</span> <span class="at">-a</span> .github</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <h3 class="unnumbered" id="long-commands">Long Commands</h3>
 <ul>
 <li>Long commands are split onto multiple lines with a trailing backslash</li>
@@ -378,7 +378,7 @@
 <section id="reading-text-files" class="slide level2 unnumbered">
 <h2>Reading Text Files</h2>
 <p>Let’s take a look at <code>pr_check.yml</code> in our <code>.github/workflows</code> folder:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a></a><span class="fu">cat</span> .github/workflows/pr_check.yml</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a></a><span class="fu">cat</span> .github/workflows/pr_check.yml</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <h3 class="unnumbered" id="the-pipe">The Pipe</h3>
 <ul>
 <li>Linux offers a pipe, <code>|</code>, similar to that of R and other functional languages
@@ -387,9 +387,9 @@
 </ul></li>
 </ul>
 <p>To find the workflow branch:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a></a><span class="fu">cat</span> .github/workflows/pr_check.yml <span class="kw">|</span> <span class="fu">grep</span> branches</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a></a><span class="fu">cat</span> .github/workflows/pr_check.yml <span class="kw">|</span> <span class="fu">grep</span> branches</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>To show just the first six items in our current folder:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a></a><span class="fu">ls</span> <span class="at">-a</span> <span class="kw">|</span> <span class="fu">head</span> <span class="at">-n</span> 6</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a></a><span class="fu">ls</span> <span class="at">-a</span> <span class="kw">|</span> <span class="fu">head</span> <span class="at">-n</span> 6</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Notice that <code>bash</code> returns the current folder and the parent folder as items.</p>
 </section>
 <section id="moving-and-copying-files" class="slide level2 unnumbered">
@@ -483,9 +483,9 @@
 <li><code>&gt;</code> is similar to pipe, but it will write to a file</li>
 <li><code>&gt;&gt;</code> is also similar to pipe, but it wall append to a file</li>
 </ul>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a></a><span class="fu">touch</span> file.txt</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a></a><span class="fu">touch</span> file.txt</span>
 <span id="cb7-2"><a></a><span class="bu">echo</span> <span class="st">"this goes in the file"</span> <span class="op">&gt;</span> file.txt</span>
-<span id="cb7-3"><a></a><span class="bu">echo</span> <span class="st">"this also goes in the file"</span> <span class="op">&gt;&gt;</span> file.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-3"><a></a><span class="bu">echo</span> <span class="st">"this also goes in the file"</span> <span class="op">&gt;&gt;</span> file.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <h3 class="unnumbered" id="with-command-line-text-editors">With Command Line Text Editors</h3>
 <ul>
 <li>There are several text editors such as <code>vi</code>, <code>vim</code>, and <code>nano</code> that work directly in the command line
@@ -700,7 +700,7 @@
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -812,13 +812,14 @@
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-            const codeEl = trigger.previousElementSibling.cloneNode(true);
-            for (const childEl of codeEl.children) {
-              if (isCodeAnnotation(childEl)) {
-                childEl.remove();
-              }
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
             }
-            return codeEl.innerText;
+          }
+          return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy

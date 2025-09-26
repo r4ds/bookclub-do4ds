@@ -475,70 +475,49 @@
   {
     "objectID": "slides/06.html#learning-objectives",
     "href": "slides/06.html#learning-objectives",
-    "title": "Docker for Data Science",
+    "title": "Demystyfing Docker",
     "section": "Learning objectives",
     "text": "Learning objectives\n\nDecide whether a container is the right tool for a given job.\nDownload and run pre-built Docker images.\nDescribe the stages of the Docker container lifecycle.\nBuild simple Dockerfiles for your own projects."
   },
   {
-    "objectID": "slides/06.html#why-containers",
-    "href": "slides/06.html#why-containers",
-    "title": "Docker for Data Science",
-    "section": "Why containers?",
-    "text": "Why containers?\n\n\nContainers are a way to save an entire machine’s state, rather than just project components\n\nThis extends beyond packages and libraries to the R or Python version itself, as well as any other tools\n\nWhile a container is similar to a VM, they are much more single purpose. They…\n\nare quick to start\ncan be used for individual projects or scripts\n\nThe container’s configuration is code (infrastructure as code!) and so it’s easy to reproduce\n\nhttps://www.reddit.com/r/ProgrammerHumor/comments/cw58z7/it_works_on_my_machine/"
+    "objectID": "slides/06.html#why-docker-matters-for-data-science",
+    "href": "slides/06.html#why-docker-matters-for-data-science",
+    "title": "Demystyfing Docker",
+    "section": "Why docker matters for data science",
+    "text": "Why docker matters for data science\n\nDocker creates standardized environments that are:\n\nReproducible\nPortable\nCollaborative\nScalable\n\n\n\n\n\n\nDocker allows us to set up infrastructure as code\nDocker enhances reproducibility by creating a reproducible environment all the way down to the operating system - important for highly regulated industries\nDocker allows you to develop your project using an image that may more closely match the production environment - important for Shiny apps and APIs\n\n\n\nSee An Introduction to Docker for R Users for a guide on reproducibility with Docker for R users"
   },
   {
-    "objectID": "slides/06.html#why-containers-for-data-science",
-    "href": "slides/06.html#why-containers-for-data-science",
-    "title": "Docker for Data Science",
-    "section": "Why containers for Data Science?",
-    "text": "Why containers for Data Science?\n\nContainers are mostly used for:\n\nPackaging an environment for someone else to use\nPackaging a finished product (project/app/whatever) for archiving, reproducibility, or production\n\n\n\nPotential examples:\n\nWhen publishing, instead of providing code, data, and describing the environment used, you can include a Dockerfile so anyone can pick up exactly where you left off\nYou have a project at work that needs to be interacted with every week no matter who looks at it or when\nYou’re publishing an R package and want to test specific features across different base R or package versions"
+    "objectID": "slides/06.html#what-is-docker",
+    "href": "slides/06.html#what-is-docker",
+    "title": "Demystyfing Docker",
+    "section": "What is Docker?",
+    "text": "What is Docker?\n\nAn open-source tool for building, sharing, and running software\n\n\n\n\n\n\n\n\nRequires a Linux operating system or the Windows Subsystem for Linux (WSL)\nWindows and macOS users download Docker Desktop, which comes with a Linux VM. Linux users are recommended to install the Docker Engine directly.\nThree terms to be familiar with are DockerFile, Docker Image, and Container Instances.\nNote that the names container and instance are often used interchangeably"
   },
   {
-    "objectID": "slides/06.html#words-of-caution",
-    "href": "slides/06.html#words-of-caution",
-    "title": "Docker for Data Science",
-    "section": "Words of caution",
-    "text": "Words of caution\n\nDocker is limited to the resources you give it. If your dev machine is less than awesome, your Docker container will be much less than awesome\nDocker is only allowed access to what you give it and may take some extra work to get running\nSome workplaces may not be comfortable with Docker\nSome use-cases may require direct access to the hardware and are incompatible with a container system\n\nSometimes computers do math differently\n\nContainers require proper setup!"
+    "objectID": "slides/06.html#specify-your-environment-via-a-dockerfile",
+    "href": "slides/06.html#specify-your-environment-via-a-dockerfile",
+    "title": "Demystyfing Docker",
+    "section": "Specify your environment via a Dockerfile",
+    "text": "Specify your environment via a Dockerfile\n\nDockerfiles build Docker images\nDockerfiles are plain text files using FROM, RUN, COPY, and CMD commands\n\n\n1FROM ubuntu:latest\n2COPY my-data.csv /data/data.csv\n3RUN [\"head\", \"/data/data.csv\"]\n\n\n1\n\nDeclare the base image\n\n2\n\nCopy data.csv from the host’s working directory to the container’s data directory\n\n3\n\nPrint the first few rows of data.csv\n\n\n\n\n\n\nCreating your own Dockerfile is optional - many standard Docker images exist on Dockerhub (e.g. rocker/tidyverse)\nDockerfiles build images and also pull existing images"
   },
   {
-    "objectID": "slides/06.html#diving-in",
-    "href": "slides/06.html#diving-in",
-    "title": "Docker for Data Science",
-    "section": "Diving In",
-    "text": "Diving In\nDocker Run\ndocker run [OPTIONS] IMAGE [COMMAND] [ARG...]\n\ndocker run tells Docker to run the following image\nOptions are configured as needed\nIMAGE is configured as user/image when pulling from docker hub (like CRAN but for Docker)\n\nDocker Compose\ndocker-compose.yml -&gt; docker compose [-f &lt;arg&gt;...] [options] [COMMAND] [ARGS...]\n\nThe docker-compose file provides a structured way to describe a docker image\nEasy way to combine multiple services (maybe you want R + Python)\nCan be used with the run (do something) or up command (be ready to do something)\nOptions are similar to docker run"
+    "objectID": "slides/06.html#docker-images-are-a-snapshot-of-your-environment",
+    "href": "slides/06.html#docker-images-are-a-snapshot-of-your-environment",
+    "title": "Demystyfing Docker",
+    "section": "Docker images are a snapshot of your environment",
+    "text": "Docker images are a snapshot of your environment\n\nDocker images contain the bundled software (e.g. OS, data, packages)\nDocker images can be shared with others via Docker hub\nDocker images can, in theory, be a standalone project\n\n\n\nOther container registries exist (e.g. Azure Container Registry)"
   },
   {
-    "objectID": "slides/06.html#container-lifecyle",
-    "href": "slides/06.html#container-lifecyle",
-    "title": "Docker for Data Science",
-    "section": "Container Lifecyle",
-    "text": "Container Lifecyle\n\n\nChange the Dockerfile, not the image\nImages can be shared like code\n\nThink Git!\n\nThere are services to provide private image registries for companies\nContainers usually auto-pull if it doesn’t exist already"
-  },
-  {
-    "objectID": "slides/06.html#more-on-docker-run",
-    "href": "slides/06.html#more-on-docker-run",
-    "title": "Docker for Data Science",
-    "section": "More on Docker Run",
-    "text": "More on Docker Run\n\nDockerHub containers are in the form &lt;user&gt;/&lt;name&gt; (alexkgold/plumber)\n\nYou can tag an image with a version number user&gt;/&lt;name&gt;:&lt;version&gt;\n\n--rm to remove the container on kill (probably not for production)\n-d run in detached mode so the terminal is free for other uses\n-p &lt;host&gt;:&lt;container&gt; publishes a port from inside the container to outside\n--name to assign a name of your choice\n-v &lt;outside/directory&gt;:&lt;inside/directory&gt; to expose a directory\n\n${PWD} is your project directory"
-  },
-  {
-    "objectID": "slides/06.html#build-a-dockerfile",
-    "href": "slides/06.html#build-a-dockerfile",
-    "title": "Docker for Data Science",
-    "section": "Build a Dockerfile",
-    "text": "Build a Dockerfile\n\nNot the same as a docker-compose.yml\nFROM the base image for the container\nRUN run any command as though it’s using the terminal\n\nIf using something fancy, you may need to install it first\n\nCOPY copy a file from host to container\nCMD run a command at runtime\n\n\n\nContainers will rebuild from the top-most command that was changed"
-  },
-  {
-    "objectID": "slides/06.html#trying-out-docker",
-    "href": "slides/06.html#trying-out-docker",
-    "title": "Docker for Data Science",
-    "section": "Trying out Docker",
-    "text": "Trying out Docker\n\nTry out plumber penguins in your browser\n\n\nKill it\n\n\nDo it again\n\n\nPoke around\n\n\nKill it again"
+    "objectID": "slides/06.html#containers-are-an-ephemeral-instance-of-a-docker-image",
+    "href": "slides/06.html#containers-are-an-ephemeral-instance-of-a-docker-image",
+    "title": "Demystyfing Docker",
+    "section": "Containers are an ephemeral instance of a Docker Image",
+    "text": "Containers are an ephemeral instance of a Docker Image\n\nBy default, changes made to containers are lost on shutdown\nData can be preserved from instance to instance of the same container using mounted volumes\nContainers are a process that executes the layers of your Dockerfile"
   },
   {
     "objectID": "slides/06.html#meeting-videos",
     "href": "slides/06.html#meeting-videos",
-    "title": "Docker for Data Science",
+    "title": "Demystyfing Docker",
     "section": "Meeting Videos",
     "text": "Meeting Videos\nCohort 1"
   },

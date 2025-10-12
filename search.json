@@ -421,49 +421,70 @@
     "href": "slides/08.html#learning-objectives",
     "title": "Getting Comfortable on the Command Line",
     "section": "Learning objectives",
-    "text": "Learning objectives\n\nThe structure of bash commands\nReferencing directories and files\nReading text files\nMoving and copying files\nServer Files\nWriting files"
+    "text": "Learning objectives\n\nSet up and customize your machine’s command line\nAccess a server via SSH (secure socket shell)"
   },
   {
-    "objectID": "slides/08.html#bash-commands",
-    "href": "slides/08.html#bash-commands",
+    "objectID": "slides/08.html#why-use-command-line",
+    "href": "slides/08.html#why-use-command-line",
     "title": "Getting Comfortable on the Command Line",
-    "section": "bash Commands",
-    "text": "bash Commands\n\nThe general structure: &lt;command&gt; &lt;flags + flag args&gt; &lt;command args&gt;\n\ncommand: What to do\nflags + flag args: Options for the command and options for those options\ncommand args: arguments to pass to the command\n\n\nListing files in the current directory\nWe want to list files in the specified directory. The bash command to list files is ls.\nR\n\ncommand: list.files()\nflags + flag args: all.files = TRUE\ncommand args: \".github\"\n\nlist.files(\".github\", all.files = TRUE)\nbash\n\ncommand: ls\nflags + flag args: -a\ncommand args: .github\n\nls -a .github\nLong Commands\n\nLong commands are split onto multiple lines with a trailing backslash\n\n\nthis is a \\\n  really really \\\n  long command"
+    "section": "Why use Command Line?",
+    "text": "Why use Command Line?\n\nOn a server, administrative interaction is via the command line\n\nMany tasks are quicker and easier\n\n\n\n\n\n\n\nAdmin via GUI\n\n\nIn some organizations, server admin tasks are done via a graphical tool, but this is a red flag.\nIt means that the organization is either trying to find relatively low-paid (and probably low-skilled) admins or are using a graphical tool to limit what IT/Admins can do. Either way, it’s going to be harder to get things done."
   },
   {
-    "objectID": "slides/08.html#directories-and-files",
-    "href": "slides/08.html#directories-and-files",
+    "objectID": "slides/08.html#getting-the-command-line-you-want",
+    "href": "slides/08.html#getting-the-command-line-you-want",
     "title": "Getting Comfortable on the Command Line",
-    "section": "Directories and Files",
-    "text": "Directories and Files\n\n\n\nWhere am I?\nReference\n\n\n\n\nWhere was I born?\n/\n\n\nWhat town do I live in?\n\n\n\nWhere do I live?\n~\n\n\nWhere am I now?\n.\n\n\nWhere was I just before where I am now?\n..\n\n\n\n*There’s no easy way to access your current mount point\nWhat if you were a file?\nLet’s say you are this file: /r4ds/do4ds/cohort1/chapter8.Rmd\n\n\n\n\n\n\n\n\n\n\nFile System Root\nDrive\nHome Folder\nFolder (Your Room)\nFile\n\n\n\n\n/\nr4ds\ndo4ds\ncohort1\nchapter8.Rmd\n\n\n\nRevisiting the “Where am I? table”\n\n\n\nWhere am I?\nReference\n\n\n\n\nWhere was I born?\n/\n\n\nWhat town do I live in?\nr4ds\n\n\nWhere do I live?\ndo4ds\n\n\nWhere am I now?\ncohort1\n\n\nWhere was I just before where I am now?\ndo4ds\n\n\n\nWhat if you have a sudden urge to see the world?\nThe bash command to change directories is cd . In this case, you start at /r4ds/do4ds/cohort1 which is the directory for your (chapter8.Rmd) bedroom.\n\n\n\n\n\n\n\nQuest\nDirections\n\n\n\n\nVisiting your cousin in cohort2\ncd ../cohort2\n\n\nVisiting your second cousin in the advr/cohort1 bookclub\ncd ../../advr/cohort1\n\n\nYou’ve gotten lost and don’t know where you are and need directions to your second cousin in the advr/cohort1 bookclub\ncd /r4ds/advr/cohort1\n\n\nStopping by the hospital where you were born because they have great grilled cheese sandwiches in the cafeteria\ncd /\n\n\nGoing back to your room\ncd ~/cohort1\n\n\n\nAny path with .. is a relative path and only works from your current directory."
+    "section": "Getting the command line you want",
+    "text": "Getting the command line you want\n\nThe terminal is the GUI where you’ll type in commands\n\nRStudio, Positron, and VS Code have built-in terminals\n\nAuthor recommends iTerm2 for MacOS\nThe shell takes the commands you type and runs them\n\nMatches the commands you type to actual programs on your system, e.g. Rscript, positron, code, git, etc.\nMacOS and Linux have bash and zsh, while Windows comes with Command Shell (cmd) and the PowerShell. Also, git bash on Windows\n\nWindows Subsystem for Linux (WSL) is another option"
   },
   {
-    "objectID": "slides/08.html#reading-text-files",
-    "href": "slides/08.html#reading-text-files",
+    "objectID": "slides/08.html#configuration-management",
+    "href": "slides/08.html#configuration-management",
     "title": "Getting Comfortable on the Command Line",
-    "section": "Reading Text Files",
-    "text": "Reading Text Files\nLet’s take a look at pr_check.yml in our .github/workflows folder:\ncat .github/workflows/pr_check.yml\nThe Pipe\n\nLinux offers a pipe, |, similar to that of R and other functional languages\n\ntake the output of this | and give it to this as an input\n\n\nTo find the workflow branch:\ncat .github/workflows/pr_check.yml | grep branches\nTo show just the first six items in our current folder:\nls -a | head -n 6\nNotice that bash returns the current folder and the parent folder as items."
+    "section": "Configuration management",
+    "text": "Configuration management\nCustomization tools for window/tab behavior and text theme/plugins:\n\nMacOS: Prezto or OhMyZsh. Three places to configure:\n\niTerm2 preferences\n\nthe zsh configuration file .zshrc\n\nPrezto configuration file .zpreztorc\n\nAuthor recommends looking into Git plugins, auto-completion and command history search functionality\n\nWindows: Oh My Posh for PowerShell"
   },
   {
-    "objectID": "slides/08.html#moving-and-copying-files",
-    "href": "slides/08.html#moving-and-copying-files",
+    "objectID": "slides/08.html#text-editors",
+    "href": "slides/08.html#text-editors",
     "title": "Getting Comfortable on the Command Line",
-    "section": "Moving and Copying Files",
-    "text": "Moving and Copying Files\nLet’s say you are this file: /r4ds/do4ds/cohort1/chapter8.Rmd\n\n\n\n\n\n\n\n\n\n\nFile System Root\nDrive\nHome Folder\nFolder (Your Room)\nFile\n\n\n\n\n/\nr4ds\ndo4ds\ncohort1\nchapter8.Rmd\n\n\n\nWhat if you do some remodeling at home?\nThe rm command will remove something, with the options to do so recursively (-r) or to force it (-f). You can also copy (cp), move (mv), or make or remove directories (mkdir and rmdir).\n\n\n\n\n\n\n\nConstruction Phase\nCommand\n\n\n\n\nMove everything out of the kitchen into a spare room\nmv ~/kitchen/* ~/spare_room\n\n\nRemove the kitchen appliances\nrm ~/kitchen/stove.app ~/kitchen/fridge.app\n\n\nDemolish the kitchen\nrmdir ~/kitchen\n\n\nMake a new kitchen\nmkdir ~/kitchen\n\n\nMove everything into the new kitchen\nmv ~/spare_room/* ~/kitchen\n\n\n\nYou mv or cp from_here to_here"
+    "section": "Text editors",
+    "text": "Text editors\n\nIDE (RStudio, Positron, o VS Code)\n\nStandalone: Sublime or Notepad++ (Windows only)"
   },
   {
-    "objectID": "slides/08.html#server-files",
-    "href": "slides/08.html#server-files",
+    "objectID": "slides/08.html#secure-server-connections-with-ssh",
+    "href": "slides/08.html#secure-server-connections-with-ssh",
     "title": "Getting Comfortable on the Command Line",
-    "section": "Server Files",
-    "text": "Server Files\n\nMoving things as one big file has much better throughput than many small files\n\nImagine sending someone a care package. You could send them individual items or one big box. The one big box is much easier to manage.\n\ntar packs and unpacks tarball files\n\nPack (create): tar -czf &lt;archive name&gt; &lt;file(s)&gt;\nUnpack (extract): tar -xfv &lt;archive name&gt;\n\nscp stands for “secure copy” and is a combination of ssh and cp"
+    "section": "Secure server connections with SSH",
+    "text": "Secure server connections with SSH\n\nRemotely accessing a server from the command line on your machine\nSSH (Secure Socket Shell) is a tool for making a secure connection to another computer over an unsecured network\n\nSSH requires invoking the ssh command line interface from a local host (your computer) with a username and the remote host’s (server’s) address.\n\nFor example, connecting to the server at server.example.com as the user alex would look like:\n\n&gt; ssh alex@server.example.com"
   },
   {
-    "objectID": "slides/08.html#writing-files",
-    "href": "slides/08.html#writing-files",
+    "objectID": "slides/08.html#understanding-ssh-keys",
+    "href": "slides/08.html#understanding-ssh-keys",
     "title": "Getting Comfortable on the Command Line",
-    "section": "Writing Files",
-    "text": "Writing Files\nWith the Command Line\n\ntouch creates a file\n&gt; is similar to pipe, but it will write to a file\n&gt;&gt; is also similar to pipe, but it wall append to a file\n\ntouch file.txt\necho \"this goes in the file\" &gt; file.txt\necho \"this also goes in the file\" &gt;&gt; file.txt\nWith Command Line Text Editors\n\nThere are several text editors such as vi, vim, and nano that work directly in the command line\n\nSome are easier to use than others\n\n\nTo exit vim: 1. Hit the escape key on your keyboard 2. Type one of these, making sure to include the : - To write AND quit: :wq - To quit without having made changes: :q - To quit and not save changes: :q!\nIt’s okay if you don’t remember.\nMemes About Exiting Vim"
+    "section": "Understanding SSH Keys",
+    "text": "Understanding SSH Keys\n\nConfigure your SSH keypair (public key and private key)\n\nPublic key: Register anywhere you’re trying to SSH into.\nPrivate key: Secret\n\n\nPublic key is the lock and private key is the key"
+  },
+  {
+    "objectID": "slides/08.html#public-key-cryptography",
+    "href": "slides/08.html#public-key-cryptography",
+    "title": "Getting Comfortable on the Command Line",
+    "section": "Public Key Cryptography",
+    "text": "Public Key Cryptography\n\nPublic key cryptography is the underlying technology\n\nNever move the private key from the computer where it was created and never share it"
+  },
+  {
+    "objectID": "slides/08.html#practical-ssh-usage",
+    "href": "slides/08.html#practical-ssh-usage",
+    "title": "Getting Comfortable on the Command Line",
+    "section": "Practical SSH usage",
+    "text": "Practical SSH usage\n\nStep 1: Create a keypair on the machine you are SSHing from. Public key has .pub suffix. id_&lt;encryption type&gt; is the standard way to name the key\nStep 2: Register a public key to SSH into a server\n\nAdd the public key to the end of your .ssh/authorized_keys file in your home directory\n\nEnsure the permissions on the authorized_keys file are correct\n\n\nStep 3: To use SSH, type ssh &lt;user&gt;@&lt;host&gt;\n\nYou can specify a particular key with the -i flag\n\nSet up an SSH config file if you use SSH a lot. That would shorten ssh -i my-ssh-key alex@server.example.com to ssh alex-server"
+  },
+  {
+    "objectID": "slides/08.html#continuous-connection-and-debugging",
+    "href": "slides/08.html#continuous-connection-and-debugging",
+    "title": "Getting Comfortable on the Command Line",
+    "section": "Continuous connection and debugging",
+    "text": "Continuous connection and debugging\n\nSSH blocks the terminal it’s using and the connection will break when your computer goes to sleep\n\nUse tmux command line utility to:\n\nPut sessions into the background\n\nMake sessions durable through sleeps and other operations\n\nFor debugging SSH: Add a -v to your command for verbose mode\n\nAdd another v for more verbosity with -vv, and if that’s not enough, add another v for super verbose mode"
   },
   {
     "objectID": "slides/08.html#meeting-videos",

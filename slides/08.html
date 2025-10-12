@@ -6,8 +6,8 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b651517ce65839d647a86e2780455cfb.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.8.24">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.25">
 
   <title>DevOps for Data Science Book Club – Getting Comfortable on the Command Line</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -201,307 +201,153 @@
 <section id="learning-objectives" class="slide level2">
 <h2>Learning objectives</h2>
 <ul>
-<li>The structure of <code>bash</code> commands</li>
-<li>Referencing directories and files</li>
-<li>Reading text files</li>
-<li>Moving and copying files</li>
-<li>Server Files</li>
-<li>Writing files</li>
+<li>Set up and customize your machine’s command line</li>
+<li>Access a server via SSH (secure socket shell)</li>
 </ul>
 </section>
-<section id="bash-commands" class="slide level2 unnumbered">
-<h2><code>bash</code> Commands</h2>
+<section>
+<section id="command-line" class="title-slide slide level1 center">
+<h1>Command Line</h1>
+
+</section>
+<section id="why-use-command-line" class="slide level2">
+<h2>Why use Command Line?</h2>
 <ul>
-<li>The general structure: <code>&lt;command&gt; &lt;flags + flag args&gt; &lt;command args&gt;</code>
+<li>On a server, administrative interaction is via the command line<br>
+</li>
+<li>Many tasks are quicker and easier</li>
+</ul>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Admin via GUI</strong></p>
+</div>
+<div class="callout-content">
+<p>In some organizations, server admin tasks are done via a graphical tool, but this is a red flag.</p>
+<p>It means that the organization is either trying to find relatively low-paid (and probably low-skilled) admins or are using a graphical tool to limit what IT/Admins can do. Either way, it’s going to be harder to get things done.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="getting-the-command-line-you-want" class="slide level2">
+<h2>Getting the command line you want</h2>
 <ul>
-<li><code>command</code>: What to do</li>
-<li><code>flags + flag args</code>: Options for the command and options for those options</li>
-<li><code>command args</code>: arguments to pass to the command</li>
+<li><p>The <strong>terminal</strong> is the GUI where you’ll type in commands<br>
+</p></li>
+<li><p>RStudio, Positron, and VS Code have built-in terminals<br>
+</p></li>
+<li><p>Author recommends <code>iTerm2</code> for MacOS</p></li>
+<li><p>The <strong>shell</strong> takes the commands you type and runs them<br>
+</p></li>
+<li><p>Matches the commands you type to actual programs on your system, e.g.&nbsp;<code>Rscript</code>, <code>positron</code>, <code>code</code>, <code>git</code>, etc.</p></li>
+<li><p>MacOS and Linux have <em>bash</em> and <em>zsh</em>, while Windows comes with <em>Command Shell</em> (<code>cmd</code>) and the <em>PowerShell</em>. Also, git bash on Windows<br>
+</p></li>
+<li><p>Windows Subsystem for Linux (WSL) is another option</p></li>
+</ul>
+</section>
+<section id="configuration-management" class="slide level2">
+<h2>Configuration management</h2>
+<p>Customization tools for window/tab behavior and text theme/plugins:</p>
+<ul>
+<li>MacOS: <code>Prezto</code> or <code>OhMyZsh</code>. Three places to configure:
+<ul>
+<li>iTerm2 preferences<br>
+</li>
+<li>the zsh configuration file <code>.zshrc</code><br>
+</li>
+<li>Prezto configuration file <code>.zpreztorc</code></li>
+</ul></li>
+<li>Author recommends looking into Git plugins, auto-completion and command history search functionality<br>
+</li>
+<li>Windows: <code>Oh My Posh</code> for PowerShell</li>
+</ul>
+</section>
+<section id="text-editors" class="slide level2">
+<h2>Text editors</h2>
+<ul>
+<li>IDE (RStudio, Positron, o VS Code)<br>
+</li>
+<li>Standalone: <em>Sublime</em> or <em>Notepad++</em> (Windows only)</li>
+</ul>
+</section></section>
+<section>
+<section id="ssh" class="title-slide slide level1 center">
+<h1>SSH</h1>
+
+</section>
+<section id="secure-server-connections-with-ssh" class="slide level2">
+<h2>Secure server connections with SSH</h2>
+<ul>
+<li>Remotely accessing a server from the command line on your machine</li>
+<li><strong>SSH</strong> (Secure Socket Shell) is a tool for making a secure connection to another computer over an unsecured network<br>
+</li>
+<li>SSH requires invoking the <code>ssh</code> command line interface from a local host (your computer) with a username and the remote host’s (server’s) address.</li>
+</ul>
+<p>For example, connecting to the server at <code>server.example.com</code> as the user <code>alex</code> would look like:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a></a><span class="op">&gt;</span> ssh <span class="ex">alex@server.example.com</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="understanding-ssh-keys" class="slide level2">
+<h2>Understanding SSH Keys</h2>
+<ul>
+<li>Configure your SSH keypair (<em>public key</em> and <em>private key</em>)
+<ul>
+<li>Public key: Register anywhere you’re trying to SSH into.</li>
+<li>Private key: Secret<br>
+</li>
+</ul></li>
+<li>Public key is the <em>lock</em> and private key is the <em>key</em></li>
+</ul>
+
+<img data-src="images/ssh.png" class="r-stretch"></section>
+<section id="public-key-cryptography" class="slide level2">
+<h2>Public Key Cryptography</h2>
+<ul>
+<li>Public key cryptography is the underlying technology<br>
+</li>
+<li>Never move the private key from the computer where it was created and never share it</li>
+</ul>
+
+<img data-src="images/keypair.png" class="r-stretch"></section>
+<section id="practical-ssh-usage" class="slide level2">
+<h2>Practical SSH usage</h2>
+<ul>
+<li>Step 1: Create a keypair on the machine you are SSHing from. Public key has <code>.pub</code> suffix. <code>id_&lt;encryption type&gt;</code> is the standard way to name the key</li>
+<li>Step 2: Register a public key to SSH into a server
+<ul>
+<li>Add the public key to the end of your <code>.ssh/authorized_keys</code> file in your home directory<br>
+</li>
+<li>Ensure the permissions on the <code>authorized_keys</code> file are correct<br>
+</li>
+</ul></li>
+<li>Step 3: To use SSH, type <code>ssh &lt;user&gt;@&lt;host&gt;</code>
+<ul>
+<li>You can specify a particular key with the <code>-i</code> flag<br>
+</li>
+<li>Set up an SSH config file if you use SSH a lot. That would shorten <code>ssh -i my-ssh-key alex@server.example.com</code> to <code>ssh alex-server</code></li>
 </ul></li>
 </ul>
-<h3 class="unnumbered" id="listing-files-in-the-current-directory">Listing files in the current directory</h3>
-<p>We want to list files in the specified directory. The <code>bash</code> command to list files is <code>ls</code>.</p>
-<h4 class="unnumbered" id="r">R</h4>
-<ul>
-<li><code>command</code>: <code>list.files()</code></li>
-<li><code>flags + flag args</code>: <code>all.files = TRUE</code></li>
-<li><code>command args</code>: <code>".github"</code></li>
-</ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">list.files</span>(<span class="st">".github"</span>, <span class="at">all.files =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<h4 class="unnumbered" id="bash">bash</h4>
-<ul>
-<li><code>command</code>: <code>ls</code></li>
-<li><code>flags + flag args</code>: <code>-a</code></li>
-<li><code>command args</code>: <code>.github</code></li>
-</ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a></a><span class="fu">ls</span> <span class="at">-a</span> .github</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<h3 class="unnumbered" id="long-commands">Long Commands</h3>
-<ul>
-<li>Long commands are split onto multiple lines with a trailing backslash</li>
-</ul>
-<!-- -->
-<pre><code>this is a \
-  really really \
-  long command</code></pre>
 </section>
-<section id="directories-and-files" class="slide level2 unnumbered">
-<h2>Directories and Files</h2>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Where am I?</th>
-<th>Reference</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Where was I born?</td>
-<td><code>/</code></td>
-</tr>
-<tr class="even">
-<td>What town do I live in?</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Where do I live?</td>
-<td><code>~</code></td>
-</tr>
-<tr class="even">
-<td>Where am I now?</td>
-<td><code>.</code></td>
-</tr>
-<tr class="odd">
-<td>Where was I just before where I am now?</td>
-<td><code>..</code></td>
-</tr>
-</tbody>
-</table>
-<p>*There’s no easy way to access your current mount point</p>
-<h3 class="unnumbered" id="what-if-you-were-a-file">What if you were a file?</h3>
-<p>Let’s say you are this file: <code>/r4ds/do4ds/cohort1/chapter8.Rmd</code></p>
-<table class="caption-top">
-<colgroup>
-<col style="width: 25%">
-<col style="width: 9%">
-<col style="width: 18%">
-<col style="width: 27%">
-<col style="width: 19%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>File System Root</th>
-<th>Drive</th>
-<th>Home Folder</th>
-<th>Folder (Your Room)</th>
-<th>File</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>/</td>
-<td>r4ds</td>
-<td>do4ds</td>
-<td>cohort1</td>
-<td>chapter8.Rmd</td>
-</tr>
-</tbody>
-</table>
-<p>Revisiting the “Where am I? table”</p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Where am I?</th>
-<th>Reference</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Where was I born?</td>
-<td><code>/</code></td>
-</tr>
-<tr class="even">
-<td>What town do I live in?</td>
-<td><code>r4ds</code></td>
-</tr>
-<tr class="odd">
-<td>Where do I live?</td>
-<td><code>do4ds</code></td>
-</tr>
-<tr class="even">
-<td>Where am I now?</td>
-<td><code>cohort1</code></td>
-</tr>
-<tr class="odd">
-<td>Where was I just before where I am now?</td>
-<td><code>do4ds</code></td>
-</tr>
-</tbody>
-</table>
-<h4 class="unnumbered" id="what-if-you-have-a-sudden-urge-to-see-the-world">What if you have a sudden urge to see the world?</h4>
-<p>The <code>bash</code> command to change directories is <code>cd</code> . In this case, you start at <code>/r4ds/do4ds/cohort1</code> which is the directory for your (<code>chapter8.Rmd</code>) bedroom.</p>
-<table class="caption-top">
-<colgroup>
-<col style="width: 73%">
-<col style="width: 26%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Quest</th>
-<th>Directions</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Visiting your cousin in <code>cohort2</code></td>
-<td><code>cd ../cohort2</code></td>
-</tr>
-<tr class="even">
-<td>Visiting your second cousin in the <code>advr/cohort1</code> bookclub</td>
-<td><code>cd ../../advr/cohort1</code></td>
-</tr>
-<tr class="odd">
-<td>You’ve gotten lost and don’t know where you are and need directions to your second cousin in the <code>advr/cohort1</code> bookclub</td>
-<td><code>cd /r4ds/advr/cohort1</code></td>
-</tr>
-<tr class="even">
-<td>Stopping by the hospital where you were born because they have great grilled cheese sandwiches in the cafeteria</td>
-<td><code>cd /</code></td>
-</tr>
-<tr class="odd">
-<td>Going back to your room</td>
-<td><code>cd ~/cohort1</code></td>
-</tr>
-</tbody>
-</table>
-<p>Any path with <code>..</code> is a relative path and only works from your current directory.</p>
-</section>
-<section id="reading-text-files" class="slide level2 unnumbered">
-<h2>Reading Text Files</h2>
-<p>Let’s take a look at <code>pr_check.yml</code> in our <code>.github/workflows</code> folder:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a></a><span class="fu">cat</span> .github/workflows/pr_check.yml</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<h3 class="unnumbered" id="the-pipe">The Pipe</h3>
+<section id="continuous-connection-and-debugging" class="slide level2">
+<h2>Continuous connection and debugging</h2>
 <ul>
-<li>Linux offers a pipe, <code>|</code>, similar to that of R and other functional languages
+<li>SSH blocks the terminal it’s using and the connection will break when your computer goes to sleep<br>
+</li>
+<li>Use <code>tmux</code> command line utility to:
 <ul>
-<li><code>take the output of this | and give it to this as an input</code></li>
+<li>Put sessions into the background<br>
+</li>
+<li>Make sessions durable through sleeps and other operations</li>
+</ul></li>
+<li>For debugging SSH: Add a <code>-v</code> to your command for verbose mode
+<ul>
+<li>Add another v for more verbosity with <code>-vv</code>, and if that’s not enough, add another v for super verbose mode</li>
 </ul></li>
 </ul>
-<p>To find the workflow branch:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a></a><span class="fu">cat</span> .github/workflows/pr_check.yml <span class="kw">|</span> <span class="fu">grep</span> branches</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>To show just the first six items in our current folder:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a></a><span class="fu">ls</span> <span class="at">-a</span> <span class="kw">|</span> <span class="fu">head</span> <span class="at">-n</span> 6</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Notice that <code>bash</code> returns the current folder and the parent folder as items.</p>
-</section>
-<section id="moving-and-copying-files" class="slide level2 unnumbered">
-<h2>Moving and Copying Files</h2>
-<p>Let’s say you are this file: <code>/r4ds/do4ds/cohort1/chapter8.Rmd</code></p>
-<table class="caption-top">
-<colgroup>
-<col style="width: 25%">
-<col style="width: 9%">
-<col style="width: 18%">
-<col style="width: 27%">
-<col style="width: 19%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>File System Root</th>
-<th>Drive</th>
-<th>Home Folder</th>
-<th>Folder (Your Room)</th>
-<th>File</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>/</td>
-<td>r4ds</td>
-<td>do4ds</td>
-<td>cohort1</td>
-<td>chapter8.Rmd</td>
-</tr>
-</tbody>
-</table>
-<h4 class="unnumbered" id="what-if-you-do-some-remodeling-at-home">What if you do some remodeling at home?</h4>
-<p>The <code>rm</code> command will remove something, with the options to do so recursively (<code>-r</code>) or to force it (<code>-f</code>). You can also copy (<code>cp</code>), move (<code>mv</code>), or make or remove directories (<code>mkdir</code> and <code>rmdir</code>).</p>
-<table class="caption-top">
-<colgroup>
-<col style="width: 53%">
-<col style="width: 46%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Construction Phase</th>
-<th>Command</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Move everything out of the kitchen into a spare room</td>
-<td><code>mv ~/kitchen/* ~/spare_room</code></td>
-</tr>
-<tr class="even">
-<td>Remove the kitchen appliances</td>
-<td><code>rm ~/kitchen/stove.app ~/kitchen/fridge.app</code></td>
-</tr>
-<tr class="odd">
-<td>Demolish the kitchen</td>
-<td><code>rmdir ~/kitchen</code></td>
-</tr>
-<tr class="even">
-<td>Make a new kitchen</td>
-<td><code>mkdir ~/kitchen</code></td>
-</tr>
-<tr class="odd">
-<td>Move everything into the new kitchen</td>
-<td><code>mv ~/spare_room/* ~/kitchen</code></td>
-</tr>
-</tbody>
-</table>
-<p>You <code>mv</code> or <code>cp</code> <code>from_here to_here</code></p>
-</section>
-<section id="server-files" class="slide level2 unnumbered">
-<h2>Server Files</h2>
-<ul>
-<li>Moving things as one big file has much better throughput than many small files
-<ul>
-<li>Imagine sending someone a care package. You could send them individual items or one big box. The one big box is much easier to manage.</li>
-</ul></li>
-<li><code>tar</code> packs and unpacks tarball files
-<ul>
-<li>Pack (create): <code>tar -czf &lt;archive name&gt; &lt;file(s)&gt;</code></li>
-<li>Unpack (extract): <code>tar -xfv &lt;archive name&gt;</code></li>
-</ul></li>
-<li><code>scp</code> stands for “secure copy” and is a combination of <code>ssh</code> and <code>cp</code></li>
-</ul>
-</section>
-<section id="writing-files" class="slide level2 unnumbered">
-<h2>Writing Files</h2>
-<h3 class="unnumbered" id="with-the-command-line">With the Command Line</h3>
-<ul>
-<li><code>touch</code> creates a file</li>
-<li><code>&gt;</code> is similar to pipe, but it will write to a file</li>
-<li><code>&gt;&gt;</code> is also similar to pipe, but it wall append to a file</li>
-</ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a></a><span class="fu">touch</span> file.txt</span>
-<span id="cb7-2"><a></a><span class="bu">echo</span> <span class="st">"this goes in the file"</span> <span class="op">&gt;</span> file.txt</span>
-<span id="cb7-3"><a></a><span class="bu">echo</span> <span class="st">"this also goes in the file"</span> <span class="op">&gt;&gt;</span> file.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<h3 class="unnumbered" id="with-command-line-text-editors">With Command Line Text Editors</h3>
-<ul>
-<li>There are several text editors such as <code>vi</code>, <code>vim</code>, and <code>nano</code> that work directly in the command line
-<ul>
-<li>Some are easier to use than others</li>
-</ul></li>
-</ul>
-<p>To exit vim: 1. Hit the <code>escape</code> key on your keyboard 2. Type one of these, making sure to include the <code>:</code> - To write AND quit: <code>:wq</code> - To quit without having made changes: <code>:q</code> - To quit and not save changes: <code>:q!</code></p>
-<p>It’s okay if you don’t remember.</p>
-<h3 class="unnumbered" id="memes-about-exiting-vim">Memes About Exiting Vim</h3>
-<p><img data-src="https://preview.redd.it/m9eh2jw08qm61.jpg?width=583&amp;format=pjpg&amp;auto=webp&amp;s=17994593b2b748b5087cc8ce786c7d161dd91747"></p>
-<p><img data-src="https://cdn.thenewstack.io/media/2022/08/9e8dd2f9-reddit-programming-forum-celebrates-exiting-vim-questions-10th-anniversary.png"></p>
-<p><img data-src="https://i.pinimg.com/736x/3e/88/c2/3e88c2d114591bb621d00298544562dc.jpg"></p>
-<p><img data-src="https://pbs.twimg.com/media/DWVgnPdXcAArUU9.jpg"></p>
-<p><img data-src="https://149351115.v2.pressablecdn.com/wp-content/uploads/2017/05/meme.jpeg"></p>
-<p><img data-src="https://miro.medium.com/max/475/1*BPkK5FHiS6rXsygxNoO2XA.jpeg"></p>
 </section>
 <section id="meeting-videos" class="slide level2 unnumbered">
 <h2>Meeting Videos</h2>
@@ -510,7 +356,7 @@
 </iframe>
 
 
-</section>
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
@@ -726,44 +572,6 @@
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

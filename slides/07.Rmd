@@ -1,6 +1,6 @@
 ---
 engine: knitr
-title: Getting Started with the Cloud
+title: The Cloud
 ---
 
 ## Learning objectives
@@ -14,35 +14,44 @@ title: Getting Started with the Cloud
 
 > So this section is really targeting the student who wants to **host a project for portfolio purposes,** the hobbyist who's **hosting a toy project,** or the data science leader who **has no choice but to host things for themselves because they just can't get IT/Admin support.**
 
-🎉🎉🎉 I've been two of those things in the last year!
-
 ## Why cloud?
 
--   It probably isn't cheaper.
--   It's faster and easier.
-    -   No need to wait for new hardware to arrive and be installed.
+- Flexibility: easy to re-scale.
+- No need to manage hardware.
+- Cheaper? 
+    - Not so much
 
 ## Things as a Service
 
-::: {style="display: flex;"}
-<div>
+**Infrastructure as a Service (IaaS, "eye-az")** 
 
-**Infrastructure as a Service (IaaS, "eye-az")** ![Raw ingredients for a cake.](images/06_raw-ingredients.jpg){width="400"}
+- *Rent a server*
+- It is actually a **VM**: a virtualized server on a virtual machine, called an instance. 
+- **Spot instances**: for stateless, fault-tolerant applications. 
+    - Cheaper, they lend you space no one is using.
+    - Preemptible, they can be claimed back.
 
-</div>
+## Things as a Service 
 
-<div>
+**Platform as a Service (PaaS, "pass")** 
 
-**Platform as a Service (PaaS, "pass")** ![A box of Betty Crocker cake mix.](images/06_cake-mix.png){width="400"}
+- They manage the servers AND your applications. 
+- You get a ready to use environment for your applications. 
+- Examples:
+    - Blob storage
+    - Lambdas, *serverless* functions
+    - Container orchestration, Kubernetes
+- Posit Connect Cloud
 
-</div>
 
-<div>
+## Things as a Service
+**Software as a Service (SaaS, "sass")** 
 
-**Software as a Service (SaaS, "sass")** ![An undecorated sheet cake.](images/06_sheet-cake.jpg){width="400"}
+- You rent the end-user software. 
+- Data as a service?
 
-</div>
-:::
+![Types of Saas. From [What Is Software as a Service (SaaS)?](https://www.spiceworks.com/tech/cloud/articles/what-is-software-as-a-service/)](images/07_saas.png)
+
 
 ## Common Cloud Services
 
@@ -52,13 +61,8 @@ title: Getting Started with the Cloud
 | Run a function as an API | Lambda                           | Azure Functions                | Google Cloud Functions         |
 | Database                 | RDS/Redshift                     | Azure Database                 | Google Cloud SQL               |
 | ML Platform              | SageMaker                        | Azure ML                       | Vertex AI                      |
+| Access control           | IAM                              | Microsoft Entra ID             | Identity Access Management     |
 
 ## Discuss the Lab
 
 <https://aws.amazon.com>
-
-## Meeting Videos
-
-### Cohort 1
-
-`r knitr::include_url("https://www.youtube.com/embed/O6lhqSz-8Dw")`

@@ -1,0 +1,22 @@
+---
+title: Cohort 2
+---
+{{< video https://www.youtube.com/embed/UiyMPIzM3V8 >}}
+
+<details>
+<summary>
+Meeting chat log
+</summary>
+```
+00:03:57	Arthur Shaw:	Hot take incoming 😉
+00:04:34	Olivier Leroy:	start
+00:32:33	Garcia Cortes, Diana Elisa:	httr2 (pronounced “hitter2”) is a comprehensive HTTP client that provides a modern, pipeable API for working with web APIs. It builds on top of {curl} to provide features like explicit request objects, built-in rate limiting & retry tooling, comprehensive OAuth support, and secure handling of secrets and credentials.
+00:32:53	Arthur Shaw:	curl options that httr lets you use: https://httr.r-lib.org/reference/httr_options.html
+00:38:06	Arthur Shaw:	Love  your HTTP return code summary. I also ave fun by looking up stuff here: https://http.cat/
+00:38:49	Garcia Cortes, Diana Elisa:	Reacted to "Love  your HTTP retu..." with 😂
+00:52:46	Arthur Shaw:	Looks to be the workflow vignette that keyring should have: https://blog.r-hub.io/2024/02/28/key-advantages-of-using-keyring/ 
+
+I'm going to see how to up my secret storage game and shift from  .Renviron  to  keyring .
+01:06:14	Olivier Leroy:	end
+```
+</details>

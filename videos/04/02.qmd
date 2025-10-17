@@ -1,0 +1,31 @@
+---
+title: Cohort 2
+---
+{{< video https://www.youtube.com/embed/e7UxrWIOD_4 >}}
+
+<details>
+<summary>
+Meeting chat log
+</summary>
+```
+00:07:48	Arthur Shaw:	For next week, I'll have a look and see if I can present. It's about time I pull my weight around here ;)
+00:07:58	Olivier Leroy:	start
+00:09:07	Umair Durrani:	I did the lab - I'd like to share using SentryR for monitoring
+00:29:31	Arthur Shaw:	If memory serves,  gtsummary  captures the calls behind each computed cell in a table. I think this is strongly desired/needed for regulated industries like pharma. https://www.danieldsjoberg.com/gtsummary/
+00:32:40	Arthur Shaw:	Replying to "If memory serves,  g..."
+
+I think this is what I meant: https://www.danieldsjoberg.com/gtsummary/articles/tbl_ard-functions.html
+00:35:57	Umair Durrani:	pointblank and tidylog are good packages for data validation and logging
+00:36:00	Arthur Shaw:	For the joining, a colleague wrote a package that reports on joining (like Stata does): https://randrescastaneda.github.io/joyn/articles/main-functionalities.html#reporting-variable
+00:36:24	Umair Durrani:	Reacted to "For the joining, a c..." with 👍
+00:38:00	Arthur Shaw:	Reacted to "I did the lab - I'd ..." with 🙏
+00:43:28	Arthur Shaw:	My new go-tos: cli's alert functions. The  text  arg seems to use  glue  without mentioning it in the docs: https://cli.r-lib.org/reference/cli_alert.html
+00:55:12	Arthur Shaw:	VSCode's suggestions to install extensions = 📎 for devs 🤣
+00:55:52	Umair Durrani:	log crash example for shiny: https://github.com/tanho63/talk_shinyprod2023_logging/blob/main/examples/log_crash.R
+00:56:37	Garcia Cortes, Diana Elisa:	Reacted to "log crash example fo..." with 👍
+00:56:52	Arthur Shaw:	Reacted to "log crash example fo..." with 👍
+01:02:16	Retselisitsoe Monyake:	Reacted to "log crash example fo..." with 👍
+01:08:42	Olivier Leroy:	Reacted to "log crash example fo..." with 👍
+01:08:57	Olivier Leroy:	stop
+```
+</details>

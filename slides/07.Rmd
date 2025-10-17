@@ -66,5 +66,3 @@ title: The Cloud
 ## Discuss the Lab
 
 <https://aws.amazon.com>
-
-## Meeting Videos

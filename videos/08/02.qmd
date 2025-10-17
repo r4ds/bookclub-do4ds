@@ -1,0 +1,42 @@
+---
+title: Cohort 2
+---
+{{< video https://www.youtube.com/embed/W8V0pAGyPck >}}
+
+<details>
+<summary>
+Meeting chat log
+</summary>
+```
+00:03:49	Umair Durrani:	Start
+00:18:04	Arthur Shaw:	Really strange the chapter didn't discuss Vim (unless I missed it).
+00:19:52	Diana Garcia Cortes:	I didn't think about it but yes! It should be there
+00:21:40	Arthur Shaw:	I will need to drop off in a bit to join a last-minute work call. But I wonder if anyone has experience with Tailscale (https://github.com/tailscale/tailscale)--and any info on whether it's better somehow that vanilla SSH. I've been seeing Tailscale mentioned a lot of late.
+00:21:56	Tan:	https://do4ds.com/chapters/sec2/2-4-app-admin.html#configuration-with-vim-and-nano  vim covered a little later
+00:22:16	Tan:	tailscale is great, but it's not the same thing as vanilla SSH
+00:22:22	Diana Garcia Cortes:	Reacted to "https://do4ds.com/ch..." with 👍
+00:22:22	Tan:	also hiya folks
+00:22:29	Arthur Shaw:	Reacted to "https://do4ds.com/ch..." with 👍
+00:22:58	Arthur Shaw:	Reacted to "also hiya folks" with 👋
+00:23:02	Diana Garcia Cortes:	Reacted to "also hiya folks" with 👋
+00:28:37	Diana Garcia Cortes:	Does anyone know why ssh is not the default protocol to use github with usethis or git2r?
+00:30:17	Diana Garcia Cortes:	Replying to "Does anyone know why..."
+
+just cause it requires more configuration? or are there some advantages when using https?
+00:30:27	Arthur Shaw:	The chapter mentioned tmux / terminal multiplexers fairly quickly. I've tinkered a bit with tmux and zellij for local stuff. I wonder if others have found it useful for connecting to and interacting with remote servers.
+00:31:20	Tan:	https://usethis.r-lib.org/articles/git-credentials.html#https-vs-ssh 
+ssh is harder to set up right on windows, and also once you set up https creds it lets you use gh api stuff as well e.g. pak/remotes installs
+00:31:32	Arthur Shaw:	Reacted to "just cause it requir..." with 👀
+00:31:52	Tan:	if that continues try checking the aws firewall
+00:32:11	Arthur Shaw:	(Gotta drop for a work call. I cannot wait to see the recording of the rest of today's session.)
+00:32:34	Diana Garcia Cortes:	Replying to "The chapter mentione..."
+
+I've used screen. It is useful
+00:32:57	Diana Garcia Cortes:	Reacted to "https://usethis.r-li..." with 👍
+00:35:12	Tan:	:claps:
+00:36:01	Umair Durrani:	Stop
+00:40:36	Tan:	https://cloud.google.com/free?hl=en 
+https://aws.amazon.com/free/ 
+for more info
+```
+</details>

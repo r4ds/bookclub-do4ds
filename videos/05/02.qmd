@@ -1,0 +1,42 @@
+---
+title: Cohort 2
+---
+{{< video https://www.youtube.com/embed/h-oadm6ZUCM >}}
+
+<details>
+<summary>
+Meeting chat log
+</summary>
+```
+00:05:49	trevin flickinger (he/him):	Hey y’all hope you don’t mind me joining in 👋🏻
+00:06:14	Umair Durrani:	Welcome, Trevin
+00:08:29	trevin flickinger (he/him):	I work for a non-profit in Ohio, mainly use R, and just set up a data pipeline using docker and AWS
+00:08:46	Umair Durrani:	Reacted to "I work for a non-pro..." with 👍
+00:08:48	Retselisitsoe Monyake:	Reacted to "I work for a non-p..." with 👍
+00:09:14	Olivier Leroy:	start
+00:26:49	Olivier Leroy:	would be different schema in DB, new version of packages
+00:27:06	trevin flickinger (he/him):	Ahh yeah, that makes sense as well
+00:27:55	trevin flickinger (he/him):	Thank you!
+00:41:07	Olivier Leroy:	I have those slide if needed
+00:58:10	Olivier Leroy:	looks good!
+01:05:04	Olivier Leroy:	gert::git_info()$shorthand
+01:06:35	Olivier Leroy:	https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks
+01:15:24	trevin flickinger (he/him):	Thank you all!
+01:16:56	Umair Durrani:	Thanks Arthur and Olivier for the useful discussions
+01:17:05	Arthur Shaw:	Reacted to "Thanks Arthur and Ol..." with 🙏
+01:17:07	Retselisitsoe Monyake:	Reacted to "Thanks Arthur and ..." with 🙏
+01:17:17	Umair Durrani:	https://happygitwithr.com/
+01:17:26	trevin flickinger (he/him):	Reacted to "https://happygitwith..." with 💯
+01:18:06	Olivier Leroy:	https://uofi.app.box.com/s/xtjcaqvgwlkn1poycuesphutpw4bnk66
+01:19:04	Arthur Shaw:	There were a few nice GitHub Actions presentations on past posit confs. I'll send them along if I can find them.
+01:19:15	Retselisitsoe Monyake:	Reacted to "There were a few n..." with 🙏
+01:19:21	Olivier Leroy:	git status
+01:19:41	Umair Durrani:	This page also has some nice resources: https://www.bigbookofr.com/chapters/version%20control#github-learning-lab
+01:19:43	Olivier Leroy:	gst='gist status'
+01:19:59	Umair Durrani:	Reacted to "https://uofi.app.box..." with 👍
+01:20:57	Arthur Shaw:	The GitHub Actions docs are something I'd like to explore more. Not sure how good the docs are, however, for newcomers (like me): https://docs.github.com/en/actions
+01:21:32	Arthur Shaw:	Thanks so much, Oliver! See you all next week. Gotta drop off
+01:21:35	Olivier Leroy:	end
+01:22:16	Retselisitsoe Monyake:	Thanks!
+```
+</details>

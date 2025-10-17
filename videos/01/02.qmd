@@ -1,0 +1,52 @@
+---
+title: Cohort 2
+---
+{{< video https://www.youtube.com/embed/GZn_Qok9KI8 >}}
+
+<details>
+<summary>
+Meeting chat log
+</summary>
+```
+00:08:34	Umair Durrani:	Start
+00:16:29	Arthur Shaw:	@Diana Garcia Cortes, I spent a long time doing what you described (except for the conda part). But then I realized I still needed to share the environment with my future self. He always gets the short end of the stick.
+00:17:00	Diana Garcia Cortes:	Reacted to "@Diana Garcia Cortes..." with ❤️
+00:19:08	Arthur Shaw:	RTools = my arch nemesis for having others reproduce my R code on their machine
+00:29:13	Umair Durrani:	Got to hop onto a different meeting, will catch up on the recording.
+00:29:19	Diana Garcia Cortes:	Reacted to "Got to hop onto a di..." with 👍
+00:32:30	Arthur Shaw:	For the installation part with {renv}, aren't you supposed to use  renv::install("myPackage")  instead? Does  install.packages("myPackage")  also work?
+00:33:17	Josh Persi:	Replying to "For the installation..."
+
+I've had no issues with install.packages and then renv::snapshot() to add them to the lock file
+00:33:31	Arthur Shaw:	Reacted to "I've had no issues w..." with 👍
+00:33:33	patrick kilduff (he/him):	Reacted to "I've had no issues w..." with 👍
+00:33:35	Josh Persi:	Replying to "For the installation..."
+
+I'm guessing renv::install() just adds it to the lockfile without the need for snapshot
+00:33:43	patrick kilduff (he/him):	Reacted to "I'm guessing renv::i..." with 👍
+00:34:03	Arthur Shaw:	Replying to "For the installation..."
+
+I think it also installs in the project library. I could be wrong.
+00:34:26	Josh Persi:	Replying to "For the installation..."
+
+That'd make sense!
+00:38:59	Arthur Shaw:	VSCode's clippy ;)
+00:47:29	Arthur Shaw:	For Nix, confusingly, you write in Nix (programming language)
+00:47:51	patrick kilduff (he/him):	Lots of rix/nix blogposts here: https://brodrigues.co/
+00:47:52	Arthur Shaw:	From what little I understand, Nix is a functional programming language and a package manager
+00:48:55	Arthur Shaw:	Replying to "From what little I u..."
+
+And an OS too
+00:50:28	Josh Persi:	I got to run, but thanks for the discussion everyone! See you next week!
+00:50:38	Diana Garcia Cortes:	Reacted to "I got to run, but th..." with 👍
+00:52:05	Arthur Shaw:	devbox is much more approachable
+00:52:27	Arthur Shaw:	Replying to "devbox is much more ..."
+
+https://www.jetify.com/devbox
+00:55:38	Arthur Shaw:	Would devcontainer do what we need? Never been really how how devcontainer relates to container engines like Docker or Podman
+01:08:38	patrick kilduff (he/him):	I have to drop, thanks all! See you all next week 😎
+01:08:49	Retselisitsoe Monyake:	Reacted to "I have to drop, than..." with 👍
+01:19:40	Arthur Shaw:	You're muted, @Olivier. You seem not to hear us either
+01:21:09	Olivier:	end
+```
+</details>

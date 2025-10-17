@@ -150,19 +150,3 @@ You write code that tells the CI/CD tool to:
 | infrastructure as code (IaC) tooling. | * IaC Tools help you stay away from  |
 |                                       |   drifting                           |
 +---------------------------------------+--------------------------------------+
-
-
-## Meeting Videos {-}
-
-### Cohort 1 {-}
-
-`r knitr::include_url("https://www.youtube.com/embed/9qQ4YpEgkr0")`
-
-<details>
-<summary> Meeting chat log </summary>
-
-```
-00:44:58	priyanka gagneja:	fantastic question
-00:47:25	priyanka gagneja:	and dates
-```
-</details>

@@ -1,0 +1,45 @@
+---
+title: Cohort 2
+---
+{{< video https://www.youtube.com/embed/Zpv4TkwHgAc >}}
+
+<details>
+<summary>
+Meeting chat log
+</summary>
+```
+00:06:59	Olivier Leroy:	start
+00:26:08	Arthur Shaw:	Although  waiter  animations are sometimes a nice Jedi mind trick to make the app seem to work faster
+00:26:25	Umair Durrani:	Reacted to "Although  waiter  an..." with 👍
+00:26:27	Olivier Leroy:	Reacted to "Although  waiter  an..." with 👍
+00:26:30	Retselisitsoe Monyake:	Reacted to "Although  waiter  an..." with 👍
+00:27:39	Olivier Leroy:	Data warehouse Kimball
+00:28:45	Arthur Shaw:	https://www.geeksforgeeks.org/dbms/difference-between-kimball-and-inmon/
+00:29:00	Arthur Shaw:	Replying to "https://www.geeksfor..."
+
+Completely new to me.
+00:29:32	Olivier Leroy:	Replying to "https://www.geeksfor..."
+
+the hard point is now data warehouse can also refer to databricks&co
+00:43:53	Arthur Shaw:	Neat article/presentation that came to mind while listening about pain points of seeing changes in data structure in DB: https://www.emilyriederer.com/talk/col-names-contract/
+
+https://www.emilyriederer.com/post/column-name-contracts/ 
+00:46:07	Olivier Leroy:	Reacted to "Neat article/present..." with 👍
+00:47:26	Arthur Shaw:	Just FYI: plumber2 is coming/here: https://posit-dev.github.io/plumber2/ 
+
+I was searching for this this moring
+00:48:49	Olivier Leroy:	Reacted to "Just FYI: plumber2 i..." with 👍
+00:53:38	Arthur Shaw:	Naming things = one of the hardest things
+00:53:46	Olivier Leroy:	Reacted to "Naming things = one ..." with 😀
+00:54:04	Retselisitsoe Monyake:	Reacted to "Naming things = one ..." with 😀
+00:55:45	Olivier Leroy:	I used mermaid
+00:56:06	Olivier Leroy:	pen and apper also :)
+00:56:42	Arthur Shaw:	excalidraw is something I picked up from the golem book and YT videos.
+01:05:02	Olivier Leroy:	I will try to find the Pyhon equivalent
+01:05:08	Arthur Shaw:	Reacted to "I will try to find t..." with 👍
+01:05:33	Josh Persi:	I know snakemake is popular in Python, but I don't think it's ergonomic as targets
+01:05:44	Umair Durrani:	Reacted to "I know snakemake is ..." with 👍
+01:05:47	Arthur Shaw:	Reacted to "I know snakemake is ..." with 🐍
+01:12:38	Garcia Cortes, Diana Elisa:	stop
+```
+</details>

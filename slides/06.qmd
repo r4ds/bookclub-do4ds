@@ -102,11 +102,3 @@ RUN ["head", "/data/data.csv"] # <3>
 - Data can be preserved from instance to instance of the same container using mounted volumes
 
 - Containers are a process that executes the layers of your Dockerfile  
-
-## Meeting Videos {-}
-
-### Cohort 1 {-}
-
-`r knitr::include_url("https://www.youtube.com/embed/gzJ3eT6tcog")`
-
-`r knitr::include_url("https://www.youtube.com/embed/CHbaTCo4gQk")`

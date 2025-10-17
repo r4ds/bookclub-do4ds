@@ -73,11 +73,3 @@ title: Enterprise Server Management
         -   Managing and maintaining a Kubernetes cluster can be complex and time-consuming and really requires a highly competent Kubernetes admin
 
         -   Networking in Kubernetes can also be quite complicated.
-
-## Meeting Videos {.unnumbered}
-
-### Cohort 1 {.unnumbered}
-
-`r knitr::include_url("https://www.youtube.com/embed/uyNSi8IqGz0")`
-
-`r knitr::include_url("https://www.youtube.com/embed/SrmbX9ZtWH4")`

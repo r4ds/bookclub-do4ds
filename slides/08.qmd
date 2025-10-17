@@ -109,10 +109,3 @@ For example, connecting to the server at `server.example.com` as the user `alex`
   
 - For debugging SSH: Add a `-v` to your command for verbose mode  
   - Add another v for more verbosity with `-vv`, and if that’s not enough, add another v for super verbose mode
-
-
-## Meeting Videos {.unnumbered}
-
-### Cohort 1 {.unnumbered}
-
-`r knitr::include_url("https://www.youtube.com/embed/_umuxP_u-d0")`

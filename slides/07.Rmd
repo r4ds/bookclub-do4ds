@@ -68,11 +68,3 @@ title: The Cloud
 <https://aws.amazon.com>
 
 ## Meeting Videos
-
-### Cohort 1
-
-`r knitr::include_url("https://www.youtube.com/embed/O6lhqSz-8Dw")`
-
-## Cohort 2
-
-`r knitr::include_url("https://www.youtube.com/embed/yk8LqHzlS7s")`

@@ -113,7 +113,7 @@
     "href": "08.html#meeting-videos",
     "title": "8. The Command Line",
     "section": "Meeting videos",
-    "text": "Meeting videos\n\n\n\n\n\n\n\n\nCohort 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "text": "Meeting videos\n\n\n\n\n\n\n\n\nCohort 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCohort 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "IT/Admin for Data Science",
       "8. The Command Line"
@@ -135,7 +135,7 @@
     "href": "06.html#meeting-videos",
     "title": "6. Demystifying Docker",
     "section": "Meeting videos",
-    "text": "Meeting videos\n\n\n\n\n\n\n\n\nCohort 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "text": "Meeting videos\n\n\n\n\n\n\n\n\nCohort 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCohort 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "DevOps Lessons for Data Science",
       "6. Demystifying Docker"
@@ -157,7 +157,7 @@
     "href": "04.html#meeting-videos",
     "title": "4. Logging and Monitoring",
     "section": "Meeting videos",
-    "text": "Meeting videos\n\n\n\n\n\n\n\n\nCohort 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "text": "Meeting videos\n\n\n\n\n\n\n\n\nCohort 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCohort 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "DevOps Lessons for Data Science",
       "4. Logging and Monitoring"
@@ -179,7 +179,7 @@
     "href": "02.html#meeting-videos",
     "title": "2. Data Project Architecture",
     "section": "Meeting videos",
-    "text": "Meeting videos\n\n\n\n\n\n\n\n\nCohort 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "text": "Meeting videos\n\n\n\n\n\n\n\n\nCohort 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCohort 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "DevOps Lessons for Data Science",
       "2. Data Project Architecture"
@@ -207,25 +207,67 @@
     "text": "Meeting chat log\n\n00:21:29    novica nakov: it's more fun with more than one key :)\n00:22:45    novica nakov: no you copied in your local folder\n00:28:28    Tinashe Tapera: ssh-copy-id: https://www.ssh.com/academy/ssh/copy-id\n00:41:20    Gus Lipkin: There’s a gui Docker image available for nginx that makes things easier (or more complicated depending on how you feel): https://nginxproxymanager.com/\n00:43:09    Tinashe Tapera: This is really nice\n00:51:45    Ahmed: pretty cool!"
   },
   {
-    "objectID": "videos/05/01.html",
-    "href": "videos/05/01.html",
-    "title": "Cohort 1",
+    "objectID": "videos/08/02.html",
+    "href": "videos/08/02.html",
+    "title": "Cohort 2",
     "section": "",
-    "text": "Meeting chat log\n\n00:44:58    priyanka gagneja:   fantastic question\n00:47:25    priyanka gagneja:   and dates"
+    "text": "Meeting chat log\n\n00:03:49    Umair Durrani:  Start\n00:18:04    Arthur Shaw:    Really strange the chapter didn't discuss Vim (unless I missed it).\n00:19:52    Diana Garcia Cortes:    I didn't think about it but yes! It should be there\n00:21:40    Arthur Shaw:    I will need to drop off in a bit to join a last-minute work call. But I wonder if anyone has experience with Tailscale (https://github.com/tailscale/tailscale)--and any info on whether it's better somehow that vanilla SSH. I've been seeing Tailscale mentioned a lot of late.\n00:21:56    Tan:    https://do4ds.com/chapters/sec2/2-4-app-admin.html#configuration-with-vim-and-nano  vim covered a little later\n00:22:16    Tan:    tailscale is great, but it's not the same thing as vanilla SSH\n00:22:22    Diana Garcia Cortes:    Reacted to \"https://do4ds.com/ch...\" with 👍\n00:22:22    Tan:    also hiya folks\n00:22:29    Arthur Shaw:    Reacted to \"https://do4ds.com/ch...\" with 👍\n00:22:58    Arthur Shaw:    Reacted to \"also hiya folks\" with 👋\n00:23:02    Diana Garcia Cortes:    Reacted to \"also hiya folks\" with 👋\n00:28:37    Diana Garcia Cortes:    Does anyone know why ssh is not the default protocol to use github with usethis or git2r?\n00:30:17    Diana Garcia Cortes:    Replying to \"Does anyone know why...\"\n\njust cause it requires more configuration? or are there some advantages when using https?\n00:30:27    Arthur Shaw:    The chapter mentioned tmux / terminal multiplexers fairly quickly. I've tinkered a bit with tmux and zellij for local stuff. I wonder if others have found it useful for connecting to and interacting with remote servers.\n00:31:20    Tan:    https://usethis.r-lib.org/articles/git-credentials.html#https-vs-ssh \nssh is harder to set up right on windows, and also once you set up https creds it lets you use gh api stuff as well e.g. pak/remotes installs\n00:31:32    Arthur Shaw:    Reacted to \"just cause it requir...\" with 👀\n00:31:52    Tan:    if that continues try checking the aws firewall\n00:32:11    Arthur Shaw:    (Gotta drop for a work call. I cannot wait to see the recording of the rest of today's session.)\n00:32:34    Diana Garcia Cortes:    Replying to \"The chapter mentione...\"\n\nI've used screen. It is useful\n00:32:57    Diana Garcia Cortes:    Reacted to \"https://usethis.r-li...\" with 👍\n00:35:12    Tan:    :claps:\n00:36:01    Umair Durrani:  Stop\n00:40:36    Tan:    https://cloud.google.com/free?hl=en \nhttps://aws.amazon.com/free/ \nfor more info"
   },
   {
-    "objectID": "videos/03/01.html",
-    "href": "videos/03/01.html",
-    "title": "Cohort 1",
+    "objectID": "videos/07/02.html",
+    "href": "videos/07/02.html",
+    "title": "Cohort 2",
     "section": "",
-    "text": "Meeting chat log\n\n00:02:43    Gus Lipkin: East Coast US, 1pm local\n00:44:48    Gus Lipkin: https://xkcd.com/927/\n00:57:17    Jack Penzer:    Graph databases &lt;3"
+    "text": "Meeting chat log\n\n00:11:22    Diana Garcia:   start\n00:13:31    Arthur Shaw:    Can't get IT/Admin support. That never happens in reality 🤣\n01:08:12    Diana Garcia:   end"
   },
   {
-    "objectID": "videos/01/01.html",
-    "href": "videos/01/01.html",
-    "title": "Cohort 1",
+    "objectID": "videos/06/02.html",
+    "href": "videos/06/02.html",
+    "title": "Cohort 2",
     "section": "",
-    "text": "Meeting chat log\n\n00:43:56    Tinashe Tapera: https://www.tidyverse.org/blog/2017/12/workflow-vs-script/\n00:45:19    Jon Harmon (jonthegeek):    That blog led to one of my favorite hex stickers: \"Everything I Know Is From Jenny Bryan\" https://raw.githubusercontent.com/MonkmanMH/EIKIFJB/main/EIKIFJB_sigmar_hex.png"
+    "text": "Meeting chat log\n\n00:07:05    Arthur Shaw:    Not used it. But this looks promising: https://rstudio.github.io/rstudioapi/reference/restartSession.html\n00:07:56    Umair Durrani:  Reacted to \"Not used it. But thi...\" with 👍\n00:08:40    Olivier Leroy:  start\n00:09:36    Olivier Leroy:  the hard path is the \"jargon\" instance, image, etc\n00:09:45    Olivier Leroy:  agree on the chapter\n00:11:38    Arthur Shaw:    Some great programmer humor to explain Docker: https://www.reddit.com/r/ProgrammerHumor/comments/y8qylu/docker_is_born/\n00:13:02    Olivier Leroy:  Reacted to \"Some great programme...\" with 😆\n00:17:07    Arthur Shaw:    I've not looked into this too much, but there are also other container engines out there. Podman took uses the Open Container Initiative spec that Docker developed and created something very, very compatible with Docker. https://opencontainers.org/\n00:19:16    Olivier Leroy:  Reacted to \"I've not looked into...\" with 👍\n00:19:28    Olivier Leroy:  https://rocker-project.org/  so see some image\n00:20:25    Arthur Shaw:    Replying to \"https://rocker-proje...\"\n\nIs there a Python equivalent of this--to the extent this question even makes sense in the Python ecosystem?\n00:20:27    Olivier Leroy:  in entreprise setup probably RHEL (with geography difference)\n00:21:01    Olivier Leroy:  Replying to \"https://rocker-proje...\"\n\n@Arthur Shaw I am not aware of\n00:21:47    Arthur Shaw:    Replying to \"https://rocker-proje...\"\n\nMaybe just this? https://hub.docker.com/_/python/\n00:22:23    Olivier Leroy:  head is part of GNU coreutils\n00:23:39    Olivier Leroy:  if you look on the build\n00:50:58    Arthur Shaw:    docker container prune: https://docs.docker.com/reference/cli/docker/container/prune/\n00:53:34    Umair Durrani:  Building reproducible analytical pipelines with R: https://raps-with-r.dev/\n00:53:37    Arthur Shaw:    Attach to a running container from VSCode: https://code.visualstudio.com/docs/devcontainers/attach-container\n00:59:51    Olivier Leroy:  end"
+  },
+  {
+    "objectID": "videos/05/02.html",
+    "href": "videos/05/02.html",
+    "title": "Cohort 2",
+    "section": "",
+    "text": "Meeting chat log\n\n00:05:49    trevin flickinger (he/him): Hey y’all hope you don’t mind me joining in 👋🏻\n00:06:14    Umair Durrani:  Welcome, Trevin\n00:08:29    trevin flickinger (he/him): I work for a non-profit in Ohio, mainly use R, and just set up a data pipeline using docker and AWS\n00:08:46    Umair Durrani:  Reacted to \"I work for a non-pro...\" with 👍\n00:08:48    Retselisitsoe Monyake:  Reacted to \"I work for a non-p...\" with 👍\n00:09:14    Olivier Leroy:  start\n00:26:49    Olivier Leroy:  would be different schema in DB, new version of packages\n00:27:06    trevin flickinger (he/him): Ahh yeah, that makes sense as well\n00:27:55    trevin flickinger (he/him): Thank you!\n00:41:07    Olivier Leroy:  I have those slide if needed\n00:58:10    Olivier Leroy:  looks good!\n01:05:04    Olivier Leroy:  gert::git_info()$shorthand\n01:06:35    Olivier Leroy:  https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks\n01:15:24    trevin flickinger (he/him): Thank you all!\n01:16:56    Umair Durrani:  Thanks Arthur and Olivier for the useful discussions\n01:17:05    Arthur Shaw:    Reacted to \"Thanks Arthur and Ol...\" with 🙏\n01:17:07    Retselisitsoe Monyake:  Reacted to \"Thanks Arthur and ...\" with 🙏\n01:17:17    Umair Durrani:  https://happygitwithr.com/\n01:17:26    trevin flickinger (he/him): Reacted to \"https://happygitwith...\" with 💯\n01:18:06    Olivier Leroy:  https://uofi.app.box.com/s/xtjcaqvgwlkn1poycuesphutpw4bnk66\n01:19:04    Arthur Shaw:    There were a few nice GitHub Actions presentations on past posit confs. I'll send them along if I can find them.\n01:19:15    Retselisitsoe Monyake:  Reacted to \"There were a few n...\" with 🙏\n01:19:21    Olivier Leroy:  git status\n01:19:41    Umair Durrani:  This page also has some nice resources: https://www.bigbookofr.com/chapters/version%20control#github-learning-lab\n01:19:43    Olivier Leroy:  gst='gist status'\n01:19:59    Umair Durrani:  Reacted to \"https://uofi.app.box...\" with 👍\n01:20:57    Arthur Shaw:    The GitHub Actions docs are something I'd like to explore more. Not sure how good the docs are, however, for newcomers (like me): https://docs.github.com/en/actions\n01:21:32    Arthur Shaw:    Thanks so much, Oliver! See you all next week. Gotta drop off\n01:21:35    Olivier Leroy:  end\n01:22:16    Retselisitsoe Monyake:  Thanks!"
+  },
+  {
+    "objectID": "videos/04/02.html",
+    "href": "videos/04/02.html",
+    "title": "Cohort 2",
+    "section": "",
+    "text": "Meeting chat log\n\n00:07:48    Arthur Shaw:    For next week, I'll have a look and see if I can present. It's about time I pull my weight around here ;)\n00:07:58    Olivier Leroy:  start\n00:09:07    Umair Durrani:  I did the lab - I'd like to share using SentryR for monitoring\n00:29:31    Arthur Shaw:    If memory serves,  gtsummary  captures the calls behind each computed cell in a table. I think this is strongly desired/needed for regulated industries like pharma. https://www.danieldsjoberg.com/gtsummary/\n00:32:40    Arthur Shaw:    Replying to \"If memory serves,  g...\"\n\nI think this is what I meant: https://www.danieldsjoberg.com/gtsummary/articles/tbl_ard-functions.html\n00:35:57    Umair Durrani:  pointblank and tidylog are good packages for data validation and logging\n00:36:00    Arthur Shaw:    For the joining, a colleague wrote a package that reports on joining (like Stata does): https://randrescastaneda.github.io/joyn/articles/main-functionalities.html#reporting-variable\n00:36:24    Umair Durrani:  Reacted to \"For the joining, a c...\" with 👍\n00:38:00    Arthur Shaw:    Reacted to \"I did the lab - I'd ...\" with 🙏\n00:43:28    Arthur Shaw:    My new go-tos: cli's alert functions. The  text  arg seems to use  glue  without mentioning it in the docs: https://cli.r-lib.org/reference/cli_alert.html\n00:55:12    Arthur Shaw:    VSCode's suggestions to install extensions = 📎 for devs 🤣\n00:55:52    Umair Durrani:  log crash example for shiny: https://github.com/tanho63/talk_shinyprod2023_logging/blob/main/examples/log_crash.R\n00:56:37    Garcia Cortes, Diana Elisa: Reacted to \"log crash example fo...\" with 👍\n00:56:52    Arthur Shaw:    Reacted to \"log crash example fo...\" with 👍\n01:02:16    Retselisitsoe Monyake:  Reacted to \"log crash example fo...\" with 👍\n01:08:42    Olivier Leroy:  Reacted to \"log crash example fo...\" with 👍\n01:08:57    Olivier Leroy:  stop"
+  },
+  {
+    "objectID": "videos/03/02.html",
+    "href": "videos/03/02.html",
+    "title": "Cohort 2",
+    "section": "",
+    "text": "Meeting chat log\n\n00:03:57    Arthur Shaw:    Hot take incoming 😉\n00:04:34    Olivier Leroy:  start\n00:32:33    Garcia Cortes, Diana Elisa: httr2 (pronounced “hitter2”) is a comprehensive HTTP client that provides a modern, pipeable API for working with web APIs. It builds on top of {curl} to provide features like explicit request objects, built-in rate limiting & retry tooling, comprehensive OAuth support, and secure handling of secrets and credentials.\n00:32:53    Arthur Shaw:    curl options that httr lets you use: https://httr.r-lib.org/reference/httr_options.html\n00:38:06    Arthur Shaw:    Love  your HTTP return code summary. I also ave fun by looking up stuff here: https://http.cat/\n00:38:49    Garcia Cortes, Diana Elisa: Reacted to \"Love  your HTTP retu...\" with 😂\n00:52:46    Arthur Shaw:    Looks to be the workflow vignette that keyring should have: https://blog.r-hub.io/2024/02/28/key-advantages-of-using-keyring/ \n\nI'm going to see how to up my secret storage game and shift from  .Renviron  to  keyring .\n01:06:14    Olivier Leroy:  end"
+  },
+  {
+    "objectID": "videos/02/02.html",
+    "href": "videos/02/02.html",
+    "title": "Cohort 2",
+    "section": "",
+    "text": "Meeting chat log\n\n00:06:59    Olivier Leroy:  start\n00:26:08    Arthur Shaw:    Although  waiter  animations are sometimes a nice Jedi mind trick to make the app seem to work faster\n00:26:25    Umair Durrani:  Reacted to \"Although  waiter  an...\" with 👍\n00:26:27    Olivier Leroy:  Reacted to \"Although  waiter  an...\" with 👍\n00:26:30    Retselisitsoe Monyake:  Reacted to \"Although  waiter  an...\" with 👍\n00:27:39    Olivier Leroy:  Data warehouse Kimball\n00:28:45    Arthur Shaw:    https://www.geeksforgeeks.org/dbms/difference-between-kimball-and-inmon/\n00:29:00    Arthur Shaw:    Replying to \"https://www.geeksfor...\"\n\nCompletely new to me.\n00:29:32    Olivier Leroy:  Replying to \"https://www.geeksfor...\"\n\nthe hard point is now data warehouse can also refer to databricks&co\n00:43:53    Arthur Shaw:    Neat article/presentation that came to mind while listening about pain points of seeing changes in data structure in DB: https://www.emilyriederer.com/talk/col-names-contract/\n\nhttps://www.emilyriederer.com/post/column-name-contracts/ \n00:46:07    Olivier Leroy:  Reacted to \"Neat article/present...\" with 👍\n00:47:26    Arthur Shaw:    Just FYI: plumber2 is coming/here: https://posit-dev.github.io/plumber2/ \n\nI was searching for this this moring\n00:48:49    Olivier Leroy:  Reacted to \"Just FYI: plumber2 i...\" with 👍\n00:53:38    Arthur Shaw:    Naming things = one of the hardest things\n00:53:46    Olivier Leroy:  Reacted to \"Naming things = one ...\" with 😀\n00:54:04    Retselisitsoe Monyake:  Reacted to \"Naming things = one ...\" with 😀\n00:55:45    Olivier Leroy:  I used mermaid\n00:56:06    Olivier Leroy:  pen and apper also :)\n00:56:42    Arthur Shaw:    excalidraw is something I picked up from the golem book and YT videos.\n01:05:02    Olivier Leroy:  I will try to find the Pyhon equivalent\n01:05:08    Arthur Shaw:    Reacted to \"I will try to find t...\" with 👍\n01:05:33    Josh Persi: I know snakemake is popular in Python, but I don't think it's ergonomic as targets\n01:05:44    Umair Durrani:  Reacted to \"I know snakemake is ...\" with 👍\n01:05:47    Arthur Shaw:    Reacted to \"I know snakemake is ...\" with 🐍\n01:12:38    Garcia Cortes, Diana Elisa: stop"
+  },
+  {
+    "objectID": "videos/01/02.html",
+    "href": "videos/01/02.html",
+    "title": "Cohort 2",
+    "section": "",
+    "text": "Meeting chat log\n\n00:08:34    Umair Durrani:  Start\n00:16:29    Arthur Shaw:    @Diana Garcia Cortes, I spent a long time doing what you described (except for the conda part). But then I realized I still needed to share the environment with my future self. He always gets the short end of the stick.\n00:17:00    Diana Garcia Cortes:    Reacted to \"@Diana Garcia Cortes...\" with ❤️\n00:19:08    Arthur Shaw:    RTools = my arch nemesis for having others reproduce my R code on their machine\n00:29:13    Umair Durrani:  Got to hop onto a different meeting, will catch up on the recording.\n00:29:19    Diana Garcia Cortes:    Reacted to \"Got to hop onto a di...\" with 👍\n00:32:30    Arthur Shaw:    For the installation part with {renv}, aren't you supposed to use  renv::install(\"myPackage\")  instead? Does  install.packages(\"myPackage\")  also work?\n00:33:17    Josh Persi: Replying to \"For the installation...\"\n\nI've had no issues with install.packages and then renv::snapshot() to add them to the lock file\n00:33:31    Arthur Shaw:    Reacted to \"I've had no issues w...\" with 👍\n00:33:33    patrick kilduff (he/him):   Reacted to \"I've had no issues w...\" with 👍\n00:33:35    Josh Persi: Replying to \"For the installation...\"\n\nI'm guessing renv::install() just adds it to the lockfile without the need for snapshot\n00:33:43    patrick kilduff (he/him):   Reacted to \"I'm guessing renv::i...\" with 👍\n00:34:03    Arthur Shaw:    Replying to \"For the installation...\"\n\nI think it also installs in the project library. I could be wrong.\n00:34:26    Josh Persi: Replying to \"For the installation...\"\n\nThat'd make sense!\n00:38:59    Arthur Shaw:    VSCode's clippy ;)\n00:47:29    Arthur Shaw:    For Nix, confusingly, you write in Nix (programming language)\n00:47:51    patrick kilduff (he/him):   Lots of rix/nix blogposts here: https://brodrigues.co/\n00:47:52    Arthur Shaw:    From what little I understand, Nix is a functional programming language and a package manager\n00:48:55    Arthur Shaw:    Replying to \"From what little I u...\"\n\nAnd an OS too\n00:50:28    Josh Persi: I got to run, but thanks for the discussion everyone! See you next week!\n00:50:38    Diana Garcia Cortes:    Reacted to \"I got to run, but th...\" with 👍\n00:52:05    Arthur Shaw:    devbox is much more approachable\n00:52:27    Arthur Shaw:    Replying to \"devbox is much more ...\"\n\nhttps://www.jetify.com/devbox\n00:55:38    Arthur Shaw:    Would devcontainer do what we need? Never been really how how devcontainer relates to container engines like Docker or Podman\n01:08:38    patrick kilduff (he/him):   I have to drop, thanks all! See you all next week 😎\n01:08:49    Retselisitsoe Monyake:  Reacted to \"I have to drop, than...\" with 👍\n01:19:40    Arthur Shaw:    You're muted, @Olivier. You seem not to hear us either\n01:21:09    Olivier:    end"
+  },
+  {
+    "objectID": "videos/00/02.html",
+    "href": "videos/00/02.html",
+    "title": "Cohort 2",
+    "section": "",
+    "text": "Meeting chat log\n\n00:03:43    Olivier Leroy:  start\n00:06:07    Josh Persi: Sorry Olivier\n00:06:16    Josh Persi: Connection is still very poor\n01:02:27    Olivier Leroy:  end"
   },
   {
     "objectID": "slides/17.html#learning-objectives",
@@ -254,13 +296,6 @@
     "title": "Enterprise Server Management",
     "section": "Facilitating Enterprise Workloads Management with Kubernetes",
     "text": "Facilitating Enterprise Workloads Management with Kubernetes\n\nKubernetes solves all three of the key enterprise IT/Admin challenges with running servers.\nIncreasing the processing power of your cluster is usually as simple as a few mouse clicks. On the other side, this makes it risky from a cost perspective.\nHelm is the standard tool for defining what’s running in the cluster.\nInstead of the ten steps required in a typical server-based deployment. There are just three steps for Kubernetes.\nWhat are the biggest strengths of Kubernetes as a scaling tool? What are some drawbacks?\n\nStrengths:\n\nAutomatic Load Balancing\nHorizontal Scaling\nInfrastructure Agnosticism\n\nDrawbacks:\n\nManaging and maintaining a Kubernetes cluster can be complex and time-consuming and really requires a highly competent Kubernetes admin\nNetworking in Kubernetes can also be quite complicated."
-  },
-  {
-    "objectID": "slides/17.html#meeting-videos",
-    "href": "slides/17.html#meeting-videos",
-    "title": "Enterprise Server Management",
-    "section": "Meeting Videos",
-    "text": "Meeting Videos\nCohort 1"
   },
   {
     "objectID": "slides/15.html#learning-objectives",
@@ -298,13 +333,6 @@
     "text": "Issues with Outbound Proxies\n\nConnections from server to the internet\nRarer than inbound.\n\n“Air-gapped” often means “strong outbound proxy.”\n\nThings that can be impacted:\n\nDownloading packages (other than from internal package manager).\nAccessing external data (APIs).\nUpdating system libraries (hopefully your IT has a plan for this).\nSoftware licensing (software might ping a server).\n\nIT often open to allowing access to specific URLs, so ask!"
   },
   {
-    "objectID": "slides/15.html#meeting-videos",
-    "href": "slides/15.html#meeting-videos",
-    "title": "Enterprise Networking",
-    "section": "Meeting Videos",
-    "text": "Meeting Videos\nCohort 1"
-  },
-  {
     "objectID": "slides/13.html#learning-objectives",
     "href": "slides/13.html#learning-objectives",
     "title": "DNS allows for human-readable addresses",
@@ -331,13 +359,6 @@
     "title": "DNS allows for human-readable addresses",
     "section": "Reconfigure nginx",
     "text": "Reconfigure nginx\n\nsudo vim /etc/nginx/nginx.conf\nserver_name ec2.whatever; to server_name yourdomain.you www.yourdomain.you;\nsudo systemctl restart nginx\nVisit http://yourdomain.you/rstudio and http://yourdomain.you/palmer/stats\n\nChrome will yell at you since https won’t work yet. See the next chapter!"
-  },
-  {
-    "objectID": "slides/13.html#meeting-videos",
-    "href": "slides/13.html#meeting-videos",
-    "title": "DNS allows for human-readable addresses",
-    "section": "Meeting Videos",
-    "text": "Meeting Videos\nCohort 1\n\n\n\n\nMeeting chat log\n\n00:21:29    novica nakov: it's more fun with more than one key :)\n00:22:45    novica nakov: no you copied in your local folder\n00:28:28    Tinashe Tapera: ssh-copy-id: https://www.ssh.com/academy/ssh/copy-id\n00:41:20    Gus Lipkin: There’s a gui Docker image available for nginx that makes things easier (or more complicated depending on how you feel): https://nginxproxymanager.com/\n00:43:09    Tinashe Tapera: This is really nice\n00:51:45    Ahmed: pretty cool!"
   },
   {
     "objectID": "slides/11.html#learning-objectives",
@@ -410,13 +431,6 @@
     "text": "Lab\nNot much to say here…🤷"
   },
   {
-    "objectID": "slides/11.html#meeting-videos",
-    "href": "slides/11.html#meeting-videos",
-    "title": "Choosing the Right Server for You",
-    "section": "Meeting Videos",
-    "text": "Meeting Videos\nCohort 1"
-  },
-  {
     "objectID": "slides/08.html#learning-objectives",
     "href": "slides/08.html#learning-objectives",
     "title": "Getting Comfortable on the Command Line",
@@ -487,13 +501,6 @@
     "text": "Continuous connection and debugging\n\nSSH blocks the terminal it’s using and the connection will break when your computer goes to sleep\n\nUse tmux command line utility to:\n\nPut sessions into the background\n\nMake sessions durable through sleeps and other operations\n\nFor debugging SSH: Add a -v to your command for verbose mode\n\nAdd another v for more verbosity with -vv, and if that’s not enough, add another v for super verbose mode"
   },
   {
-    "objectID": "slides/08.html#meeting-videos",
-    "href": "slides/08.html#meeting-videos",
-    "title": "Getting Comfortable on the Command Line",
-    "section": "Meeting Videos",
-    "text": "Meeting Videos\nCohort 1"
-  },
-  {
     "objectID": "slides/06.html#learning-objectives",
     "href": "slides/06.html#learning-objectives",
     "title": "Demystyfing Docker",
@@ -536,13 +543,6 @@
     "text": "Containers are an ephemeral instance of a Docker Image\n\nBy default, changes made to containers are lost on shutdown\nData can be preserved from instance to instance of the same container using mounted volumes\nContainers are a process that executes the layers of your Dockerfile"
   },
   {
-    "objectID": "slides/06.html#meeting-videos",
-    "href": "slides/06.html#meeting-videos",
-    "title": "Demystyfing Docker",
-    "section": "Meeting Videos",
-    "text": "Meeting Videos\nCohort 1"
-  },
-  {
     "objectID": "slides/04.html#learning-objectives",
     "href": "slides/04.html#learning-objectives",
     "title": "Logging and Monitoring",
@@ -583,13 +583,6 @@
     "title": "Logging and Monitoring",
     "section": "Review Discussion",
     "text": "Review Discussion\n\nDifferentiate between logs and metrics.\nLog events from your code using the {log4r} package.\nRecognize some open source options for emitting metrics."
-  },
-  {
-    "objectID": "slides/04.html#meeting-videos",
-    "href": "slides/04.html#meeting-videos",
-    "title": "Logging and Monitoring",
-    "section": "Meeting Videos",
-    "text": "Meeting Videos\nCohort 1"
   },
   {
     "objectID": "slides/02.html#learning-objectives",
@@ -674,13 +667,6 @@
     "title": "Data Project Architecture",
     "section": "Review",
     "text": "Review\nComprehension questions\n\nDo you ever think about your application layer?\nWhat libraries could you use to implement a three-layer architecture in R or Python?\nHow do you reduce the data requirements for your project?\nHow do you handle your intermediate artifacts?"
-  },
-  {
-    "objectID": "slides/02.html#meeting-videos",
-    "href": "slides/02.html#meeting-videos",
-    "title": "Data Project Architecture",
-    "section": "Meeting Videos",
-    "text": "Meeting Videos\nCohort 1\n\n\n\n\nMeeting chat log\n\n00:02:43    Gus Lipkin: East Coast US, 1pm local\n00:44:48    Gus Lipkin: https://xkcd.com/927/\n00:57:17    Jack Penzer:    Graph databases &lt;3"
   },
   {
     "objectID": "slides/00.html#book-club-meetings",
@@ -1022,13 +1008,6 @@
     "text": "Review\nLeft those as an open discussion questions?\n\n\n\n\n\n\n\nLearning Objective\nWhat Did We Learn?\n\n\n\n\nCompare and contrast the tiers of the three-tier app architecture vs the seven data science services.\n\n\n\nAnswer the two data-storage questions about an app: storage format and storage location.\n\n\n\nChoose the appropriate storage solution for an app.\n\n\n\nAuthorize an app to access data.\n\n\n\nConsider database-as-a-service options."
   },
   {
-    "objectID": "slides/03.html#meeting-videos",
-    "href": "slides/03.html#meeting-videos",
-    "title": "Designing Your Application Layers",
-    "section": "Meeting Videos",
-    "text": "Meeting Videos\nCohort 1\n\n\n\n\nMeeting chat log\n\n00:02:43    Gus Lipkin: East Coast US, 1pm local\n00:44:48    Gus Lipkin: https://xkcd.com/927/\n00:57:17    Jack Penzer:    Graph databases &lt;3"
-  },
-  {
     "objectID": "slides/05.html#learning-objectives",
     "href": "slides/05.html#learning-objectives",
     "title": "Code promotion and integration",
@@ -1078,60 +1057,60 @@
     "text": "Review\n\n\n\n\n\n\n\nLearning Objective\nWhat Did We Learn?\n\n\n\n\nDescribe the three environments used in software development and data science.\n\nDev: where products are conceived and built\nTest: where products are rigorously tested against the many different environments they will encounter “in the wild”\nProd: where the live product exists “in the wild”\n\n\n\nUse GitHub Actions (GHA) to deploy data science assets.\nR users can do this with r-lib 📦\n\n\nKeep environments in sync using infrastructure as code (IaC) tooling.\n\nServers are cheap; use frequently\nIaC Tools help you stay away from drifting"
   },
   {
-    "objectID": "slides/05.html#meeting-videos",
-    "href": "slides/05.html#meeting-videos",
-    "title": "Code promotion and integration",
-    "section": "Meeting Videos",
-    "text": "Meeting Videos\nCohort 1\n\n\n\n\nMeeting chat log\n\n00:44:58    priyanka gagneja:   fantastic question\n00:47:25    priyanka gagneja:   and dates"
-  },
-  {
     "objectID": "slides/07.html#learning-objectives",
     "href": "slides/07.html#learning-objectives",
-    "title": "Getting Started with the Cloud",
+    "title": "The Cloud",
     "section": "Learning objectives",
     "text": "Learning objectives\n\nRecognize why you might (and might not) want to host services in the cloud.\nDifferentiate between IaaS, PaaS, and SaaS.\nList some common cloud services.\nStart and stop an EC2 instance on AWS."
   },
   {
     "objectID": "slides/07.html#quick-section-overview",
     "href": "slides/07.html#quick-section-overview",
-    "title": "Getting Started with the Cloud",
+    "title": "The Cloud",
     "section": "Quick Section Overview",
-    "text": "Quick Section Overview\n\nSo this section is really targeting the student who wants to host a project for portfolio purposes, the hobbyist who’s hosting a toy project, or the data science leader who has no choice but to host things for themselves because they just can’t get IT/Admin support.\n\n🎉🎉🎉 I’ve been two of those things in the last year!"
+    "text": "Quick Section Overview\n\nSo this section is really targeting the student who wants to host a project for portfolio purposes, the hobbyist who’s hosting a toy project, or the data science leader who has no choice but to host things for themselves because they just can’t get IT/Admin support."
   },
   {
     "objectID": "slides/07.html#why-cloud",
     "href": "slides/07.html#why-cloud",
-    "title": "Getting Started with the Cloud",
+    "title": "The Cloud",
     "section": "Why cloud?",
-    "text": "Why cloud?\n\nIt probably isn’t cheaper.\nIt’s faster and easier.\n\nNo need to wait for new hardware to arrive and be installed."
+    "text": "Why cloud?\n\nFlexibility: easy to re-scale.\nNo need to manage hardware.\nCheaper?\n\nNot so much"
   },
   {
     "objectID": "slides/07.html#things-as-a-service",
     "href": "slides/07.html#things-as-a-service",
-    "title": "Getting Started with the Cloud",
+    "title": "The Cloud",
     "section": "Things as a Service",
-    "text": "Things as a Service\n\n\nInfrastructure as a Service (IaaS, “eye-az”) \n\n\nPlatform as a Service (PaaS, “pass”) \n\n\nSoftware as a Service (SaaS, “sass”)"
+    "text": "Things as a Service\nInfrastructure as a Service (IaaS, “eye-az”)\n\nRent a server\nIt is actually a VM: a virtualized server on a virtual machine, called an instance.\nSpot instances: for stateless, fault-tolerant applications.\n\nCheaper, they lend you space no one is using.\nPreemptible, they can be claimed back."
+  },
+  {
+    "objectID": "slides/07.html#things-as-a-service-1",
+    "href": "slides/07.html#things-as-a-service-1",
+    "title": "The Cloud",
+    "section": "Things as a Service",
+    "text": "Things as a Service\nPlatform as a Service (PaaS, “pass”)\n\nThey manage the servers AND your applications.\nYou get a ready to use environment for your applications.\nExamples:\n\nBlob storage\nLambdas, serverless functions\nContainer orchestration, Kubernetes\n\nPosit Connect Cloud"
+  },
+  {
+    "objectID": "slides/07.html#things-as-a-service-2",
+    "href": "slides/07.html#things-as-a-service-2",
+    "title": "The Cloud",
+    "section": "Things as a Service",
+    "text": "Things as a Service\nSoftware as a Service (SaaS, “sass”)\n\nYou rent the end-user software.\nData as a service?\n\n\nTypes of Saas. From What Is Software as a Service (SaaS)?"
   },
   {
     "objectID": "slides/07.html#common-cloud-services",
     "href": "slides/07.html#common-cloud-services",
-    "title": "Getting Started with the Cloud",
+    "title": "The Cloud",
     "section": "Common Cloud Services",
-    "text": "Common Cloud Services\n\n\n\n\n\n\n\n\n\nService\nAWS\nAzure\nGCP\n\n\n\n\nKubernetes cluster\nEKS (Elastic Kubernetes Service)\nAKS (Azure Kubernetes Service)\nGKE (Google Kubernetes Engine)\n\n\nRun a function as an API\nLambda\nAzure Functions\nGoogle Cloud Functions\n\n\nDatabase\nRDS/Redshift\nAzure Database\nGoogle Cloud SQL\n\n\nML Platform\nSageMaker\nAzure ML\nVertex AI"
+    "text": "Common Cloud Services\n\n\n\n\n\n\n\n\n\nService\nAWS\nAzure\nGCP\n\n\n\n\nKubernetes cluster\nEKS (Elastic Kubernetes Service)\nAKS (Azure Kubernetes Service)\nGKE (Google Kubernetes Engine)\n\n\nRun a function as an API\nLambda\nAzure Functions\nGoogle Cloud Functions\n\n\nDatabase\nRDS/Redshift\nAzure Database\nGoogle Cloud SQL\n\n\nML Platform\nSageMaker\nAzure ML\nVertex AI\n\n\nAccess control\nIAM\nMicrosoft Entra ID\nIdentity Access Management"
   },
   {
     "objectID": "slides/07.html#discuss-the-lab",
     "href": "slides/07.html#discuss-the-lab",
-    "title": "Getting Started with the Cloud",
+    "title": "The Cloud",
     "section": "Discuss the Lab",
     "text": "Discuss the Lab\nhttps://aws.amazon.com"
-  },
-  {
-    "objectID": "slides/07.html#meeting-videos",
-    "href": "slides/07.html#meeting-videos",
-    "title": "Getting Started with the Cloud",
-    "section": "Meeting Videos",
-    "text": "Meeting Videos\nCohort 1"
   },
   {
     "objectID": "slides/09.html#learning-objectives",
@@ -1204,13 +1183,6 @@
     "text": "Plumber in docker\n\nsudo apt-get install docker.io\n\nsudo docker ps to make sure it worked\n\n\nsudo docker run --rm -d \\\n  -p 8555:8000 \\\n  --name palmer-plumber \\\n  alexkgold/plumber\n\nssh -NL 8555:localhost:8555 test-user@$SERVER_ADDRESS\nIt’s an api!"
   },
   {
-    "objectID": "slides/09.html#meeting-videos",
-    "href": "slides/09.html#meeting-videos",
-    "title": "Basic Linux SysAdmin",
-    "section": "Meeting Videos",
-    "text": "Meeting Videos\nCohort 1\n\n\n\n\nMeeting chat log\n\n00:21:29    novica nakov: it's more fun with more than one key :)\n00:22:45    novica nakov: no you copied in your local folder\n00:28:28    Tinashe Tapera: ssh-copy-id: https://www.ssh.com/academy/ssh/copy-id\n00:41:20    Gus Lipkin: There’s a gui Docker image available for nginx that makes things easier (or more complicated depending on how you feel): https://nginxproxymanager.com/\n00:43:09    Tinashe Tapera: This is really nice\n00:51:45    Ahmed: pretty cool!"
-  },
-  {
     "objectID": "slides/12.html#learning-objectives",
     "href": "slides/12.html#learning-objectives",
     "title": "Intro to Computer Networks",
@@ -1253,13 +1225,6 @@
     "text": "Add plumber api routing\n\nAdd a location block each time you want to add an API.\n\n    location /palmer/ {\n      # Check the book to see if he has added more!\n      proxy_pass http://localhost:8555/;\n      proxy_set_header Host $host;\n    }\n\nsudo systemctl restart nginx\nTest it at your “Public IPv4 DNS” /palmer/stats and /palmer/__docs__/."
   },
   {
-    "objectID": "slides/12.html#meeting-videos",
-    "href": "slides/12.html#meeting-videos",
-    "title": "Intro to Computer Networks",
-    "section": "Meeting Videos",
-    "text": "Meeting Videos\nCohort 1\n\n\n\n\nMeeting chat log\n\n00:21:29    novica nakov: it's more fun with more than one key :)\n00:22:45    novica nakov: no you copied in your local folder\n00:28:28    Tinashe Tapera: ssh-copy-id: https://www.ssh.com/academy/ssh/copy-id\n00:41:20    Gus Lipkin: There’s a gui Docker image available for nginx that makes things easier (or more complicated depending on how you feel): https://nginxproxymanager.com/\n00:43:09    Tinashe Tapera: This is really nice\n00:51:45    Ahmed: pretty cool!"
-  },
-  {
     "objectID": "slides/14.html#learning-objectives",
     "href": "slides/14.html#learning-objectives",
     "title": "You should use SSL/HTTPS",
@@ -1293,13 +1258,6 @@
     "title": "You should use SSL/HTTPS",
     "section": "Open the port",
     "text": "Open the port\n(you may have already set this up in Chapter 12)\n\n(Log into console.aws.amazon.com and navigate to EC2/Instances)\nClick the “Security” tab on your instance.\nClick the Security group (something like launch-wizard-2)\n\n(or go directly to “Network & Security”/“Security Groups”)\n\n“Inbound rules” &gt; “Edit inbound rules”\n“Add rule”\n\n“HTTPS”, “Anywhere-IPv4”\n\nDiscussion: Leave HTTP, probably?\nVisit https://yourdomain.you/rstudio, http://yourdomain.you/rstudio, etc."
-  },
-  {
-    "objectID": "slides/14.html#meeting-videos",
-    "href": "slides/14.html#meeting-videos",
-    "title": "You should use SSL/HTTPS",
-    "section": "Meeting Videos",
-    "text": "Meeting Videos\nCohort 1\n\n\n\n\nMeeting chat log\n\n00:21:29    novica nakov: it's more fun with more than one key :)\n00:22:45    novica nakov: no you copied in your local folder\n00:28:28    Tinashe Tapera: ssh-copy-id: https://www.ssh.com/academy/ssh/copy-id\n00:41:20    Gus Lipkin: There’s a gui Docker image available for nginx that makes things easier (or more complicated depending on how you feel): https://nginxproxymanager.com/\n00:43:09    Tinashe Tapera: This is really nice\n00:51:45    Ahmed: pretty cool!"
   },
   {
     "objectID": "slides/16.html#learning-objectives",
@@ -1349,13 +1307,6 @@
     "title": "Auth in Enterprise",
     "section": "Learning Objectives",
     "text": "Learning Objectives\n\nWhat is the difference between authentication and authorization?\n\nAuthentication = who is asking?\nAuthorization = what do you want to do?\n\nWhat are some different ways to manage permissions? What are the advantages and drawbacks of each?\n\nIn order of complexity: ACL, RBAC, ABAC\n\nWhat is some advantages of token-based auth? Why are most organizations adopting it? Are there any drawbacks?\n\nReduces complexity by providing one “handshake”, but doesn’t solve everything (e.g. data access, token management)\n\nFor each of the following, is it a username + password method or a token method? PAM, LDAP, Kerberos, SAML, ODIC/OAuth\n\nPAM = username + password\nLDAP = username + password\nKerberos = Token\nSAML = Token\nODIC/OAuth = Token"
-  },
-  {
-    "objectID": "slides/16.html#meeting-videos",
-    "href": "slides/16.html#meeting-videos",
-    "title": "Auth in Enterprise",
-    "section": "Meeting Videos",
-    "text": "Meeting Videos\nCohort 1"
   },
   {
     "objectID": "slides/18.html#learning-objectives",
@@ -1421,11 +1372,18 @@
     "text": "Package Restrictions\n\nTo restrict package access, IT Admins must:\n\nRestrict access to public repositories\nProvide an alternative!\n\nDon’t worry about space needed for packages. Most are small\n\nI have 421 packages taking up ~2GB\n\n\n\nLots of kinds of enterprise repository software\n\nTwo main concerns:\n\nManaging vulnerabilities\n\nCode scanners vs common vulnerabliities vs common sense\n\nLicenses\nMaintenance/lifetime"
   },
   {
-    "objectID": "slides/18.html#meeting-videos",
-    "href": "slides/18.html#meeting-videos",
-    "title": "Open Source Data Science in the Enterprise",
-    "section": "Meeting Videos",
-    "text": "Meeting Videos\nCohort 1"
+    "objectID": "videos/00/01.html",
+    "href": "videos/00/01.html",
+    "title": "Cohort 1",
+    "section": "",
+    "text": "Meeting chat log\n\n00:43:56    Tinashe Tapera: https://www.tidyverse.org/blog/2017/12/workflow-vs-script/\n00:45:19    Jon Harmon (jonthegeek):    That blog led to one of my favorite hex stickers: \"Everything I Know Is From Jenny Bryan\" https://raw.githubusercontent.com/MonkmanMH/EIKIFJB/main/EIKIFJB_sigmar_hex.png"
+  },
+  {
+    "objectID": "videos/01/01.html",
+    "href": "videos/01/01.html",
+    "title": "Cohort 1",
+    "section": "",
+    "text": "Meeting chat log\n\n00:43:56    Tinashe Tapera: https://www.tidyverse.org/blog/2017/12/workflow-vs-script/\n00:45:19    Jon Harmon (jonthegeek):    That blog led to one of my favorite hex stickers: \"Everything I Know Is From Jenny Bryan\" https://raw.githubusercontent.com/MonkmanMH/EIKIFJB/main/EIKIFJB_sigmar_hex.png"
   },
   {
     "objectID": "videos/02/01.html",
@@ -1433,6 +1391,20 @@
     "title": "Cohort 1",
     "section": "",
     "text": "Meeting chat log\n\n00:02:43    Gus Lipkin: East Coast US, 1pm local\n00:44:48    Gus Lipkin: https://xkcd.com/927/\n00:57:17    Jack Penzer:    Graph databases &lt;3"
+  },
+  {
+    "objectID": "videos/03/01.html",
+    "href": "videos/03/01.html",
+    "title": "Cohort 1",
+    "section": "",
+    "text": "Meeting chat log\n\n00:02:43    Gus Lipkin: East Coast US, 1pm local\n00:44:48    Gus Lipkin: https://xkcd.com/927/\n00:57:17    Jack Penzer:    Graph databases &lt;3"
+  },
+  {
+    "objectID": "videos/05/01.html",
+    "href": "videos/05/01.html",
+    "title": "Cohort 1",
+    "section": "",
+    "text": "Meeting chat log\n\n00:44:58    priyanka gagneja:   fantastic question\n00:47:25    priyanka gagneja:   and dates"
   },
   {
     "objectID": "videos/13/01.html",
@@ -1457,7 +1429,7 @@
     "href": "01.html#meeting-videos",
     "title": "1. Environments as Code",
     "section": "Meeting videos",
-    "text": "Meeting videos\n\n\n\n\n\n\n\n\nCohort 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "text": "Meeting videos\n\n\n\n\n\n\n\n\nCohort 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCohort 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "DevOps Lessons for Data Science",
       "1. Environments as Code"
@@ -1479,7 +1451,7 @@
     "href": "03.html#meeting-videos",
     "title": "3. Databases and Data APIs",
     "section": "Meeting videos",
-    "text": "Meeting videos\n\n\n\n\n\n\n\n\nCohort 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "text": "Meeting videos\n\n\n\n\n\n\n\n\nCohort 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCohort 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "DevOps Lessons for Data Science",
       "3. Databases and Data APIs"
@@ -1501,7 +1473,7 @@
     "href": "05.html#meeting-videos",
     "title": "5. Deployments and Code Promotion",
     "section": "Meeting videos",
-    "text": "Meeting videos\n\n\n\n\n\n\n\n\nCohort 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "text": "Meeting videos\n\n\n\n\n\n\n\n\nCohort 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCohort 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "DevOps Lessons for Data Science",
       "5. Deployments and Code Promotion"
@@ -1523,7 +1495,7 @@
     "href": "07.html#meeting-videos",
     "title": "7. The Cloud",
     "section": "Meeting videos",
-    "text": "Meeting videos\n\n\n\n\n\n\n\n\nCohort 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "text": "Meeting videos\n\n\n\n\n\n\n\n\nCohort 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCohort 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "IT/Admin for Data Science",
       "7. The Cloud"

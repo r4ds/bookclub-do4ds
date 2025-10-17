@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.25">
 
-  <title>DevOps for Data Science Book Club – Getting Started with the Cloud</title>
+  <title>DevOps for Data Science Book Club – The Cloud</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -126,7 +126,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Getting Started with the Cloud</h1>
+  <h1 class="title">The Cloud</h1>
 
 <div class="quarto-title-authors">
 </div>
@@ -146,32 +146,55 @@
 <blockquote>
 <p>So this section is really targeting the student who wants to <strong>host a project for portfolio purposes,</strong> the hobbyist who’s <strong>hosting a toy project,</strong> or the data science leader who <strong>has no choice but to host things for themselves because they just can’t get IT/Admin support.</strong></p>
 </blockquote>
-<p>🎉🎉🎉 I’ve been two of those things in the last year!</p>
 </section>
 <section id="why-cloud" class="slide level2">
 <h2>Why cloud?</h2>
 <ul>
-<li>It probably isn’t cheaper.</li>
-<li>It’s faster and easier.
+<li>Flexibility: easy to re-scale.</li>
+<li>No need to manage hardware.</li>
+<li>Cheaper?
 <ul>
-<li>No need to wait for new hardware to arrive and be installed.</li>
+<li>Not so much</li>
 </ul></li>
 </ul>
 </section>
 <section id="things-as-a-service" class="slide level2">
 <h2>Things as a Service</h2>
-<div style="display: flex;">
-<div>
-<p><strong>Infrastructure as a Service (IaaS, “eye-az”)</strong> <img data-src="images/06_raw-ingredients.jpg" width="400" alt="Raw ingredients for a cake."></p>
-</div>
-<div>
-<p><strong>Platform as a Service (PaaS, “pass”)</strong> <img data-src="images/06_cake-mix.png" width="400" alt="A box of Betty Crocker cake mix."></p>
-</div>
-<div>
-<p><strong>Software as a Service (SaaS, “sass”)</strong> <img data-src="images/06_sheet-cake.jpg" width="400" alt="An undecorated sheet cake."></p>
-</div>
-</div>
+<p><strong>Infrastructure as a Service (IaaS, “eye-az”)</strong></p>
+<ul>
+<li><em>Rent a server</em></li>
+<li>It is actually a <strong>VM</strong>: a virtualized server on a virtual machine, called an instance.</li>
+<li><strong>Spot instances</strong>: for stateless, fault-tolerant applications.
+<ul>
+<li>Cheaper, they lend you space no one is using.</li>
+<li>Preemptible, they can be claimed back.</li>
+</ul></li>
+</ul>
 </section>
+<section id="things-as-a-service-1" class="slide level2">
+<h2>Things as a Service</h2>
+<p><strong>Platform as a Service (PaaS, “pass”)</strong></p>
+<ul>
+<li>They manage the servers AND your applications.</li>
+<li>You get a ready to use environment for your applications.</li>
+<li>Examples:
+<ul>
+<li>Blob storage</li>
+<li>Lambdas, <em>serverless</em> functions</li>
+<li>Container orchestration, Kubernetes</li>
+</ul></li>
+<li>Posit Connect Cloud</li>
+</ul>
+</section>
+<section id="things-as-a-service-2" class="slide level2">
+<h2>Things as a Service</h2>
+<p><strong>Software as a Service (SaaS, “sass”)</strong></p>
+<ul>
+<li>You rent the end-user software.</li>
+<li>Data as a service?</li>
+</ul>
+
+<img data-src="images/07_saas.png" class="r-stretch quarto-figure-center"><p class="caption">Types of Saas. From <a href="https://www.spiceworks.com/tech/cloud/articles/what-is-software-as-a-service/">What Is Software as a Service (SaaS)?</a></p></section>
 <section id="common-cloud-services" class="slide level2">
 <h2>Common Cloud Services</h2>
 <table class="caption-top">
@@ -214,18 +237,18 @@
 <td>Azure ML</td>
 <td>Vertex AI</td>
 </tr>
+<tr class="odd">
+<td>Access control</td>
+<td>IAM</td>
+<td>Microsoft Entra ID</td>
+<td>Identity Access Management</td>
+</tr>
 </tbody>
 </table>
 </section>
 <section id="discuss-the-lab" class="slide level2">
 <h2>Discuss the Lab</h2>
 <p><a href="https://aws.amazon.com" class="uri">https://aws.amazon.com</a></p>
-</section>
-<section id="meeting-videos" class="slide level2">
-<h2>Meeting Videos</h2>
-<h3 id="cohort-1">Cohort 1</h3>
-<iframe src="https://www.youtube.com/embed/O6lhqSz-8Dw" width="100%" height="400px" data-external="1">
-</iframe>
 
 
 </section>

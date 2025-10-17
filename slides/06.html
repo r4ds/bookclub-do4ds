@@ -343,14 +343,6 @@
 <li><p>Data can be preserved from instance to instance of the same container using mounted volumes</p></li>
 <li><p>Containers are a process that executes the layers of your Dockerfile</p></li>
 </ul>
-</section>
-<section id="meeting-videos" class="slide level2 unnumbered">
-<h2>Meeting Videos</h2>
-<h3 class="unnumbered" id="cohort-1">Cohort 1</h3>
-<iframe src="https://www.youtube.com/embed/gzJ3eT6tcog" width="100%" height="400px" data-external="1">
-</iframe>
-<iframe src="https://www.youtube.com/embed/CHbaTCo4gQk" width="100%" height="400px" data-external="1">
-</iframe>
 
 
 </section>
@@ -569,6 +561,44 @@
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

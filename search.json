@@ -1010,51 +1010,65 @@
   {
     "objectID": "slides/05.html#learning-objectives",
     "href": "slides/05.html#learning-objectives",
-    "title": "Code promotion and integration",
+    "title": "Deployments and Code Promotion",
     "section": "Learning objectives",
-    "text": "Learning objectives\n\nDescribe the three environments used in software development and data science.\nUse GitHub Actions (GHA) to deploy data science assets.\nKeep environments in sync using infrastructure as code (IaC) tooling."
+    "text": "Learning objectives\n\nHow–and why–progressively promote code from your computer to the cloud\nWhy work in 3 environments\nHow deployment can be automated with GitHub Actions"
   },
   {
-    "objectID": "slides/05.html#why-do-we-care-about-code-promotion-workflows",
-    "href": "slides/05.html#why-do-we-care-about-code-promotion-workflows",
-    "title": "Code promotion and integration",
-    "section": "Why Do We Care About Code Promotion Workflows?",
-    "text": "Why Do We Care About Code Promotion Workflows?\n\n\n\n(Image Source: Reddit)\n\n\n\nWithout foresight, live products can break. Users sad; supervisors mad.\nCode promotion reduces the risk of disaster by:\n\nModularizing processes\nTesting & checking rigorously\nMinimizing downtime\n\n\n\nWhat does code promotion look like?"
+    "objectID": "slides/05.html#cicd-find-out-what-it-means-to-me",
+    "href": "slides/05.html#cicd-find-out-what-it-means-to-me",
+    "title": "Deployments and Code Promotion",
+    "section": "CI/CD: Find out what it means to me",
+    "text": "CI/CD: Find out what it means to me\n\n\n\nCentralized, version-controlled source code builds the project.\n\n\nNot just on my machine.\nNo time-stamped versions.\nNo manual or non-code actions.\n\n\n\n\nRegular and “right-sized” changes to the code.\n\n\nNo long-lived branches\nNo massive changes\n\n\n\n\nAutomated pre-deployment tests.\n\n\nEnsure code meets standards (e.g., style, tests, etc.)\nBreak tests; not prod.\n\n\n\n\nAutomated deployment\n\n\nNo manually moving files\nNo making ad hoc changes as deployment is done"
   },
   {
-    "objectID": "slides/05.html#the-three-environments",
-    "href": "slides/05.html#the-three-environments",
-    "title": "Code promotion and integration",
-    "section": "The Three Environments",
-    "text": "The Three Environments\n\n\n\n(Image Source: Miami University)\n\n\nDev\n\nThe development environment is the product sandbox\nMost “data science” happens here:\n\nData analysis & modeling\nApp prototyping\nETL\n\n\nComparing dev for data science vs dev for software engineering:\n\n\n\n\n\n\n\nData Science\n\n\nSoftware Engineering\n\n\n\n\n\n\nGoal\n\n\nExplore relationships in data that may develop into live products\n\n\nBuild & implement a specific feature for a live product with pre-defined requirements\n\n\n\n\nTools\n\n\n“Fully fledged” data science IDE (RStudio, VSCode) can encompass Dev, Test, & Prod\n\n\nDev, Test, & Prod are differentiated by environments & containers\n\n\n\n\n\n\n\nMost of what data scientists do doesn’t end up as a live product in the state it was created; these entities think differently! (Source)\n\n\nTest\n\nTest is for testing :)\nTests used for many reasons incl. security, portability, performance, usability\n\nProd\n\nGold standard (where your live product is released into the wild)\nShould be guarded by Continuous Integration/Continuous Deployment (CI/CD)\nIdeally zero manual interaction and zero changes to the actual code"
+    "objectID": "slides/05.html#three-envs-for-developer-kings",
+    "href": "slides/05.html#three-envs-for-developer-kings",
+    "title": "Deployments and Code Promotion",
+    "section": "Three envs for developer-kings 👑👑👑",
+    "text": "Three envs for developer-kings 👑👑👑\n\n\n\n\n\n\n\n\nDev\nWhere the messy magic happens\nTest\nWhere testing and scruntinization happen\nProd\nWhere production code lives"
   },
   {
-    "objectID": "slides/05.html#cicd",
-    "href": "slides/05.html#cicd",
-    "title": "Code promotion and integration",
-    "section": "CI/CD",
-    "text": "CI/CD\n\nMost CI/CD processes are usually managed with git:\n\n\n\n\nThere are a handful of git workflow patterns for DevOps (Image Source: The book!)\n\n\nCI/CD processes are “triggered” by git changes (i.e. when code changes in test)\n\nGitHub is the leading provider for CI/CD via GitHub Actions (GHA)\n\nHow Does it Work?\nYou write code that tells the CI/CD tool to:\n\nBuild a clean, empty server on the cloud\nCopy your code with new changes and the bare-minimum requirements for it to run\nInstall and run any tests as specified; if tests fail, stop immediately and inform the developer\nAccept the new changes and “push” to production (automatically copy the changes to the live product)\n\nr-lib 📦 is your friend for getting started with GHA with R — See here"
+    "objectID": "slides/05.html#one-process-to-rule-them-all-and-in-the-promotion-bind-them",
+    "href": "slides/05.html#one-process-to-rule-them-all-and-in-the-promotion-bind-them",
+    "title": "Deployments and Code Promotion",
+    "section": "One process to rule them all, and in the promotion bind them 💍",
+    "text": "One process to rule them all, and in the promotion bind them 💍"
   },
   {
-    "objectID": "slides/05.html#per-environment-configuration",
-    "href": "slides/05.html#per-environment-configuration",
-    "title": "Code promotion and integration",
-    "section": "Per-Environment Configuration",
-    "text": "Per-Environment Configuration\n\nWhen servers are “stood up” by CI/CD, they can take many forms\nIt’s wise to test these forms for your users\nHow do you flexibly code CI/CD to test many forms? config 📦 in R is your friend, use it to set environment variables1\n\nWe’ll probably learn more about environment variables in chapter 7 + 8"
+    "objectID": "slides/05.html#environmental-science-keeping-envs-separate-but-similar",
+    "href": "slides/05.html#environmental-science-keeping-envs-separate-but-similar",
+    "title": "Deployments and Code Promotion",
+    "section": "Environmental science: keeping envs separate but similar",
+    "text": "Environmental science: keeping envs separate but similar\n\n\nChallenge\n\nIf I have 3 envs, how do I keep them in sync?\nIf only prod can touch real data, how can I be sure changes in dev and test work?\n\n\nHow\n\nBranches\nConfiguration\nPromotion"
   },
   {
-    "objectID": "slides/05.html#creating-maintaining-identical-environments",
-    "href": "slides/05.html#creating-maintaining-identical-environments",
-    "title": "Code promotion and integration",
-    "section": "Creating & Maintaining Identical Environments",
-    "text": "Creating & Maintaining Identical Environments\n\nServers should be cattle; not sheep/environments are pocket change\n\nServers should be unremarkable, used frequently and interchangeably\n\nTest environments should be identical to production; therefore, never fiddle with test when tests fail\n\nDoing so introduces servers to drift out of alignment\n\nInfrastructure as Code (IaC) are tools meant to manage these servers and changes"
+    "objectID": "slides/05.html#branches",
+    "href": "slides/05.html#branches",
+    "title": "Deployments and Code Promotion",
+    "section": "Branches",
+    "text": "Branches"
   },
   {
-    "objectID": "slides/05.html#review",
-    "href": "slides/05.html#review",
-    "title": "Code promotion and integration",
-    "section": "Review",
-    "text": "Review\n\n\n\n\n\n\n\nLearning Objective\nWhat Did We Learn?\n\n\n\n\nDescribe the three environments used in software development and data science.\n\nDev: where products are conceived and built\nTest: where products are rigorously tested against the many different environments they will encounter “in the wild”\nProd: where the live product exists “in the wild”\n\n\n\nUse GitHub Actions (GHA) to deploy data science assets.\nR users can do this with r-lib 📦\n\n\nKeep environments in sync using infrastructure as code (IaC) tooling.\n\nServers are cheap; use frequently\nIaC Tools help you stay away from drifting"
+    "objectID": "slides/05.html#configuration",
+    "href": "slides/05.html#configuration",
+    "title": "Deployments and Code Promotion",
+    "section": "Configuration",
+    "text": "Configuration\n\n\nEither hand-roll a config per env …\nSorry–too lazy\n\n… or make an env-aware config\ndev:\n  write: false\n  db-path: dev-db\nprod:\n  write: true\n  db-path: prod-db"
+  },
+  {
+    "objectID": "slides/05.html#promotion",
+    "href": "slides/05.html#promotion",
+    "title": "Deployments and Code Promotion",
+    "section": "Promotion",
+    "text": "Promotion\n\nRun tests\nReview code\nMerge"
+  },
+  {
+    "objectID": "slides/05.html#deployment-weve-got-a-runner",
+    "href": "slides/05.html#deployment-weve-got-a-runner",
+    "title": "Deployments and Code Promotion",
+    "section": "Deployment: we’ve got a runner 🏃‍♂️‍➡️",
+    "text": "Deployment: we’ve got a runner 🏃‍♂️‍➡️\n\nEvent listener (on: ...)\nJob(s)\n\nIn an env\n\nOS (runs-on: ubuntu-latest)\nEnv vars (e.g. env: GITHUB_PAT: ${{ secrets.ACTIONS_DEPLOY_KEY }})\n\nConsist of step(s)\n\nAction (uses)\nCommand (sudo make-coffee)"
   },
   {
     "objectID": "slides/07.html#learning-objectives",

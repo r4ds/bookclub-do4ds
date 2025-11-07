@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.25">
 
-  <title>DevOps for Data Science Book Club – Code promotion and integration</title>
+  <title>DevOps for Data Science Book Club – Deployments and Code Promotion</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -27,6 +27,72 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #f8f8f2;  }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #f8f8f2; } /* Normal */
+    code span.al { color: #f07178; } /* Alert */
+    code span.an { color: #d4d0ab; } /* Annotation */
+    code span.at { color: #00e0e0; } /* Attribute */
+    code span.bn { color: #d4d0ab; } /* BaseN */
+    code span.bu { color: #abe338; } /* BuiltIn */
+    code span.cf { color: #ffa07a; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #abe338; } /* Char */
+    code span.cn { color: #ffd700; } /* Constant */
+    code span.co { color: #f8f8f2; font-style: italic; } /* Comment */
+    code span.cv { color: #ffd700; } /* CommentVar */
+    code span.do { color: #f8f8f2; } /* Documentation */
+    code span.dt { color: #ffa07a; } /* DataType */
+    code span.dv { color: #d4d0ab; } /* DecVal */
+    code span.er { color: #f07178; text-decoration: underline; } /* Error */
+    code span.ex { color: #00e0e0; font-weight: bold; } /* Extension */
+    code span.fl { color: #d4d0ab; } /* Float */
+    code span.fu { color: #ffa07a; } /* Function */
+    code span.im { color: #abe338; } /* Import */
+    code span.in { color: #d4d0ab; } /* Information */
+    code span.kw { color: #ffa07a; font-weight: bold; } /* Keyword */
+    code span.op { color: #ffa07a; } /* Operator */
+    code span.ot { color: #00e0e0; } /* Other */
+    code span.pp { color: #dcc6e0; } /* Preprocessor */
+    code span.re { color: #00e0e0; background-color: #f8f8f2; } /* RegionMarker */
+    code span.sc { color: #abe338; } /* SpecialChar */
+    code span.ss { color: #abe338; } /* SpecialString */
+    code span.st { color: #abe338; } /* String */
+    code span.va { color: #00e0e0; } /* Variable */
+    code span.vs { color: #abe338; } /* VerbatimString */
+    code span.wa { color: #dcc6e0; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-5079db4132f0eaf0a29ac93fceccb8c9.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -126,7 +192,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Code promotion and integration</h1>
+  <h1 class="title">Deployments and Code Promotion</h1>
 
 <div class="quarto-title-authors">
 </div>
@@ -135,202 +201,142 @@
 <section id="learning-objectives" class="slide level2">
 <h2>Learning objectives</h2>
 <ul>
-<li>Describe the <strong>three environments</strong> used in software development and data science.</li>
-<li>Use <strong>GitHub Actions (GHA) to deploy</strong> data science assets.</li>
-<li>Keep environments in sync using <strong>infrastructure as code (IaC) tooling.</strong></li>
+<li>How–and why–progressively promote code from your computer to the cloud</li>
+<li>Why work in 3 environments</li>
+<li>How deployment can be automated with GitHub Actions</li>
 </ul>
 </section>
-<section id="why-do-we-care-about-code-promotion-workflows" class="slide level2 unnumbered">
-<h2>Why Do We Care About Code Promotion Workflows?</h2>
+<section id="cicd-find-out-what-it-means-to-me" class="slide level2">
+<h2>CI/CD: Find out what it means to me</h2>
+<ul>
+<li><details>
+<summary>
+<strong>Centralized, version-controlled source code builds the project.</strong>
+</summary>
+<ul>
+<li>Not just on my machine.</li>
+<li>No time-stamped versions.</li>
+<li>No manual or non-code actions.</li>
+</ul>
+</details></li>
+<li><details>
+<summary>
+<strong>Regular and “right-sized” changes to the code.</strong>
+</summary>
+<ul>
+<li>No long-lived branches</li>
+<li>No massive changes</li>
+</ul>
+</details></li>
+<li><details>
+<summary>
+<strong>Automated pre-deployment tests.</strong>
+</summary>
+<ul>
+<li>Ensure code meets standards (e.g., style, tests, etc.)</li>
+<li>Break tests; not prod.</li>
+</ul>
+</details></li>
+<li><details>
+<summary>
+<strong>Automated deployment</strong>
+</summary>
+<ul>
+<li>No manually moving files</li>
+<li>No making ad hoc changes as deployment is done</li>
+</ul>
+</details></li>
+</ul>
+</section>
+<section id="three-envs-for-developer-kings" class="slide level2">
+<h2>Three envs for developer-kings 👑👑👑</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<div class="quarto-figure quarto-figure-center">
 <figure>
-<img src="https://i.redd.it/7zhsce11xms31.jpg" style="float:right;width:300px;height:420px;">
-<figcaption>
-(Image Source: <a href="https://www.reddit.com/r/ProgrammerHumor/comments/di2shq/well_thats_interesting_lets_take_rest_of_the_day/">Reddit</a>)
-</figcaption>
+<p><img data-src="https://do4ds.com/chapters/sec1/images/dev-test-prod.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
+</div>
+</div><div class="column" style="width:30%;">
+<h3 id="dev">Dev</h3>
+<p>Where the messy magic happens</p>
+<h3 id="test">Test</h3>
+<p>Where testing and scruntinization happen</p>
+<h3 id="prod">Prod</h3>
+<p>Where production code lives</p>
+</div></div>
+</section>
+<section id="one-process-to-rule-them-all-and-in-the-promotion-bind-them" class="slide level2">
+<h2>One process to rule them all, and in the promotion bind them 💍</h2>
+
+<img data-src="https://do4ds.com/chapters/sec1/images/dev-test-prod.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="environmental-science-keeping-envs-separate-but-similar" class="slide level2">
+<h2>Environmental science: keeping envs separate but similar</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="challenge">Challenge</h3>
 <ul>
-<li>Without foresight, live products can break. Users sad; supervisors mad.</li>
-<li>Code promotion reduces the risk of disaster by:
+<li>If I have 3 envs, how do I keep them in sync?</li>
+<li>If only prod can touch real data, how can I be sure changes in dev and test work?</li>
+</ul>
+</div><div class="column fragment" style="width:50%;">
+<h3 id="how">How</h3>
 <ul>
-<li>Modularizing processes</li>
-<li>Testing &amp; checking rigorously</li>
-<li>Minimizing downtime</li>
+<li>Branches</li>
+<li>Configuration</li>
+<li>Promotion</li>
+</ul>
+</div></div>
+</section>
+<section id="branches" class="slide level2">
+<h2>Branches</h2>
+
+<img data-src="https://do4ds.com/chapters/sec1/images/git-branches.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="configuration" class="slide level2">
+<h2>Configuration</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="either-hand-roll-a-config-per-env">Either hand-roll a config per env …</h3>
+<p>Sorry–too lazy</p>
+</div><div class="column fragment" style="width:50%;">
+<h3 id="or-make-an-env-aware-config">… or make an env-aware config</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a></a><span class="fu">dev</span><span class="kw">:</span></span>
+<span id="cb1-2"><a></a><span class="at">  </span><span class="fu">write</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
+<span id="cb1-3"><a></a><span class="at">  </span><span class="fu">db-path</span><span class="kw">:</span><span class="at"> dev-db</span></span>
+<span id="cb1-4"><a></a><span class="fu">prod</span><span class="kw">:</span></span>
+<span id="cb1-5"><a></a><span class="at">  </span><span class="fu">write</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb1-6"><a></a><span class="at">  </span><span class="fu">db-path</span><span class="kw">:</span><span class="at"> prod-db</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div></div>
+</section>
+<section id="promotion" class="slide level2">
+<h2>Promotion</h2>
+<ul>
+<li>Run tests</li>
+<li>Review code</li>
+<li>Merge</li>
+</ul>
+</section>
+<section id="deployment-weve-got-a-runner" class="slide level2">
+<h2>Deployment: we’ve got a runner 🏃‍♂️‍➡️</h2>
+<ul>
+<li>Event listener (<code>on: ...</code>)</li>
+<li>Job(s)
+<ul>
+<li>In an env
+<ul>
+<li>OS (<code>runs-on: ubuntu-latest</code>)</li>
+<li>Env vars (e.g.&nbsp;<code>env: GITHUB_PAT: ${{ secrets.ACTIONS_DEPLOY_KEY }}</code>)</li>
+</ul></li>
+<li>Consist of step(s)
+<ul>
+<li>Action (<code>uses</code>)</li>
+<li>Command (<code>sudo make-coffee</code>)</li>
+</ul></li>
 </ul></li>
 </ul>
-<blockquote>
-<p>What does code promotion look like?</p>
-</blockquote>
-</section>
-<section id="the-three-environments" class="slide level2 unnumbered">
-<h2>The Three Environments</h2>
-<figure>
-<img src="https://miamioh.edu/_files/images/it-services/news-articles/2017/08/dev-graphic.png">
-<figcaption>
-(Image Source: <a href="https://miamioh.edu/it-services/news/2017/08/dev-test-prod.html">Miami University</a>)
-</figcaption>
-</figure>
-<h3 class="unnumbered" id="dev">Dev</h3>
-<ul>
-<li>The <em>development environment</em> is the product sandbox</li>
-<li>Most “data science” happens here:
-<ul>
-<li>Data analysis &amp; modeling</li>
-<li>App prototyping</li>
-<li>ETL</li>
-</ul></li>
-</ul>
-<p>Comparing dev for data science vs dev for software engineering:</p>
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
-.tg .tg-0lax{text-align:left;vertical-align:top}
-</style>
-<table class="tg">
-<thead>
-<tr>
-<th class="tg-0lax">
-</th>
-<th class="tg-1wig">
-Data Science
-</th>
-<th class="tg-1wig">
-Software Engineering
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tg-0lax">
-<span style="font-weight:bold">Goal</span>
-</td>
-<td class="tg-0lax">
-Explore relationships in data that may develop into live products
-</td>
-<td class="tg-0lax">
-Build &amp; implement a specific feature for a live product with pre-defined requirements
-</td>
-</tr>
-<tr>
-<td class="tg-1wig">
-Tools
-</td>
-<td class="tg-0lax">
-“Fully fledged” data science IDE (RStudio, VSCode) can encompass Dev, Test, &amp; Prod
-</td>
-<td class="tg-0lax">
-Dev, Test, &amp; Prod are differentiated by environments &amp; containers
-</td>
-</tr>
-</tbody>
-</table>
-<figure>
-<img src="https://www.productboard.com/wp-content/uploads/2022/04/untitled-3.png" style="width:500px;height:450px;">
-<figcaption>
-Most of what data scientists do doesn’t end up as a live product in the state it was created; these entities think differently! (<a href="https://www.productboard.com/blog/orchestrating-ml-workflows-with-airflow/">Source</a>)
-</figcaption>
-</figure>
-<h3 class="unnumbered" id="test">Test</h3>
-<ul>
-<li><p>Test is for testing :)</p></li>
-<li><p>Tests used for many reasons incl.&nbsp;security, portability, performance, usability</p></li>
-</ul>
-<h3 class="unnumbered" id="prod">Prod</h3>
-<ul>
-<li>Gold standard (where your live product is released into the wild)</li>
-<li>Should be guarded by Continuous Integration/Continuous Deployment (CI/CD)</li>
-<li>Ideally zero manual interaction and zero changes to the actual code</li>
-</ul>
-</section>
-<section id="cicd" class="slide level2 unnumbered">
-<h2>CI/CD</h2>
-<ul>
-<li>Most CI/CD processes are usually managed with git:</li>
-</ul>
-<figure>
-<img src="https://do4ds.com/chapters/sec1/images-code-promotion/git-branches.png">
-<figcaption>
-There are a handful of <a href="https://rovitpm.com/5-git-workflows-to-improve-development/">git workflow patterns</a> for DevOps (Image Source: <a href="https://do4ds.com/chapters/sec1/1-1-code-promotion.html#cicd-and-the-mechanics-of-code-promotion">The book!</a>)
-</figcaption>
-</figure>
-<p>CI/CD processes are “triggered” by git changes (i.e.&nbsp;when code changes in <code>test</code>)</p>
-<ul>
-<li>GitHub is the leading provider for CI/CD via GitHub Actions (GHA)</li>
-</ul>
-<h3 class="unnumbered" id="how-does-it-work">How Does it Work?</h3>
-<p>You write code that tells the CI/CD tool to:</p>
-<ol type="1">
-<li>Build a clean, empty server on the cloud</li>
-<li>Copy your code with new changes and the bare-minimum requirements for it to run</li>
-<li>Install and run any tests as specified; if tests fail, stop immediately and inform the developer</li>
-<li>Accept the new changes and “push” to production (automatically copy the changes to the live product)</li>
-</ol>
-<p><code>r-lib</code> 📦 is your friend for getting started with GHA with R — See <a href="https://github.com/r-lib/actions">here</a></p>
-</section>
-<section id="per-environment-configuration" class="slide level2 unnumbered">
-<h2>Per-Environment Configuration</h2>
-<ul>
-<li>When servers are “stood up” by CI/CD, they can take many forms</li>
-<li>It’s wise to test these forms for your users</li>
-<li>How do you flexibly code CI/CD to test many forms? <code>config</code> 📦 in R is your friend, use it to set environment variables<sup>1</sup></li>
-</ul>
-<aside><ol class="aside-footnotes"><li id="fn1"><p>We’ll probably learn more about environment variables in chapter 7 + 8</p></li></ol></aside></section>
-<section id="creating-maintaining-identical-environments" class="slide level2 unnumbered">
-<h2>Creating &amp; Maintaining Identical Environments</h2>
-<ul>
-<li>Servers should be cattle; not sheep/environments are pocket change
-<ul>
-<li>Servers should be unremarkable, used frequently and interchangeably</li>
-</ul></li>
-<li>Test environments should be identical to production; therefore, never fiddle with test when tests fail
-<ul>
-<li>Doing so introduces servers to <em>drift out of alignment</em></li>
-</ul></li>
-<li>Infrastructure as Code (IaC) are tools meant to manage these servers and changes</li>
-</ul>
-</section>
-<section id="review" class="slide level2 unnumbered">
-<h2>Review</h2>
-<table class="caption-top">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 49%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Learning Objective</th>
-<th>What Did We Learn?</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Describe the <strong>three environments</strong> used in software development and data science.</td>
-<td><ol type="1">
-<li><strong>Dev:</strong> where products are conceived and built</li>
-<li><strong>Test:</strong> where products are rigorously tested against the many different environments they will encounter “in the wild”</li>
-<li><strong>Prod:</strong> where the live product exists “in the wild”</li>
-</ol></td>
-</tr>
-<tr class="even">
-<td>Use <strong>GitHub Actions (GHA) to deploy</strong> data science assets.</td>
-<td>R users can do this with <code>r-lib</code> 📦</td>
-</tr>
-<tr class="odd">
-<td>Keep environments in sync using infrastructure as code (IaC) tooling.</td>
-<td><ul>
-<li>Servers are cheap; use frequently</li>
-<li>IaC Tools help you stay away from drifting</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
 
 
 </section>
-
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">

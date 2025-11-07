@@ -1,0 +1,145 @@
+---
+engine: knitr
+title:  Deployments and Code Promotion
+---
+
+## Learning objectives
+
+- How--and why--progressively promote code from your computer to the cloud
+- Why work in 3 environments
+- How deployment can be automated with GitHub Actions
+
+## CI/CD: Find out what it means to me
+
+- <details>
+  <summary>**Centralized, version-controlled source code builds the project.**</summary>
+  - Not just on my machine.
+  - No time-stamped versions.
+  - No manual or non-code actions.
+</details>
+- <details>
+  <summary>**Regular and "right-sized" changes to the code.**</summary>
+  - No long-lived branches
+  - No massive changes
+</details>
+- <details>
+  <summary>**Automated pre-deployment tests.**</summary>
+  - Ensure code meets standards (e.g., style, tests, etc.)
+  - Break tests; not prod.
+</details>
+- <details>
+  <summary>**Automated deployment**</summary>
+  - No manually moving files
+  - No making ad hoc changes as deployment is done
+</details>
+
+## Three envs for developer-kings 👑👑👑
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+![](https://do4ds.com/chapters/sec1/images/dev-test-prod.png){fig-align="center"}
+
+:::
+
+::: {.column width="30%"}
+
+### Dev
+
+Where the messy magic happens
+
+### Test
+
+Where testing and scruntinization happen
+
+### Prod
+
+Where production code lives
+
+:::
+
+::::
+
+
+
+## One process to rule them all, and in the promotion bind them 💍
+
+![](https://do4ds.com/chapters/sec1/images/dev-test-prod.png){fig-align="center"}
+
+## Environmental science: keeping envs separate but similar
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+### Challenge
+
+- If I have 3 envs, how do I keep them in sync?
+- If only prod can touch real data, how can I be sure changes in dev and test work?
+
+:::
+
+::: {.column width="50%" .fragment}
+
+### How
+
+- Branches
+- Configuration
+- Promotion
+
+
+:::
+
+::::
+
+
+## Branches
+
+![](https://do4ds.com/chapters/sec1/images/git-branches.png){fig-align="center"}
+
+## Configuration
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+### Either hand-roll a config per env ...
+
+Sorry--too lazy
+
+:::
+
+::: {.column width="50%" .fragment}
+
+### ... or make an env-aware config
+
+```yaml
+dev:
+  write: false
+  db-path: dev-db
+prod:
+  write: true
+  db-path: prod-db
+```
+
+:::
+
+::::
+
+## Promotion
+
+- Run tests
+- Review code
+- Merge
+
+## Deployment: we've got a runner 🏃‍♂️‍➡️
+
+- Event listener (`on: ...`)
+- Job(s)
+  - In an env
+    - OS (`runs-on: ubuntu-latest`)
+    - Env vars (e.g. `env: GITHUB_PAT: ${{ secrets.ACTIONS_DEPLOY_KEY }}`)
+  - Consist of step(s)
+    - Action (`uses`)
+    - Command (`sudo make-coffee`)

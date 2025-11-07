@@ -1,0 +1,16 @@
+---
+title: Cohort 2
+---
+{{< video https://www.youtube.com/embed/Ya0EHNfg4WA >}}
+
+<details>
+<summary>
+Meeting chat log
+</summary>
+```
+00:03:43	Olivier Leroy:	start
+00:06:07	Josh Persi:	Sorry Olivier
+00:06:16	Josh Persi:	Connection is still very poor
+01:02:27	Olivier Leroy:	end
+```
+</details>

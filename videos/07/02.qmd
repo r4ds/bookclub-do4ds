@@ -1,0 +1,15 @@
+---
+title: Cohort 2
+---
+{{< video https://www.youtube.com/embed/yk8LqHzlS7s >}}
+
+<details>
+<summary>
+Meeting chat log
+</summary>
+```
+00:11:22	Diana Garcia:	start
+00:13:31	Arthur Shaw:	Can't get IT/Admin support. That never happens in reality 🤣
+01:08:12	Diana Garcia:	end
+```
+</details>

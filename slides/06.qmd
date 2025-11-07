@@ -1,0 +1,104 @@
+---
+engine: knitr
+title: Demystyfing Docker 
+---
+
+## Learning objectives
+
+- Decide whether a container is the right tool for a given job.
+- Download and run pre-built Docker images.
+- Describe the stages of the Docker container lifecycle.
+- Build simple Dockerfiles for your own projects.
+
+## Why docker matters for data science 
+
+- Docker creates standardized environments that are:
+
+  1. Reproducible
+
+  2. Portable 
+
+  3. Collaborative 
+  
+  4. Scalable
+
+![](images/06_docker-logo.png){.absolute width=480 height=270 left=500px top=200px fig-alt="The Docker logo, a whale with shipping containers on its back"}
+
+::: aside
+See [An Introduction to Docker for R Users](https://colinfay.me/docker-r-reproducibility/) for a guide on reproducibility with Docker for R users
+:::
+
+::: {.notes}
+
+- Docker allows us to set up infrastructure as code
+
+- Docker enhances reproducibility by creating a reproducible environment all the way down to the operating system - important for highly regulated industries
+
+- Docker allows you to develop your project using an image that may more closely match the production environment - important for Shiny apps and APIs
+
+:::
+
+## What is Docker? 
+
+- An open-source tool for building, sharing, and running software
+
+![](images/06_docker-lifecycle.png){fig-align="center" width=50% height=50% fig-alt="The Docker lifecycle and commands, showing that a Dockerfile produces a Docker Image, which leads to a Docker Container"}
+
+::: {.notes}
+
+- Requires a Linux operating system or the Windows Subsystem for Linux (WSL)
+
+- Windows and macOS users download [Docker Desktop](https://www.docker.com/products/docker-desktop/), which comes with a Linux VM. Linux users are recommended to install the [Docker Engine](https://docs.docker.com/engine/install/) directly.
+
+- Three terms to be familiar with are DockerFile, Docker Image, and Container Instances. 
+
+- Note that the names *container* and *instance* are often used interchangeably
+
+:::
+
+## Specify your environment via a `Dockerfile`
+
+- Dockerfiles build Docker images
+
+- Dockerfiles are plain text files using `FROM`, `RUN`, `COPY`, and `CMD` commands 
+
+```{bash}
+#| eval: false
+#| echo: true
+FROM ubuntu:latest # <1>                
+COPY my-data.csv /data/data.csv # <2>
+RUN ["head", "/data/data.csv"] # <3>
+```
+1. Declare the base image
+2. Copy `data.csv` from the host's working directory to the container's data directory
+3. Print the first few rows of `data.csv` 
+
+::: {.notes}
+
+- Creating your own Dockerfile is optional - many standard Docker images exist on Dockerhub (e.g. [`rocker/tidyverse`]())  
+
+- Dockerfiles build images and also *pull* existing images
+
+:::
+
+## Docker images are a snapshot of your environment
+
+- Docker images contain the bundled software (e.g. OS, data, packages)
+
+- Docker images can be shared with others via [Docker hub](https://hub.docker.com/)
+
+- Docker images can, in theory, be a standalone project
+
+::: {.notes}
+
+- Other container registries exist (e.g. [Azure Container Registry](https://azure.microsoft.com/en-us/products/container-registry/?msockid=16f9494b817a63e60f275f7a80ce623d))
+
+:::
+
+## Containers are an ephemeral instance of a Docker Image
+
+- By default, changes made to containers are lost on shutdown
+
+- Data can be preserved from instance to instance of the same container using mounted volumes
+
+- Containers are a process that executes the layers of your Dockerfile  

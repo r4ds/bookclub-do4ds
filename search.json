@@ -14,7 +14,7 @@
     "href": "17.html",
     "title": "17. Compute at Enterprise Scale",
     "section": "",
-    "text": "No matching items",
+    "text": "&lt;– This file is generated automatically. Do not edit. –&gt; &lt;– Edit files in /slides and /videos. –&gt; :::{#slides} :::",
     "crumbs": [
       "Enterprise-Grade Data Science",
       "17. Compute at Enterprise Scale"
@@ -36,7 +36,7 @@
     "href": "15.html",
     "title": "15. Enterprise Networking",
     "section": "",
-    "text": "No matching items",
+    "text": "&lt;– This file is generated automatically. Do not edit. –&gt; &lt;– Edit files in /slides and /videos. –&gt; :::{#slides} :::",
     "crumbs": [
       "Enterprise-Grade Data Science",
       "15. Enterprise Networking"
@@ -58,7 +58,7 @@
     "href": "13.html",
     "title": "13. Domains and DNS",
     "section": "",
-    "text": "No matching items",
+    "text": "&lt;– This file is generated automatically. Do not edit. –&gt; &lt;– Edit files in /slides and /videos. –&gt; :::{#slides} :::",
     "crumbs": [
       "IT/Admin for Data Science",
       "13. Domains and DNS"
@@ -80,7 +80,7 @@
     "href": "11.html",
     "title": "11. Server Resources and Scaling",
     "section": "",
-    "text": "No matching items",
+    "text": "&lt;– This file is generated automatically. Do not edit. –&gt; &lt;– Edit files in /slides and /videos. –&gt; :::{#slides} :::",
     "crumbs": [
       "IT/Admin for Data Science",
       "11. Server Resources and Scaling"
@@ -102,7 +102,7 @@
     "href": "08.html",
     "title": "8. The Command Line",
     "section": "",
-    "text": "No matching items",
+    "text": "&lt;– This file is generated automatically. Do not edit. –&gt; &lt;– Edit files in /slides and /videos. –&gt; :::{#slides} :::",
     "crumbs": [
       "IT/Admin for Data Science",
       "8. The Command Line"
@@ -124,7 +124,7 @@
     "href": "06.html",
     "title": "6. Demystifying Docker",
     "section": "",
-    "text": "No matching items",
+    "text": "&lt;– This file is generated automatically. Do not edit. –&gt; &lt;– Edit files in /slides and /videos. –&gt; :::{#slides} :::",
     "crumbs": [
       "DevOps Lessons for Data Science",
       "6. Demystifying Docker"
@@ -146,7 +146,7 @@
     "href": "04.html",
     "title": "4. Logging and Monitoring",
     "section": "",
-    "text": "No matching items",
+    "text": "&lt;– This file is generated automatically. Do not edit. –&gt; &lt;– Edit files in /slides and /videos. –&gt; :::{#slides} :::",
     "crumbs": [
       "DevOps Lessons for Data Science",
       "4. Logging and Monitoring"
@@ -168,7 +168,7 @@
     "href": "02.html",
     "title": "2. Data Project Architecture",
     "section": "",
-    "text": "No matching items",
+    "text": "&lt;– This file is generated automatically. Do not edit. –&gt; &lt;– Edit files in /slides and /videos. –&gt; :::{#slides} :::",
     "crumbs": [
       "DevOps Lessons for Data Science",
       "2. Data Project Architecture"
@@ -1432,7 +1432,7 @@
     "href": "01.html",
     "title": "1. Environments as Code",
     "section": "",
-    "text": "No matching items",
+    "text": "&lt;– This file is generated automatically. Do not edit. –&gt; &lt;– Edit files in /slides and /videos. –&gt; :::{#slides} :::",
     "crumbs": [
       "DevOps Lessons for Data Science",
       "1. Environments as Code"
@@ -1454,7 +1454,7 @@
     "href": "03.html",
     "title": "3. Databases and Data APIs",
     "section": "",
-    "text": "No matching items",
+    "text": "&lt;– This file is generated automatically. Do not edit. –&gt; &lt;– Edit files in /slides and /videos. –&gt; :::{#slides} :::",
     "crumbs": [
       "DevOps Lessons for Data Science",
       "3. Databases and Data APIs"
@@ -1476,7 +1476,7 @@
     "href": "05.html",
     "title": "5. Deployments and Code Promotion",
     "section": "",
-    "text": "No matching items",
+    "text": "&lt;– This file is generated automatically. Do not edit. –&gt; &lt;– Edit files in /slides and /videos. –&gt; :::{#slides} :::",
     "crumbs": [
       "DevOps Lessons for Data Science",
       "5. Deployments and Code Promotion"
@@ -1498,7 +1498,7 @@
     "href": "07.html",
     "title": "7. The Cloud",
     "section": "",
-    "text": "No matching items",
+    "text": "&lt;– This file is generated automatically. Do not edit. –&gt; &lt;– Edit files in /slides and /videos. –&gt; :::{#slides} :::",
     "crumbs": [
       "IT/Admin for Data Science",
       "7. The Cloud"
@@ -1520,7 +1520,7 @@
     "href": "09.html",
     "title": "9. Linux Administration",
     "section": "",
-    "text": "No matching items",
+    "text": "&lt;– This file is generated automatically. Do not edit. –&gt; &lt;– Edit files in /slides and /videos. –&gt; :::{#slides} :::",
     "crumbs": [
       "IT/Admin for Data Science",
       "9. Linux Administration"
@@ -1542,7 +1542,7 @@
     "href": "12.html",
     "title": "12. Computer Networks",
     "section": "",
-    "text": "No matching items",
+    "text": "&lt;– This file is generated automatically. Do not edit. –&gt; &lt;– Edit files in /slides and /videos. –&gt; :::{#slides} :::",
     "crumbs": [
       "IT/Admin for Data Science",
       "12. Computer Networks"
@@ -1564,7 +1564,7 @@
     "href": "14.html",
     "title": "14. SSL/TLS and HTTPS",
     "section": "",
-    "text": "No matching items",
+    "text": "&lt;– This file is generated automatically. Do not edit. –&gt; &lt;– Edit files in /slides and /videos. –&gt; :::{#slides} :::",
     "crumbs": [
       "IT/Admin for Data Science",
       "14. SSL/TLS and HTTPS"
@@ -1586,7 +1586,7 @@
     "href": "16.html",
     "title": "16. Auth in Enterprise",
     "section": "",
-    "text": "No matching items",
+    "text": "&lt;– This file is generated automatically. Do not edit. –&gt; &lt;– Edit files in /slides and /videos. –&gt; :::{#slides} :::",
     "crumbs": [
       "Enterprise-Grade Data Science",
       "16. Auth in Enterprise"
@@ -1608,7 +1608,7 @@
     "href": "18.html",
     "title": "18. Package Management in the Enterprise",
     "section": "",
-    "text": "No matching items",
+    "text": "&lt;– This file is generated automatically. Do not edit. –&gt; &lt;– Edit files in /slides and /videos. –&gt; :::{#slides} :::",
     "crumbs": [
       "Enterprise-Grade Data Science",
       "18. Package Management in the Enterprise"

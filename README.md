@@ -2,7 +2,7 @@
 
 Welcome to the DSLC DevOps for Data Science Book Club!
 
-We are working together to read [_DevOps for Data Science_](https://do4ds.com/) by Alex K Gold (Chapman & Hall, copyright 2024, [9781032100340](https://www.routledge.com/DevOps-for-Data-Science/Gold/p/book/9781032100340)).
+We are working together to read [_DevOps for Data Science_](https://do4ds.com/) by Alex K Gold (Chapman & Hall, copyright 2024, [9781032100340](https://www.routledge.com/DevOps-for-Data-Science/Gold/p/book/9781032100340)). If you'd like to buy a physical copy of the book, please consider using [this affiliate link](https://amzn.to/4nVnIvb) to support the Data Science Learning Community.
 
 Join the [#book_club-do4ds](https://dslcio.slack.com/archives/C03SMHQ0RJP) channel on the [DSLC Slack](https://dslc.io/join) to participate.
 As we read, we are producing [slides for the book](https://dslc.io/do4ds).

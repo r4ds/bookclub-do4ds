@@ -1,0 +1,241 @@
+---
+engine: knitr
+title: Application Administration
+---
+
+## Learning objectives
+
+- How to install packages
+- Where to install packages
+- How to run apps as services
+
+
+## Linux app install and upgrade
+
+::: {.panel-tabset}
+
+### Package manager
+
+1. Update package index
+
+```bash
+sudo apt-get update
+```
+
+2. Find the package name
+
+```bash
+# apt search {keyword}
+apt search "^r-.*" | sort
+```
+
+3. Install target package: 
+
+```bash
+# sudo apt-get install {package-name}
+# note: not sure which is better `apt` or `apt-get`
+sudo apt install r-base r-base-dev
+```
+
+### Side-load
+
+1. Download
+
+```bash
+#  with curl, download the right Debian package
+export R_VERSION=4.5.2
+curl -O https://cdn.posit.co/r/ubuntu-2404/pkgs/r-${R_VERSION}_1_$(dpkg --print-architecture).deb
+```
+
+2. Install
+
+```bash
+# install the Debian package
+sudo apt-get install ./r-${R_VERSION}_1_$(dpkg --print-architecture).deb
+```
+
+Source: Posit Docs [here](https://docs.posit.co/resources/install-r.html#download-and-install-r)
+
+
+:::
+
+## Configure application
+
+- Read the app's docs
+- Create or modify the file
+
+```bash
+# create a tmux configuration file
+cd ~
+touch .tmux.conf
+
+# edit it
+vim .tmux.conf
+```
+
+## Where to find application files
+
+- Read the app's docs
+- Search in some common places (from the book)
+  - `/bin`, `/opt`, `/usr/local`, `/usr/bin` – installation locations for software.
+  - `/etc` – configuration files for applications.
+  - `/var` – variable data, most commonly log files in `/var/log` or `/var/lib`.
+- Some other places:
+  - `~` in a dotfile (e.g., `.tmux`)
+  - `~/.config/`
+
+## Edit configuration files
+
+- Read the app's docs
+- Use an editor on the server:
+  - Nano
+  - Vi(m)
+
+## Read logs
+
+::: {.panel-tabset}
+
+### Find them
+
+From the book:
+
+> Most applications write their logs somewhere inside the `/var` directory. Some activities will get logged to the main log at `/var/log/syslog`. Other things may get logged to `/var/log/<application name>` or `/var/lib/<application name>`.
+
+### Read them
+
+Print:
+
+- Whole log at once: `cat`
+- Few lines at time: `less`
+- First few lines: `head`
+- Last few lines: `tail`
+
+```bash
+# print lines as they are written to the log
+tail my_file -f
+```
+
+### Search them
+
+- Filter lines with regex patterns: `grep`
+- Filter lines with conditions: `awk`
+
+:::
+
+## Running the right commands
+
+::: {.panel-tabset}
+
+### Where is binary
+
+Either you know (because you put it here) (e.g. `/opt/python3`)
+
+Or you can find out
+
+```bash
+which python3
+# /usr/bin/python3
+```
+
+### Whether on path
+
+Applications need
+To run in the the terminal, either:
+
+- Specify the path
+- Or it is on PATH
+
+To see PATH, print it:
+
+```bash
+echo $PATH
+```
+
+### How to put on path
+
+Option 1: append app's path to PATH
+
+```bash
+# edit and save `.bashrc` to add your new path
+export PATH=/my/app/path:$PATH
+```
+
+Option 2: create symlink from app location to an on-PATH place
+
+```bash
+# create a (soft) symlink from installation in `opt` to a place on PATH
+sudo ln -s /opt/R/${R_VERSION}/bin/R /usr/local/bin/R
+sudo ln -s /opt/R/${R_VERSION}/bin/Rscript /usr/local/bin/Rscript
+```
+
+Source: Posit Docs [here](https://docs.posit.co/resources/install-r.html#create-a-symlink-to-r)
+
+:::
+
+## Running apps as services
+
+::: {.panel-tabset}
+
+### Create a service file
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+1. Create file
+
+```bash
+# move to directory where startup services
+cd /etc/systemd/system/
+
+# create a service file
+touch my_app.service
+```
+
+:::
+
+::: {.column width="50%"}
+
+2. Populate the contents
+
+```
+[Unit]
+Description=My Application Service
+After=network.target # Or other dependencies
+
+[Service]
+ExecStart=/path/to/your/application/executable # Or a script that runs it
+WorkingDirectory=/path/to/your/application/directory
+Restart=always
+User=your_username # Optional, run as a specific user
+Group=your_group # Optional, run as a specific group
+
+[Install]
+WantedBy=multi-user.target
+```
+
+:::
+
+::::
+
+### Enable the service
+
+Reload configurations:
+
+```bash
+sudo systemctl daemon-reload
+```
+
+Enable your service
+
+```bash
+sudo systemctl enable my_app.service
+```
+
+Start the service
+
+```bash
+sudo systemctl start my_app.service
+```
+
+:::

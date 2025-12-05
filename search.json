@@ -98,337 +98,401 @@
     ]
   },
   {
-    "objectID": "08.html",
-    "href": "08.html",
-    "title": "8. The Command Line",
+    "objectID": "09.html",
+    "href": "09.html",
+    "title": "9. Linux Administration",
     "section": "",
     "text": "No matching items",
     "crumbs": [
       "IT/Admin for Data Science",
-      "8. The Command Line"
+      "9. Linux Administration"
     ]
   },
   {
-    "objectID": "08.html#meeting-videos",
-    "href": "08.html#meeting-videos",
-    "title": "8. The Command Line",
+    "objectID": "09.html#meeting-videos",
+    "href": "09.html#meeting-videos",
+    "title": "9. Linux Administration",
+    "section": "Meeting videos",
+    "text": "Meeting videos\n\n\n\n\n\n\n\n\nCohort 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "IT/Admin for Data Science",
+      "9. Linux Administration"
+    ]
+  },
+  {
+    "objectID": "07.html",
+    "href": "07.html",
+    "title": "7. The Cloud",
+    "section": "",
+    "text": "No matching items",
+    "crumbs": [
+      "IT/Admin for Data Science",
+      "7. The Cloud"
+    ]
+  },
+  {
+    "objectID": "07.html#meeting-videos",
+    "href": "07.html#meeting-videos",
+    "title": "7. The Cloud",
     "section": "Meeting videos",
     "text": "Meeting videos\n\n\n\n\n\n\n\n\nCohort 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCohort 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "IT/Admin for Data Science",
-      "8. The Command Line"
+      "7. The Cloud"
     ]
   },
   {
-    "objectID": "06.html",
-    "href": "06.html",
-    "title": "6. Demystifying Docker",
+    "objectID": "05.html",
+    "href": "05.html",
+    "title": "5. Deployments and Code Promotion",
     "section": "",
     "text": "No matching items",
     "crumbs": [
       "DevOps Lessons for Data Science",
-      "6. Demystifying Docker"
+      "5. Deployments and Code Promotion"
     ]
   },
   {
-    "objectID": "06.html#meeting-videos",
-    "href": "06.html#meeting-videos",
-    "title": "6. Demystifying Docker",
+    "objectID": "05.html#meeting-videos",
+    "href": "05.html#meeting-videos",
+    "title": "5. Deployments and Code Promotion",
     "section": "Meeting videos",
     "text": "Meeting videos\n\n\n\n\n\n\n\n\nCohort 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCohort 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "DevOps Lessons for Data Science",
-      "6. Demystifying Docker"
+      "5. Deployments and Code Promotion"
     ]
   },
   {
-    "objectID": "04.html",
-    "href": "04.html",
-    "title": "4. Logging and Monitoring",
+    "objectID": "03.html",
+    "href": "03.html",
+    "title": "3. Databases and Data APIs",
     "section": "",
     "text": "No matching items",
     "crumbs": [
       "DevOps Lessons for Data Science",
-      "4. Logging and Monitoring"
+      "3. Databases and Data APIs"
     ]
   },
   {
-    "objectID": "04.html#meeting-videos",
-    "href": "04.html#meeting-videos",
-    "title": "4. Logging and Monitoring",
+    "objectID": "03.html#meeting-videos",
+    "href": "03.html#meeting-videos",
+    "title": "3. Databases and Data APIs",
     "section": "Meeting videos",
     "text": "Meeting videos\n\n\n\n\n\n\n\n\nCohort 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCohort 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "DevOps Lessons for Data Science",
-      "4. Logging and Monitoring"
+      "3. Databases and Data APIs"
     ]
   },
   {
-    "objectID": "02.html",
-    "href": "02.html",
-    "title": "2. Data Project Architecture",
+    "objectID": "01.html",
+    "href": "01.html",
+    "title": "1. Environments as Code",
     "section": "",
     "text": "No matching items",
     "crumbs": [
       "DevOps Lessons for Data Science",
-      "2. Data Project Architecture"
+      "1. Environments as Code"
     ]
   },
   {
-    "objectID": "02.html#meeting-videos",
-    "href": "02.html#meeting-videos",
-    "title": "2. Data Project Architecture",
+    "objectID": "01.html#meeting-videos",
+    "href": "01.html#meeting-videos",
+    "title": "1. Environments as Code",
     "section": "Meeting videos",
     "text": "Meeting videos\n\n\n\n\n\n\n\n\nCohort 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCohort 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "DevOps Lessons for Data Science",
-      "2. Data Project Architecture"
+      "1. Environments as Code"
     ]
   },
   {
-    "objectID": "videos/14/01.html",
-    "href": "videos/14/01.html",
+    "objectID": "videos/13/01.html",
+    "href": "videos/13/01.html",
     "title": "Cohort 1",
     "section": "",
     "text": "Meeting chat log\n\n00:21:29    novica nakov: it's more fun with more than one key :)\n00:22:45    novica nakov: no you copied in your local folder\n00:28:28    Tinashe Tapera: ssh-copy-id: https://www.ssh.com/academy/ssh/copy-id\n00:41:20    Gus Lipkin: There’s a gui Docker image available for nginx that makes things easier (or more complicated depending on how you feel): https://nginxproxymanager.com/\n00:43:09    Tinashe Tapera: This is really nice\n00:51:45    Ahmed: pretty cool!"
   },
   {
-    "objectID": "videos/12/01.html",
-    "href": "videos/12/01.html",
+    "objectID": "videos/05/01.html",
+    "href": "videos/05/01.html",
     "title": "Cohort 1",
     "section": "",
-    "text": "Meeting chat log\n\n00:21:29    novica nakov: it's more fun with more than one key :)\n00:22:45    novica nakov: no you copied in your local folder\n00:28:28    Tinashe Tapera: ssh-copy-id: https://www.ssh.com/academy/ssh/copy-id\n00:41:20    Gus Lipkin: There’s a gui Docker image available for nginx that makes things easier (or more complicated depending on how you feel): https://nginxproxymanager.com/\n00:43:09    Tinashe Tapera: This is really nice\n00:51:45    Ahmed: pretty cool!"
+    "text": "Meeting chat log\n\n00:44:58    priyanka gagneja:   fantastic question\n00:47:25    priyanka gagneja:   and dates"
   },
   {
-    "objectID": "videos/09/01.html",
-    "href": "videos/09/01.html",
+    "objectID": "videos/03/01.html",
+    "href": "videos/03/01.html",
     "title": "Cohort 1",
     "section": "",
-    "text": "Meeting chat log\n\n00:21:29    novica nakov: it's more fun with more than one key :)\n00:22:45    novica nakov: no you copied in your local folder\n00:28:28    Tinashe Tapera: ssh-copy-id: https://www.ssh.com/academy/ssh/copy-id\n00:41:20    Gus Lipkin: There’s a gui Docker image available for nginx that makes things easier (or more complicated depending on how you feel): https://nginxproxymanager.com/\n00:43:09    Tinashe Tapera: This is really nice\n00:51:45    Ahmed: pretty cool!"
+    "text": "Meeting chat log\n\n00:02:43    Gus Lipkin: East Coast US, 1pm local\n00:44:48    Gus Lipkin: https://xkcd.com/927/\n00:57:17    Jack Penzer:    Graph databases &lt;3"
   },
   {
-    "objectID": "videos/08/02.html",
-    "href": "videos/08/02.html",
-    "title": "Cohort 2",
+    "objectID": "videos/02/01.html",
+    "href": "videos/02/01.html",
+    "title": "Cohort 1",
     "section": "",
-    "text": "Meeting chat log\n\n00:03:49    Umair Durrani:  Start\n00:18:04    Arthur Shaw:    Really strange the chapter didn't discuss Vim (unless I missed it).\n00:19:52    Diana Garcia Cortes:    I didn't think about it but yes! It should be there\n00:21:40    Arthur Shaw:    I will need to drop off in a bit to join a last-minute work call. But I wonder if anyone has experience with Tailscale (https://github.com/tailscale/tailscale)--and any info on whether it's better somehow that vanilla SSH. I've been seeing Tailscale mentioned a lot of late.\n00:21:56    Tan:    https://do4ds.com/chapters/sec2/2-4-app-admin.html#configuration-with-vim-and-nano  vim covered a little later\n00:22:16    Tan:    tailscale is great, but it's not the same thing as vanilla SSH\n00:22:22    Diana Garcia Cortes:    Reacted to \"https://do4ds.com/ch...\" with 👍\n00:22:22    Tan:    also hiya folks\n00:22:29    Arthur Shaw:    Reacted to \"https://do4ds.com/ch...\" with 👍\n00:22:58    Arthur Shaw:    Reacted to \"also hiya folks\" with 👋\n00:23:02    Diana Garcia Cortes:    Reacted to \"also hiya folks\" with 👋\n00:28:37    Diana Garcia Cortes:    Does anyone know why ssh is not the default protocol to use github with usethis or git2r?\n00:30:17    Diana Garcia Cortes:    Replying to \"Does anyone know why...\"\n\njust cause it requires more configuration? or are there some advantages when using https?\n00:30:27    Arthur Shaw:    The chapter mentioned tmux / terminal multiplexers fairly quickly. I've tinkered a bit with tmux and zellij for local stuff. I wonder if others have found it useful for connecting to and interacting with remote servers.\n00:31:20    Tan:    https://usethis.r-lib.org/articles/git-credentials.html#https-vs-ssh \nssh is harder to set up right on windows, and also once you set up https creds it lets you use gh api stuff as well e.g. pak/remotes installs\n00:31:32    Arthur Shaw:    Reacted to \"just cause it requir...\" with 👀\n00:31:52    Tan:    if that continues try checking the aws firewall\n00:32:11    Arthur Shaw:    (Gotta drop for a work call. I cannot wait to see the recording of the rest of today's session.)\n00:32:34    Diana Garcia Cortes:    Replying to \"The chapter mentione...\"\n\nI've used screen. It is useful\n00:32:57    Diana Garcia Cortes:    Reacted to \"https://usethis.r-li...\" with 👍\n00:35:12    Tan:    :claps:\n00:36:01    Umair Durrani:  Stop\n00:40:36    Tan:    https://cloud.google.com/free?hl=en \nhttps://aws.amazon.com/free/ \nfor more info"
+    "text": "Meeting chat log\n\n00:02:43    Gus Lipkin: East Coast US, 1pm local\n00:44:48    Gus Lipkin: https://xkcd.com/927/\n00:57:17    Jack Penzer:    Graph databases &lt;3"
   },
   {
-    "objectID": "videos/07/02.html",
-    "href": "videos/07/02.html",
-    "title": "Cohort 2",
+    "objectID": "videos/01/01.html",
+    "href": "videos/01/01.html",
+    "title": "Cohort 1",
     "section": "",
-    "text": "Meeting chat log\n\n00:11:22    Diana Garcia:   start\n00:13:31    Arthur Shaw:    Can't get IT/Admin support. That never happens in reality 🤣\n01:08:12    Diana Garcia:   end"
+    "text": "Meeting chat log\n\n00:43:56    Tinashe Tapera: https://www.tidyverse.org/blog/2017/12/workflow-vs-script/\n00:45:19    Jon Harmon (jonthegeek):    That blog led to one of my favorite hex stickers: \"Everything I Know Is From Jenny Bryan\" https://raw.githubusercontent.com/MonkmanMH/EIKIFJB/main/EIKIFJB_sigmar_hex.png"
   },
   {
-    "objectID": "videos/06/02.html",
-    "href": "videos/06/02.html",
-    "title": "Cohort 2",
+    "objectID": "videos/00/01.html",
+    "href": "videos/00/01.html",
+    "title": "Cohort 1",
     "section": "",
-    "text": "Meeting chat log\n\n00:07:05    Arthur Shaw:    Not used it. But this looks promising: https://rstudio.github.io/rstudioapi/reference/restartSession.html\n00:07:56    Umair Durrani:  Reacted to \"Not used it. But thi...\" with 👍\n00:08:40    Olivier Leroy:  start\n00:09:36    Olivier Leroy:  the hard path is the \"jargon\" instance, image, etc\n00:09:45    Olivier Leroy:  agree on the chapter\n00:11:38    Arthur Shaw:    Some great programmer humor to explain Docker: https://www.reddit.com/r/ProgrammerHumor/comments/y8qylu/docker_is_born/\n00:13:02    Olivier Leroy:  Reacted to \"Some great programme...\" with 😆\n00:17:07    Arthur Shaw:    I've not looked into this too much, but there are also other container engines out there. Podman took uses the Open Container Initiative spec that Docker developed and created something very, very compatible with Docker. https://opencontainers.org/\n00:19:16    Olivier Leroy:  Reacted to \"I've not looked into...\" with 👍\n00:19:28    Olivier Leroy:  https://rocker-project.org/  so see some image\n00:20:25    Arthur Shaw:    Replying to \"https://rocker-proje...\"\n\nIs there a Python equivalent of this--to the extent this question even makes sense in the Python ecosystem?\n00:20:27    Olivier Leroy:  in entreprise setup probably RHEL (with geography difference)\n00:21:01    Olivier Leroy:  Replying to \"https://rocker-proje...\"\n\n@Arthur Shaw I am not aware of\n00:21:47    Arthur Shaw:    Replying to \"https://rocker-proje...\"\n\nMaybe just this? https://hub.docker.com/_/python/\n00:22:23    Olivier Leroy:  head is part of GNU coreutils\n00:23:39    Olivier Leroy:  if you look on the build\n00:50:58    Arthur Shaw:    docker container prune: https://docs.docker.com/reference/cli/docker/container/prune/\n00:53:34    Umair Durrani:  Building reproducible analytical pipelines with R: https://raps-with-r.dev/\n00:53:37    Arthur Shaw:    Attach to a running container from VSCode: https://code.visualstudio.com/docs/devcontainers/attach-container\n00:59:51    Olivier Leroy:  end"
+    "text": "Meeting chat log\n\n00:43:56    Tinashe Tapera: https://www.tidyverse.org/blog/2017/12/workflow-vs-script/\n00:45:19    Jon Harmon (jonthegeek):    That blog led to one of my favorite hex stickers: \"Everything I Know Is From Jenny Bryan\" https://raw.githubusercontent.com/MonkmanMH/EIKIFJB/main/EIKIFJB_sigmar_hex.png"
   },
   {
-    "objectID": "videos/05/02.html",
-    "href": "videos/05/02.html",
-    "title": "Cohort 2",
-    "section": "",
-    "text": "Meeting chat log\n\n00:05:49    trevin flickinger (he/him): Hey y’all hope you don’t mind me joining in 👋🏻\n00:06:14    Umair Durrani:  Welcome, Trevin\n00:08:29    trevin flickinger (he/him): I work for a non-profit in Ohio, mainly use R, and just set up a data pipeline using docker and AWS\n00:08:46    Umair Durrani:  Reacted to \"I work for a non-pro...\" with 👍\n00:08:48    Retselisitsoe Monyake:  Reacted to \"I work for a non-p...\" with 👍\n00:09:14    Olivier Leroy:  start\n00:26:49    Olivier Leroy:  would be different schema in DB, new version of packages\n00:27:06    trevin flickinger (he/him): Ahh yeah, that makes sense as well\n00:27:55    trevin flickinger (he/him): Thank you!\n00:41:07    Olivier Leroy:  I have those slide if needed\n00:58:10    Olivier Leroy:  looks good!\n01:05:04    Olivier Leroy:  gert::git_info()$shorthand\n01:06:35    Olivier Leroy:  https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks\n01:15:24    trevin flickinger (he/him): Thank you all!\n01:16:56    Umair Durrani:  Thanks Arthur and Olivier for the useful discussions\n01:17:05    Arthur Shaw:    Reacted to \"Thanks Arthur and Ol...\" with 🙏\n01:17:07    Retselisitsoe Monyake:  Reacted to \"Thanks Arthur and ...\" with 🙏\n01:17:17    Umair Durrani:  https://happygitwithr.com/\n01:17:26    trevin flickinger (he/him): Reacted to \"https://happygitwith...\" with 💯\n01:18:06    Olivier Leroy:  https://uofi.app.box.com/s/xtjcaqvgwlkn1poycuesphutpw4bnk66\n01:19:04    Arthur Shaw:    There were a few nice GitHub Actions presentations on past posit confs. I'll send them along if I can find them.\n01:19:15    Retselisitsoe Monyake:  Reacted to \"There were a few n...\" with 🙏\n01:19:21    Olivier Leroy:  git status\n01:19:41    Umair Durrani:  This page also has some nice resources: https://www.bigbookofr.com/chapters/version%20control#github-learning-lab\n01:19:43    Olivier Leroy:  gst='gist status'\n01:19:59    Umair Durrani:  Reacted to \"https://uofi.app.box...\" with 👍\n01:20:57    Arthur Shaw:    The GitHub Actions docs are something I'd like to explore more. Not sure how good the docs are, however, for newcomers (like me): https://docs.github.com/en/actions\n01:21:32    Arthur Shaw:    Thanks so much, Oliver! See you all next week. Gotta drop off\n01:21:35    Olivier Leroy:  end\n01:22:16    Retselisitsoe Monyake:  Thanks!"
-  },
-  {
-    "objectID": "videos/04/02.html",
-    "href": "videos/04/02.html",
-    "title": "Cohort 2",
-    "section": "",
-    "text": "Meeting chat log\n\n00:07:48    Arthur Shaw:    For next week, I'll have a look and see if I can present. It's about time I pull my weight around here ;)\n00:07:58    Olivier Leroy:  start\n00:09:07    Umair Durrani:  I did the lab - I'd like to share using SentryR for monitoring\n00:29:31    Arthur Shaw:    If memory serves,  gtsummary  captures the calls behind each computed cell in a table. I think this is strongly desired/needed for regulated industries like pharma. https://www.danieldsjoberg.com/gtsummary/\n00:32:40    Arthur Shaw:    Replying to \"If memory serves,  g...\"\n\nI think this is what I meant: https://www.danieldsjoberg.com/gtsummary/articles/tbl_ard-functions.html\n00:35:57    Umair Durrani:  pointblank and tidylog are good packages for data validation and logging\n00:36:00    Arthur Shaw:    For the joining, a colleague wrote a package that reports on joining (like Stata does): https://randrescastaneda.github.io/joyn/articles/main-functionalities.html#reporting-variable\n00:36:24    Umair Durrani:  Reacted to \"For the joining, a c...\" with 👍\n00:38:00    Arthur Shaw:    Reacted to \"I did the lab - I'd ...\" with 🙏\n00:43:28    Arthur Shaw:    My new go-tos: cli's alert functions. The  text  arg seems to use  glue  without mentioning it in the docs: https://cli.r-lib.org/reference/cli_alert.html\n00:55:12    Arthur Shaw:    VSCode's suggestions to install extensions = 📎 for devs 🤣\n00:55:52    Umair Durrani:  log crash example for shiny: https://github.com/tanho63/talk_shinyprod2023_logging/blob/main/examples/log_crash.R\n00:56:37    Garcia Cortes, Diana Elisa: Reacted to \"log crash example fo...\" with 👍\n00:56:52    Arthur Shaw:    Reacted to \"log crash example fo...\" with 👍\n01:02:16    Retselisitsoe Monyake:  Reacted to \"log crash example fo...\" with 👍\n01:08:42    Olivier Leroy:  Reacted to \"log crash example fo...\" with 👍\n01:08:57    Olivier Leroy:  stop"
-  },
-  {
-    "objectID": "videos/03/02.html",
-    "href": "videos/03/02.html",
-    "title": "Cohort 2",
-    "section": "",
-    "text": "Meeting chat log\n\n00:03:57    Arthur Shaw:    Hot take incoming 😉\n00:04:34    Olivier Leroy:  start\n00:32:33    Garcia Cortes, Diana Elisa: httr2 (pronounced “hitter2”) is a comprehensive HTTP client that provides a modern, pipeable API for working with web APIs. It builds on top of {curl} to provide features like explicit request objects, built-in rate limiting & retry tooling, comprehensive OAuth support, and secure handling of secrets and credentials.\n00:32:53    Arthur Shaw:    curl options that httr lets you use: https://httr.r-lib.org/reference/httr_options.html\n00:38:06    Arthur Shaw:    Love  your HTTP return code summary. I also ave fun by looking up stuff here: https://http.cat/\n00:38:49    Garcia Cortes, Diana Elisa: Reacted to \"Love  your HTTP retu...\" with 😂\n00:52:46    Arthur Shaw:    Looks to be the workflow vignette that keyring should have: https://blog.r-hub.io/2024/02/28/key-advantages-of-using-keyring/ \n\nI'm going to see how to up my secret storage game and shift from  .Renviron  to  keyring .\n01:06:14    Olivier Leroy:  end"
-  },
-  {
-    "objectID": "videos/02/02.html",
-    "href": "videos/02/02.html",
-    "title": "Cohort 2",
-    "section": "",
-    "text": "Meeting chat log\n\n00:06:59    Olivier Leroy:  start\n00:26:08    Arthur Shaw:    Although  waiter  animations are sometimes a nice Jedi mind trick to make the app seem to work faster\n00:26:25    Umair Durrani:  Reacted to \"Although  waiter  an...\" with 👍\n00:26:27    Olivier Leroy:  Reacted to \"Although  waiter  an...\" with 👍\n00:26:30    Retselisitsoe Monyake:  Reacted to \"Although  waiter  an...\" with 👍\n00:27:39    Olivier Leroy:  Data warehouse Kimball\n00:28:45    Arthur Shaw:    https://www.geeksforgeeks.org/dbms/difference-between-kimball-and-inmon/\n00:29:00    Arthur Shaw:    Replying to \"https://www.geeksfor...\"\n\nCompletely new to me.\n00:29:32    Olivier Leroy:  Replying to \"https://www.geeksfor...\"\n\nthe hard point is now data warehouse can also refer to databricks&co\n00:43:53    Arthur Shaw:    Neat article/presentation that came to mind while listening about pain points of seeing changes in data structure in DB: https://www.emilyriederer.com/talk/col-names-contract/\n\nhttps://www.emilyriederer.com/post/column-name-contracts/ \n00:46:07    Olivier Leroy:  Reacted to \"Neat article/present...\" with 👍\n00:47:26    Arthur Shaw:    Just FYI: plumber2 is coming/here: https://posit-dev.github.io/plumber2/ \n\nI was searching for this this moring\n00:48:49    Olivier Leroy:  Reacted to \"Just FYI: plumber2 i...\" with 👍\n00:53:38    Arthur Shaw:    Naming things = one of the hardest things\n00:53:46    Olivier Leroy:  Reacted to \"Naming things = one ...\" with 😀\n00:54:04    Retselisitsoe Monyake:  Reacted to \"Naming things = one ...\" with 😀\n00:55:45    Olivier Leroy:  I used mermaid\n00:56:06    Olivier Leroy:  pen and apper also :)\n00:56:42    Arthur Shaw:    excalidraw is something I picked up from the golem book and YT videos.\n01:05:02    Olivier Leroy:  I will try to find the Pyhon equivalent\n01:05:08    Arthur Shaw:    Reacted to \"I will try to find t...\" with 👍\n01:05:33    Josh Persi: I know snakemake is popular in Python, but I don't think it's ergonomic as targets\n01:05:44    Umair Durrani:  Reacted to \"I know snakemake is ...\" with 👍\n01:05:47    Arthur Shaw:    Reacted to \"I know snakemake is ...\" with 🐍\n01:12:38    Garcia Cortes, Diana Elisa: stop"
-  },
-  {
-    "objectID": "videos/01/02.html",
-    "href": "videos/01/02.html",
-    "title": "Cohort 2",
-    "section": "",
-    "text": "Meeting chat log\n\n00:08:34    Umair Durrani:  Start\n00:16:29    Arthur Shaw:    @Diana Garcia Cortes, I spent a long time doing what you described (except for the conda part). But then I realized I still needed to share the environment with my future self. He always gets the short end of the stick.\n00:17:00    Diana Garcia Cortes:    Reacted to \"@Diana Garcia Cortes...\" with ❤️\n00:19:08    Arthur Shaw:    RTools = my arch nemesis for having others reproduce my R code on their machine\n00:29:13    Umair Durrani:  Got to hop onto a different meeting, will catch up on the recording.\n00:29:19    Diana Garcia Cortes:    Reacted to \"Got to hop onto a di...\" with 👍\n00:32:30    Arthur Shaw:    For the installation part with {renv}, aren't you supposed to use  renv::install(\"myPackage\")  instead? Does  install.packages(\"myPackage\")  also work?\n00:33:17    Josh Persi: Replying to \"For the installation...\"\n\nI've had no issues with install.packages and then renv::snapshot() to add them to the lock file\n00:33:31    Arthur Shaw:    Reacted to \"I've had no issues w...\" with 👍\n00:33:33    patrick kilduff (he/him):   Reacted to \"I've had no issues w...\" with 👍\n00:33:35    Josh Persi: Replying to \"For the installation...\"\n\nI'm guessing renv::install() just adds it to the lockfile without the need for snapshot\n00:33:43    patrick kilduff (he/him):   Reacted to \"I'm guessing renv::i...\" with 👍\n00:34:03    Arthur Shaw:    Replying to \"For the installation...\"\n\nI think it also installs in the project library. I could be wrong.\n00:34:26    Josh Persi: Replying to \"For the installation...\"\n\nThat'd make sense!\n00:38:59    Arthur Shaw:    VSCode's clippy ;)\n00:47:29    Arthur Shaw:    For Nix, confusingly, you write in Nix (programming language)\n00:47:51    patrick kilduff (he/him):   Lots of rix/nix blogposts here: https://brodrigues.co/\n00:47:52    Arthur Shaw:    From what little I understand, Nix is a functional programming language and a package manager\n00:48:55    Arthur Shaw:    Replying to \"From what little I u...\"\n\nAnd an OS too\n00:50:28    Josh Persi: I got to run, but thanks for the discussion everyone! See you next week!\n00:50:38    Diana Garcia Cortes:    Reacted to \"I got to run, but th...\" with 👍\n00:52:05    Arthur Shaw:    devbox is much more approachable\n00:52:27    Arthur Shaw:    Replying to \"devbox is much more ...\"\n\nhttps://www.jetify.com/devbox\n00:55:38    Arthur Shaw:    Would devcontainer do what we need? Never been really how how devcontainer relates to container engines like Docker or Podman\n01:08:38    patrick kilduff (he/him):   I have to drop, thanks all! See you all next week 😎\n01:08:49    Retselisitsoe Monyake:  Reacted to \"I have to drop, than...\" with 👍\n01:19:40    Arthur Shaw:    You're muted, @Olivier. You seem not to hear us either\n01:21:09    Olivier:    end"
-  },
-  {
-    "objectID": "videos/00/02.html",
-    "href": "videos/00/02.html",
-    "title": "Cohort 2",
-    "section": "",
-    "text": "Meeting chat log\n\n00:03:43    Olivier Leroy:  start\n00:06:07    Josh Persi: Sorry Olivier\n00:06:16    Josh Persi: Connection is still very poor\n01:02:27    Olivier Leroy:  end"
-  },
-  {
-    "objectID": "slides/17.html#learning-objectives",
-    "href": "slides/17.html#learning-objectives",
-    "title": "Enterprise Server Management",
+    "objectID": "slides/18.html#learning-objectives",
+    "href": "slides/18.html#learning-objectives",
+    "title": "Open Source Data Science in the Enterprise",
     "section": "Learning objectives",
-    "text": "Learning objectives\n\nSimplyfing Complexity Using Infrastructure as Code (IaC)\nHow to Scale and Stabilize Workloads in Enterprise-Level Organisations\nFacilitating Enterprise Workloads Management with Kubernetes"
+    "text": "Learning objectives\n\nWhat are sandboxes and why should we use them?\nWhat is the code promotion process?\nHow does software licensing affect the work you do?\nWhat are some concerns to keep in mind when using free open-source software?"
   },
   {
-    "objectID": "slides/17.html#simplyfing-complexity-using-infrastructure-as-code-iac",
-    "href": "slides/17.html#simplyfing-complexity-using-infrastructure-as-code-iac",
-    "title": "Enterprise Server Management",
-    "section": "Simplyfing Complexity Using Infrastructure as Code (IaC)",
-    "text": "Simplyfing Complexity Using Infrastructure as Code (IaC)\n\nServers should be cattle, not pets.\nAlex recommended a two-dimensional Dev/Test/Prod setup\n\n\nIT/Admin group make changes to the platform in a staging environment.\nData scientists are never granted access to the staging environments and must complete all of their work in the IT/Admin production environment.\n\nThe ideal approach to migrate servers and apps from staging to production is to use IaC and CI/CD to ensure that code changes always make it into production at the proper time."
+    "objectID": "slides/18.html#data-science-sandboxes",
+    "href": "slides/18.html#data-science-sandboxes",
+    "title": "Open Source Data Science in the Enterprise",
+    "section": "Data Science Sandboxes",
+    "text": "Data Science Sandboxes\n\nKeep dev/test/prod separated\n\nThree components to a sandbox:\n\nfree read-only access to real data\nbroad access to packages\nproduction code promotion process"
   },
   {
-    "objectID": "slides/17.html#how-to-scale-and-stabilize-workloads-in-enterprise-level-organisations",
-    "href": "slides/17.html#how-to-scale-and-stabilize-workloads-in-enterprise-level-organisations",
-    "title": "Enterprise Server Management",
-    "section": "How to Scale and Stabilize Workloads in Enterprise-Level Organisations",
-    "text": "How to Scale and Stabilize Workloads in Enterprise-Level Organisations\n\nVertical Scaling Limitations and Horizontal Scaling to the rescue\n\nBefore attempting horizontal scaling, it is usually always good to exhaust the portion of vertical scaling where costs climb linearly with computation.\n\nHigh Availability is achieved by\n\nUsing Load balancers in Horizontal scaling\n\nImagine a restaurant with one chef that is trying to serve meals to a hundred customers at once.\n\nThe chef can only cook one meal at a time, so the customers are getting frustrated with long wait times and some of them are leaving.This is because the chef is overloaded and cannot handle the intense workload.\nNow, imagine the restaurant hires three more chefs, all with the same skills and equipment as the first chef. The restaurant invests in a system where each chef has a buzzer that goes off when there are new orders waiting for them. The buzzer ensures that each chef knows exactly when they need to start cooking a new meal, and they do not get overwhelmed by too many orders at once.\nIn this analogy, the chefs represent servers or clusters, and the buzzer represents a load balancer.\n\n\nMaintaining a backup of the load balancer and the database/NAS.\n\n\n\n\nAdding Autoscaling (i.e. you save money when traffic is low)\n\nMany autoscaling frameworks these days assume that applications are mostly stateless."
+    "objectID": "slides/18.html#read-only-access",
+    "href": "slides/18.html#read-only-access",
+    "title": "Open Source Data Science in the Enterprise",
+    "section": "Read-only access",
+    "text": "Read-only access\n\nThe last thing you want to do is mess up production data\nThis gives you the access you need without the worry\nAny writes are contained to the sandbox\nYou can also protect your data in completely offline environments\n\nFun fact: Some PCs have to be so secure that they’re considered insecure if they’ve ever connected to any kind of network ever"
   },
   {
-    "objectID": "slides/17.html#facilitating-enterprise-workloads-management-with-kubernetes",
-    "href": "slides/17.html#facilitating-enterprise-workloads-management-with-kubernetes",
-    "title": "Enterprise Server Management",
-    "section": "Facilitating Enterprise Workloads Management with Kubernetes",
-    "text": "Facilitating Enterprise Workloads Management with Kubernetes\n\nKubernetes solves all three of the key enterprise IT/Admin challenges with running servers.\nIncreasing the processing power of your cluster is usually as simple as a few mouse clicks. On the other side, this makes it risky from a cost perspective.\nHelm is the standard tool for defining what’s running in the cluster.\nInstead of the ten steps required in a typical server-based deployment. There are just three steps for Kubernetes.\nWhat are the biggest strengths of Kubernetes as a scaling tool? What are some drawbacks?\n\nStrengths:\n\nAutomatic Load Balancing\nHorizontal Scaling\nInfrastructure Agnosticism\n\nDrawbacks:\n\nManaging and maintaining a Kubernetes cluster can be complex and time-consuming and really requires a highly competent Kubernetes admin\nNetworking in Kubernetes can also be quite complicated."
+    "objectID": "slides/18.html#package-availability",
+    "href": "slides/18.html#package-availability",
+    "title": "Open Source Data Science in the Enterprise",
+    "section": "Package availability",
+    "text": "Package availability\n\nYou may have package restrictions (understandable, but :( all the same)\n\nSecurity\nCorrectness\nMaintenance\n\nFree reign in dev is great\n\nYou can keep track of what you use with renv or venv"
   },
   {
-    "objectID": "slides/15.html#learning-objectives",
-    "href": "slides/15.html#learning-objectives",
-    "title": "Enterprise Networking",
+    "objectID": "slides/18.html#promotion",
+    "href": "slides/18.html#promotion",
+    "title": "Open Source Data Science in the Enterprise",
+    "section": "Promotion",
+    "text": "Promotion\n\nHow do you promote code from dev to test to prod?\nUsually only admins get prod access\nAlways best to discuss a promotion strategy when getting started\n\nDiscussed in chapter 1"
+  },
+  {
+    "objectID": "slides/18.html#devtestprod-for-admins",
+    "href": "slides/18.html#devtestprod-for-admins",
+    "title": "Open Source Data Science in the Enterprise",
+    "section": "Dev/Test/Prod for Admins",
+    "text": "Dev/Test/Prod for Admins\n\nJust like you want to keep your package environment safe, admins want your system kept safe\n\nServers, OS, R/Python, etc\n\nPromotion matrix\n\nIT/Admins can upgrade the environment separately from the data science tooling\nIT/Admins like to call development and testing “staging”\n\nThis is where DevOps for Data Science starts to become regular DevOps\n\nInfrastructure as code"
+  },
+  {
+    "objectID": "slides/18.html#infrastructure-as-code-iac",
+    "href": "slides/18.html#infrastructure-as-code-iac",
+    "title": "Open Source Data Science in the Enterprise",
+    "section": "Infrastructure as Code (IaC)",
+    "text": "Infrastructure as Code (IaC)\n\nTo get a server to be useful you need two things:\n\nProvision (create) the infrastructure\nConfigure the infrastructure\n\nNo clear dividing line between provisioning and configuring tools\nDocker is part of IaC, but you still need a deployment framework and hypervisor or other container management software\nIaC should be deployed with CI/CD, but doesn’t have to be\nYou’re not safe from your own bad habits\n\nShiny example:\n\nSet up a server\nConfigure network settings\n\n\nSecurity\nPorts\nAnything else\n\n\nInstall R (or Python or whatever)\nInstall Shiny\nHosting software"
+  },
+  {
+    "objectID": "slides/18.html#open-source-in-enterprise",
+    "href": "slides/18.html#open-source-in-enterprise",
+    "title": "Open Source Data Science in the Enterprise",
+    "section": "Open Source in Enterprise",
+    "text": "Open Source in Enterprise\nI am not a lawyer and this is not legal advice.\nBut try to be aware of the licenses your software and packages are under\nFour FOSS freedoms:\n\nView and inspect source code\nRun the software\nModify the software\nRedistribute the software\n\nGeneral categories:\n\nPermissive: You can do basically whatever you want\n\nExamples: MIT, Apache, BSD\n\nCopyleft: Derivative works must use the same license\n\nExamples: GPL, AGPL\n\nNot something you want to mess with\nThings get confusing when mixing licenses"
+  },
+  {
+    "objectID": "slides/18.html#package-restrictions",
+    "href": "slides/18.html#package-restrictions",
+    "title": "Open Source Data Science in the Enterprise",
+    "section": "Package Restrictions",
+    "text": "Package Restrictions\n\nTo restrict package access, IT Admins must:\n\nRestrict access to public repositories\nProvide an alternative!\n\nDon’t worry about space needed for packages. Most are small\n\nI have 421 packages taking up ~2GB\n\n\n\nLots of kinds of enterprise repository software\n\nTwo main concerns:\n\nManaging vulnerabilities\n\nCode scanners vs common vulnerabliities vs common sense\n\nLicenses\nMaintenance/lifetime"
+  },
+  {
+    "objectID": "slides/16.html#learning-objectives",
+    "href": "slides/16.html#learning-objectives",
+    "title": "Auth in Enterprise",
     "section": "Learning objectives",
-    "text": "Learning objectives\n\nUnderstand enterprise networking terminology.\nList some benefits of private networks and proxies.\nRecognize issues related to inbound proxies.\nRecognize issues related to outbound proxies."
+    "text": "Learning objectives\n\nWhat is the difference between authentication and authorization?\nWhat are some different ways to manage permissions? What are the advantages and drawbacks of each?\nWhat is some advantages of token-based auth? Why are most organizations adopting it? Are there any drawbacks?\nFor each of the following, is it a username + password method or a token method? PAM, LDAP, Kerberos, SAML, ODIC/OAuth"
   },
   {
-    "objectID": "slides/15.html#enterprise-networking-terminology",
-    "href": "slides/15.html#enterprise-networking-terminology",
-    "title": "Enterprise Networking",
-    "section": "Enterprise Networking Terminology",
-    "text": "Enterprise Networking Terminology\n\nprivate network: a network that communicates with the wider internet via proxies; VPC (“Virtual private cloud”) on AWS\ninbound proxy: more formally “reverse proxy”; a server on the public network that routes traffic into a private network\noutbound proxy: more formally “forward proxy”; a server on the public network that routes traffic out of a private network"
+    "objectID": "slides/16.html#introduction",
+    "href": "slides/16.html#introduction",
+    "title": "Auth in Enterprise",
+    "section": "Introduction",
+    "text": "Introduction\n\nThe goal of Auth is to manage two desires: everybody should be able to do their work, but nobody should be able to work on something they’re not supposed to\nPeople leave, join, change roles frequently. Having one person with the key to every room is impractical (and unsafe)\nIn “least privilege”, people only get access to the things they need and nothing they don’t\nAuth is all about systems that balance these needs"
   },
   {
-    "objectID": "slides/15.html#benefits-of-private-networks",
-    "href": "slides/15.html#benefits-of-private-networks",
-    "title": "Enterprise Networking",
-    "section": "Benefits of Private Networks",
-    "text": "Benefits of Private Networks\n\nDeal with security issues at the proxies\nEasier to route traffic (and change routing) to specific servers\nEasier to manage ports\nCan block traffic to/from specific unwanted sources\n\nOr block all traffic and only allow specific white lists\n\nCan optionally handle authentication at the proxy & pass token/header along"
+    "objectID": "slides/16.html#ldapad",
+    "href": "slides/16.html#ldapad",
+    "title": "Auth in Enterprise",
+    "section": "LDAP/AD",
+    "text": "LDAP/AD\n\nAuthentication = knowing who is requesting access to something they need\nAuthorization = checking if that person should have access to the thing they’re asking for\nLightweight Directory Access Protocol (LDAP) or Access Directory (AD) centralizes security by having everyone need only one “key” for every room (one set of username-password credentials)\n\nAuthentication is improved, but authorization is not\nThe communication between the device and the server is not guaranteed to be secure\nYou still need to check credentials at each room repeatedly"
   },
   {
-    "objectID": "slides/15.html#issues-with-inbound-proxies",
-    "href": "slides/15.html#issues-with-inbound-proxies",
-    "title": "Enterprise Networking",
-    "section": "Issues with Inbound Proxies",
-    "text": "Issues with Inbound Proxies\n\nConnections from your laptop to the server\nThings that are often configured:\n\nUpload/download file size limits.\nUpload/download/session timeouts.\n\nSigns that you might be fighting against an inbound proxy:\n\nUploads/downloads from you to the server fail or cut off early.\nYour session keeps ending (you have to log back in).\n\nSpecial case: Websockets\n\nOlder proxies might break things like Shiny and Streamlit."
+    "objectID": "slides/16.html#single-sign-on-sso",
+    "href": "slides/16.html#single-sign-on-sso",
+    "title": "Auth in Enterprise",
+    "section": "Single Sign On (SSO)",
+    "text": "Single Sign On (SSO)\n\nSSO is like getting a key card at the front desk for the day\n\nThe card is given to you if your credentials are correct (authenticated)\nCard maintains your credentials throughout the day\nCard already knows which rooms you need access to (authorized)\n\nManaged by browser’s tokens:\n\nSecurity Assertion Markup Language (SAML 2.0, in XML)\nOpen Identity Connect (OIDC, OAuth2.0, in JSON)\n\nExternal services like Okta, OneLogin, Azure Active Directory are vendors"
   },
   {
-    "objectID": "slides/15.html#issues-with-outbound-proxies",
-    "href": "slides/15.html#issues-with-outbound-proxies",
-    "title": "Enterprise Networking",
-    "section": "Issues with Outbound Proxies",
-    "text": "Issues with Outbound Proxies\n\nConnections from server to the internet\nRarer than inbound.\n\n“Air-gapped” often means “strong outbound proxy.”\n\nThings that can be impacted:\n\nDownloading packages (other than from internal package manager).\nAccessing external data (APIs).\nUpdating system libraries (hopefully your IT has a plan for this).\nSoftware licensing (software might ping a server).\n\nIT often open to allowing access to specific URLs, so ask!"
+    "objectID": "slides/16.html#permissions",
+    "href": "slides/16.html#permissions",
+    "title": "Auth in Enterprise",
+    "section": "Permissions",
+    "text": "Permissions\n\nSimple permissions management is just a list e.g. Access Control List (ACL)\nRole Based Access Control (RBAC) defines groups of permissions by person e.g. manager, intern, executive\n\nMore flexible and simple at first\nComplexity creep for each person who thinks they’re “special”\n\nAttribute Based Access Control (ABAC) defines permissions for combinations of the person, task, data, etc.\n\ne.g. AWS Identity and Access Management (IAM) aims to balance complexity with security"
   },
   {
-    "objectID": "slides/13.html#learning-objectives",
-    "href": "slides/13.html#learning-objectives",
-    "title": "DNS allows for human-readable addresses",
+    "objectID": "slides/16.html#why-should-we-care",
+    "href": "slides/16.html#why-should-we-care",
+    "title": "Auth in Enterprise",
+    "section": "Why should we care?",
+    "text": "Why should we care?\n\nYour org should be able to equip you with the tools required to be a creative and effective data scientist without jeopardizing their privacy/security\nData access, of course\n\nInternal data sources often only need LDAP-like credentials (not SSO)\nSome orgs use Kerberos to create SSO-like tokens for data\nOthers still use JSON Web Token (JWT) — rare but still new\nIAM is often used for cloud-to-cloud security\n\nService accounts are software that needs permission to do things by itself\n\ne.g. you don’t want to have to sign in yourself for every user who wants to use your secure Shiny app"
+  },
+  {
+    "objectID": "slides/16.html#learning-objectives-1",
+    "href": "slides/16.html#learning-objectives-1",
+    "title": "Auth in Enterprise",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\n\nWhat is the difference between authentication and authorization?\n\nAuthentication = who is asking?\nAuthorization = what do you want to do?\n\nWhat are some different ways to manage permissions? What are the advantages and drawbacks of each?\n\nIn order of complexity: ACL, RBAC, ABAC\n\nWhat is some advantages of token-based auth? Why are most organizations adopting it? Are there any drawbacks?\n\nReduces complexity by providing one “handshake”, but doesn’t solve everything (e.g. data access, token management)\n\nFor each of the following, is it a username + password method or a token method? PAM, LDAP, Kerberos, SAML, ODIC/OAuth\n\nPAM = username + password\nLDAP = username + password\nKerberos = Token\nSAML = Token\nODIC/OAuth = Token"
+  },
+  {
+    "objectID": "slides/14.html#learning-objectives",
+    "href": "slides/14.html#learning-objectives",
+    "title": "You should use SSL/HTTPS",
     "section": "Learning objectives",
-    "text": "Learning objectives\n\nDetails that we won’t dig into:\n\nDescribe the pieces of a fully qualified domain name (FQDN).\nExplain why DNS changes can take a long time to propagate.\nUse DNS records to route traffic to a domain.\n\nConfigure a domain name for an AWS EC2.\n\nAllocate an Elastic IP.\nConfigure DNS records to route traffic to an AWS EC2."
+    "text": "Learning objectives\n\nDetails that we won’t dig into:\n\nIdentify the problems that SSL/https are meant to solve.\nExplain how SSL/https solve those problems.\n\nConfigure SSL on an AWS EC2.\n\nConfigure nginx to identify your domain name.\nUse certbot to set up SSL.\nUpdate the rstudio configuration in nginx to support https.\nOpen the necessary ports on your EC2’s security group."
   },
   {
-    "objectID": "slides/13.html#allocate-an-elastic-ip",
-    "href": "slides/13.html#allocate-an-elastic-ip",
-    "title": "DNS allows for human-readable addresses",
-    "section": "Allocate an Elastic IP",
-    "text": "Allocate an Elastic IP\n\n(Make sure the server from Chapter 12 is running, with /rstudio & /palmer via nginx)\nNavigate to “EC2” &gt; “Network & Security” &gt; “Elastic IPs”\n“Allocate Elastic IP Address” (and click “Allocate”)\n“Actions” / “Associate Elastic IP Address”\n\nFind the instance\n\nTo clean up, you can do “Actions” / “Release Elastic IP Addresses”"
+    "objectID": "slides/14.html#get-ready",
+    "href": "slides/14.html#get-ready",
+    "title": "You should use SSL/HTTPS",
+    "section": "Get ready",
+    "text": "Get ready\n\nIf you’ve followed the instructions from Chapter 13, you’re ready to go!\nMake sure you have this line in nginx.conf:\n\nserver_name yourdomain.you www.yourdomain.you;"
   },
   {
-    "objectID": "slides/13.html#configure-dns-records",
-    "href": "slides/13.html#configure-dns-records",
-    "title": "DNS allows for human-readable addresses",
-    "section": "Configure DNS Records",
-    "text": "Configure DNS Records\n\n(Register a domain)\nFind the “DNS” settings for that domain at your registrar\nAdd or edit 3 records:\n\nA * 12.345.678.90\nA @ 12.345.678.90\nCNAME www yourdomain.you"
+    "objectID": "slides/14.html#certbot",
+    "href": "slides/14.html#certbot",
+    "title": "You should use SSL/HTTPS",
+    "section": "certbot",
+    "text": "certbot\n\nsudo apt-get install certbot python3-certbot-nginx\nsudo systemctl restart nginx\nsudo certbot –nginx -d yourdomain.you -d www.yourdomain.you"
   },
   {
-    "objectID": "slides/13.html#reconfigure-nginx",
-    "href": "slides/13.html#reconfigure-nginx",
-    "title": "DNS allows for human-readable addresses",
-    "section": "Reconfigure nginx",
-    "text": "Reconfigure nginx\n\nsudo vim /etc/nginx/nginx.conf\nserver_name ec2.whatever; to server_name yourdomain.you www.yourdomain.you;\nsudo systemctl restart nginx\nVisit http://yourdomain.you/rstudio and http://yourdomain.you/palmer/stats\n\nChrome will yell at you since https won’t work yet. See the next chapter!"
+    "objectID": "slides/14.html#rstudio-in-nginx.conf",
+    "href": "slides/14.html#rstudio-in-nginx.conf",
+    "title": "You should use SSL/HTTPS",
+    "section": "rstudio in nginx.conf",
+    "text": "rstudio in nginx.conf\n\nsudo vim /etc/nginx/nginx.conf\nproxy_set_header X-Forwarded-Proto https; in the rstudio location\nsudo systemctl restart nginx"
   },
   {
-    "objectID": "slides/11.html#learning-objectives",
-    "href": "slides/11.html#learning-objectives",
-    "title": "Choosing the Right Server for You",
+    "objectID": "slides/14.html#open-the-port",
+    "href": "slides/14.html#open-the-port",
+    "title": "You should use SSL/HTTPS",
+    "section": "Open the port",
+    "text": "Open the port\n(you may have already set this up in Chapter 12)\n\n(Log into console.aws.amazon.com and navigate to EC2/Instances)\nClick the “Security” tab on your instance.\nClick the Security group (something like launch-wizard-2)\n\n(or go directly to “Network & Security”/“Security Groups”)\n\n“Inbound rules” &gt; “Edit inbound rules”\n“Add rule”\n\n“HTTPS”, “Anywhere-IPv4”\n\nDiscussion: Leave HTTP, probably?\nVisit https://yourdomain.you/rstudio, http://yourdomain.you/rstudio, etc."
+  },
+  {
+    "objectID": "slides/12.html#learning-objectives",
+    "href": "slides/12.html#learning-objectives",
+    "title": "Intro to Computer Networks",
     "section": "Learning objectives",
-    "text": "Learning objectives\n\nAppreciate computation hardware/software\nCPU vs. GPU\nRAM vs Storage"
+    "text": "Learning objectives\n\nDetails that we won’t dig into:\n\nDescribe the pieces of a URL.\nBriefly explain how ports map to services.\nOutline how IP addresses map to servers.\nTroubleshoot common network problems.\n\nUse nginx to make multiple services available from a single server.\n\nInstall nginx on an Ubuntu server.\nAllow outside traffic to reach nginx on our AWS EC2.\nRoute traffic to RStudio via nginx.conf.\nRoute traffic to JupyterHub via nginx.conf (skipped here).\nRoute traffic to a plumber api via nginx.conf."
   },
   {
-    "objectID": "slides/11.html#what-is-computing",
-    "href": "slides/11.html#what-is-computing",
-    "title": "Choosing the Right Server for You",
-    "section": "What is Computing?",
-    "text": "What is Computing?\n\nEverything on a computer is represented by a (usually very large) number.\nAt a hardware level the only thing computers do is add these numbers together.\nModern computers add very quickly and very accurately.\nComputing speed is limited by cores and clock\n\n\nclassroom as a computer"
+    "objectID": "slides/12.html#install-nginx",
+    "href": "slides/12.html#install-nginx",
+    "title": "Intro to Computer Networks",
+    "section": "Install nginx",
+    "text": "Install nginx\n\n(Make sure the server from Chapter 11 is running, with RStudio & the plumber API.)\nssh test-user@$SERVER_ADDRESS\nsudo apt install nginx"
   },
   {
-    "objectID": "slides/11.html#cpu-the-physical-brain",
-    "href": "slides/11.html#cpu-the-physical-brain",
-    "title": "Choosing the Right Server for You",
-    "section": "CPU: The physical brain",
-    "text": "CPU: The physical brain\n\nCores: Available processing centers in a CPU (usually 4-32)\nClock speed: number of operations each core can accomplish (2-5 GHz, 2-5 billion operations per sec)\nMost recent improvement is a result of number of cores, and core usage, not clocks\n\n\nmoore’s law"
+    "objectID": "slides/12.html#allow-outside-traffic",
+    "href": "slides/12.html#allow-outside-traffic",
+    "title": "Intro to Computer Networks",
+    "section": "Allow outside traffic",
+    "text": "Allow outside traffic\n\n(Log into console.aws.amazon.com and navigate to EC2/Instances)\nClick the “Security” tab on your instance.\nClick the Security group (something like launch-wizard-2)\n\n(or go directly to “Network & Security”/“Security Groups”)\n\n“Inbound rules” &gt; “Edit inbound rules”\n“Add rule”\n\n“HTTP”, “Anywhere-IPv4”\n“HTTPS”, “Anywhere-IPv4” while we’re in here (won’t work yet, though)"
   },
   {
-    "objectID": "slides/11.html#how-do-i-go-faster",
-    "href": "slides/11.html#how-do-i-go-faster",
-    "title": "Choosing the Right Server for You",
-    "section": "How do I go faster…?",
-    "text": "How do I go faster…?\n\nFor R/Python, fewer faster cores are usually preferable to many slower cores\nFor servers, keep it light:\n\n\\(n \\textrm{ cores} = 1 \\textrm{ core per user} + 1\\)"
+    "objectID": "slides/12.html#edit-nginx.conf",
+    "href": "slides/12.html#edit-nginx.conf",
+    "title": "Intro to Computer Networks",
+    "section": "Edit nginx.conf",
+    "text": "Edit nginx.conf\n\nsudo cp /etc/nginx/nginx.conf /etc/nginx/nginx-backup.conf\nsudo vim /etc/nginx/nginx.conf\n\nDelete everything below the events block (80dd).\n\nSet up http basics.\n\nhttp {\n  \n  # Enable websockets (needed for Shiny) -- I don't know if this part matters.\n  map $http_upgrade  $connection_upgrade { \n    default upgrade; '' close; \n  }\n  \n  server { listen 80;\n  \n    # You can edit this file if you want a default page.\n    root /usr/share/nginx/html;\n    index index.html index.htm;\n  \n    # I think this was necessary to get it to work.\n    # We'll do more with this in Chapter 13.\n    server_name ec2-12-345-678-90.compute-1.amazonaws.com;\n  }\n}\n\nsudo systemctl restart nginx\nTest it at your “Public IPv4 DNS”."
   },
   {
-    "objectID": "slides/11.html#gpu",
-    "href": "slides/11.html#gpu",
-    "title": "Choosing the Right Server for You",
-    "section": "GPU",
-    "text": "GPU\n\nSpecialized chips initially built for graphics\nMore numerous slower cores than CPU\n\n\nWhere a consumer-grade CPU has 4-16 cores, mid-range GPUs have 700-4,000 cores, but each one runs between 1% and 10% the speed of a CPU core.\n\n\nGreat for parallelisation (think Neural Nets)"
+    "objectID": "slides/12.html#add-rstudio-routing",
+    "href": "slides/12.html#add-rstudio-routing",
+    "title": "Intro to Computer Networks",
+    "section": "Add RStudio routing",
+    "text": "Add RStudio routing\n\nAdd a location block inside the http / server section of nginx.conf.\n\n    location /rstudio/ {\n      # Needed only for a custom path prefix of /rstudio\n      rewrite ^/rstudio/(.*)$ /$1 break;\n      \n      proxy_pass http://localhost:8787;\n      \n      proxy_http_version 1.1;\n      proxy_set_header Upgrade $http_upgrade;\n      proxy_set_header Connection $connection_upgrade;\n      proxy_read_timeout 20d;\n      \n      # Not needed if www-root-path is set in rserver.conf\n      proxy_set_header X-RStudio-Root-Path /rstudio;\n      \n      # Optionally, use an explicit hostname and omit the port if using 80/443\n      proxy_set_header Host $host:$server_port;\n    }\n\nsudo systemctl restart nginx\nTest it at your “Public IPv4 DNS” /rstudio."
   },
   {
-    "objectID": "slides/11.html#so-should-i-get-gpu",
-    "href": "slides/11.html#so-should-i-get-gpu",
-    "title": "Choosing the Right Server for You",
-    "section": "So Should I Get GPU…?",
-    "text": "So Should I Get GPU…?\n\nUsually, no (parallelising into &lt; 10 workers is often enough)\nYou’ll know you need a GPU when you get there\nDiscuss…\n\n\ndecisions, decisions"
+    "objectID": "slides/12.html#add-plumber-api-routing",
+    "href": "slides/12.html#add-plumber-api-routing",
+    "title": "Intro to Computer Networks",
+    "section": "Add plumber api routing",
+    "text": "Add plumber api routing\n\nAdd a location block each time you want to add an API.\n\n    location /palmer/ {\n      # Check the book to see if he has added more!\n      proxy_pass http://localhost:8555/;\n      proxy_set_header Host $host;\n    }\n\nsudo systemctl restart nginx\nTest it at your “Public IPv4 DNS” /palmer/stats and /palmer/__docs__/."
   },
   {
-    "objectID": "slides/11.html#ram",
-    "href": "slides/11.html#ram",
-    "title": "Choosing the Right Server for You",
-    "section": "RAM",
-    "text": "RAM\n\nBasically short term memory. When a process ends, it is destroyed (like when you quit RStudio)\nGet a computer with lots of RAM, probably\n\n\\(\\textrm{Necessary RAM} = \\textrm{max amount of data} \\times 3\\)\n\nIf it’s too big, move to disk (e.g. database, Arrow, dask, HDF5)\n\n\nBig data in R"
+    "objectID": "slides/10.html#learning-objectives",
+    "href": "slides/10.html#learning-objectives",
+    "title": "Application Administration",
+    "section": "Learning objectives",
+    "text": "Learning objectives\n\nHow to install packages\nWhere to install packages\nHow to run apps as services"
   },
   {
-    "objectID": "slides/11.html#disk-storage",
-    "href": "slides/11.html#disk-storage",
-    "title": "Choosing the Right Server for You",
-    "section": "Disk (Storage)",
-    "text": "Disk (Storage)\n\nWhere physical files live and persist\nThe bigger the better (and cheaper nowadays)\n\n\\(\\textrm{Necessary Storage} = \\textrm{approx data} + 1 \\textrm{GB} \\times n \\textrm{ users}\\)"
+    "objectID": "slides/10.html#linux-app-install-and-upgrade",
+    "href": "slides/10.html#linux-app-install-and-upgrade",
+    "title": "Application Administration",
+    "section": "Linux app install and upgrade",
+    "text": "Linux app install and upgrade\n\nPackage managerSide-load\n\n\n\nUpdate package index\n\nsudo apt-get update\n\nFind the package name\n\n# apt search {keyword}\napt search \"^r-.*\" | sort\n\nInstall target package:\n\n# sudo apt-get install {package-name}\n# note: not sure which is better `apt` or `apt-get`\nsudo apt install r-base r-base-dev\n\n\n\nDownload\n\n#  with curl, download the right Debian package\nexport R_VERSION=4.5.2\ncurl -O https://cdn.posit.co/r/ubuntu-2404/pkgs/r-${R_VERSION}_1_$(dpkg --print-architecture).deb\n\nInstall\n\n# install the Debian package\nsudo apt-get install ./r-${R_VERSION}_1_$(dpkg --print-architecture).deb\nSource: Posit Docs here"
   },
   {
-    "objectID": "slides/11.html#scenarios",
-    "href": "slides/11.html#scenarios",
-    "title": "Choosing the Right Server for You",
-    "section": "Scenarios",
-    "text": "Scenarios\n\nYou try to load a big csv file into pandas in Python. It churns for a while and then crashes.\nYou go to build a new ML model on your data. You’d like to re-train the model once a day, but it turns out training this model takes 26 hours on your laptop.\nYou design an visualization Matplotlib , and create a whole bunch in a loop, you want to parallelize the operation. Right now you’re running on a t2.small with 1 CPU."
+    "objectID": "slides/10.html#configure-application",
+    "href": "slides/10.html#configure-application",
+    "title": "Application Administration",
+    "section": "Configure application",
+    "text": "Configure application\n\nRead the app’s docs\nCreate or modify the file\n\n# create a tmux configuration file\ncd ~\ntouch .tmux.conf\n\n# edit it\nvim .tmux.conf"
   },
   {
-    "objectID": "slides/11.html#lab",
-    "href": "slides/11.html#lab",
-    "title": "Choosing the Right Server for You",
-    "section": "Lab",
-    "text": "Lab\nNot much to say here…🤷"
+    "objectID": "slides/10.html#where-to-find-application-files",
+    "href": "slides/10.html#where-to-find-application-files",
+    "title": "Application Administration",
+    "section": "Where to find application files",
+    "text": "Where to find application files\n\nRead the app’s docs\nSearch in some common places (from the book)\n\n/bin, /opt, /usr/local, /usr/bin – installation locations for software.\n/etc – configuration files for applications.\n/var – variable data, most commonly log files in /var/log or /var/lib.\n\nSome other places:\n\n~ in a dotfile (e.g., .tmux)\n~/.config/"
+  },
+  {
+    "objectID": "slides/10.html#edit-configuration-files",
+    "href": "slides/10.html#edit-configuration-files",
+    "title": "Application Administration",
+    "section": "Edit configuration files",
+    "text": "Edit configuration files\n\nRead the app’s docs\nUse an editor on the server:\n\nNano\nVi(m)"
+  },
+  {
+    "objectID": "slides/10.html#read-logs",
+    "href": "slides/10.html#read-logs",
+    "title": "Application Administration",
+    "section": "Read logs",
+    "text": "Read logs\n\nFind themRead themSearch them\n\n\nFrom the book:\n\nMost applications write their logs somewhere inside the /var directory. Some activities will get logged to the main log at /var/log/syslog. Other things may get logged to /var/log/&lt;application name&gt; or /var/lib/&lt;application name&gt;.\n\n\n\nPrint:\n\nWhole log at once: cat\nFew lines at time: less\nFirst few lines: head\nLast few lines: tail\n\n# print lines as they are written to the log\ntail my_file -f\n\n\n\nFilter lines with regex patterns: grep\nFilter lines with conditions: awk"
+  },
+  {
+    "objectID": "slides/10.html#running-the-right-commands",
+    "href": "slides/10.html#running-the-right-commands",
+    "title": "Application Administration",
+    "section": "Running the right commands",
+    "text": "Running the right commands\n\nWhere is binaryWhether on pathHow to put on path\n\n\nEither you know (because you put it here) (e.g. /opt/python3)\nOr you can find out\nwhich python3\n# /usr/bin/python3\n\n\nApplications need To run in the the terminal, either:\n\nSpecify the path\nOr it is on PATH\n\nTo see PATH, print it:\necho $PATH\n\n\nOption 1: append app’s path to PATH\n# edit and save `.bashrc` to add your new path\nexport PATH=/my/app/path:$PATH\nOption 2: create symlink from app location to an on-PATH place\n# create a (soft) symlink from installation in `opt` to a place on PATH\nsudo ln -s /opt/R/${R_VERSION}/bin/R /usr/local/bin/R\nsudo ln -s /opt/R/${R_VERSION}/bin/Rscript /usr/local/bin/Rscript\nSource: Posit Docs here"
+  },
+  {
+    "objectID": "slides/10.html#running-apps-as-services",
+    "href": "slides/10.html#running-apps-as-services",
+    "title": "Application Administration",
+    "section": "Running apps as services",
+    "text": "Running apps as services\n\nCreate a service fileEnable the service\n\n\n\n\n\nCreate file\n\n# move to directory where startup services\ncd /etc/systemd/system/\n\n# create a service file\ntouch my_app.service\n\n\nPopulate the contents\n\n[Unit]\nDescription=My Application Service\nAfter=network.target # Or other dependencies\n\n[Service]\nExecStart=/path/to/your/application/executable # Or a script that runs it\nWorkingDirectory=/path/to/your/application/directory\nRestart=always\nUser=your_username # Optional, run as a specific user\nGroup=your_group # Optional, run as a specific group\n\n[Install]\nWantedBy=multi-user.target\n\n\n\nReload configurations:\nsudo systemctl daemon-reload\nEnable your service\nsudo systemctl enable my_app.service\nStart the service\nsudo systemctl start my_app.service"
   },
   {
     "objectID": "slides/08.html#learning-objectives",
@@ -1197,344 +1261,347 @@
     "text": "Plumber in docker\n\nsudo apt-get install docker.io\n\nsudo docker ps to make sure it worked\n\n\nsudo docker run --rm -d \\\n  -p 8555:8000 \\\n  --name palmer-plumber \\\n  alexkgold/plumber\n\nssh -NL 8555:localhost:8555 test-user@$SERVER_ADDRESS\nIt’s an api!"
   },
   {
-    "objectID": "slides/12.html#learning-objectives",
-    "href": "slides/12.html#learning-objectives",
-    "title": "Intro to Computer Networks",
+    "objectID": "slides/11.html#learning-objectives",
+    "href": "slides/11.html#learning-objectives",
+    "title": "Choosing the Right Server for You",
     "section": "Learning objectives",
-    "text": "Learning objectives\n\nDetails that we won’t dig into:\n\nDescribe the pieces of a URL.\nBriefly explain how ports map to services.\nOutline how IP addresses map to servers.\nTroubleshoot common network problems.\n\nUse nginx to make multiple services available from a single server.\n\nInstall nginx on an Ubuntu server.\nAllow outside traffic to reach nginx on our AWS EC2.\nRoute traffic to RStudio via nginx.conf.\nRoute traffic to JupyterHub via nginx.conf (skipped here).\nRoute traffic to a plumber api via nginx.conf."
+    "text": "Learning objectives\n\nAppreciate computation hardware/software\nCPU vs. GPU\nRAM vs Storage"
   },
   {
-    "objectID": "slides/12.html#install-nginx",
-    "href": "slides/12.html#install-nginx",
-    "title": "Intro to Computer Networks",
-    "section": "Install nginx",
-    "text": "Install nginx\n\n(Make sure the server from Chapter 11 is running, with RStudio & the plumber API.)\nssh test-user@$SERVER_ADDRESS\nsudo apt install nginx"
+    "objectID": "slides/11.html#what-is-computing",
+    "href": "slides/11.html#what-is-computing",
+    "title": "Choosing the Right Server for You",
+    "section": "What is Computing?",
+    "text": "What is Computing?\n\nEverything on a computer is represented by a (usually very large) number.\nAt a hardware level the only thing computers do is add these numbers together.\nModern computers add very quickly and very accurately.\nComputing speed is limited by cores and clock\n\n\nclassroom as a computer"
   },
   {
-    "objectID": "slides/12.html#allow-outside-traffic",
-    "href": "slides/12.html#allow-outside-traffic",
-    "title": "Intro to Computer Networks",
-    "section": "Allow outside traffic",
-    "text": "Allow outside traffic\n\n(Log into console.aws.amazon.com and navigate to EC2/Instances)\nClick the “Security” tab on your instance.\nClick the Security group (something like launch-wizard-2)\n\n(or go directly to “Network & Security”/“Security Groups”)\n\n“Inbound rules” &gt; “Edit inbound rules”\n“Add rule”\n\n“HTTP”, “Anywhere-IPv4”\n“HTTPS”, “Anywhere-IPv4” while we’re in here (won’t work yet, though)"
+    "objectID": "slides/11.html#cpu-the-physical-brain",
+    "href": "slides/11.html#cpu-the-physical-brain",
+    "title": "Choosing the Right Server for You",
+    "section": "CPU: The physical brain",
+    "text": "CPU: The physical brain\n\nCores: Available processing centers in a CPU (usually 4-32)\nClock speed: number of operations each core can accomplish (2-5 GHz, 2-5 billion operations per sec)\nMost recent improvement is a result of number of cores, and core usage, not clocks\n\n\nmoore’s law"
   },
   {
-    "objectID": "slides/12.html#edit-nginx.conf",
-    "href": "slides/12.html#edit-nginx.conf",
-    "title": "Intro to Computer Networks",
-    "section": "Edit nginx.conf",
-    "text": "Edit nginx.conf\n\nsudo cp /etc/nginx/nginx.conf /etc/nginx/nginx-backup.conf\nsudo vim /etc/nginx/nginx.conf\n\nDelete everything below the events block (80dd).\n\nSet up http basics.\n\nhttp {\n  \n  # Enable websockets (needed for Shiny) -- I don't know if this part matters.\n  map $http_upgrade  $connection_upgrade { \n    default upgrade; '' close; \n  }\n  \n  server { listen 80;\n  \n    # You can edit this file if you want a default page.\n    root /usr/share/nginx/html;\n    index index.html index.htm;\n  \n    # I think this was necessary to get it to work.\n    # We'll do more with this in Chapter 13.\n    server_name ec2-12-345-678-90.compute-1.amazonaws.com;\n  }\n}\n\nsudo systemctl restart nginx\nTest it at your “Public IPv4 DNS”."
+    "objectID": "slides/11.html#how-do-i-go-faster",
+    "href": "slides/11.html#how-do-i-go-faster",
+    "title": "Choosing the Right Server for You",
+    "section": "How do I go faster…?",
+    "text": "How do I go faster…?\n\nFor R/Python, fewer faster cores are usually preferable to many slower cores\nFor servers, keep it light:\n\n\\(n \\textrm{ cores} = 1 \\textrm{ core per user} + 1\\)"
   },
   {
-    "objectID": "slides/12.html#add-rstudio-routing",
-    "href": "slides/12.html#add-rstudio-routing",
-    "title": "Intro to Computer Networks",
-    "section": "Add RStudio routing",
-    "text": "Add RStudio routing\n\nAdd a location block inside the http / server section of nginx.conf.\n\n    location /rstudio/ {\n      # Needed only for a custom path prefix of /rstudio\n      rewrite ^/rstudio/(.*)$ /$1 break;\n      \n      proxy_pass http://localhost:8787;\n      \n      proxy_http_version 1.1;\n      proxy_set_header Upgrade $http_upgrade;\n      proxy_set_header Connection $connection_upgrade;\n      proxy_read_timeout 20d;\n      \n      # Not needed if www-root-path is set in rserver.conf\n      proxy_set_header X-RStudio-Root-Path /rstudio;\n      \n      # Optionally, use an explicit hostname and omit the port if using 80/443\n      proxy_set_header Host $host:$server_port;\n    }\n\nsudo systemctl restart nginx\nTest it at your “Public IPv4 DNS” /rstudio."
+    "objectID": "slides/11.html#gpu",
+    "href": "slides/11.html#gpu",
+    "title": "Choosing the Right Server for You",
+    "section": "GPU",
+    "text": "GPU\n\nSpecialized chips initially built for graphics\nMore numerous slower cores than CPU\n\n\nWhere a consumer-grade CPU has 4-16 cores, mid-range GPUs have 700-4,000 cores, but each one runs between 1% and 10% the speed of a CPU core.\n\n\nGreat for parallelisation (think Neural Nets)"
   },
   {
-    "objectID": "slides/12.html#add-plumber-api-routing",
-    "href": "slides/12.html#add-plumber-api-routing",
-    "title": "Intro to Computer Networks",
-    "section": "Add plumber api routing",
-    "text": "Add plumber api routing\n\nAdd a location block each time you want to add an API.\n\n    location /palmer/ {\n      # Check the book to see if he has added more!\n      proxy_pass http://localhost:8555/;\n      proxy_set_header Host $host;\n    }\n\nsudo systemctl restart nginx\nTest it at your “Public IPv4 DNS” /palmer/stats and /palmer/__docs__/."
+    "objectID": "slides/11.html#so-should-i-get-gpu",
+    "href": "slides/11.html#so-should-i-get-gpu",
+    "title": "Choosing the Right Server for You",
+    "section": "So Should I Get GPU…?",
+    "text": "So Should I Get GPU…?\n\nUsually, no (parallelising into &lt; 10 workers is often enough)\nYou’ll know you need a GPU when you get there\nDiscuss…\n\n\ndecisions, decisions"
   },
   {
-    "objectID": "slides/14.html#learning-objectives",
-    "href": "slides/14.html#learning-objectives",
-    "title": "You should use SSL/HTTPS",
+    "objectID": "slides/11.html#ram",
+    "href": "slides/11.html#ram",
+    "title": "Choosing the Right Server for You",
+    "section": "RAM",
+    "text": "RAM\n\nBasically short term memory. When a process ends, it is destroyed (like when you quit RStudio)\nGet a computer with lots of RAM, probably\n\n\\(\\textrm{Necessary RAM} = \\textrm{max amount of data} \\times 3\\)\n\nIf it’s too big, move to disk (e.g. database, Arrow, dask, HDF5)\n\n\nBig data in R"
+  },
+  {
+    "objectID": "slides/11.html#disk-storage",
+    "href": "slides/11.html#disk-storage",
+    "title": "Choosing the Right Server for You",
+    "section": "Disk (Storage)",
+    "text": "Disk (Storage)\n\nWhere physical files live and persist\nThe bigger the better (and cheaper nowadays)\n\n\\(\\textrm{Necessary Storage} = \\textrm{approx data} + 1 \\textrm{GB} \\times n \\textrm{ users}\\)"
+  },
+  {
+    "objectID": "slides/11.html#scenarios",
+    "href": "slides/11.html#scenarios",
+    "title": "Choosing the Right Server for You",
+    "section": "Scenarios",
+    "text": "Scenarios\n\nYou try to load a big csv file into pandas in Python. It churns for a while and then crashes.\nYou go to build a new ML model on your data. You’d like to re-train the model once a day, but it turns out training this model takes 26 hours on your laptop.\nYou design an visualization Matplotlib , and create a whole bunch in a loop, you want to parallelize the operation. Right now you’re running on a t2.small with 1 CPU."
+  },
+  {
+    "objectID": "slides/11.html#lab",
+    "href": "slides/11.html#lab",
+    "title": "Choosing the Right Server for You",
+    "section": "Lab",
+    "text": "Lab\nNot much to say here…🤷"
+  },
+  {
+    "objectID": "slides/13.html#learning-objectives",
+    "href": "slides/13.html#learning-objectives",
+    "title": "DNS allows for human-readable addresses",
     "section": "Learning objectives",
-    "text": "Learning objectives\n\nDetails that we won’t dig into:\n\nIdentify the problems that SSL/https are meant to solve.\nExplain how SSL/https solve those problems.\n\nConfigure SSL on an AWS EC2.\n\nConfigure nginx to identify your domain name.\nUse certbot to set up SSL.\nUpdate the rstudio configuration in nginx to support https.\nOpen the necessary ports on your EC2’s security group."
+    "text": "Learning objectives\n\nDetails that we won’t dig into:\n\nDescribe the pieces of a fully qualified domain name (FQDN).\nExplain why DNS changes can take a long time to propagate.\nUse DNS records to route traffic to a domain.\n\nConfigure a domain name for an AWS EC2.\n\nAllocate an Elastic IP.\nConfigure DNS records to route traffic to an AWS EC2."
   },
   {
-    "objectID": "slides/14.html#get-ready",
-    "href": "slides/14.html#get-ready",
-    "title": "You should use SSL/HTTPS",
-    "section": "Get ready",
-    "text": "Get ready\n\nIf you’ve followed the instructions from Chapter 13, you’re ready to go!\nMake sure you have this line in nginx.conf:\n\nserver_name yourdomain.you www.yourdomain.you;"
+    "objectID": "slides/13.html#allocate-an-elastic-ip",
+    "href": "slides/13.html#allocate-an-elastic-ip",
+    "title": "DNS allows for human-readable addresses",
+    "section": "Allocate an Elastic IP",
+    "text": "Allocate an Elastic IP\n\n(Make sure the server from Chapter 12 is running, with /rstudio & /palmer via nginx)\nNavigate to “EC2” &gt; “Network & Security” &gt; “Elastic IPs”\n“Allocate Elastic IP Address” (and click “Allocate”)\n“Actions” / “Associate Elastic IP Address”\n\nFind the instance\n\nTo clean up, you can do “Actions” / “Release Elastic IP Addresses”"
   },
   {
-    "objectID": "slides/14.html#certbot",
-    "href": "slides/14.html#certbot",
-    "title": "You should use SSL/HTTPS",
-    "section": "certbot",
-    "text": "certbot\n\nsudo apt-get install certbot python3-certbot-nginx\nsudo systemctl restart nginx\nsudo certbot –nginx -d yourdomain.you -d www.yourdomain.you"
+    "objectID": "slides/13.html#configure-dns-records",
+    "href": "slides/13.html#configure-dns-records",
+    "title": "DNS allows for human-readable addresses",
+    "section": "Configure DNS Records",
+    "text": "Configure DNS Records\n\n(Register a domain)\nFind the “DNS” settings for that domain at your registrar\nAdd or edit 3 records:\n\nA * 12.345.678.90\nA @ 12.345.678.90\nCNAME www yourdomain.you"
   },
   {
-    "objectID": "slides/14.html#rstudio-in-nginx.conf",
-    "href": "slides/14.html#rstudio-in-nginx.conf",
-    "title": "You should use SSL/HTTPS",
-    "section": "rstudio in nginx.conf",
-    "text": "rstudio in nginx.conf\n\nsudo vim /etc/nginx/nginx.conf\nproxy_set_header X-Forwarded-Proto https; in the rstudio location\nsudo systemctl restart nginx"
+    "objectID": "slides/13.html#reconfigure-nginx",
+    "href": "slides/13.html#reconfigure-nginx",
+    "title": "DNS allows for human-readable addresses",
+    "section": "Reconfigure nginx",
+    "text": "Reconfigure nginx\n\nsudo vim /etc/nginx/nginx.conf\nserver_name ec2.whatever; to server_name yourdomain.you www.yourdomain.you;\nsudo systemctl restart nginx\nVisit http://yourdomain.you/rstudio and http://yourdomain.you/palmer/stats\n\nChrome will yell at you since https won’t work yet. See the next chapter!"
   },
   {
-    "objectID": "slides/14.html#open-the-port",
-    "href": "slides/14.html#open-the-port",
-    "title": "You should use SSL/HTTPS",
-    "section": "Open the port",
-    "text": "Open the port\n(you may have already set this up in Chapter 12)\n\n(Log into console.aws.amazon.com and navigate to EC2/Instances)\nClick the “Security” tab on your instance.\nClick the Security group (something like launch-wizard-2)\n\n(or go directly to “Network & Security”/“Security Groups”)\n\n“Inbound rules” &gt; “Edit inbound rules”\n“Add rule”\n\n“HTTPS”, “Anywhere-IPv4”\n\nDiscussion: Leave HTTP, probably?\nVisit https://yourdomain.you/rstudio, http://yourdomain.you/rstudio, etc."
-  },
-  {
-    "objectID": "slides/16.html#learning-objectives",
-    "href": "slides/16.html#learning-objectives",
-    "title": "Auth in Enterprise",
+    "objectID": "slides/15.html#learning-objectives",
+    "href": "slides/15.html#learning-objectives",
+    "title": "Enterprise Networking",
     "section": "Learning objectives",
-    "text": "Learning objectives\n\nWhat is the difference between authentication and authorization?\nWhat are some different ways to manage permissions? What are the advantages and drawbacks of each?\nWhat is some advantages of token-based auth? Why are most organizations adopting it? Are there any drawbacks?\nFor each of the following, is it a username + password method or a token method? PAM, LDAP, Kerberos, SAML, ODIC/OAuth"
+    "text": "Learning objectives\n\nUnderstand enterprise networking terminology.\nList some benefits of private networks and proxies.\nRecognize issues related to inbound proxies.\nRecognize issues related to outbound proxies."
   },
   {
-    "objectID": "slides/16.html#introduction",
-    "href": "slides/16.html#introduction",
-    "title": "Auth in Enterprise",
-    "section": "Introduction",
-    "text": "Introduction\n\nThe goal of Auth is to manage two desires: everybody should be able to do their work, but nobody should be able to work on something they’re not supposed to\nPeople leave, join, change roles frequently. Having one person with the key to every room is impractical (and unsafe)\nIn “least privilege”, people only get access to the things they need and nothing they don’t\nAuth is all about systems that balance these needs"
+    "objectID": "slides/15.html#enterprise-networking-terminology",
+    "href": "slides/15.html#enterprise-networking-terminology",
+    "title": "Enterprise Networking",
+    "section": "Enterprise Networking Terminology",
+    "text": "Enterprise Networking Terminology\n\nprivate network: a network that communicates with the wider internet via proxies; VPC (“Virtual private cloud”) on AWS\ninbound proxy: more formally “reverse proxy”; a server on the public network that routes traffic into a private network\noutbound proxy: more formally “forward proxy”; a server on the public network that routes traffic out of a private network"
   },
   {
-    "objectID": "slides/16.html#ldapad",
-    "href": "slides/16.html#ldapad",
-    "title": "Auth in Enterprise",
-    "section": "LDAP/AD",
-    "text": "LDAP/AD\n\nAuthentication = knowing who is requesting access to something they need\nAuthorization = checking if that person should have access to the thing they’re asking for\nLightweight Directory Access Protocol (LDAP) or Access Directory (AD) centralizes security by having everyone need only one “key” for every room (one set of username-password credentials)\n\nAuthentication is improved, but authorization is not\nThe communication between the device and the server is not guaranteed to be secure\nYou still need to check credentials at each room repeatedly"
+    "objectID": "slides/15.html#benefits-of-private-networks",
+    "href": "slides/15.html#benefits-of-private-networks",
+    "title": "Enterprise Networking",
+    "section": "Benefits of Private Networks",
+    "text": "Benefits of Private Networks\n\nDeal with security issues at the proxies\nEasier to route traffic (and change routing) to specific servers\nEasier to manage ports\nCan block traffic to/from specific unwanted sources\n\nOr block all traffic and only allow specific white lists\n\nCan optionally handle authentication at the proxy & pass token/header along"
   },
   {
-    "objectID": "slides/16.html#single-sign-on-sso",
-    "href": "slides/16.html#single-sign-on-sso",
-    "title": "Auth in Enterprise",
-    "section": "Single Sign On (SSO)",
-    "text": "Single Sign On (SSO)\n\nSSO is like getting a key card at the front desk for the day\n\nThe card is given to you if your credentials are correct (authenticated)\nCard maintains your credentials throughout the day\nCard already knows which rooms you need access to (authorized)\n\nManaged by browser’s tokens:\n\nSecurity Assertion Markup Language (SAML 2.0, in XML)\nOpen Identity Connect (OIDC, OAuth2.0, in JSON)\n\nExternal services like Okta, OneLogin, Azure Active Directory are vendors"
+    "objectID": "slides/15.html#issues-with-inbound-proxies",
+    "href": "slides/15.html#issues-with-inbound-proxies",
+    "title": "Enterprise Networking",
+    "section": "Issues with Inbound Proxies",
+    "text": "Issues with Inbound Proxies\n\nConnections from your laptop to the server\nThings that are often configured:\n\nUpload/download file size limits.\nUpload/download/session timeouts.\n\nSigns that you might be fighting against an inbound proxy:\n\nUploads/downloads from you to the server fail or cut off early.\nYour session keeps ending (you have to log back in).\n\nSpecial case: Websockets\n\nOlder proxies might break things like Shiny and Streamlit."
   },
   {
-    "objectID": "slides/16.html#permissions",
-    "href": "slides/16.html#permissions",
-    "title": "Auth in Enterprise",
-    "section": "Permissions",
-    "text": "Permissions\n\nSimple permissions management is just a list e.g. Access Control List (ACL)\nRole Based Access Control (RBAC) defines groups of permissions by person e.g. manager, intern, executive\n\nMore flexible and simple at first\nComplexity creep for each person who thinks they’re “special”\n\nAttribute Based Access Control (ABAC) defines permissions for combinations of the person, task, data, etc.\n\ne.g. AWS Identity and Access Management (IAM) aims to balance complexity with security"
+    "objectID": "slides/15.html#issues-with-outbound-proxies",
+    "href": "slides/15.html#issues-with-outbound-proxies",
+    "title": "Enterprise Networking",
+    "section": "Issues with Outbound Proxies",
+    "text": "Issues with Outbound Proxies\n\nConnections from server to the internet\nRarer than inbound.\n\n“Air-gapped” often means “strong outbound proxy.”\n\nThings that can be impacted:\n\nDownloading packages (other than from internal package manager).\nAccessing external data (APIs).\nUpdating system libraries (hopefully your IT has a plan for this).\nSoftware licensing (software might ping a server).\n\nIT often open to allowing access to specific URLs, so ask!"
   },
   {
-    "objectID": "slides/16.html#why-should-we-care",
-    "href": "slides/16.html#why-should-we-care",
-    "title": "Auth in Enterprise",
-    "section": "Why should we care?",
-    "text": "Why should we care?\n\nYour org should be able to equip you with the tools required to be a creative and effective data scientist without jeopardizing their privacy/security\nData access, of course\n\nInternal data sources often only need LDAP-like credentials (not SSO)\nSome orgs use Kerberos to create SSO-like tokens for data\nOthers still use JSON Web Token (JWT) — rare but still new\nIAM is often used for cloud-to-cloud security\n\nService accounts are software that needs permission to do things by itself\n\ne.g. you don’t want to have to sign in yourself for every user who wants to use your secure Shiny app"
-  },
-  {
-    "objectID": "slides/16.html#learning-objectives-1",
-    "href": "slides/16.html#learning-objectives-1",
-    "title": "Auth in Enterprise",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\n\nWhat is the difference between authentication and authorization?\n\nAuthentication = who is asking?\nAuthorization = what do you want to do?\n\nWhat are some different ways to manage permissions? What are the advantages and drawbacks of each?\n\nIn order of complexity: ACL, RBAC, ABAC\n\nWhat is some advantages of token-based auth? Why are most organizations adopting it? Are there any drawbacks?\n\nReduces complexity by providing one “handshake”, but doesn’t solve everything (e.g. data access, token management)\n\nFor each of the following, is it a username + password method or a token method? PAM, LDAP, Kerberos, SAML, ODIC/OAuth\n\nPAM = username + password\nLDAP = username + password\nKerberos = Token\nSAML = Token\nODIC/OAuth = Token"
-  },
-  {
-    "objectID": "slides/18.html#learning-objectives",
-    "href": "slides/18.html#learning-objectives",
-    "title": "Open Source Data Science in the Enterprise",
+    "objectID": "slides/17.html#learning-objectives",
+    "href": "slides/17.html#learning-objectives",
+    "title": "Enterprise Server Management",
     "section": "Learning objectives",
-    "text": "Learning objectives\n\nWhat are sandboxes and why should we use them?\nWhat is the code promotion process?\nHow does software licensing affect the work you do?\nWhat are some concerns to keep in mind when using free open-source software?"
+    "text": "Learning objectives\n\nSimplyfing Complexity Using Infrastructure as Code (IaC)\nHow to Scale and Stabilize Workloads in Enterprise-Level Organisations\nFacilitating Enterprise Workloads Management with Kubernetes"
   },
   {
-    "objectID": "slides/18.html#data-science-sandboxes",
-    "href": "slides/18.html#data-science-sandboxes",
-    "title": "Open Source Data Science in the Enterprise",
-    "section": "Data Science Sandboxes",
-    "text": "Data Science Sandboxes\n\nKeep dev/test/prod separated\n\nThree components to a sandbox:\n\nfree read-only access to real data\nbroad access to packages\nproduction code promotion process"
+    "objectID": "slides/17.html#simplyfing-complexity-using-infrastructure-as-code-iac",
+    "href": "slides/17.html#simplyfing-complexity-using-infrastructure-as-code-iac",
+    "title": "Enterprise Server Management",
+    "section": "Simplyfing Complexity Using Infrastructure as Code (IaC)",
+    "text": "Simplyfing Complexity Using Infrastructure as Code (IaC)\n\nServers should be cattle, not pets.\nAlex recommended a two-dimensional Dev/Test/Prod setup\n\n\nIT/Admin group make changes to the platform in a staging environment.\nData scientists are never granted access to the staging environments and must complete all of their work in the IT/Admin production environment.\n\nThe ideal approach to migrate servers and apps from staging to production is to use IaC and CI/CD to ensure that code changes always make it into production at the proper time."
   },
   {
-    "objectID": "slides/18.html#read-only-access",
-    "href": "slides/18.html#read-only-access",
-    "title": "Open Source Data Science in the Enterprise",
-    "section": "Read-only access",
-    "text": "Read-only access\n\nThe last thing you want to do is mess up production data\nThis gives you the access you need without the worry\nAny writes are contained to the sandbox\nYou can also protect your data in completely offline environments\n\nFun fact: Some PCs have to be so secure that they’re considered insecure if they’ve ever connected to any kind of network ever"
+    "objectID": "slides/17.html#how-to-scale-and-stabilize-workloads-in-enterprise-level-organisations",
+    "href": "slides/17.html#how-to-scale-and-stabilize-workloads-in-enterprise-level-organisations",
+    "title": "Enterprise Server Management",
+    "section": "How to Scale and Stabilize Workloads in Enterprise-Level Organisations",
+    "text": "How to Scale and Stabilize Workloads in Enterprise-Level Organisations\n\nVertical Scaling Limitations and Horizontal Scaling to the rescue\n\nBefore attempting horizontal scaling, it is usually always good to exhaust the portion of vertical scaling where costs climb linearly with computation.\n\nHigh Availability is achieved by\n\nUsing Load balancers in Horizontal scaling\n\nImagine a restaurant with one chef that is trying to serve meals to a hundred customers at once.\n\nThe chef can only cook one meal at a time, so the customers are getting frustrated with long wait times and some of them are leaving.This is because the chef is overloaded and cannot handle the intense workload.\nNow, imagine the restaurant hires three more chefs, all with the same skills and equipment as the first chef. The restaurant invests in a system where each chef has a buzzer that goes off when there are new orders waiting for them. The buzzer ensures that each chef knows exactly when they need to start cooking a new meal, and they do not get overwhelmed by too many orders at once.\nIn this analogy, the chefs represent servers or clusters, and the buzzer represents a load balancer.\n\n\nMaintaining a backup of the load balancer and the database/NAS.\n\n\n\n\nAdding Autoscaling (i.e. you save money when traffic is low)\n\nMany autoscaling frameworks these days assume that applications are mostly stateless."
   },
   {
-    "objectID": "slides/18.html#package-availability",
-    "href": "slides/18.html#package-availability",
-    "title": "Open Source Data Science in the Enterprise",
-    "section": "Package availability",
-    "text": "Package availability\n\nYou may have package restrictions (understandable, but :( all the same)\n\nSecurity\nCorrectness\nMaintenance\n\nFree reign in dev is great\n\nYou can keep track of what you use with renv or venv"
+    "objectID": "slides/17.html#facilitating-enterprise-workloads-management-with-kubernetes",
+    "href": "slides/17.html#facilitating-enterprise-workloads-management-with-kubernetes",
+    "title": "Enterprise Server Management",
+    "section": "Facilitating Enterprise Workloads Management with Kubernetes",
+    "text": "Facilitating Enterprise Workloads Management with Kubernetes\n\nKubernetes solves all three of the key enterprise IT/Admin challenges with running servers.\nIncreasing the processing power of your cluster is usually as simple as a few mouse clicks. On the other side, this makes it risky from a cost perspective.\nHelm is the standard tool for defining what’s running in the cluster.\nInstead of the ten steps required in a typical server-based deployment. There are just three steps for Kubernetes.\nWhat are the biggest strengths of Kubernetes as a scaling tool? What are some drawbacks?\n\nStrengths:\n\nAutomatic Load Balancing\nHorizontal Scaling\nInfrastructure Agnosticism\n\nDrawbacks:\n\nManaging and maintaining a Kubernetes cluster can be complex and time-consuming and really requires a highly competent Kubernetes admin\nNetworking in Kubernetes can also be quite complicated."
   },
   {
-    "objectID": "slides/18.html#promotion",
-    "href": "slides/18.html#promotion",
-    "title": "Open Source Data Science in the Enterprise",
-    "section": "Promotion",
-    "text": "Promotion\n\nHow do you promote code from dev to test to prod?\nUsually only admins get prod access\nAlways best to discuss a promotion strategy when getting started\n\nDiscussed in chapter 1"
-  },
-  {
-    "objectID": "slides/18.html#devtestprod-for-admins",
-    "href": "slides/18.html#devtestprod-for-admins",
-    "title": "Open Source Data Science in the Enterprise",
-    "section": "Dev/Test/Prod for Admins",
-    "text": "Dev/Test/Prod for Admins\n\nJust like you want to keep your package environment safe, admins want your system kept safe\n\nServers, OS, R/Python, etc\n\nPromotion matrix\n\nIT/Admins can upgrade the environment separately from the data science tooling\nIT/Admins like to call development and testing “staging”\n\nThis is where DevOps for Data Science starts to become regular DevOps\n\nInfrastructure as code"
-  },
-  {
-    "objectID": "slides/18.html#infrastructure-as-code-iac",
-    "href": "slides/18.html#infrastructure-as-code-iac",
-    "title": "Open Source Data Science in the Enterprise",
-    "section": "Infrastructure as Code (IaC)",
-    "text": "Infrastructure as Code (IaC)\n\nTo get a server to be useful you need two things:\n\nProvision (create) the infrastructure\nConfigure the infrastructure\n\nNo clear dividing line between provisioning and configuring tools\nDocker is part of IaC, but you still need a deployment framework and hypervisor or other container management software\nIaC should be deployed with CI/CD, but doesn’t have to be\nYou’re not safe from your own bad habits\n\nShiny example:\n\nSet up a server\nConfigure network settings\n\n\nSecurity\nPorts\nAnything else\n\n\nInstall R (or Python or whatever)\nInstall Shiny\nHosting software"
-  },
-  {
-    "objectID": "slides/18.html#open-source-in-enterprise",
-    "href": "slides/18.html#open-source-in-enterprise",
-    "title": "Open Source Data Science in the Enterprise",
-    "section": "Open Source in Enterprise",
-    "text": "Open Source in Enterprise\nI am not a lawyer and this is not legal advice.\nBut try to be aware of the licenses your software and packages are under\nFour FOSS freedoms:\n\nView and inspect source code\nRun the software\nModify the software\nRedistribute the software\n\nGeneral categories:\n\nPermissive: You can do basically whatever you want\n\nExamples: MIT, Apache, BSD\n\nCopyleft: Derivative works must use the same license\n\nExamples: GPL, AGPL\n\nNot something you want to mess with\nThings get confusing when mixing licenses"
-  },
-  {
-    "objectID": "slides/18.html#package-restrictions",
-    "href": "slides/18.html#package-restrictions",
-    "title": "Open Source Data Science in the Enterprise",
-    "section": "Package Restrictions",
-    "text": "Package Restrictions\n\nTo restrict package access, IT Admins must:\n\nRestrict access to public repositories\nProvide an alternative!\n\nDon’t worry about space needed for packages. Most are small\n\nI have 421 packages taking up ~2GB\n\n\n\nLots of kinds of enterprise repository software\n\nTwo main concerns:\n\nManaging vulnerabilities\n\nCode scanners vs common vulnerabliities vs common sense\n\nLicenses\nMaintenance/lifetime"
-  },
-  {
-    "objectID": "videos/00/01.html",
-    "href": "videos/00/01.html",
-    "title": "Cohort 1",
+    "objectID": "videos/00/02.html",
+    "href": "videos/00/02.html",
+    "title": "Cohort 2",
     "section": "",
-    "text": "Meeting chat log\n\n00:43:56    Tinashe Tapera: https://www.tidyverse.org/blog/2017/12/workflow-vs-script/\n00:45:19    Jon Harmon (jonthegeek):    That blog led to one of my favorite hex stickers: \"Everything I Know Is From Jenny Bryan\" https://raw.githubusercontent.com/MonkmanMH/EIKIFJB/main/EIKIFJB_sigmar_hex.png"
+    "text": "Meeting chat log\n\n00:03:43    Olivier Leroy:  start\n00:06:07    Josh Persi: Sorry Olivier\n00:06:16    Josh Persi: Connection is still very poor\n01:02:27    Olivier Leroy:  end"
   },
   {
-    "objectID": "videos/01/01.html",
-    "href": "videos/01/01.html",
-    "title": "Cohort 1",
+    "objectID": "videos/01/02.html",
+    "href": "videos/01/02.html",
+    "title": "Cohort 2",
     "section": "",
-    "text": "Meeting chat log\n\n00:43:56    Tinashe Tapera: https://www.tidyverse.org/blog/2017/12/workflow-vs-script/\n00:45:19    Jon Harmon (jonthegeek):    That blog led to one of my favorite hex stickers: \"Everything I Know Is From Jenny Bryan\" https://raw.githubusercontent.com/MonkmanMH/EIKIFJB/main/EIKIFJB_sigmar_hex.png"
+    "text": "Meeting chat log\n\n00:08:34    Umair Durrani:  Start\n00:16:29    Arthur Shaw:    @Diana Garcia Cortes, I spent a long time doing what you described (except for the conda part). But then I realized I still needed to share the environment with my future self. He always gets the short end of the stick.\n00:17:00    Diana Garcia Cortes:    Reacted to \"@Diana Garcia Cortes...\" with ❤️\n00:19:08    Arthur Shaw:    RTools = my arch nemesis for having others reproduce my R code on their machine\n00:29:13    Umair Durrani:  Got to hop onto a different meeting, will catch up on the recording.\n00:29:19    Diana Garcia Cortes:    Reacted to \"Got to hop onto a di...\" with 👍\n00:32:30    Arthur Shaw:    For the installation part with {renv}, aren't you supposed to use  renv::install(\"myPackage\")  instead? Does  install.packages(\"myPackage\")  also work?\n00:33:17    Josh Persi: Replying to \"For the installation...\"\n\nI've had no issues with install.packages and then renv::snapshot() to add them to the lock file\n00:33:31    Arthur Shaw:    Reacted to \"I've had no issues w...\" with 👍\n00:33:33    patrick kilduff (he/him):   Reacted to \"I've had no issues w...\" with 👍\n00:33:35    Josh Persi: Replying to \"For the installation...\"\n\nI'm guessing renv::install() just adds it to the lockfile without the need for snapshot\n00:33:43    patrick kilduff (he/him):   Reacted to \"I'm guessing renv::i...\" with 👍\n00:34:03    Arthur Shaw:    Replying to \"For the installation...\"\n\nI think it also installs in the project library. I could be wrong.\n00:34:26    Josh Persi: Replying to \"For the installation...\"\n\nThat'd make sense!\n00:38:59    Arthur Shaw:    VSCode's clippy ;)\n00:47:29    Arthur Shaw:    For Nix, confusingly, you write in Nix (programming language)\n00:47:51    patrick kilduff (he/him):   Lots of rix/nix blogposts here: https://brodrigues.co/\n00:47:52    Arthur Shaw:    From what little I understand, Nix is a functional programming language and a package manager\n00:48:55    Arthur Shaw:    Replying to \"From what little I u...\"\n\nAnd an OS too\n00:50:28    Josh Persi: I got to run, but thanks for the discussion everyone! See you next week!\n00:50:38    Diana Garcia Cortes:    Reacted to \"I got to run, but th...\" with 👍\n00:52:05    Arthur Shaw:    devbox is much more approachable\n00:52:27    Arthur Shaw:    Replying to \"devbox is much more ...\"\n\nhttps://www.jetify.com/devbox\n00:55:38    Arthur Shaw:    Would devcontainer do what we need? Never been really how how devcontainer relates to container engines like Docker or Podman\n01:08:38    patrick kilduff (he/him):   I have to drop, thanks all! See you all next week 😎\n01:08:49    Retselisitsoe Monyake:  Reacted to \"I have to drop, than...\" with 👍\n01:19:40    Arthur Shaw:    You're muted, @Olivier. You seem not to hear us either\n01:21:09    Olivier:    end"
   },
   {
-    "objectID": "videos/02/01.html",
-    "href": "videos/02/01.html",
-    "title": "Cohort 1",
+    "objectID": "videos/02/02.html",
+    "href": "videos/02/02.html",
+    "title": "Cohort 2",
     "section": "",
-    "text": "Meeting chat log\n\n00:02:43    Gus Lipkin: East Coast US, 1pm local\n00:44:48    Gus Lipkin: https://xkcd.com/927/\n00:57:17    Jack Penzer:    Graph databases &lt;3"
+    "text": "Meeting chat log\n\n00:06:59    Olivier Leroy:  start\n00:26:08    Arthur Shaw:    Although  waiter  animations are sometimes a nice Jedi mind trick to make the app seem to work faster\n00:26:25    Umair Durrani:  Reacted to \"Although  waiter  an...\" with 👍\n00:26:27    Olivier Leroy:  Reacted to \"Although  waiter  an...\" with 👍\n00:26:30    Retselisitsoe Monyake:  Reacted to \"Although  waiter  an...\" with 👍\n00:27:39    Olivier Leroy:  Data warehouse Kimball\n00:28:45    Arthur Shaw:    https://www.geeksforgeeks.org/dbms/difference-between-kimball-and-inmon/\n00:29:00    Arthur Shaw:    Replying to \"https://www.geeksfor...\"\n\nCompletely new to me.\n00:29:32    Olivier Leroy:  Replying to \"https://www.geeksfor...\"\n\nthe hard point is now data warehouse can also refer to databricks&co\n00:43:53    Arthur Shaw:    Neat article/presentation that came to mind while listening about pain points of seeing changes in data structure in DB: https://www.emilyriederer.com/talk/col-names-contract/\n\nhttps://www.emilyriederer.com/post/column-name-contracts/ \n00:46:07    Olivier Leroy:  Reacted to \"Neat article/present...\" with 👍\n00:47:26    Arthur Shaw:    Just FYI: plumber2 is coming/here: https://posit-dev.github.io/plumber2/ \n\nI was searching for this this moring\n00:48:49    Olivier Leroy:  Reacted to \"Just FYI: plumber2 i...\" with 👍\n00:53:38    Arthur Shaw:    Naming things = one of the hardest things\n00:53:46    Olivier Leroy:  Reacted to \"Naming things = one ...\" with 😀\n00:54:04    Retselisitsoe Monyake:  Reacted to \"Naming things = one ...\" with 😀\n00:55:45    Olivier Leroy:  I used mermaid\n00:56:06    Olivier Leroy:  pen and apper also :)\n00:56:42    Arthur Shaw:    excalidraw is something I picked up from the golem book and YT videos.\n01:05:02    Olivier Leroy:  I will try to find the Pyhon equivalent\n01:05:08    Arthur Shaw:    Reacted to \"I will try to find t...\" with 👍\n01:05:33    Josh Persi: I know snakemake is popular in Python, but I don't think it's ergonomic as targets\n01:05:44    Umair Durrani:  Reacted to \"I know snakemake is ...\" with 👍\n01:05:47    Arthur Shaw:    Reacted to \"I know snakemake is ...\" with 🐍\n01:12:38    Garcia Cortes, Diana Elisa: stop"
   },
   {
-    "objectID": "videos/03/01.html",
-    "href": "videos/03/01.html",
-    "title": "Cohort 1",
+    "objectID": "videos/03/02.html",
+    "href": "videos/03/02.html",
+    "title": "Cohort 2",
     "section": "",
-    "text": "Meeting chat log\n\n00:02:43    Gus Lipkin: East Coast US, 1pm local\n00:44:48    Gus Lipkin: https://xkcd.com/927/\n00:57:17    Jack Penzer:    Graph databases &lt;3"
+    "text": "Meeting chat log\n\n00:03:57    Arthur Shaw:    Hot take incoming 😉\n00:04:34    Olivier Leroy:  start\n00:32:33    Garcia Cortes, Diana Elisa: httr2 (pronounced “hitter2”) is a comprehensive HTTP client that provides a modern, pipeable API for working with web APIs. It builds on top of {curl} to provide features like explicit request objects, built-in rate limiting & retry tooling, comprehensive OAuth support, and secure handling of secrets and credentials.\n00:32:53    Arthur Shaw:    curl options that httr lets you use: https://httr.r-lib.org/reference/httr_options.html\n00:38:06    Arthur Shaw:    Love  your HTTP return code summary. I also ave fun by looking up stuff here: https://http.cat/\n00:38:49    Garcia Cortes, Diana Elisa: Reacted to \"Love  your HTTP retu...\" with 😂\n00:52:46    Arthur Shaw:    Looks to be the workflow vignette that keyring should have: https://blog.r-hub.io/2024/02/28/key-advantages-of-using-keyring/ \n\nI'm going to see how to up my secret storage game and shift from  .Renviron  to  keyring .\n01:06:14    Olivier Leroy:  end"
   },
   {
-    "objectID": "videos/05/01.html",
-    "href": "videos/05/01.html",
-    "title": "Cohort 1",
+    "objectID": "videos/04/02.html",
+    "href": "videos/04/02.html",
+    "title": "Cohort 2",
     "section": "",
-    "text": "Meeting chat log\n\n00:44:58    priyanka gagneja:   fantastic question\n00:47:25    priyanka gagneja:   and dates"
+    "text": "Meeting chat log\n\n00:07:48    Arthur Shaw:    For next week, I'll have a look and see if I can present. It's about time I pull my weight around here ;)\n00:07:58    Olivier Leroy:  start\n00:09:07    Umair Durrani:  I did the lab - I'd like to share using SentryR for monitoring\n00:29:31    Arthur Shaw:    If memory serves,  gtsummary  captures the calls behind each computed cell in a table. I think this is strongly desired/needed for regulated industries like pharma. https://www.danieldsjoberg.com/gtsummary/\n00:32:40    Arthur Shaw:    Replying to \"If memory serves,  g...\"\n\nI think this is what I meant: https://www.danieldsjoberg.com/gtsummary/articles/tbl_ard-functions.html\n00:35:57    Umair Durrani:  pointblank and tidylog are good packages for data validation and logging\n00:36:00    Arthur Shaw:    For the joining, a colleague wrote a package that reports on joining (like Stata does): https://randrescastaneda.github.io/joyn/articles/main-functionalities.html#reporting-variable\n00:36:24    Umair Durrani:  Reacted to \"For the joining, a c...\" with 👍\n00:38:00    Arthur Shaw:    Reacted to \"I did the lab - I'd ...\" with 🙏\n00:43:28    Arthur Shaw:    My new go-tos: cli's alert functions. The  text  arg seems to use  glue  without mentioning it in the docs: https://cli.r-lib.org/reference/cli_alert.html\n00:55:12    Arthur Shaw:    VSCode's suggestions to install extensions = 📎 for devs 🤣\n00:55:52    Umair Durrani:  log crash example for shiny: https://github.com/tanho63/talk_shinyprod2023_logging/blob/main/examples/log_crash.R\n00:56:37    Garcia Cortes, Diana Elisa: Reacted to \"log crash example fo...\" with 👍\n00:56:52    Arthur Shaw:    Reacted to \"log crash example fo...\" with 👍\n01:02:16    Retselisitsoe Monyake:  Reacted to \"log crash example fo...\" with 👍\n01:08:42    Olivier Leroy:  Reacted to \"log crash example fo...\" with 👍\n01:08:57    Olivier Leroy:  stop"
   },
   {
-    "objectID": "videos/13/01.html",
-    "href": "videos/13/01.html",
+    "objectID": "videos/05/02.html",
+    "href": "videos/05/02.html",
+    "title": "Cohort 2",
+    "section": "",
+    "text": "Meeting chat log\n\n00:05:49    trevin flickinger (he/him): Hey y’all hope you don’t mind me joining in 👋🏻\n00:06:14    Umair Durrani:  Welcome, Trevin\n00:08:29    trevin flickinger (he/him): I work for a non-profit in Ohio, mainly use R, and just set up a data pipeline using docker and AWS\n00:08:46    Umair Durrani:  Reacted to \"I work for a non-pro...\" with 👍\n00:08:48    Retselisitsoe Monyake:  Reacted to \"I work for a non-p...\" with 👍\n00:09:14    Olivier Leroy:  start\n00:26:49    Olivier Leroy:  would be different schema in DB, new version of packages\n00:27:06    trevin flickinger (he/him): Ahh yeah, that makes sense as well\n00:27:55    trevin flickinger (he/him): Thank you!\n00:41:07    Olivier Leroy:  I have those slide if needed\n00:58:10    Olivier Leroy:  looks good!\n01:05:04    Olivier Leroy:  gert::git_info()$shorthand\n01:06:35    Olivier Leroy:  https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks\n01:15:24    trevin flickinger (he/him): Thank you all!\n01:16:56    Umair Durrani:  Thanks Arthur and Olivier for the useful discussions\n01:17:05    Arthur Shaw:    Reacted to \"Thanks Arthur and Ol...\" with 🙏\n01:17:07    Retselisitsoe Monyake:  Reacted to \"Thanks Arthur and ...\" with 🙏\n01:17:17    Umair Durrani:  https://happygitwithr.com/\n01:17:26    trevin flickinger (he/him): Reacted to \"https://happygitwith...\" with 💯\n01:18:06    Olivier Leroy:  https://uofi.app.box.com/s/xtjcaqvgwlkn1poycuesphutpw4bnk66\n01:19:04    Arthur Shaw:    There were a few nice GitHub Actions presentations on past posit confs. I'll send them along if I can find them.\n01:19:15    Retselisitsoe Monyake:  Reacted to \"There were a few n...\" with 🙏\n01:19:21    Olivier Leroy:  git status\n01:19:41    Umair Durrani:  This page also has some nice resources: https://www.bigbookofr.com/chapters/version%20control#github-learning-lab\n01:19:43    Olivier Leroy:  gst='gist status'\n01:19:59    Umair Durrani:  Reacted to \"https://uofi.app.box...\" with 👍\n01:20:57    Arthur Shaw:    The GitHub Actions docs are something I'd like to explore more. Not sure how good the docs are, however, for newcomers (like me): https://docs.github.com/en/actions\n01:21:32    Arthur Shaw:    Thanks so much, Oliver! See you all next week. Gotta drop off\n01:21:35    Olivier Leroy:  end\n01:22:16    Retselisitsoe Monyake:  Thanks!"
+  },
+  {
+    "objectID": "videos/06/02.html",
+    "href": "videos/06/02.html",
+    "title": "Cohort 2",
+    "section": "",
+    "text": "Meeting chat log\n\n00:07:05    Arthur Shaw:    Not used it. But this looks promising: https://rstudio.github.io/rstudioapi/reference/restartSession.html\n00:07:56    Umair Durrani:  Reacted to \"Not used it. But thi...\" with 👍\n00:08:40    Olivier Leroy:  start\n00:09:36    Olivier Leroy:  the hard path is the \"jargon\" instance, image, etc\n00:09:45    Olivier Leroy:  agree on the chapter\n00:11:38    Arthur Shaw:    Some great programmer humor to explain Docker: https://www.reddit.com/r/ProgrammerHumor/comments/y8qylu/docker_is_born/\n00:13:02    Olivier Leroy:  Reacted to \"Some great programme...\" with 😆\n00:17:07    Arthur Shaw:    I've not looked into this too much, but there are also other container engines out there. Podman took uses the Open Container Initiative spec that Docker developed and created something very, very compatible with Docker. https://opencontainers.org/\n00:19:16    Olivier Leroy:  Reacted to \"I've not looked into...\" with 👍\n00:19:28    Olivier Leroy:  https://rocker-project.org/  so see some image\n00:20:25    Arthur Shaw:    Replying to \"https://rocker-proje...\"\n\nIs there a Python equivalent of this--to the extent this question even makes sense in the Python ecosystem?\n00:20:27    Olivier Leroy:  in entreprise setup probably RHEL (with geography difference)\n00:21:01    Olivier Leroy:  Replying to \"https://rocker-proje...\"\n\n@Arthur Shaw I am not aware of\n00:21:47    Arthur Shaw:    Replying to \"https://rocker-proje...\"\n\nMaybe just this? https://hub.docker.com/_/python/\n00:22:23    Olivier Leroy:  head is part of GNU coreutils\n00:23:39    Olivier Leroy:  if you look on the build\n00:50:58    Arthur Shaw:    docker container prune: https://docs.docker.com/reference/cli/docker/container/prune/\n00:53:34    Umair Durrani:  Building reproducible analytical pipelines with R: https://raps-with-r.dev/\n00:53:37    Arthur Shaw:    Attach to a running container from VSCode: https://code.visualstudio.com/docs/devcontainers/attach-container\n00:59:51    Olivier Leroy:  end"
+  },
+  {
+    "objectID": "videos/07/02.html",
+    "href": "videos/07/02.html",
+    "title": "Cohort 2",
+    "section": "",
+    "text": "Meeting chat log\n\n00:11:22    Diana Garcia:   start\n00:13:31    Arthur Shaw:    Can't get IT/Admin support. That never happens in reality 🤣\n01:08:12    Diana Garcia:   end"
+  },
+  {
+    "objectID": "videos/08/02.html",
+    "href": "videos/08/02.html",
+    "title": "Cohort 2",
+    "section": "",
+    "text": "Meeting chat log\n\n00:03:49    Umair Durrani:  Start\n00:18:04    Arthur Shaw:    Really strange the chapter didn't discuss Vim (unless I missed it).\n00:19:52    Diana Garcia Cortes:    I didn't think about it but yes! It should be there\n00:21:40    Arthur Shaw:    I will need to drop off in a bit to join a last-minute work call. But I wonder if anyone has experience with Tailscale (https://github.com/tailscale/tailscale)--and any info on whether it's better somehow that vanilla SSH. I've been seeing Tailscale mentioned a lot of late.\n00:21:56    Tan:    https://do4ds.com/chapters/sec2/2-4-app-admin.html#configuration-with-vim-and-nano  vim covered a little later\n00:22:16    Tan:    tailscale is great, but it's not the same thing as vanilla SSH\n00:22:22    Diana Garcia Cortes:    Reacted to \"https://do4ds.com/ch...\" with 👍\n00:22:22    Tan:    also hiya folks\n00:22:29    Arthur Shaw:    Reacted to \"https://do4ds.com/ch...\" with 👍\n00:22:58    Arthur Shaw:    Reacted to \"also hiya folks\" with 👋\n00:23:02    Diana Garcia Cortes:    Reacted to \"also hiya folks\" with 👋\n00:28:37    Diana Garcia Cortes:    Does anyone know why ssh is not the default protocol to use github with usethis or git2r?\n00:30:17    Diana Garcia Cortes:    Replying to \"Does anyone know why...\"\n\njust cause it requires more configuration? or are there some advantages when using https?\n00:30:27    Arthur Shaw:    The chapter mentioned tmux / terminal multiplexers fairly quickly. I've tinkered a bit with tmux and zellij for local stuff. I wonder if others have found it useful for connecting to and interacting with remote servers.\n00:31:20    Tan:    https://usethis.r-lib.org/articles/git-credentials.html#https-vs-ssh \nssh is harder to set up right on windows, and also once you set up https creds it lets you use gh api stuff as well e.g. pak/remotes installs\n00:31:32    Arthur Shaw:    Reacted to \"just cause it requir...\" with 👀\n00:31:52    Tan:    if that continues try checking the aws firewall\n00:32:11    Arthur Shaw:    (Gotta drop for a work call. I cannot wait to see the recording of the rest of today's session.)\n00:32:34    Diana Garcia Cortes:    Replying to \"The chapter mentione...\"\n\nI've used screen. It is useful\n00:32:57    Diana Garcia Cortes:    Reacted to \"https://usethis.r-li...\" with 👍\n00:35:12    Tan:    :claps:\n00:36:01    Umair Durrani:  Stop\n00:40:36    Tan:    https://cloud.google.com/free?hl=en \nhttps://aws.amazon.com/free/ \nfor more info"
+  },
+  {
+    "objectID": "videos/09/01.html",
+    "href": "videos/09/01.html",
     "title": "Cohort 1",
     "section": "",
     "text": "Meeting chat log\n\n00:21:29    novica nakov: it's more fun with more than one key :)\n00:22:45    novica nakov: no you copied in your local folder\n00:28:28    Tinashe Tapera: ssh-copy-id: https://www.ssh.com/academy/ssh/copy-id\n00:41:20    Gus Lipkin: There’s a gui Docker image available for nginx that makes things easier (or more complicated depending on how you feel): https://nginxproxymanager.com/\n00:43:09    Tinashe Tapera: This is really nice\n00:51:45    Ahmed: pretty cool!"
   },
   {
-    "objectID": "01.html",
-    "href": "01.html",
-    "title": "1. Environments as Code",
+    "objectID": "videos/12/01.html",
+    "href": "videos/12/01.html",
+    "title": "Cohort 1",
+    "section": "",
+    "text": "Meeting chat log\n\n00:21:29    novica nakov: it's more fun with more than one key :)\n00:22:45    novica nakov: no you copied in your local folder\n00:28:28    Tinashe Tapera: ssh-copy-id: https://www.ssh.com/academy/ssh/copy-id\n00:41:20    Gus Lipkin: There’s a gui Docker image available for nginx that makes things easier (or more complicated depending on how you feel): https://nginxproxymanager.com/\n00:43:09    Tinashe Tapera: This is really nice\n00:51:45    Ahmed: pretty cool!"
+  },
+  {
+    "objectID": "videos/14/01.html",
+    "href": "videos/14/01.html",
+    "title": "Cohort 1",
+    "section": "",
+    "text": "Meeting chat log\n\n00:21:29    novica nakov: it's more fun with more than one key :)\n00:22:45    novica nakov: no you copied in your local folder\n00:28:28    Tinashe Tapera: ssh-copy-id: https://www.ssh.com/academy/ssh/copy-id\n00:41:20    Gus Lipkin: There’s a gui Docker image available for nginx that makes things easier (or more complicated depending on how you feel): https://nginxproxymanager.com/\n00:43:09    Tinashe Tapera: This is really nice\n00:51:45    Ahmed: pretty cool!"
+  },
+  {
+    "objectID": "02.html",
+    "href": "02.html",
+    "title": "2. Data Project Architecture",
     "section": "",
     "text": "No matching items",
     "crumbs": [
       "DevOps Lessons for Data Science",
-      "1. Environments as Code"
+      "2. Data Project Architecture"
     ]
   },
   {
-    "objectID": "01.html#meeting-videos",
-    "href": "01.html#meeting-videos",
-    "title": "1. Environments as Code",
+    "objectID": "02.html#meeting-videos",
+    "href": "02.html#meeting-videos",
+    "title": "2. Data Project Architecture",
     "section": "Meeting videos",
     "text": "Meeting videos\n\n\n\n\n\n\n\n\nCohort 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCohort 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "DevOps Lessons for Data Science",
-      "1. Environments as Code"
+      "2. Data Project Architecture"
     ]
   },
   {
-    "objectID": "03.html",
-    "href": "03.html",
-    "title": "3. Databases and Data APIs",
+    "objectID": "04.html",
+    "href": "04.html",
+    "title": "4. Logging and Monitoring",
     "section": "",
     "text": "No matching items",
     "crumbs": [
       "DevOps Lessons for Data Science",
-      "3. Databases and Data APIs"
+      "4. Logging and Monitoring"
     ]
   },
   {
-    "objectID": "03.html#meeting-videos",
-    "href": "03.html#meeting-videos",
-    "title": "3. Databases and Data APIs",
+    "objectID": "04.html#meeting-videos",
+    "href": "04.html#meeting-videos",
+    "title": "4. Logging and Monitoring",
     "section": "Meeting videos",
     "text": "Meeting videos\n\n\n\n\n\n\n\n\nCohort 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCohort 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "DevOps Lessons for Data Science",
-      "3. Databases and Data APIs"
+      "4. Logging and Monitoring"
     ]
   },
   {
-    "objectID": "05.html",
-    "href": "05.html",
-    "title": "5. Deployments and Code Promotion",
+    "objectID": "06.html",
+    "href": "06.html",
+    "title": "6. Demystifying Docker",
     "section": "",
     "text": "No matching items",
     "crumbs": [
       "DevOps Lessons for Data Science",
-      "5. Deployments and Code Promotion"
+      "6. Demystifying Docker"
     ]
   },
   {
-    "objectID": "05.html#meeting-videos",
-    "href": "05.html#meeting-videos",
-    "title": "5. Deployments and Code Promotion",
+    "objectID": "06.html#meeting-videos",
+    "href": "06.html#meeting-videos",
+    "title": "6. Demystifying Docker",
     "section": "Meeting videos",
     "text": "Meeting videos\n\n\n\n\n\n\n\n\nCohort 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCohort 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "DevOps Lessons for Data Science",
-      "5. Deployments and Code Promotion"
+      "6. Demystifying Docker"
     ]
   },
   {
-    "objectID": "07.html",
-    "href": "07.html",
-    "title": "7. The Cloud",
+    "objectID": "08.html",
+    "href": "08.html",
+    "title": "8. The Command Line",
     "section": "",
     "text": "No matching items",
     "crumbs": [
       "IT/Admin for Data Science",
-      "7. The Cloud"
+      "8. The Command Line"
     ]
   },
   {
-    "objectID": "07.html#meeting-videos",
-    "href": "07.html#meeting-videos",
-    "title": "7. The Cloud",
+    "objectID": "08.html#meeting-videos",
+    "href": "08.html#meeting-videos",
+    "title": "8. The Command Line",
     "section": "Meeting videos",
     "text": "Meeting videos\n\n\n\n\n\n\n\n\nCohort 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCohort 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "IT/Admin for Data Science",
-      "7. The Cloud"
+      "8. The Command Line"
     ]
   },
   {
-    "objectID": "09.html",
-    "href": "09.html",
-    "title": "9. Linux Administration",
+    "objectID": "10.html",
+    "href": "10.html",
+    "title": "10. Application Administration",
     "section": "",
-    "text": "No matching items",
+    "text": "Application Administration\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "IT/Admin for Data Science",
-      "9. Linux Administration"
-    ]
-  },
-  {
-    "objectID": "09.html#meeting-videos",
-    "href": "09.html#meeting-videos",
-    "title": "9. Linux Administration",
-    "section": "Meeting videos",
-    "text": "Meeting videos\n\n\n\n\n\n\n\n\nCohort 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
-    "crumbs": [
-      "IT/Admin for Data Science",
-      "9. Linux Administration"
+      "10. Application Administration"
     ]
   },
   {

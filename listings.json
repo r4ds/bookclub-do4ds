@@ -28,59 +28,10 @@
     ]
   },
   {
-    "listing": "/08.html",
+    "listing": "/09.html",
     "items": [
-      "/slides/08.html",
-      "/videos/08/02.html",
-      "/videos/08/01.html"
-    ]
-  },
-  {
-    "listing": "/06.html",
-    "items": [
-      "/slides/06.html",
-      "/videos/06/02.html",
-      "/videos/06/01.html"
-    ]
-  },
-  {
-    "listing": "/04.html",
-    "items": [
-      "/slides/04.html",
-      "/videos/04/02.html",
-      "/videos/04/01.html"
-    ]
-  },
-  {
-    "listing": "/02.html",
-    "items": [
-      "/slides/02.html",
-      "/videos/02/02.html",
-      "/videos/02/01.html"
-    ]
-  },
-  {
-    "listing": "/01.html",
-    "items": [
-      "/slides/01.html",
-      "/videos/01/02.html",
-      "/videos/01/01.html"
-    ]
-  },
-  {
-    "listing": "/03.html",
-    "items": [
-      "/slides/03.html",
-      "/videos/03/02.html",
-      "/videos/03/01.html"
-    ]
-  },
-  {
-    "listing": "/05.html",
-    "items": [
-      "/slides/05.html",
-      "/videos/05/02.html",
-      "/videos/05/01.html"
+      "/slides/09.html",
+      "/videos/09/01.html"
     ]
   },
   {
@@ -92,10 +43,65 @@
     ]
   },
   {
-    "listing": "/09.html",
+    "listing": "/05.html",
     "items": [
-      "/slides/09.html",
-      "/videos/09/01.html"
+      "/slides/05.html",
+      "/videos/05/02.html",
+      "/videos/05/01.html"
+    ]
+  },
+  {
+    "listing": "/03.html",
+    "items": [
+      "/slides/03.html",
+      "/videos/03/02.html",
+      "/videos/03/01.html"
+    ]
+  },
+  {
+    "listing": "/01.html",
+    "items": [
+      "/slides/01.html",
+      "/videos/01/02.html",
+      "/videos/01/01.html"
+    ]
+  },
+  {
+    "listing": "/02.html",
+    "items": [
+      "/slides/02.html",
+      "/videos/02/02.html",
+      "/videos/02/01.html"
+    ]
+  },
+  {
+    "listing": "/04.html",
+    "items": [
+      "/slides/04.html",
+      "/videos/04/02.html",
+      "/videos/04/01.html"
+    ]
+  },
+  {
+    "listing": "/06.html",
+    "items": [
+      "/slides/06.html",
+      "/videos/06/02.html",
+      "/videos/06/01.html"
+    ]
+  },
+  {
+    "listing": "/08.html",
+    "items": [
+      "/slides/08.html",
+      "/videos/08/02.html",
+      "/videos/08/01.html"
+    ]
+  },
+  {
+    "listing": "/10.html",
+    "items": [
+      "/slides/10.html"
     ]
   },
   {

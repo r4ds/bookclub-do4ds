@@ -1333,30 +1333,44 @@
   {
     "objectID": "slides/13.html#learning-objectives",
     "href": "slides/13.html#learning-objectives",
-    "title": "DNS allows for human-readable addresses",
+    "title": "Domains and DNS",
     "section": "Learning objectives",
-    "text": "Learning objectives\n\nDetails that we won’t dig into:\n\nDescribe the pieces of a fully qualified domain name (FQDN).\nExplain why DNS changes can take a long time to propagate.\nUse DNS records to route traffic to a domain.\n\nConfigure a domain name for an AWS EC2.\n\nAllocate an Elastic IP.\nConfigure DNS records to route traffic to an AWS EC2."
+    "text": "Learning objectives\n\nUnderstanding DNS and nameservers\nUnderstanding the fully qualified domain name\nUnderstanding how to configure DNS for your server"
   },
   {
-    "objectID": "slides/13.html#allocate-an-elastic-ip",
-    "href": "slides/13.html#allocate-an-elastic-ip",
-    "title": "DNS allows for human-readable addresses",
-    "section": "Allocate an Elastic IP",
-    "text": "Allocate an Elastic IP\n\n(Make sure the server from Chapter 12 is running, with /rstudio & /palmer via nginx)\nNavigate to “EC2” &gt; “Network & Security” &gt; “Elastic IPs”\n“Allocate Elastic IP Address” (and click “Allocate”)\n“Actions” / “Associate Elastic IP Address”\n\nFind the instance\n\nTo clean up, you can do “Actions” / “Release Elastic IP Addresses”"
+    "objectID": "slides/13.html#nameservers-the-phone-books-of-the-internet",
+    "href": "slides/13.html#nameservers-the-phone-books-of-the-internet",
+    "title": "Domains and DNS",
+    "section": "Nameservers: the phone books of the internet",
+    "text": "Nameservers: the phone books of the internet\n\n\n\n\n\nClient provides a domain\nNameserver\n\nlooks up domain\nfinds domain’s IP\nreturns matching IP"
   },
   {
-    "objectID": "slides/13.html#configure-dns-records",
-    "href": "slides/13.html#configure-dns-records",
-    "title": "DNS allows for human-readable addresses",
-    "section": "Configure DNS Records",
-    "text": "Configure DNS Records\n\n(Register a domain)\nFind the “DNS” settings for that domain at your registrar\nAdd or edit 3 records:\n\nA * 12.345.678.90\nA @ 12.345.678.90\nCNAME www yourdomain.you"
+    "objectID": "slides/13.html#domains-deconstructed",
+    "href": "slides/13.html#domains-deconstructed",
+    "title": "Domains and DNS",
+    "section": "Domains deconstructed",
+    "text": "Domains deconstructed"
   },
   {
-    "objectID": "slides/13.html#reconfigure-nginx",
-    "href": "slides/13.html#reconfigure-nginx",
-    "title": "DNS allows for human-readable addresses",
-    "section": "Reconfigure nginx",
-    "text": "Reconfigure nginx\n\nsudo vim /etc/nginx/nginx.conf\nserver_name ec2.whatever; to server_name yourdomain.you www.yourdomain.you;\nsudo systemctl restart nginx\nVisit http://yourdomain.you/rstudio and http://yourdomain.you/palmer/stats\n\nChrome will yell at you since https won’t work yet. See the next chapter!"
+    "objectID": "slides/13.html#how-to-get-a-domain",
+    "href": "slides/13.html#how-to-get-a-domain",
+    "title": "Domains and DNS",
+    "section": "How to get a domain",
+    "text": "How to get a domain\n\n\nOverview\n\nBuy. Actually, rent from DNS provider.\nRegister. Typically, with ICANN via DNS provider.\n\n\nDetailed steps\n\nGo to a DNS provider (e.g., Namecheap, Godaddy, AWS Route 53, etc)\nSearch for a domain name in a top-level domain (e.g. hello-world in .com)\nPay to use it\nProvide some personal details for registration (that DNS providers typically redacts)"
+  },
+  {
+    "objectID": "slides/13.html#how-to-link-your-server-and-your-domain",
+    "href": "slides/13.html#how-to-link-your-server-and-your-domain",
+    "title": "Domains and DNS",
+    "section": "How to link your server and your domain",
+    "text": "How to link your server and your domain\n\n\nNetworking table …\n\n\n\nPath/Host\nType\nTarget\n\n\n\n\n@\nA\n64.56.223.5\n\n\nwww\nCNAME\nexample.com\n\n\nblog\nA\n114.13.56.77\n\n\n*\nA\n64.56.223.5\n\n\n\n\n… explained\n\n\n@. Traffic to exactly example.com -&gt; IP 64...\nwww. Traffic to www.example.com -&gt; example.com -&gt; IP 64...\nblog. blog.example.com -&gt; different IP\n*. Everything else -&gt; IP 64...."
+  },
+  {
+    "objectID": "slides/13.html#demos",
+    "href": "slides/13.html#demos",
+    "title": "Domains and DNS",
+    "section": "Demos",
+    "text": "Demos\n\nGitHub Pages\nAWS"
   },
   {
     "objectID": "slides/15.html#learning-objectives",

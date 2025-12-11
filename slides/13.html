@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.26">
 
-  <title>DevOps for Data Science Book Club – DNS allows for human-readable addresses</title>
+  <title>DevOps for Data Science Book Club – Domains and DNS</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -126,7 +126,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">DNS allows for human-readable addresses</h1>
+  <h1 class="title">Domains and DNS</h1>
 
 <div class="quarto-title-authors">
 </div>
@@ -135,55 +135,104 @@
 <section id="learning-objectives" class="slide level2">
 <h2>Learning objectives</h2>
 <ul>
-<li>Details that we won’t dig into:
-<ul>
-<li>Describe the pieces of a fully qualified domain name (FQDN).</li>
-<li>Explain why DNS changes can take a long time to propagate.</li>
-<li>Use DNS records to route traffic to a domain.</li>
-</ul></li>
-<li>Configure a domain name for an AWS EC2.
-<ul>
-<li>Allocate an Elastic IP.</li>
-<li>Configure DNS records to route traffic to an AWS EC2.</li>
-</ul></li>
+<li>Understanding DNS and nameservers</li>
+<li>Understanding the fully qualified domain name</li>
+<li>Understanding how to configure DNS for your server</li>
 </ul>
 </section>
-<section id="allocate-an-elastic-ip" class="slide level2 unnumbered">
-<h2>Allocate an Elastic IP</h2>
+<section id="nameservers-the-phone-books-of-the-internet" class="slide level2">
+<h2>Nameservers: the phone books of the internet</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="https://do4ds.com/chapters/sec2/images/dns_resolution.png"></p>
+</div><div class="column" style="width:50%;">
 <ul>
-<li><em>(Make sure the server from Chapter 12 is running, with <code>/rstudio</code> &amp; <code>/palmer</code> via <code>nginx</code>)</em></li>
-<li>Navigate to “EC2” &gt; “Network &amp; Security” &gt; “Elastic IPs”</li>
-<li>“Allocate Elastic IP Address” (and click “Allocate”)</li>
-<li>“Actions” / “Associate Elastic IP Address”
+<li>Client provides a domain</li>
+<li>Nameserver
 <ul>
-<li>Find the instance</li>
-</ul></li>
-<li>To clean up, you can do “Actions” / “Release Elastic IP Addresses”</li>
-</ul>
-</section>
-<section id="configure-dns-records" class="slide level2 unnumbered">
-<h2>Configure DNS Records</h2>
-<ul>
-<li><em>(Register a domain)</em></li>
-<li>Find the “DNS” settings for that domain at your registrar</li>
-<li>Add or edit 3 records:
-<ul>
-<li>A * <code>12.345.678.90</code></li>
-<li>A @ <code>12.345.678.90</code></li>
-<li>CNAME www <code>yourdomain.you</code></li>
+<li>looks up domain</li>
+<li>finds domain’s IP</li>
+<li>returns matching IP</li>
 </ul></li>
 </ul>
+</div></div>
 </section>
-<section id="reconfigure-nginx" class="slide level2 unnumbered">
-<h2>Reconfigure nginx</h2>
+<section id="domains-deconstructed" class="slide level2">
+<h2>Domains deconstructed</h2>
+
+<img data-src="images/fully-qualified-domain-deconstructed.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="how-to-get-a-domain" class="slide level2">
+<h2>How to get a domain</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="overview">Overview</h3>
 <ul>
-<li><code>sudo vim /etc/nginx/nginx.conf</code></li>
-<li><code>server_name ec2.whatever;</code> to <code>server_name yourdomain.you www.yourdomain.you;</code></li>
-<li><code>sudo systemctl restart nginx</code></li>
-<li>Visit <code>http://yourdomain.you/rstudio</code> and <code>http://yourdomain.you/palmer/stats</code>
+<li><strong>Buy</strong>. Actually, rent from DNS provider.</li>
+<li><strong>Register</strong>. Typically, with <a href="https://en.wikipedia.org/wiki/ICANN">ICANN</a> via DNS provider.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="detailed-steps">Detailed steps</h3>
 <ul>
-<li>Chrome will yell at you since https won’t work yet. See the next chapter!</li>
-</ul></li>
+<li>Go to a DNS provider (e.g., Namecheap, Godaddy, AWS Route 53, etc)</li>
+<li>Search for a domain name in a top-level domain (e.g.&nbsp;<code>hello-world</code> in <code>.com</code>)</li>
+<li>Pay to use it</li>
+<li>Provide some personal details for registration (that DNS providers typically redacts)</li>
+</ul>
+</div></div>
+</section>
+<section id="how-to-link-your-server-and-your-domain" class="slide level2">
+<h2>How to link your server and your domain</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<h3 id="networking-table">Networking table …</h3>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Path/Host</th>
+<th>Type</th>
+<th>Target</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>@</code></td>
+<td><code>A</code></td>
+<td>64.56.223.5</td>
+</tr>
+<tr class="even">
+<td>www</td>
+<td><code>CNAME</code></td>
+<td>example.com</td>
+</tr>
+<tr class="odd">
+<td>blog</td>
+<td><code>A</code></td>
+<td>114.13.56.77</td>
+</tr>
+<tr class="even">
+<td>*</td>
+<td><code>A</code></td>
+<td>64.56.223.5</td>
+</tr>
+</tbody>
+</table>
+</div><div class="column" style="width:40%;">
+<h3 id="explained">… explained</h3>
+<div class="fragment">
+<ul>
+<li class="fragment"><code>@</code>. Traffic to exactly <code>example.com</code> -&gt; IP <code>64...</code></li>
+<li class="fragment"><code>www</code>. Traffic to <code>www.example.com</code> -&gt; <code>example.com</code> -&gt; IP <code>64...</code></li>
+<li class="fragment"><code>blog</code>. <code>blog.example.com</code> -&gt; different IP</li>
+<li class="fragment"><code>*</code>. Everything else -&gt; IP <code>64....</code></li>
+</ul>
+</div>
+</div></div>
+</section>
+<section id="demos" class="slide level2">
+<h2>Demos</h2>
+<ul>
+<li>GitHub Pages</li>
+<li><del>AWS</del></li>
 </ul>
 
 

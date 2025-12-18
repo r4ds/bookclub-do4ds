@@ -1,6 +1,6 @@
 ---
 engine: knitr
-title: Choosing the Right Server for You
+title:  Server Resources and Scaling
 ---
 
 ## Learning objectives
@@ -39,26 +39,6 @@ title: Choosing the Right Server for You
 
 $n \textrm{ cores} = 1 \textrm{ core per user} + 1$
 
-## GPU {-}
-
-- Specialized chips initially built for graphics
-
-- More numerous slower cores than CPU
-
-> Where a consumer-grade CPU has 4-16 cores, mid-range GPUs have 700-4,000 cores, but each one runs between 1% and 10% the speed of a CPU core.
-
-- Great for parallelisation (think Neural Nets)
-
-## So Should I Get  GPU...? {-}
-
-- Usually, no (parallelising into < 10 workers is often enough)
-
-- You'll know you need a GPU when you get there
-
-- _Discuss..._
-
-![decisions, decisions](https://study.com/cimages/videopreview/ayh7r7g0ty.jpg)
-
 ## RAM {-}
 
 - Basically short term memory. When a process ends, it is destroyed (like when you quit RStudio)
@@ -79,6 +59,32 @@ $\textrm{Necessary RAM} = \textrm{max amount of data} \times 3$
 
 $\textrm{Necessary Storage} = \textrm{approx data} + 1 \textrm{GB} \times n \textrm{ users}$
 
+- Disk types:
+    - HDD: mechanical, slower, cheaper
+
+    - SSD: electronic, faster, more expensive
+
+## GPU {-}
+
+- Specialized chips initially built for graphics
+
+- More numerous slower cores than CPU
+
+> Where a consumer-grade CPU has 4-16 cores, mid-range GPUs have 700-4,000 cores, but each one runs between 1% and 10% the speed of a CPU core.
+
+- Great for parallelisation (think Neural Nets)
+
+## So Should I Get  GPU...? {-}
+
+- Usually, no (parallelising into < 10 workers is often enough)
+
+- You'll know you need a GPU when you get there
+
+- _Discuss..._
+
+![decisions, decisions](https://study.com/cimages/videopreview/ayh7r7g0ty.jpg)
+
+
 ## Scenarios {-}
 
 1. You try to load a big csv file into pandas in Python. It churns for a while and then crashes.
@@ -86,7 +92,3 @@ $\textrm{Necessary Storage} = \textrm{approx data} + 1 \textrm{GB} \times n \tex
 2. You go to build a new ML model on your data. You’d like to re-train the model once a day, but it turns out training this model takes 26 hours on your laptop.
 
 3. You design an visualization Matplotlib , and create a whole bunch in a loop, you want to parallelize the operation. Right now you’re running on a t2.small with 1 CPU.
-
-## Lab {-}
-
-Not much to say here...🤷

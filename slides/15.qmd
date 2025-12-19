@@ -12,13 +12,20 @@ title: Enterprise Networking
 
 ## Enterprise Networking Terminology {-}
 
--   **private network:** a network that *communicates* with the wider internet *via proxies;* VPC ("Virtual private cloud") on AWS 
--   **inbound proxy:** more formally "reverse proxy"; a server on the public network that routes traffic *into* a private network
--   **outbound proxy:** more formally "forward proxy"; a server on the public network that routes traffic *out of* a private network
+A **private network** *communicates* with the wider internet *via proxies;* VPC ("Virtual private cloud") on AWS
+
+![The shape of an enterprise network](images/15_subnets.png)
+
+## Traffic Direction {-}
+-   **inbound/reverse proxy:** routes traffic *into* a private network. Laptop → Server
+-   **outbound/forward proxy:** routes traffic *out of* a private network. Server → API
+
+![Proxies](images/15_traffic.png)
 
 ## Benefits of Private Networks {-}
 
 -   Deal with security issues at the proxies
+-   Use private IP addresses internally
 -   Easier to route traffic (and change routing) to specific servers
 -   Easier to manage ports
 -   Can block traffic to/from specific unwanted sources
@@ -27,15 +34,14 @@ title: Enterprise Networking
 
 ## Issues with Inbound Proxies {-}
 
--   Connections from your laptop to the server
+- Connections from your laptop to the server
+- Correct port configuration is critical
 -   Things that are often configured:
     -   Upload/download file size limits.
     -   Upload/download/session timeouts.
 -   Signs that you might be fighting against an inbound proxy:
     -   Uploads/downloads from you to the server fail or cut off early.
     -   Your session keeps ending (you have to log back in).
--   Special case: Websockets
-    -   Older proxies might break things like Shiny and Streamlit.
 
 ## Issues with Outbound Proxies {-}
 

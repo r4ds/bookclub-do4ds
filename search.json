@@ -1263,72 +1263,65 @@
   {
     "objectID": "slides/11.html#learning-objectives",
     "href": "slides/11.html#learning-objectives",
-    "title": "Choosing the Right Server for You",
+    "title": "Server Resources and Scaling",
     "section": "Learning objectives",
     "text": "Learning objectives\n\nAppreciate computation hardware/software\nCPU vs. GPU\nRAM vs Storage"
   },
   {
     "objectID": "slides/11.html#what-is-computing",
     "href": "slides/11.html#what-is-computing",
-    "title": "Choosing the Right Server for You",
+    "title": "Server Resources and Scaling",
     "section": "What is Computing?",
     "text": "What is Computing?\n\nEverything on a computer is represented by a (usually very large) number.\nAt a hardware level the only thing computers do is add these numbers together.\nModern computers add very quickly and very accurately.\nComputing speed is limited by cores and clock\n\n\nclassroom as a computer"
   },
   {
     "objectID": "slides/11.html#cpu-the-physical-brain",
     "href": "slides/11.html#cpu-the-physical-brain",
-    "title": "Choosing the Right Server for You",
+    "title": "Server Resources and Scaling",
     "section": "CPU: The physical brain",
     "text": "CPU: The physical brain\n\nCores: Available processing centers in a CPU (usually 4-32)\nClock speed: number of operations each core can accomplish (2-5 GHz, 2-5 billion operations per sec)\nMost recent improvement is a result of number of cores, and core usage, not clocks\n\n\nmoore’s law"
   },
   {
     "objectID": "slides/11.html#how-do-i-go-faster",
     "href": "slides/11.html#how-do-i-go-faster",
-    "title": "Choosing the Right Server for You",
+    "title": "Server Resources and Scaling",
     "section": "How do I go faster…?",
     "text": "How do I go faster…?\n\nFor R/Python, fewer faster cores are usually preferable to many slower cores\nFor servers, keep it light:\n\n\\(n \\textrm{ cores} = 1 \\textrm{ core per user} + 1\\)"
   },
   {
-    "objectID": "slides/11.html#gpu",
-    "href": "slides/11.html#gpu",
-    "title": "Choosing the Right Server for You",
-    "section": "GPU",
-    "text": "GPU\n\nSpecialized chips initially built for graphics\nMore numerous slower cores than CPU\n\n\nWhere a consumer-grade CPU has 4-16 cores, mid-range GPUs have 700-4,000 cores, but each one runs between 1% and 10% the speed of a CPU core.\n\n\nGreat for parallelisation (think Neural Nets)"
-  },
-  {
-    "objectID": "slides/11.html#so-should-i-get-gpu",
-    "href": "slides/11.html#so-should-i-get-gpu",
-    "title": "Choosing the Right Server for You",
-    "section": "So Should I Get GPU…?",
-    "text": "So Should I Get GPU…?\n\nUsually, no (parallelising into &lt; 10 workers is often enough)\nYou’ll know you need a GPU when you get there\nDiscuss…\n\n\ndecisions, decisions"
-  },
-  {
     "objectID": "slides/11.html#ram",
     "href": "slides/11.html#ram",
-    "title": "Choosing the Right Server for You",
+    "title": "Server Resources and Scaling",
     "section": "RAM",
     "text": "RAM\n\nBasically short term memory. When a process ends, it is destroyed (like when you quit RStudio)\nGet a computer with lots of RAM, probably\n\n\\(\\textrm{Necessary RAM} = \\textrm{max amount of data} \\times 3\\)\n\nIf it’s too big, move to disk (e.g. database, Arrow, dask, HDF5)\n\n\nBig data in R"
   },
   {
     "objectID": "slides/11.html#disk-storage",
     "href": "slides/11.html#disk-storage",
-    "title": "Choosing the Right Server for You",
+    "title": "Server Resources and Scaling",
     "section": "Disk (Storage)",
-    "text": "Disk (Storage)\n\nWhere physical files live and persist\nThe bigger the better (and cheaper nowadays)\n\n\\(\\textrm{Necessary Storage} = \\textrm{approx data} + 1 \\textrm{GB} \\times n \\textrm{ users}\\)"
+    "text": "Disk (Storage)\n\nWhere physical files live and persist\nThe bigger the better (and cheaper nowadays)\n\n\\(\\textrm{Necessary Storage} = \\textrm{approx data} + 1 \\textrm{GB} \\times n \\textrm{ users}\\)\n\nDisk types:\n\nHDD: mechanical, slower, cheaper\nSSD: electronic, faster, more expensive"
+  },
+  {
+    "objectID": "slides/11.html#gpu",
+    "href": "slides/11.html#gpu",
+    "title": "Server Resources and Scaling",
+    "section": "GPU",
+    "text": "GPU\n\nSpecialized chips initially built for graphics\nMore numerous slower cores than CPU\n\n\nWhere a consumer-grade CPU has 4-16 cores, mid-range GPUs have 700-4,000 cores, but each one runs between 1% and 10% the speed of a CPU core.\n\n\nGreat for parallelisation (think Neural Nets)"
+  },
+  {
+    "objectID": "slides/11.html#so-should-i-get-gpu",
+    "href": "slides/11.html#so-should-i-get-gpu",
+    "title": "Server Resources and Scaling",
+    "section": "So Should I Get GPU…?",
+    "text": "So Should I Get GPU…?\n\nUsually, no (parallelising into &lt; 10 workers is often enough)\nYou’ll know you need a GPU when you get there\nDiscuss…\n\n\ndecisions, decisions"
   },
   {
     "objectID": "slides/11.html#scenarios",
     "href": "slides/11.html#scenarios",
-    "title": "Choosing the Right Server for You",
+    "title": "Server Resources and Scaling",
     "section": "Scenarios",
     "text": "Scenarios\n\nYou try to load a big csv file into pandas in Python. It churns for a while and then crashes.\nYou go to build a new ML model on your data. You’d like to re-train the model once a day, but it turns out training this model takes 26 hours on your laptop.\nYou design an visualization Matplotlib , and create a whole bunch in a loop, you want to parallelize the operation. Right now you’re running on a t2.small with 1 CPU."
-  },
-  {
-    "objectID": "slides/11.html#lab",
-    "href": "slides/11.html#lab",
-    "title": "Choosing the Right Server for You",
-    "section": "Lab",
-    "text": "Lab\nNot much to say here…🤷"
   },
   {
     "objectID": "slides/13.html#learning-objectives",

@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.26">
 
-  <title>DevOps for Data Science Book Club – Choosing the Right Server for You</title>
+  <title>DevOps for Data Science Book Club – Server Resources and Scaling</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -126,7 +126,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Choosing the Right Server for You</h1>
+  <h1 class="title">Server Resources and Scaling</h1>
 
 <div class="quarto-title-authors">
 </div>
@@ -167,6 +167,33 @@
 </ul>
 <p><span class="math inline">\(n \textrm{ cores} = 1 \textrm{ core per user} + 1\)</span></p>
 </section>
+<section id="ram" class="slide level2 unnumbered">
+<h2>RAM</h2>
+<ul>
+<li><p>Basically short term memory. When a process ends, it is destroyed (like when you quit RStudio)</p></li>
+<li><p>Get a computer with lots of RAM, probably</p></li>
+</ul>
+<p><span class="math inline">\(\textrm{Necessary RAM} = \textrm{max amount of data} \times 3\)</span></p>
+<ul>
+<li>If it’s too big, move to disk (e.g.&nbsp;database, Arrow, dask, HDF5)</li>
+</ul>
+
+<img data-src="https://rviews.rstudio.com/post/2019-07-01-3-big-data-paradigms-for-r_files/chunk_pull.png" class="r-stretch quarto-figure-center"><p class="caption">Big data in R</p></section>
+<section id="disk-storage" class="slide level2 unnumbered">
+<h2>Disk (Storage)</h2>
+<ul>
+<li><p>Where physical files live and persist</p></li>
+<li><p>The bigger the better (and cheaper nowadays)</p></li>
+</ul>
+<p><span class="math inline">\(\textrm{Necessary Storage} = \textrm{approx data} + 1 \textrm{GB} \times n \textrm{ users}\)</span></p>
+<ul>
+<li>Disk types:
+<ul>
+<li><p>HDD: mechanical, slower, cheaper</p></li>
+<li><p>SSD: electronic, faster, more expensive</p></li>
+</ul></li>
+</ul>
+</section>
 <section id="gpu" class="slide level2 unnumbered">
 <h2>GPU</h2>
 <ul>
@@ -189,26 +216,6 @@
 </ul>
 
 <img data-src="https://study.com/cimages/videopreview/ayh7r7g0ty.jpg" class="r-stretch quarto-figure-center"><p class="caption">decisions, decisions</p></section>
-<section id="ram" class="slide level2 unnumbered">
-<h2>RAM</h2>
-<ul>
-<li><p>Basically short term memory. When a process ends, it is destroyed (like when you quit RStudio)</p></li>
-<li><p>Get a computer with lots of RAM, probably</p></li>
-</ul>
-<p><span class="math inline">\(\textrm{Necessary RAM} = \textrm{max amount of data} \times 3\)</span></p>
-<ul>
-<li>If it’s too big, move to disk (e.g.&nbsp;database, Arrow, dask, HDF5)</li>
-</ul>
-
-<img data-src="https://rviews.rstudio.com/post/2019-07-01-3-big-data-paradigms-for-r_files/chunk_pull.png" class="r-stretch quarto-figure-center"><p class="caption">Big data in R</p></section>
-<section id="disk-storage" class="slide level2 unnumbered">
-<h2>Disk (Storage)</h2>
-<ul>
-<li><p>Where physical files live and persist</p></li>
-<li><p>The bigger the better (and cheaper nowadays)</p></li>
-</ul>
-<p><span class="math inline">\(\textrm{Necessary Storage} = \textrm{approx data} + 1 \textrm{GB} \times n \textrm{ users}\)</span></p>
-</section>
 <section id="scenarios" class="slide level2 unnumbered">
 <h2>Scenarios</h2>
 <ol type="1">
@@ -216,10 +223,6 @@
 <li><p>You go to build a new ML model on your data. You’d like to re-train the model once a day, but it turns out training this model takes 26 hours on your laptop.</p></li>
 <li><p>You design an visualization Matplotlib , and create a whole bunch in a loop, you want to parallelize the operation. Right now you’re running on a t2.small with 1 CPU.</p></li>
 </ol>
-</section>
-<section id="lab" class="slide level2 unnumbered">
-<h2>Lab</h2>
-<p>Not much to say here…🤷</p>
 
 
 </section>

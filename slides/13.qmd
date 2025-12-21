@@ -1,0 +1,101 @@
+---
+engine: knitr
+title: Domains and DNS
+---
+
+## Learning objectives
+
+- Understanding DNS and nameservers
+- Understanding the fully qualified domain name
+- Understanding how to configure DNS for your server
+
+## Nameservers: the phone books of the internet
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![](https://do4ds.com/chapters/sec2/images/dns_resolution.png)
+
+:::
+
+::: {.column width="50%"}
+
+- Client provides a domain
+- Nameserver
+    - looks up domain
+    - finds domain's IP
+    - returns matching IP
+
+:::
+
+::::
+
+## Domains deconstructed
+
+![](images/fully-qualified-domain-deconstructed.png){fig-align="center"}
+
+## How to get a domain
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+### Overview
+
+- **Buy**. Actually, rent from DNS provider.
+- **Register**. Typically, with [ICANN](https://en.wikipedia.org/wiki/ICANN) via DNS provider.
+
+:::
+
+::: {.column width="50%"}
+
+### Detailed steps
+
+- Go to a DNS provider (e.g., Namecheap, Godaddy, AWS Route 53, etc)
+- Search for a domain name in a top-level domain (e.g. `hello-world` in `.com`)
+- Pay to use it
+- Provide some personal details for registration (that DNS providers typically redacts)
+
+:::
+
+::::
+
+
+## How to link your server and your domain
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+### Networking table ...
+
+| Path/Host | Type | Target |
+| --------- | ---- | ------ |
+| `@` | `A` | 64.56.223.5 |
+| www | `CNAME` | example.com |
+| blog | `A` | 114.13.56.77 |
+| * | `A` | 64.56.223.5 |
+
+:::
+
+::: {.column width="40%"}
+
+### ... explained
+
+::: {.fragment .incremental}
+- `@`. Traffic to exactly `example.com` -> IP `64...`
+- `www`.  Traffic to `www.example.com` -> `example.com` -> IP `64...`
+- `blog`. `blog.example.com` -> different IP
+- `*`. Everything else -> IP `64....`
+:::
+
+:::
+
+::::
+
+
+## Demos
+
+- GitHub Pages
+- ~~AWS~~

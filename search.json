@@ -1377,21 +1377,28 @@
     "href": "slides/15.html#enterprise-networking-terminology",
     "title": "Enterprise Networking",
     "section": "Enterprise Networking Terminology",
-    "text": "Enterprise Networking Terminology\n\nprivate network: a network that communicates with the wider internet via proxies; VPC (“Virtual private cloud”) on AWS\ninbound proxy: more formally “reverse proxy”; a server on the public network that routes traffic into a private network\noutbound proxy: more formally “forward proxy”; a server on the public network that routes traffic out of a private network"
+    "text": "Enterprise Networking Terminology\nA private network communicates with the wider internet via proxies; VPC (“Virtual private cloud”) on AWS\n\nThe shape of an enterprise network"
+  },
+  {
+    "objectID": "slides/15.html#traffic-direction",
+    "href": "slides/15.html#traffic-direction",
+    "title": "Enterprise Networking",
+    "section": "Traffic Direction",
+    "text": "Traffic Direction\n\ninbound/reverse proxy: routes traffic into a private network. Laptop → Server\noutbound/forward proxy: routes traffic out of a private network. Server → API\n\n\nProxies"
   },
   {
     "objectID": "slides/15.html#benefits-of-private-networks",
     "href": "slides/15.html#benefits-of-private-networks",
     "title": "Enterprise Networking",
     "section": "Benefits of Private Networks",
-    "text": "Benefits of Private Networks\n\nDeal with security issues at the proxies\nEasier to route traffic (and change routing) to specific servers\nEasier to manage ports\nCan block traffic to/from specific unwanted sources\n\nOr block all traffic and only allow specific white lists\n\nCan optionally handle authentication at the proxy & pass token/header along"
+    "text": "Benefits of Private Networks\n\nDeal with security issues at the proxies\nUse private IP addresses internally\nEasier to route traffic (and change routing) to specific servers\nEasier to manage ports\nCan block traffic to/from specific unwanted sources\n\nOr block all traffic and only allow specific white lists\n\nCan optionally handle authentication at the proxy & pass token/header along"
   },
   {
     "objectID": "slides/15.html#issues-with-inbound-proxies",
     "href": "slides/15.html#issues-with-inbound-proxies",
     "title": "Enterprise Networking",
     "section": "Issues with Inbound Proxies",
-    "text": "Issues with Inbound Proxies\n\nConnections from your laptop to the server\nThings that are often configured:\n\nUpload/download file size limits.\nUpload/download/session timeouts.\n\nSigns that you might be fighting against an inbound proxy:\n\nUploads/downloads from you to the server fail or cut off early.\nYour session keeps ending (you have to log back in).\n\nSpecial case: Websockets\n\nOlder proxies might break things like Shiny and Streamlit."
+    "text": "Issues with Inbound Proxies\n\nConnections from your laptop to the server\nCorrect port configuration is critical\nThings that are often configured:\n\nUpload/download file size limits.\nUpload/download/session timeouts.\n\nSigns that you might be fighting against an inbound proxy:\n\nUploads/downloads from you to the server fail or cut off early.\nYour session keeps ending (you have to log back in)."
   },
   {
     "objectID": "slides/15.html#issues-with-outbound-proxies",

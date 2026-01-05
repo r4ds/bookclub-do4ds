@@ -143,16 +143,22 @@
 </section>
 <section id="enterprise-networking-terminology" class="slide level2 unnumbered">
 <h2>Enterprise Networking Terminology</h2>
+<p>A <strong>private network</strong> <em>communicates</em> with the wider internet <em>via proxies;</em> VPC (“Virtual private cloud”) on AWS</p>
+
+<img data-src="images/15_subnets.png" class="r-stretch quarto-figure-center"><p class="caption">The shape of an enterprise network</p></section>
+<section id="traffic-direction" class="slide level2 unnumbered">
+<h2>Traffic Direction</h2>
 <ul>
-<li><strong>private network:</strong> a network that <em>communicates</em> with the wider internet <em>via proxies;</em> VPC (“Virtual private cloud”) on AWS</li>
-<li><strong>inbound proxy:</strong> more formally “reverse proxy”; a server on the public network that routes traffic <em>into</em> a private network</li>
-<li><strong>outbound proxy:</strong> more formally “forward proxy”; a server on the public network that routes traffic <em>out of</em> a private network</li>
+<li><strong>inbound/reverse proxy:</strong> routes traffic <em>into</em> a private network. Laptop → Server</li>
+<li><strong>outbound/forward proxy:</strong> routes traffic <em>out of</em> a private network. Server → API</li>
 </ul>
-</section>
+
+<img data-src="images/15_traffic.png" class="r-stretch quarto-figure-center"><p class="caption">Proxies</p></section>
 <section id="benefits-of-private-networks" class="slide level2 unnumbered">
 <h2>Benefits of Private Networks</h2>
 <ul>
 <li>Deal with security issues at the proxies</li>
+<li>Use private IP addresses internally</li>
 <li>Easier to route traffic (and change routing) to specific servers</li>
 <li>Easier to manage ports</li>
 <li>Can block traffic to/from specific unwanted sources
@@ -166,6 +172,7 @@
 <h2>Issues with Inbound Proxies</h2>
 <ul>
 <li>Connections from your laptop to the server</li>
+<li>Correct port configuration is critical</li>
 <li>Things that are often configured:
 <ul>
 <li>Upload/download file size limits.</li>
@@ -175,10 +182,6 @@
 <ul>
 <li>Uploads/downloads from you to the server fail or cut off early.</li>
 <li>Your session keeps ending (you have to log back in).</li>
-</ul></li>
-<li>Special case: Websockets
-<ul>
-<li>Older proxies might break things like Shiny and Streamlit.</li>
 </ul></li>
 </ul>
 </section>

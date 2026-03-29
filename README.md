@@ -11,8 +11,8 @@ As we read, we are producing [slides for the book](https://dslc.io/do4ds).
 
 If you would like to present, please see the sign-up sheet for your cohort (linked below, and pinned in the [#book_club-do4ds](https://dslcio.slack.com/archives/C03SMHQ0RJP) channel on Slack)!
 
-- Cohort 1 (started 2022-10-15, finished 2023-05-27): [meeting videos](https://youtube.com/playlist?list=PL3x6DOfs2NGh_vdoVBZ0Tp3nOrOgY_XIZ)
-- Cohort 2 (facilitator: @Olivier Leroy): [Fridays 10am central](https://dslcio.slack.com/archives/C03SMHQ0RJP/p1754224181469239) | [schedule](https://docs.google.com/spreadsheets/d/1a99WLm0v6GsSGEwmo2EJ8F6p_9TFpZ4UWRNwVKCX7RE/edit?usp=sharing) | [meeting videos](https://DSLC.video/do4ds02)
+- Cohort 1 (ended 2023-05-27): [meeting videos](https://DSLC.video/do4ds01)
+- Cohort 2 (ended 2026-03-06): [meeting videos](https://DSLC.video/do4ds02)
 
 <hr>
 
